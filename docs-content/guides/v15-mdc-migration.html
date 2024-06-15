@@ -1,100 +1,99 @@
-<div class="docs-markdown"><h1 data-ng_translator_product="100" data-ng_translator_ref_id="edpks2fzzywwrrth31ruweugl">迁移到基于 MDC 的 Angular Material Components</h1><p>In Angular Material v15 and later, many of the components have been refactored to be based on the official
-<a href="https://github.com/material-components/material-components-web">Material Design Components for Web (MDC)</a>.
-The components from the following imports have been refactored:</p>
+<div class="docs-markdown"><h1 data-ng_translator_product="100" data-ng_translator_ref_id="edpks2fzzywwrrth31ruweugl">迁移到基于 MDC 的 Angular Material Components</h1><p data-ng_translator_product="100" data-ng_translator_ref_id="30l45c0iewi0nmv3v6of4y3k9">在 Angular Material v15 及更高版本中，许多组件已重构为基于官方的 
+<a href="https://github.com/material-components/material-components-web">Material Design Components for Web (MDC)</a>。以下导入的组件已重构：</p>
 <table>
 <thead>
 <tr>
-<th>Import path</th>
-<th>Summary of changes</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="cja1wr8nxvbqy01ejqlsefc13">导入路径</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="86659nenl564fpotfgp29ilnt">更改摘要</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>@angular/material/autocomplete</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/button</td>
-<td>Style changes, API changes</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ac6p3lthn2he5mo42ybj1jy4i">样式更改、API 更改</td>
 </tr>
 <tr>
 <td>@angular/material/card</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/checkbox</td>
-<td>Style changes, changes to event behavior</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="98ll36sb7g2lsbz38s2e3lgnn">样式更改、事件行为更改</td>
 </tr>
 <tr>
 <td>@angular/material/chips</td>
-<td>Complete rewrite</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="496zlqluss2gy71l9xdxs3bl">完全重写</td>
 </tr>
 <tr>
 <td>@angular/material/core</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/dialog</td>
-<td>Style changes, changes to change detection behavior</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5by4plmw3z2k2zk49ecoizfoj">样式更改、更改检测行为更改</td>
 </tr>
 <tr>
 <td>@angular/material/form-field</td>
-<td>Style changes, some appearances removed, API changes</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="casprree58x75q427lct69nvq">样式更改、某些外观已移除、API 更改</td>
 </tr>
 <tr>
 <td>@angular/material/input</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/list</td>
-<td>Style changes, API changes</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ac6p3lthn2he5mo42ybj1jy4i">样式更改、API 更改</td>
 </tr>
 <tr>
 <td>@angular/material/menu</td>
-<td>Style changes, API changes</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ac6p3lthn2he5mo42ybj1jy4i">样式更改、API 更改</td>
 </tr>
 <tr>
 <td>@angular/material/paginator</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/progress-bar</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/progress-spinner</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/radio</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/select</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/slide-toggle</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/slider</td>
-<td>Complete rewrite</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="496zlqluss2gy71l9xdxs3bl">完全重写</td>
 </tr>
 <tr>
 <td>@angular/material/snack-bar</td>
-<td>Style changes, API changes</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ac6p3lthn2he5mo42ybj1jy4i">样式更改、API 更改</td>
 </tr>
 <tr>
 <td>@angular/material/table</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 <tr>
 <td>@angular/material/tabs</td>
-<td>Style changes, API changes</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ac6p3lthn2he5mo42ybj1jy4i">样式更改、API 更改</td>
 </tr>
 <tr>
 <td>@angular/material/tooltip</td>
-<td>Style changes only</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1s84fuf9b2pjx1kgtnjaq6y5r">仅样式更改</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="lxdmhagx7jvp38axb3yipwr3">重构的组件提供了一些优于旧实现的优势，包括：</p>
@@ -104,7 +103,7 @@ The components from the following imports have been refactored:</p>
 <li data-ng_translator_product="100" data-ng_translator_ref_id="5oay7ce9mm1k1k6qw730c0602">由于基于通用基础设施，未来版本的 Material Design 规范的采纳速度更快</li>
 </ul>
 
-        <h2 id="what-has-changed" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4dkacz4lc7lcxrbpmmmionlxn"><span header-link="what-has-changed"></span>发生了哪些变化？</h2>
+        <h2 id="what-has-changed" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4dkacz4lc7lcxrbpmmmionlxn">发生了哪些变化？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="76hpdz1bjyhffaxyxhaynokdr">新组件具有不同的内部 DOM 和 CSS 样式。但是，新组件的大多数 TypeScript API 和组件/指令选择器都尽可能接近旧实现。这使得迁移你的应用程序并使其与新组件一起运行变得更简单。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="tpych5yhl2acv4kfcatuwcgl">由于新的 DOM 和 CSS，你可能会发现应用程序中的某些样式需要调整，尤其是当你的 CSS 覆盖了任何已迁移组件的内部元素的样式时。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="b7b06lm12nbdai4vobltvih7l">为了与 MDC 集成，有一些组件对其 API 进行了较大变更。这些组件包括：</p>
@@ -119,7 +118,7 @@ The components from the following imports have been refactored:</p>
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {MatLegacyButtonModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/legacy-button'</span>;
 </code></pre>
 
-        <h2 id="how-to-migrate" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e3svln2wufnhd2y8r5q5fji6s"><span header-link="how-to-migrate"></span>如何迁移</h2>
+        <h2 id="how-to-migrate" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e3svln2wufnhd2y8r5q5fji6s">如何迁移</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="b8ndu9zfx05nkektd5f6la8xv">你可以通过运行 Angular Material 的自动重构工具来开始迁移。该工具实现为一个 <a href="https://angular.io/guide/schematics">Angular 原理图</a>，能将你的大部分代码更新为新的组件版本。虽然需要进行一些跟进，但你可以通过遵循这些最佳实践来减少手动工作：</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="c116u7kv1nf10bgtzz5l07e3f">通过确保你的应用程序在迁移之前遵循了某些良好实践，你可以减少所需的手动工作量。</p>
 <ul>
@@ -127,44 +126,37 @@ The components from the following imports have been refactored:</p>
 <li data-ng_translator_product="100" data-ng_translator_ref_id="5g1fr611use72xctookud6pvw">使用<a href="/guide/using-component-harnesses">组件挽具</a>在测试中与 Angular Material 组件交互，而不是检查组件的内部元素、属性或方法。使用组件挽具使你的测试更易于理解，并且对 Angular Material 中的更改更健壮</li>
 </ul>
 
-        <h3 id="1-update-to-angular-material-v16" class="docs-header-link">
-          
-          1. Update to Angular Material v16
-        </h3>
-      <p>Angular Material includes a schematic to help migrate applications to use the new MDC-based
-components. To get started, upgrade your application to Angular Material 16.</p>
+        <h3 id="1-update-to-angular-material-v16" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dl4jkp2xpejq0ee0vwa25j4xa">1. 更新到 Angular Material v16</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ewvi6zkx7x77hi45dsh2ywu9r">Angular Material 包含一个原理图，可帮助将应用程序迁移到使用新的基于 MDC 的组件。要开始，请将你的应用程序升级到 Angular Material 16。</p>
 <pre><code class="language-shell">ng update @angular/material@16
 </code></pre>
-<p>As part of this update, a schematic will run to automatically move your application to use the
-"legacy" imports containing the old component implementations. This provides a quick path to getting
-your application running on v16 with minimal manual changes.</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="59zusbbiop6lmlyystnlol471">作为此更新的一部分，将运行一个原理图，以自动将你的应用程序迁移到使用包含旧组件实现的“旧版”导入。这提供了一条快速路径，可以让你在进行最少的手动更改的情况下，让你的应用程序在 v16 上运行。</p>
 
-        <h3 id="2-run-the-migration-tool" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5c4uu2s2wqp60rggwh6yao1jm"><span header-link="2-run-the-migration-tool"></span>2.运行迁移工具</h3>
-      <p>After upgrading to v16, you can run the migration tool to switch from the legacy component
-implementations to the new MDC-based ones.</p>
+        <h3 id="2-run-the-migration-tool" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5c4uu2s2wqp60rggwh6yao1jm">2.运行迁移工具</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4naq6ldiym3m9lq1s8ovykq3n">升级到 v16 后，你可以运行迁移工具，从旧版组件实现切换到新的基于 MDC 的组件。</p>
 <pre><code class="language-shell">ng generate @angular/material:mdc-migration
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ccn8l3pczrz2zftpp0260y94v">此命令将你的 TypeScript、样式和模板更新为新的实现，并尽可能自动更新。</p>
 
-        <h4 id="running-a-partial-migration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="87ju46x0zky3j9bj1xtm8ztcq"><span header-link="running-a-partial-migration"></span>运行部分迁移</h4>
+        <h4 id="running-a-partial-migration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="87ju46x0zky3j9bj1xtm8ztcq">运行部分迁移</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="15k8rpd94l42d51wmda9gsqc6">根据应用程序的大小和复杂性，你可能希望一次迁移单个组件或一小组组件，而不是一次迁移所有组件。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4ks58ds0uw0byk5w9gvw10ywk">你可能还希望一次迁移你的应用程序一个模块，而不是一起迁移。你可以在同一个应用程序中同时使用旧实现和新实现，只要它们不在同一个 <code>NgModule</code> 中使用。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ct6tpq3zjwpefo7kjfsqfasd0">该脚本将提示你输入要迁移的目录和组件。</p>
 
-        <h3 id="3-check-for-todos-left-by-the-migration-tool" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bk2zs0hfj325trkybdxx88ozc"><span header-link="3-check-for-todos-left-by-the-migration-tool"></span>3. 检查迁移工具留下的 TODO。</h3>
+        <h3 id="3-check-for-todos-left-by-the-migration-tool" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bk2zs0hfj325trkybdxx88ozc">3. 检查迁移工具留下的 TODO。</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="eh9e8wax2xyvowi6bezzzcl1o">在迁移工具无法自动更新你的代码的情况下，它会尝试添加注释以供人工跟进。这些 TODO 注释遵循通用格式，因此可以轻松识别。</p>
 <pre><code class="language-ts"><span class="hljs-comment">// TODO(mdc-migration): ...</span>
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9o7uyoduar7z4lh595f614eqe">要搜索迁移工具留下的所有注释，请在你的 IDE 中搜索 <code>TODO(mdc-migration):</code></p>
 
-        <h3 id="4-verify-your-application" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b2tge32s7vjjgvrpvq6pbkgjq"><span header-link="4-verify-your-application"></span>4. 验证你的申请</h3>
+        <h3 id="4-verify-your-application" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b2tge32s7vjjgvrpvq6pbkgjq">4. 验证你的申请</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e8551d1xq372mgsgm7h1n2lo">在运行迁移并解决 TODO 之后，手动验证一切是否正常工作。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="190cv2jpfdhdbx7sobj05cz50">运行你的测试并确认它们通过。你的测试可能依赖于内部 DOM 或旧组件实现的异步计时细节，并且可能需要更新。如果你发现需要更新某些测试，请考虑使用<a href="guide/using-component-harnesses">组件挽具</a>来使测试更加健壮。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="cp68fqla0tkvzu0dvjqwec2in">运行你的应用程序并验证新组件是否正确。由于组件内部 DOM 和 CSS 的变化，你可能需要调整应用程序的某些样式。</p>
 
-        <h2 id="comprehensive-list-of-changes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9v4ddgdl3gwqb9vsgwi61vfkk"><span header-link="comprehensive-list-of-changes"></span>综合变更清单</h2>
+        <h2 id="comprehensive-list-of-changes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9v4ddgdl3gwqb9vsgwi61vfkk">综合变更清单</h2>
       
-        <h3 id="library-wide-changes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="rp649b6t3k82tquqoprrb3fs"><span header-link="library-wide-changes"></span>库范围内的变化</h3>
+        <h3 id="library-wide-changes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="rp649b6t3k82tquqoprrb3fs">库范围内的变化</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="cfvyns8f4xhyk0tahqjyqydfh">组件大小、颜色、间距、阴影和动画都在整体上略有变化。这些更改通常会提高规范合规性和无障碍性。</p>
 </li>
@@ -176,7 +168,7 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 
-        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs"><span header-link="theming"></span>主题</h3>
+        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs">主题</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="2irfvthj2lldxhco9geks6471"><code>mat.define-typography-config</code> 定义的默认排版级别已更新，以反映对 Material Design 规范的更改。</p>
 </li>
@@ -201,7 +193,7 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 
-        <h3 id="autocomplete" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6nnp9lhi7vhw3cemxa96xctxb"><span header-link="autocomplete"></span>自动完成</h3>
+        <h3 id="autocomplete" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6nnp9lhi7vhw3cemxa96xctxb">自动完成</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="9boza21xhp7308guyco6tdz45">长选项现在将换行而不再是截断。</p>
 </li>
@@ -213,7 +205,7 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 
-        <h3 id="button" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9ppjlv6l98et1ftejj01pr8eb"><span header-link="button"></span>按钮</h3>
+        <h3 id="button" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9ppjlv6l98et1ftejj01pr8eb">按钮</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="9qw45ry3fs522jozegj8sypsv">图标按钮的高度和宽度是 <code>48px</code> 而不再是 <code>40px</code> 。</p>
 </li>
@@ -238,7 +230,7 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 
-        <h3 id="card" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6vgshr27nx34zj9ss9zxk1d67"><span header-link="card"></span>卡片</h3>
+        <h3 id="card" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6vgshr27nx34zj9ss9zxk1d67">卡片</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="e4w2cxd54jnvnojvwkkcszs4s">默认情况下，mat-card 不应用任何内衬距。相反，此内衬距是在卡片内容区域定义的： <code>&lt;mat-card-content&gt;</code> 、 <code>&lt;mat-card-header&gt;</code> 和 <code>&lt;mat-card-actions&gt;</code> 。</p>
 </li>
@@ -253,7 +245,7 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 
-        <h3 id="checkbox" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4advmw384g2gwj1hwx7u6ulaz"><span header-link="checkbox"></span>复选框</h3>
+        <h3 id="checkbox" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4advmw384g2gwj1hwx7u6ulaz">复选框</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="eiru2jg8k93prbk9hpflrpxmm">单击复选框现在直接触发原生复选框元素，而不再是 shim div。原生复选框在其 <code>click</code> 事件上调用 <code>preventDefault</code> 时会有古怪的行为，因此用户不应在 <code>click</code> 上调用 <code>preventDefault</code> 。</p>
 </li>
@@ -272,7 +264,7 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 
-        <h3 id="chips" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6pxsxap0xa8t5q3ger5huiocm"><span header-link="chips"></span>纸片</h3>
+        <h3 id="chips" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6pxsxap0xa8t5q3ger5huiocm">纸片</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="52zkbz36ogoff1z3hb2yzs0ln">纸片曾经是指令，但现在改成了组件。这意味着它们无法再用于其它组件。</p>
 </li>
@@ -286,14 +278,16 @@ implementations to the new MDC-based ones.</p>
 </li>
 </ul>
 </li>
-<li><p>The migration tool always changes the legacy <code>&lt;mat-chip-list&gt;</code> to <code>&lt;mat-chip-listbox&gt;</code> to minimize
-differences before and after. You should separately consider changing to <code>&lt;mat-chip-grid&gt;</code> or
-<code>&lt;mat-chip-set&gt;</code> on a case-by-case basis. See <a href="guide/overview#interaction-patterns">Chips Interaction Patterns</a> for more guidence on
-choosing the appropriate component for your use case.</p>
+<li><p data-ng_translator_product="100" data-ng_translator_ref_id="7jsvbxbl1dlmhl7seumx4sc18">迁移工具始终将旧版 
+<code>&lt;mat-chip-list&gt;</code> 更改为 
+<code>&lt;mat-chip-listbox&gt;</code>，以最大程度地减少前后差异。你应该分别考虑在逐案基础上更改为 
+<code>&lt;mat-chip-grid&gt;</code> 或 
+<code>&lt;mat-chip-set&gt;</code>。有关为你的用例选择适当组件的更多指导，请参阅 
+<a href="guide/overview#interaction-patterns">Chips 交互模式</a>。</p>
 </li>
 </ul>
 
-        <h3 id="dialog" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cxjndop3by9jxkv43z8zyo3yn"><span header-link="dialog"></span>对话</h3>
+        <h3 id="dialog" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cxjndop3by9jxkv43z8zyo3yn">对话</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="1cmcxvvztdjooti1i2gs760gi"><code>.mat-dialog-container</code> 不再包含 24px 的内衬距。相反，内部对话框指令会负责添加正确的内衬距。如果你的对话框不使用任何像 <code>&lt;mat-dialog-content&gt;</code> 这样的指令，这将很明显。</p>
 </li>
@@ -303,7 +297,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="form-field" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="338czstwnttc14jpx0mfiwvjx"><span header-link="form-field"></span>表单字段</h3>
+        <h3 id="form-field" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="338czstwnttc14jpx0mfiwvjx">表单字段</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="230oqu9gvqoltu81es3qiv9x1">“旧版 - legacy”和“标准 - standard”表单字段外观设置不再存在，因为它们已从 Material Design 规范中删除。</p>
 </li>
@@ -321,7 +315,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="input" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ddfymjl058fx32say5qduqez5"><span header-link="input"></span>输入框</h3>
+        <h3 id="input" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ddfymjl058fx32say5qduqez5">输入框</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="dv1052wywilvdv3kc6ytf5dlp">MatInput 必须用在 <code>&lt;mat-form-field&gt;</code> 内。以前，如果页面在其他地方加载了表单字段样式，则可能会（无意中）用到不在表单字段中的 <code>&lt;input matInput&gt;</code> 。</p>
 </li>
@@ -333,7 +327,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="list" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ahkrb2923n7wjg6b0a97svi9c"><span header-link="list"></span>列表</h3>
+        <h3 id="list" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ahkrb2923n7wjg6b0a97svi9c">列表</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="6k13vyk8fc6j0td0de1v3l53v">此 API 已经过重新设计以支持文本换行并更好地与 Material Design 规范集成。</p>
 </li>
@@ -378,7 +372,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="menu" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e06y9wf8lgl4a17swk8mfvoz1"><span header-link="menu"></span>菜单</h3>
+        <h3 id="menu" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e06y9wf8lgl4a17swk8mfvoz1">菜单</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="5mz8nf8hse8ttrp1us21e478r">无论在 DOM 中的顺序如何，菜单项的图标总是会出现在文本之前。</p>
 <ul>
@@ -401,7 +395,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="option--optgroup" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3p5xqnkdu050bowgvn9ciaaf1"><span header-link="option--optgroup"></span>选项/选项组</h3>
+        <h3 id="option--optgroup" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3p5xqnkdu050bowgvn9ciaaf1">选项/选项组</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="2tu4n2wlabhgg18wt64npurxf">长选项现在将换行而不再用省略号截断。</p>
 </li>
@@ -409,12 +403,12 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="paginator" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bs8g5tq3v3xmyx4sioksd2du4"><span header-link="paginator"></span>分页器</h3>
+        <h3 id="paginator" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bs8g5tq3v3xmyx4sioksd2du4">分页器</h3>
       <ul>
 <li data-ng_translator_product="100" data-ng_translator_ref_id="ctknnkjb2w9c0rtw0lsn16xlu"><code>mat-paginator</code> 中的表单字段仅支持新表单字段提供的 <code>appearance</code> 选项（ <code>fill</code> 和 <code>outline</code> ）。</li>
 </ul>
 
-        <h3 id="progress-bar" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3781w2zolglj4ye0ns5jx89kq"><span header-link="progress-bar"></span>进度条</h3>
+        <h3 id="progress-bar" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3781w2zolglj4ye0ns5jx89kq">进度条</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="139r7994awix7gaj4j0do0epw">内部元素的可见性现在设置为 <code>visible</code> 。设置 <code>visibility: hidden</code> 将不再隐藏所有内部元素。要改为使用 <code>opacity: 0</code> 、 <code>display: none</code> 设置样式，或使用 <code>ngIf</code> 完全删除它。</p>
 </li>
@@ -422,12 +416,12 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="progress-spinner" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8li3e8xlzzqexlhkz5joj0e0l"><span header-link="progress-spinner"></span>进度圈</h3>
+        <h3 id="progress-spinner" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8li3e8xlzzqexlhkz5joj0e0l">进度圈</h3>
       <ul>
 <li data-ng_translator_product="100" data-ng_translator_ref_id="7kbevb11gri646gobu387aosn">宿主元素不再是 <code>display: block</code> 的。要修复布局问题，请将 <code>display: block</code> 添加回此元素。</li>
 </ul>
 
-        <h3 id="radio" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cup84s27ip286h0hu6qqmz44p"><span header-link="radio"></span>单选</h3>
+        <h3 id="radio" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cup84s27ip286h0hu6qqmz44p">单选</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="dnp9l1ujap9amxwvxdwv5m3wf">单选按钮标签不再是 <code>width: 100%</code>。这有助于防止用户在偶然单击页面上的空白时意外选中单选按钮。</p>
 </li>
@@ -440,7 +434,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="select" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="a7d3zmfhgs9mrbxinzme9u6ii"><span header-link="select"></span>选择框</h3>
+        <h3 id="select" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="a7d3zmfhgs9mrbxinzme9u6ii">选择框</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="5dqulor3songn5ovan0av1vqq"><code>MatSelect</code> 不再将下拉菜单中的选定选项与触发器文本对齐。</p>
 </li>
@@ -456,7 +450,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="slide-toggle" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8909qhpz2j1y216ir8skh54wa"><span header-link="slide-toggle"></span>滑动开关</h3>
+        <h3 id="slide-toggle" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8909qhpz2j1y216ir8skh54wa">滑动开关</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="ecgz0oxmpsh5jgp7jnlzk9e9i">为了提高无障碍性，基于 MDC 的版本使用 <code>&lt;button role="switch"&gt;</code> 来表示切换而不再是 <code>&lt;input type="checkbox"&gt;</code> 。滑动开关将不再响应原生表单验证。要考虑表单验证的替代方法。</p>
 </li>
@@ -469,7 +463,7 @@ choosing the appropriate component for your use case.</p>
 </li>
 </ul>
 
-        <h3 id="slider" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="82kwfc6fahb0nruufqrthdwmk"><span header-link="slider"></span>滑块</h3>
+        <h3 id="slider" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="82kwfc6fahb0nruufqrthdwmk">滑块</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="ef4g22b76p1qpi2ktuhm69nmq">滑块现在可与移动设备屏幕阅读器配合使用。</p>
 </li>
@@ -537,8 +531,7 @@ choosing the appropriate component for your use case.</p>
 <li><code>@Output() valueChange: EventEmitter&lt;number&gt;</code></li>
 <li><code>@Output() dragEnd: EventEmitter&lt;MatSliderDragEvent&gt;</code></li>
 <li><code>@Output() dragStart: EventEmitter&lt;MatSliderDragEvent&gt;</code></li>
-<li><code>percentage: number</code>
-And the following methods:</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="a0ozhiomaa01jg83vwgt7oozi"><code>percentage: number</code> 以及以下方法：</li>
 <li><code>blur</code></li>
 <li><code>focus</code></li>
 </ul>
@@ -549,7 +542,7 @@ And the following methods:</li>
 </li>
 </ul>
 
-        <h3 id="snack-bar" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="53rokpaw66b887s6tzia4gt4l"><span header-link="snack-bar"></span>快餐栏</h3>
+        <h3 id="snack-bar" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="53rokpaw66b887s6tzia4gt4l">快餐栏</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="a33yk9qeci4snlrxp6ia5k3u9">对于简单的、基于文本的快餐栏，没有重大变化。</p>
 </li>
@@ -567,7 +560,7 @@ And the following methods:</li>
 </li>
 </ul>
 
-        <h3 id="table" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3lb4kf8yyoeicmmsqx08u2o1i"><span header-link="table"></span>表格</h3>
+        <h3 id="table" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3lb4kf8yyoeicmmsqx08u2o1i">表格</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="9sie0141642s63qfyx9d85osb">所有单元格都有 <code>16px</code> 的左右内衬距，而不再是只有最左边和最右边的单元格有 <code>24px</code> 的内衬距。</p>
 </li>
@@ -589,7 +582,7 @@ And the following methods:</li>
 </li>
 </ul>
 
-        <h3 id="tabs" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9e60tqmd3drj0zm3x0rijt4io"><span header-link="tabs"></span>选项卡</h3>
+        <h3 id="tabs" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9e60tqmd3drj0zm3x0rijt4io">选项卡</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="dgejj4uf103ar8xzczukukjab">选择选项卡标题时，标题标签文本颜色会与主题颜色匹配。</p>
 </li>
@@ -606,7 +599,7 @@ And the following methods:</li>
 </li>
 </ul>
 
-        <h3 id="tooltip" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1c9nsc82l7s6razcltez9f1"><span header-link="tooltip"></span>工具提示</h3>
+        <h3 id="tooltip" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1c9nsc82l7s6razcltez9f1">工具提示</h3>
       <ul>
 <li><p data-ng_translator_product="100" data-ng_translator_ref_id="5vi542clscpsmy62dgp6a01vs">背景颜色是不透明的，而不再是稍微透明的。这提高了无障碍性。</p>
 </li>

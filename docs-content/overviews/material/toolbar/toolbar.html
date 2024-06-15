@@ -2,29 +2,29 @@
 <div material-docs-example="toolbar-overview"></div>
 
 
-        <h3 id="single-row" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4gvjj3ebe5mquwclyrpq0lxt"><span header-link="single-row"></span>单行工具栏</h3>
+        <h3 id="single-row" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4gvjj3ebe5mquwclyrpq0lxt">单行工具栏</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="514xotcs0cowxm5tbyb0yqumn">在大多数场景下，工具栏会放在应用的顶部，而且只包含一行应用标题。</p>
 <div material-docs-example="toolbar-overview" file="toolbar-overview-example.html" region="toolbar-simple"></div>
 
 
-        <h3 id="multiple-rows" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch106j76ci3eaqxwei9ynuln1"><span header-link="multiple-rows"></span>多行工具栏</h3>
+        <h3 id="multiple-rows" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch106j76ci3eaqxwei9ynuln1">多行工具栏</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="mg4t4flvq75ymm4jljyctpzn">Material Design 规范中说工具栏同样可以是多行的。可以通过把 <code>&lt;mat-toolbar-row&gt;</code> 元素放进 <code>&lt;mat-toolbar&gt;</code> 中来创建多行工具栏。</p>
 <div material-docs-example="toolbar-multirow" file="toolbar-multirow-example.html" region="toolbar-row"></div>
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="dhklnqhexk4be15dfbp3ct7qy"><strong>注意</strong>：当指定了多行工具栏时，不支持把内容放在 <code>&lt;mat-toolbar-row&gt;</code> 的外面。</p>
 
-        <h3 id="positioning-toolbar-content" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1qvdnx8skwjyc6dh6j5oo5k"><span header-link="positioning-toolbar-content"></span>定位工具栏内容</h3>
+        <h3 id="positioning-toolbar-content" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1qvdnx8skwjyc6dh6j5oo5k">定位工具栏内容</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6jjlz4kojq3hf0x85ft03txmp">工具栏不会对其内容进行任何定位。这让用户有足够的控制权来按照应用的要求对内容进行定位。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4a6mfyl7dlj2s7tg7v6zl8f9q">一种常见的模式是把标题定位在左侧，而另一些操作定位在右侧。这可以使用 <code>display: flex</code> 来轻松实现：</p>
 <div material-docs-example="toolbar-multirow" file="toolbar-multirow-example.html" region="toolbar-position-content"></div>
 <div material-docs-example="toolbar-multirow" file="toolbar-multirow-example.css" region="toolbar-position-content-style"></div>
 
 
-        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs"><span header-link="theming"></span>主题</h3>
+        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs">主题</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8sxk2wk361fcua5jxyqxk8b3g"><code>&lt;mat-toolbar&gt;</code> 的颜色可以使用 <code>color</code> 属性进行设置。默认情况下，工具栏根据当前的主题（亮或暗）使用一个中立的背景颜色。
 可以把它修改为 <code>'primary'</code> <code>'accent'</code> 或 <code>'warn'</code>。</p>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8ilb6ki6c826poos3j0hsfoc3">默认情况下，工具栏假设它是纯装饰性的，因此不设置角色、ARIA 属性或键盘快捷键。这时它相当于页面中的一些 <code>&lt;div&gt;</code> 元素。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="d59k802meoyo4ydd06hpqc3hw">通常，工具栏会用作标题，这时候可以使用 <code>role="heading"</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="cvp25pl0dc2fmc9gmt2ws8dyg">只有当工具栏的用例和 <code>role="toolbar"</code> 相匹配时，它才应该加上此角色，并通过 <code>aria-label</code> 或 <code>aria-labelledby</code> 添加一个标签。</p>

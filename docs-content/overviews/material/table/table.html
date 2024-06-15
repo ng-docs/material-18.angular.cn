@@ -2,11 +2,11 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="60wfcwm47xtdkxt9aydfspakx">此表格基于 CDK 中的 data-table 构建，并在数据输入和模板上采用了相同的接口，只是它的元素选择器和属性选择器都使用 <code>mat-</code> 前缀，而不是 <code>cdk-</code> 前缀。
 对于该接口的更多信息以及表格的具体实现方式，参见 <a href="/guide/cdk-table">CDK data-table 指南</a>。</p>
 
-        <h3 id="getting-started" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="conbb9sv6an4r1ht073w62bmu"><span header-link="getting-started"></span>快速上手</h3>
+        <h3 id="getting-started" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="conbb9sv6an4r1ht073w62bmu">快速上手</h3>
       <div material-docs-example="table-basic"></div>
 
 
-        <h4 id="1-write-your-mat-table-and-provide-data" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9dfqavgerdk6246hwa5kyj2xg"><span header-link="1-write-your-mat-table-and-provide-data"></span>1. 编写你的 mat-table 并提供数据</h4>
+        <h4 id="1-write-your-mat-table-and-provide-data" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9dfqavgerdk6246hwa5kyj2xg">1. 编写你的 mat-table 并提供数据</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="887etxqv43mnb9hbhde48pizu">先把 <code>&lt;table mat-table&gt;</code> 组件添加到模板中，并传入数据。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8x31vyn9n1vbk2oisuen96e8h">为表格提供数据的最简单方式就是给它的输入属性 <code>dataSource</code> 提供一个数组型数据。
 该表格将会接收这个数组，并把数组型数据中的每一个对象渲染成一行。</p>
@@ -17,7 +17,7 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ao6accbj1donquanw84nsmnze">为了优化表格的性能，它不会自动检查数组型数据的变更。而是要在每次在数据表中添加、删除或移动对象时，通过调用它的 <code>renderRows</code> 方法来更新表格的各行。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6ja6vnq5tid16vty9qhi68f1s">虽然数组是把数据绑定到数据源的<em>最简单的</em>方式，但它也受限最严重。对于更复杂的应用，建议使用 <code>DataSource</code> 实例。参见稍后的 "高级数据源" 部分了解更多。</p>
 
-        <h4 id="2-define-the-column-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4y2un6bzus4zsxw81fahhoz9"><span header-link="2-define-the-column-templates"></span>2. 定义列模板</h4>
+        <h4 id="2-define-the-column-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4y2un6bzus4zsxw81fahhoz9">2. 定义列模板</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1sb1felpclc3987k8mm5zoe20">接着，编写表格的列模板。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="dwfmr05k1ur8192opoitt5jiu">每个列定义都应该有一个唯一的名字，并且包含其表头单元格和行内单元格的内容。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="7pbw1030sim6g6jp6n907udh3">下面是一个名为 <code>'username'</code> 的简单列定义。
@@ -33,7 +33,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="b0slezx2iwtyindnyh08t69g6">查看 API 文档和 <code>mat-text-column</code> 的例子，以了解如何自定义表头文本、文本对齐方式和单元格数据访问器。请注意，这与 flex-layout 表不兼容。此外，如果数据的属性最小化过，则应提供数据访问器，因为属性名和字符串名称在最小化后将不再匹配。</p>
 
-        <h4 id="3-define-the-row-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="axpsh4rivqyo2bprcozgl4cm2"><span header-link="3-define-the-row-templates"></span>3. 定义行模板</h4>
+        <h4 id="3-define-the-row-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="axpsh4rivqyo2bprcozgl4cm2">3. 定义行模板</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8cgs1lwlqf10yse9xqbevza0x">最后，一旦你定义了各个列，就要告诉表格该在表头和数据行中显示哪些列。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1fu39toifjd0hd3hxw468mjh7">先在组件中创建一个变量，其中包含你要渲染的列数组。</p>
 <pre><code class="language-ts">columnsToDisplay = [<span class="hljs-string">'userName'</span>, <span class="hljs-string">'age'</span>];
@@ -45,10 +45,10 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="egb50tuojcx8guad6dgz0ghlm">注意，提供给各行的列数组可以使用任意顺序，不要求和定义列的顺序一致。同样的，你也不必包含模板中定义的每一列。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="98t3yq219l8447g3zgiywn7yj">这意味着通过调整提供给各行的列顺序，你可以轻易调整列序和动态包含/排除某些列。</p>
 
-        <h3 id="advanced-data-sources" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ctf3gj358bjpfickwnvqw9jve"><span header-link="advanced-data-sources"></span>高级数据结构</h3>
+        <h3 id="advanced-data-sources" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ctf3gj358bjpfickwnvqw9jve">高级数据结构</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6ek25zv1p2c9c5mkbssyoqe8v">为表格提供数据的最简单方式是传入一个数组型数据。对于更复杂的用例，则可以从一些更灵活的方式中受益，比如使用 Observable 流，或把你的数据源逻辑封装进 <code>DataSource</code> 类中。</p>
 
-        <h4 id="observable-stream-of-data-arrays" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="lspx2ffrpr8pb4g9q3x2v1ct"><span header-link="observable-stream-of-data-arrays"></span>数组型数据的 Observable 流</h4>
+        <h4 id="observable-stream-of-data-arrays" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="lspx2ffrpr8pb4g9q3x2v1ct">数组型数据的 Observable 流</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e0ys5c5ewupqzugk40y0aomlr">为表格提供数据的另一种方法是传入一个 Observable 流，每当它变化时都会发出一个要渲染的数组型数据。
 表格会监听这个流，每当它发出新的数组型数据时，就会自动触发一次更新。</p>
 
@@ -62,24 +62,24 @@
 表格会调用 <code>connect</code> 函数，以接收一个流，流中会发出要渲染的数组型数据。当表格销毁时，就会调用 <code>disconnect</code>，它是清理 <code>connect</code> 期间所做的各种订阅的最佳时机。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="brbxakkaac5hfyy2xspqpljb">虽然 Angular Material 提供了现成的表格 <code>DataSource</code> 类 <code>MatTableDataSource</code>，但是你可能希望针对更复杂的用例创建自己的 <code>DataSource</code> 类。你可以用一个自定义的 <code>DataSource</code> 类来扩展抽象类 <code>DataSource</code>，然后实现其 <code>connect</code> 和 <code>disconnect</code> 方法。对于这些复杂用例，自定义 <code>DataSource</code> 必须通过扩展其他基类（ <code>MyCustomDataSource extends SomeOtherBaseClass implements DataSource</code> ）来继承其功能，以遵守 Typescript 的限制，即只能实现一个基类。</p>
 
-        <h3 id="styling-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ekzg87tnv73dcdzi4trhltp7d"><span header-link="styling-columns"></span>样式列</h3>
+        <h3 id="styling-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ekzg87tnv73dcdzi4trhltp7d">样式列</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="99uoa4y6rin1wuzj3n82a54pl">每个表格单元格都有一个基于它出现在哪一列自动生成的类。这个生成的类的格式是 <code>mat-column-NAME</code> 。例如，可以使用选择器 <code>.mat-column-symbol</code> 将名为“symbol”的列中的单元格作为目标。</p>
 <div material-docs-example="table-column-styling"></div>
 
 
-        <h3 id="row-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ap8d5a5xmsi0ufz2yzhzznh3a"><span header-link="row-templates"></span>行模板</h3>
+        <h3 id="row-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ap8d5a5xmsi0ufz2yzhzznh3a">行模板</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="avwbbgzt4bizul7g4uoki5bwt">行模板上的事件处理程序和属性绑定将应用于表中渲染的每一行。例如，向行模板添加 <code>(click)</code> 处理程序将导致每个单独的行在单击时调用处理程序。</p>
 <div material-docs-example="table-row-binding"></div>
 
 
-        <h3 id="features" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbbapsbl52qel93gz2gcljnv1"><span header-link="features"></span>特性</h3>
+        <h3 id="features" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbbapsbl52qel93gz2gcljnv1">特性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="53cwt2r6u1thlioqacli939me"><code>MatTable</code> 专注于一个职责：以高效且具有无障碍性的方式执行数据渲染。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="bn6wfyrv985mxm2flcq2oad4n">你可能注意到了，表格本身并没有自带很多特性，而是把该表格作为一个组件联合体的一部分，来补全其它特性。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="cw5vototet9pz9kipwqqbz407">比如，你可以把 <code>MatSort</code> 和 <code>MatPaginator</code> 添加到表格中，以提供排序和分页特性，并根据它们的输出来修改要传给表格的数据。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9urwxahmygkylclcp3tilpvfk">对于那些可以对数组型数据进行排序、分页和过滤功能的表格，为了简化其用法，Angular Material 库自带了一个 <code>MatTableDataSource</code>，它已经实现了根据当前表格的状态来决定要显示哪些列的逻辑。
 要给表格添加这些特性，请查看其相关部分的文档。</p>
 
-        <h4 id="pagination" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="eze5ktr3em5fxsgfzd2tqlaj8"><span header-link="pagination"></span>分页</h4>
+        <h4 id="pagination" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="eze5ktr3em5fxsgfzd2tqlaj8">分页</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="7xyszwyegw19f1rceze2fwpo9">要想对表格数据进行分页，请在表格后添加一个 <code>&lt;mat-paginator&gt;</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="7ck0xb58pmlm1ot4t5ufwg7bc">如果你正在用 <code>MatTableDataSource</code> 作为表格的数据源，那么只要把 <code>MatPaginator</code> 提供给这个数据源就可以了。
 它将会自动监听用户所做的页码变更，并把正确分页之后的数据发给该表格。</p>
@@ -90,7 +90,7 @@
 <div material-docs-example="table-pagination"></div>
 
 
-        <h4 id="sorting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7ntba6qlcxs8d60bbcgbuhnf"><span header-link="sorting"></span>排序</h4>
+        <h4 id="sorting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7ntba6qlcxs8d60bbcgbuhnf">排序</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="7awry66cle4t4hl7jghzuxhqv">要想为表格添加排序行为，请给它添加 <code>matSort</code> 指令并把 <code>mat-sort-header</code> 指令添加到每个允许触发排序功能的表头上。</p>
 <pre><code class="language-html"><span class="hljs-comment">&lt;!-- Name Column --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ng-container</span> <span class="hljs-attr">matColumnDef</span>=<span class="hljs-string">"position"</span>&gt;</span>
@@ -109,7 +109,7 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="51wcj175b0so61t65c4d30xse"><code>MatSort</code> 是用来排序表格数据的一个现成的解决方案，但它不是唯一的选择。
 事实上，表格可以和任何一个自定义的排序 UI 或策略类协同工作，因为 <code>MatTable</code> 及其接口没有绑死到任何一个特定的实现。</p>
 
-        <h4 id="filtering" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4d5ze38mkmklzew6mwwd1pr5s"><span header-link="filtering"></span>过滤</h4>
+        <h4 id="filtering" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4d5ze38mkmklzew6mwwd1pr5s">过滤</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cwm5trrhcpvtvij1rlk9b5ydx">Angular Material 没有提供用于过滤 <code>MatTable</code> 的具体组件，因为没有一种简单通用的方式可以为表格数据添加过滤界面。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9kp9q0pecnugogdyksqvdpfim">通常的策略是添加一个输入框，用户可以在其中输入过滤字符串，并监听此输入，以修改从数据源提供给表格的数据。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6yvuu1jw2ide48unvj5tbwc0k">如果你正在使用 <code>MatTableDataSource</code> 只要将过滤字符串提供给 <code>MatTableDataSource</code> 就可以了。
@@ -122,18 +122,18 @@
 <!-- example(table-filtering) -->
 
 
-        <h4 id="selection" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7mvzf7znqjorcjl1h3qs3fyz8"><span header-link="selection"></span>选择</h4>
+        <h4 id="selection" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7mvzf7znqjorcjl1h3qs3fyz8">选择</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5v89zo2o9k9ydpbuo1cawigp9">目前，还没有对给表格添加选取界面提供正式的支持。不过 Angular Material 提供了一些组件和代码片段来支持它。
 下面这些步骤是为表格添加列选择功能的解决方案之一（但不是唯一的）。</p>
 
-        <h5 id="1-add-a-selection-model" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dismivacxgor20jtyse91fu7h"><span header-link="1-add-a-selection-model"></span>1. 添加选取模式</h5>
+        <h5 id="1-add-a-selection-model" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dismivacxgor20jtyse91fu7h">1. 添加选取模式</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="66zadtqn9moyb0ly3wc9c6pn8">首先建立来自 <code>@angular/cdk/collections</code> 的 <code>SelectionModel</code>，它用来维护选取状态。</p>
 <pre><code class="language-js"><span class="hljs-keyword">const</span> initialSelection = [];
 <span class="hljs-keyword">const</span> allowMultiSelect = <span class="hljs-literal">true</span>;
 <span class="hljs-built_in">this</span>.selection = <span class="hljs-keyword">new</span> SelectionModel&lt;MyDataType&gt;(allowMultiSelect, initialSelection);
 </code></pre>
 
-        <h5 id="2-define-a-selection-column" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b4p5ivlc1xa6kpzrthygcj75q"><span header-link="2-define-a-selection-column"></span>2. 定义选择列</h5>
+        <h5 id="2-define-a-selection-column" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b4p5ivlc1xa6kpzrthygcj75q">2. 定义选择列</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="c1wfg6pmz7yarqjjgevz4fqf5">添加一个列定义，以显示本行的检查框，包括给标题行的主控检查框。
 其列名也要添加到提供给表头和数据行的待显示列数组中。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ng-container</span> <span class="hljs-attr">matColumnDef</span>=<span class="hljs-string">"select"</span>&gt;</span>
@@ -152,7 +152,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">ng-container</span>&gt;</span>
 </code></pre>
 
-        <h5 id="3-add-event-handling-logic" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5j3hpgqkujab6nyplxz4wv4x0"><span header-link="3-add-event-handling-logic"></span>3. 添加事件处理逻辑</h5>
+        <h5 id="3-add-event-handling-logic" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5j3hpgqkujab6nyplxz4wv4x0">3. 添加事件处理逻辑</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8bl8ho64bnvvu6zldrd0bu70p">在组件逻辑中实现一些行为，以处理表头的主控开关，并检查是否所有的行都被选中了。</p>
 <pre><code class="language-js"><span class="hljs-comment">/** Whether the number of selected elements matches the total number of rows. */</span>
 <span class="hljs-function"><span class="hljs-title">isAllSelected</span>(<span class="hljs-params"></span>)</span> {
@@ -169,7 +169,7 @@
 }
 </code></pre>
 
-        <h5 id="4-include-overflow-styling" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4c6yrhh2lla90esfrchk4f3qj"><span header-link="4-include-overflow-styling"></span>4. 包含 overflow 样式</h5>
+        <h5 id="4-include-overflow-styling" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4c6yrhh2lla90esfrchk4f3qj">4. 包含 overflow 样式</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6cz1gy0bnsfj4j3ma1cokip15">最后，调整选取列的样式，让它的 overflow 不是 hidden。这样就可以让涟漪效果延伸到单元格之外。</p>
 <pre><code class="language-css"><span class="hljs-selector-class">.mat-column-select</span> {
   <span class="hljs-attribute">overflow</span>: initial;
@@ -178,7 +178,7 @@
 <!-- example(table-selection) -->
 
 
-        <h4 id="footer-row" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7wse0jqoyjrk9mw4yrvdqv6ju"><span header-link="footer-row"></span>表尾</h4>
+        <h4 id="footer-row" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7wse0jqoyjrk9mw4yrvdqv6ju">表尾</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="b8oqn582lw4mrpmjgs8ej51is">添加一个表尾的定义并为其指定一个单元格模板，可以为表格添加一个表尾。表尾会显示在所有数据行之后。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ng-container</span> <span class="hljs-attr">matColumnDef</span>=<span class="hljs-string">"cost"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">mat-header-cell</span> *<span class="hljs-attr">matHeaderCellDef</span>&gt;</span> Cost <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -195,7 +195,7 @@
 <!-- example(table-footer-row) -->
 
 
-        <h4 id="sticky-rows-and-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cru3p4loy69cwuz2nerfy6hwz"><span header-link="sticky-rows-and-columns"></span>钉住某些行和列</h4>
+        <h4 id="sticky-rows-and-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cru3p4loy69cwuz2nerfy6hwz">钉住某些行和列</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="eqnh4gu38z3tcvvzj67fmffyo">通过使用 <code>position: sticky</code> 样式，可以固定住表格的某些行和列，这样它们在滚动时就不会离开视野。
 表格所提供的输入属性将会自动应用正确的 CSS 样式，以便这些行和列能被钉住。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="hicwazu9lsbe5xbedwd4ghfg">要想把表头行固定到包含此表格的视野顶部，你可以给 <code>matHeaderRowDef</code> 添加输入属性 <code>sticky</code>。</p>
@@ -212,14 +212,14 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5fldqvj54qn5kk3yiuhnenuub">此外，在一些特殊情况下，Edge 中的定位也会不稳定。比如，如果滚动容器具有复杂的阴影而且还有兄弟元素，那么钉住的单元格就会抖动。
 这里是 <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/17514118/">Edge 上关于此问题的 Issue</a>。</p>
 
-        <h4 id="multiple-row-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="541lt175snn8br9ctx1gvuanl"><span header-link="multiple-row-templates"></span>多行模板</h4>
+        <h4 id="multiple-row-templates" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="541lt175snn8br9ctx1gvuanl">多行模板</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="wlviglrkvy3fcz6efvtztq3h">当使用 <code>multiTemplateDataRows</code> 指令以支持让每个数据对象对应多行时，<code>*matRowDef</code> 中使用同一个上下文，不过其 <code>index</code> 值要换成 <code>dataIndex</code> 和 <code>renderIndex</code>。</p>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="459duxavylpchqn2n8aof8bcc">默认情况下， <code>MatTable</code> 会应用 <code>role="table"</code>，这里假设表格主要包含静态内容。你可以通过在 table 元素上显式设置 <code>role="grid"</code> 或 <code>role="treegrid"</code> 来更改其角色。虽然更改角色会更新子元素角色，例如将 <code>role="cell"</code> 更改为 <code>role="gridcell"</code> ，但这<em>不会</em>对表格应用额外的键盘输入处理或焦点管理逻辑。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="e1tvie0qzqpkbpwkq4l9x9oh">始终通过表格元素上的 <code>aria-label</code> 或 <code>aria-labelledby</code> 为你的表格提供无障碍标签。</p>
 
-        <h3 id="tables-with-display-flex" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b1ydkyiqcvji0dfub167tvsvk"><span header-link="tables-with-display-flex"></span>使用 <code>display: flex</code> 的表格</h3>
+        <h3 id="tables-with-display-flex" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b1ydkyiqcvji0dfub167tvsvk">使用 <code>display: flex</code> 的表格</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e0himwk7cpl8bhz8n5bops76b"><code>MatTable</code> 不要求你使用原生 HTML 表格，所以你可以用另一种基于 <code>display: flex</code> 的方式来控制表格的样式。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="67mk6cetm1r82zt18j9p3prn3">这种方式把原生的 <code>table</code> 元素标记替换成 <code>MatTable</code> 指令的选择器。
 比如 <code>&lt;table mat-table&gt;</code> 变成了 <code>&lt;mat-table&gt;</code>；<code>&lt;tr mat-row&gt;</code> 变成了 <code>&lt;mat-row&gt;</code>。下面的例子用这种方式改写了以前的例子：</p>
@@ -249,7 +249,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5y0rmyco61ae5veb19q9t3yvi">注意，这种方法意味着你不能使用某些原生表格的专属特性，比如 colspan/rowspan 或一些能根据其内容自动调整自身大小的列。</p>
 
-        <h3 id="tables-with-matripple" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9oia26bkpwl73zq4vmuvl0upv"><span header-link="tables-with-matripple"></span>带有 <code>MatRipple</code> 的表格</h3>
+        <h3 id="tables-with-matripple" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9oia26bkpwl73zq4vmuvl0upv">带有 <code>MatRipple</code> 的表格</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ddpls6ikldorfivysb2vnssa3">默认情况下， <code>MatTable</code> 不会为行设置 Material Design 涟漪。可以使用来自 <code>@angular/material/core</code> 的 <code>MatRipple</code> 指令将涟漪效果添加到表行。由于浏览器的限制，涟漪不能应用于原生 <code>th</code> 或 <code>tr</code> 元素。设置涟漪的推荐方法是使用 <code>MatTable</code> 的非原生 <code>display: flex</code> 变体。</p>
 <!-- example(table-with-ripples) -->
 

@@ -2,7 +2,7 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8xlvau5iszu8v331x6p7yv6dk">树控件基于 CDK 的树控件构建，并使用相似的接口来表示其数据源和模板。只是它们的元素和属性选择器会用 <code>mat-</code> 前缀，而不是 <code>cdk-</code> 前缀。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="46jahazu2ibikk545tlw65ycu">有两种类型的树：扁平树和嵌套树。这两种树的 DOM 结构是不同的。</p>
 
-        <h4 id="flat-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cp10chopmy3fziusutz0hnclo"><span header-link="flat-tree"></span>扁平树</h4>
+        <h4 id="flat-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cp10chopmy3fziusutz0hnclo">扁平树</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="azl0gxd42zocxojzbn32mge8">在扁平树中，其层次是扁平的，各个节点不会渲染在其它节点内部，而是渲染成一系列兄弟节点。
 <code>TreeFlattener</code> 的实例用来根据层次型数据生成扁平的条目列表。
 每个节点的级别都是从其 <code>TreeControl</code> 中的 <code>getLevel</code> 方法中读取的；这个级别可用来设置节点样式，使其缩进到适当的级别。</p>
@@ -18,7 +18,7 @@
 <!--TODO(tinayuangao): Add a flat tree example here -->
 
 
-        <h4 id="nested-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="477l6x7q579rfynkgn6lwbq20"><span header-link="nested-tree"></span>嵌套树</h4>
+        <h4 id="nested-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="477l6x7q579rfynkgn6lwbq20">嵌套树</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="85sjqgp0cwgntkjbi5kx7odgp">在嵌套树中，子节点会放在其父节点 DOM 元素的内部。父节点有一个出口（outlet），用来存放其所有子节点。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-tree</span>&gt;</span>
    <span class="hljs-tag">&lt;<span class="hljs-name">mat-nested-tree-node</span>&gt;</span>
@@ -34,7 +34,7 @@
 <!--TODO(tinayuangao): Add a nested tree example here -->
 
 
-        <h3 id="features" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbbapsbl52qel93gz2gcljnv1"><span header-link="features"></span>特性</h3>
+        <h3 id="features" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbbapsbl52qel93gz2gcljnv1">特性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="47zbjp632tdggdmspha4rylcg"><code>&lt;mat-tree&gt;</code> 本身只关心树形结构的渲染工作。通过在节点模板内添加行为（比如衬距 <code>padding</code> 和切换 <code>toggle</code>），可以在标准树的基础上构建额外功能。
 那些能影响渲染数据的交互（比如展开/折叠）应该能通过表格的数据源进行传播。</p>
 
@@ -47,15 +47,15 @@
 <code>getChildren</code> 函数可以返回一个指定节点上子节点的 <code>Observable</code> 或其子节点的数组。
 对于扁平树的节点，要把 <code>getLevel</code> 和 <code>isExpandable</code> 函数传给 <code>FlatTreeControl</code>，来让它能递归使用。</p>
 
-        <h3 id="toggle" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8rmn671vqqrtowib0vluw6622"><span header-link="toggle"></span>开关</h3>
+        <h3 id="toggle" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8rmn671vqqrtowib0vluw6622">开关</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="39utvlfbjfou9mmvb77ial4mt">可以把 <code>matTreeNodeToggle</code> 添加到树节点模板中，以展开/折叠树节点。此开关可以切换 <code>TreeControl</code> 中的展开/折叠函数，还能把 <code>[matTreeNodeToggleRecursive]</code> 设置为 <code>true</code> 来递归展开/折叠树节点。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="imfdlxig603vzs9pxmf0z9bx">此开关可以放在树节点中的任何地方，并且只能通过点击（<code>click</code>）操作进行切换。</p>
 
-        <h3 id="padding-flat-tree-only" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="393gi09i4jx8k8txvcupjpuww"><span header-link="padding-flat-tree-only"></span>衬距（仅限扁平树）</h3>
+        <h3 id="padding-flat-tree-only" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="393gi09i4jx8k8txvcupjpuww">衬距（仅限扁平树）</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3qoq237lcpoipu7bjmvqvmb53"><code>matTreeNodePadding</code> 可以放在扁平树的节点模板中，以展示扁平树节点的 <code>level</code> 信息。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9651w0fe33fzomlrmkiddyb42">嵌套树不需要进行衬距，因为 DOM 中的层次结构就能很容易地加上它。</p>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="apizxbi1bz9gwiid5zf6cetrk">没有文本或标签的树应该通过 <code>aria-label</code> 或 <code>aria-labelledby</code> 给出一个有意义的标签。如果没有指定，则 <code>aria-readonly</code> 会默认为 <code>true</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="98qiag1nfj4yte5oi7s1oskwh">树的角色是 <code>tree</code>。
 父节点会带有 <code>role="group"</code>，而叶节点会带有 <code>role="treeitem"</code>。</p>

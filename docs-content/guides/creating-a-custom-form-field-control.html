@@ -59,7 +59,7 @@
 }
 </code></pre>
 
-        <h2 id="providing-our-component-as-a-matformfieldcontrol" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9eb1pkt0o8d1cjw69sruaw2h8"><span header-link="providing-our-component-as-a-matformfieldcontrol"></span>把我们的组件作为 MatFormFieldControl 提供出来</h2>
+        <h2 id="providing-our-component-as-a-matformfieldcontrol" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9eb1pkt0o8d1cjw69sruaw2h8">把我们的组件作为 MatFormFieldControl 提供出来</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="b3q6x7rl86xen9xztbyk32tpn">第一步把我们的组件作为 <code>MatFormFieldControl</code> 接口的实现提供出来，而 <code>&lt;mat-form-field&gt;</code> 知道该如何与该接口协作。 要做到这一点，我们要创建一个自己的类来实现 <code>MatFormFieldControl</code>。由于它是一个泛型接口，我们需要包含一个类型参数来标记出这个控件支持的数据类型，在这里也就是 <code>MyTel</code>。然后我们为这个组件添加一个提供者，以便表单字段（form-field）能把它作为 <code>MatFormFieldControl</code> 注入进去。</p>
 <pre><code class="language-ts"><span class="hljs-meta">@Component</span>({
   ...
@@ -71,7 +71,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="aqzrpzip75y3dlddhlnyf3rs1">这将准备好我们的组件，以便它能和 <code>&lt;mat-form-field&gt;</code> 协作。接下来我们还要实现该接口中声明的各个方法和属性。 要深入了解 <code>MatFormFieldControl</code> 接口，参见<a href="guide/api">表单字段的 API 文档</a>。</p>
 
-        <h3 id="implementing-the-methods-and-properties-of-matformfieldcontrol" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="kack9hroclu0pkuee88l8j69"><span header-link="implementing-the-methods-and-properties-of-matformfieldcontrol"></span>实现 MatFormFieldControl 的各个方法和属性</h3>
+        <h3 id="implementing-the-methods-and-properties-of-matformfieldcontrol" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="kack9hroclu0pkuee88l8j69">实现 MatFormFieldControl 的各个方法和属性</h3>
       
         <h4 id="value" class="docs-header-link">
           
@@ -333,7 +333,7 @@
 }
 </code></pre>
 
-        <h3 id="improving-accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7pmnci13yr9upil7b83bam4q1"><span header-link="improving-accessibility"></span>提升无障碍性</h3>
+        <h3 id="improving-accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7pmnci13yr9upil7b83bam4q1">提升无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="67jw1srg13lqlpps4roxt8i2a">我们的自定义表单字段控件由多个用于描述电话号码段的输入控件组成。为了提升无障碍性，我们把这些输入作为带有 <code>role="group"</code> 属性的 <code>div</code> 元素的一部分。这可以确保屏幕阅读器用户知道所有这些输入控件都是一起的。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2didwg1ekbvudb4gcrqndx2p5">屏幕阅读器用户却缺少一条很重要的信息。他们无法分辨这个输入组所代表的含义。为了改善这一点，我们应该使用 <code>aria-label</code> 或者 <code>aria-labelledby</code> 为这个分组元素添加一个标签。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="b9joeyzra29b0rjtym5z5hnvk">我们建议把该标签链接到这个组，将其作为父元素 <code>&lt;mat-form-field&gt;</code> 的一部分。这可以确保显式指定的标签（使用 <code>&lt;mat-label&gt;</code> ）确实被用作了该控件的标签。</p>
@@ -352,7 +352,7 @@
          [<span class="hljs-attr">attr.aria-labelledby</span>]=<span class="hljs-string">"parentFormField?.getLabelId()"</span>&gt;</span>
 </code></pre>
 
-        <h3 id="trying-it-out" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1f6ocsx6hzsf2yvcahnc52ojj"><span header-link="trying-it-out"></span>试试看</h3>
+        <h3 id="trying-it-out" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1f6ocsx6hzsf2yvcahnc52ojj">试试看</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cjawwenua3owjxg3m8qqkiyb5">现在，我们已经完整的实现了该接口，来试试它！我们要做的一切就是把它扔进 <code>&lt;mat-form-field&gt;</code> 中：</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-form-field</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">example-tel-input</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">example-tel-input</span>&gt;</span>

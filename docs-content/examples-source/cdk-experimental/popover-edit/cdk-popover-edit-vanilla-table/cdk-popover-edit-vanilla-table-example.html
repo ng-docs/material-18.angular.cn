@@ -27,35 +27,24 @@
     <tr>
       <td data-ng_translator_product="100" data-ng_translator_ref_id="bem1kr5d3ptu3n16fx7mtrtch">{{element.position}}</td>
 
-      <td [cdkpopoveredit]="nameEdit">
-        {{element.name}}
+      <td [cdkpopoveredit]="nameEdit" data-ng_translator_product="100" data-ng_translator_ref_id="e3s7t1ntbwmcgzpdkm649dlh2">{{element.name}} 
+<!-- 此编辑在单元格中定义，可以隐式访问 element --> 
+<ng-template #nameedit> 
+ <div style="background-color: white; width: 100%"> 
+  <form #f="ngForm" cdkEditControl (ngSubmit)="onSubmitName(element, f)" [cdkEditControlPreservedFormValue]="preservedNameValues.get(element)" (cdkEditControlPreservedFormValueChange)="preservedNameValues.set(element, $event)">
+    编辑 a: 
+   <input [ngModel]="element.name" name="name" required> 
+   <br> 
+   <button type="submit">确认</button> 
+   <button cdkeditrevert>恢复</button> 
+   <button cdkeditclose>关闭</button> 
+  </form> 
+ </div> 
+</ng-template> 
+<span *cdkrowhovercontent> <button cdkeditopen>编辑</button> </span></td>
 
-        <!-- This edit is defined in the cell and can implicitly access element -->
-        <ng-template #nameedit>
-          <div style="background-color: white; width: 100%">
-            <form #f="ngForm" cdkEditControl (ngSubmit)="onSubmitName(element, f)" [cdkEditControlPreservedFormValue]="preservedNameValues.get(element)" (cdkEditControlPreservedFormValueChange)="preservedNameValues.set(element, $event)">
-              Edit a:
-              <input [ngModel]="element.name" name="name" required>
-              <br>
-              <button type="submit">Confirm</button>
-              <button cdkeditrevert>Revert</button>
-              <button cdkeditclose>Close</button>
-            </form>
-          </div>
-        </ng-template>
-
-        <span *cdkrowhovercontent>
-          <button cdkeditopen>Edit</button>
-        </span>
-      </td>
-
-      <td [cdkpopoveredit]="weightEdit" [cdkpopovereditcontext]="element">
-        {{element.weight}}
-
-        <span *cdkrowhovercontent>
-          <button cdkeditopen>Edit</button>
-        </span>
-      </td>
+      <td [cdkpopoveredit]="weightEdit" [cdkpopovereditcontext]="element" data-ng_translator_product="100" data-ng_translator_ref_id="wmyjvolw52hp3c8nd9g4uivd">{{element.weight}} 
+<span *cdkrowhovercontent> <button cdkeditopen>编辑</button> </span></td>
 
       <td data-ng_translator_product="100" data-ng_translator_ref_id="ajlcxvp8cjl07pd6l7jqkngsv">{{element.symbol}}</td>
     </tr>

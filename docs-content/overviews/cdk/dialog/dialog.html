@@ -26,13 +26,13 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 }
 </code></pre>
 
-        <h3 id="dialog-styling" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="54y8leiy7ah6trzo5nr0z8zfu"><span header-link="dialog-styling"></span>对话框样式</h3>
+        <h3 id="dialog-styling" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="54y8leiy7ah6trzo5nr0z8zfu">对话框样式</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="blr5op9qo9jdn8cz0vbrb5hko"><code>Dialog</code> 服务包括一组刻意限制的结构化样式。你可以使用以下方法之一自定义对话框的外观。</p>
 
-        <h4 id="panelclass-option" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e0bbufkzfw0sb7vby7kz6rki"><span header-link="panelclass-option"></span><code>panelClass</code> 选项</h4>
+        <h4 id="panelclass-option" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e0bbufkzfw0sb7vby7kz6rki"><code>panelClass</code> 选项</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8y2erkshas8l1ke164krzywuc"><code>DialogConfig</code> 的 <code>panelClass</code> 属性允许你将一个或多个 CSS 类应用于包含自定义对话框内容的浮层元素。任何针对这些 CSS 类的样式都必须是全局样式。</p>
 
-        <h4 id="styling-the-dialog-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="og9xxr8osxn6189zkypom167"><span header-link="styling-the-dialog-component"></span>设置对话框组件的样式</h4>
+        <h4 id="styling-the-dialog-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="og9xxr8osxn6189zkypom167">设置对话框组件的样式</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4yf266nxoizbjdqjtfp8xc8zx">你可以使用自定义组件的 <code>styles</code> 或 <code>styleUrls</code> 来设置对话框内容的样式：</p>
 <pre><code class="language-ts"><span class="hljs-comment">// MyDialog is rendered via `dialog.open(MyDialog)`</span>
 <span class="hljs-meta">@Component</span>({
@@ -51,7 +51,7 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 <div material-docs-example="cdk-dialog-styling"></div>
 
 
-        <h4 id="providing-a-custom-dialog-container" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cj50i1rym2vpgboja5heur03c"><span header-link="providing-a-custom-dialog-container"></span>提供自定义对话框容器</h4>
+        <h4 id="providing-a-custom-dialog-container" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cj50i1rym2vpgboja5heur03c">提供自定义对话框容器</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1rbox0nql8w3psdohr5lmgxph">如果你想更好地控制对话框的行为和样式，可以使用 <code>DialogConfig</code> 中的 <code>container</code> 选项提供自己的对话框容器组件。这种方法需要更多的代码，但它允许你围绕对话框内容自定义 DOM 结构和容器的行为。自定义容器组件可以选择扩展 <code>CdkDialogContainer</code> 以继承标准行为，例如无障碍化的焦点管理。</p>
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {CdkDialogContainer} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/dialog'</span>;
 
@@ -69,7 +69,7 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyDialogContainer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">CdkDialogContainer</span> </span>{}
 </code></pre>
 
-        <h3 id="specifying-global-configuration-defaults" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch5qbx9cisqd93oj3egxye562"><span header-link="specifying-global-configuration-defaults"></span>指定全局配置默认值</h3>
+        <h3 id="specifying-global-configuration-defaults" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch5qbx9cisqd93oj3egxye562">指定全局配置默认值</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1oyj6cfl1anqd5gaqjgtvfhd5">可以通过在应用程序的根模块中为注入令牌 <code>DEFAULT_DIALOG_CONFIG</code> 提供 <code>DialogConfig</code> 实例来指定默认对话框选项。</p>
 <pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
   <span class="hljs-attr">providers</span>: [
@@ -78,7 +78,7 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 })
 </code></pre>
 
-        <h3 id="sharing-data-with-the-dialog-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9t2bo9cywaglurujsb1kkq4jm"><span header-link="sharing-data-with-the-dialog-component"></span>与 Dialog 组件共享数据。</h3>
+        <h3 id="sharing-data-with-the-dialog-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9t2bo9cywaglurujsb1kkq4jm">与 Dialog 组件共享数据。</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8cc1km4ox29vwqqfh8qrfg6md">你可以使用 <code>data</code> 选项将信息传递给对话框组件。</p>
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> dialogRef = dialog.open(YourDialog, {
   <span class="hljs-attr">data</span>: {<span class="hljs-attr">name</span>: <span class="hljs-string">'frodo'</span>},
@@ -104,61 +104,66 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 <div material-docs-example="cdk-dialog-data"></div>
 
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6tegy68x0u8tt7iamvwjqps35">默认情况下， <code>Dialog</code> 会创建实现了 ARIA <code>role="dialog"</code> 模式的模态对话框。你可以通过 <code>DialogConfig</code> <code>alertdialog</code> 来更改此对话框的角色。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="bi64cyzv0tbasl1py6ztrb38z">你应该通过设置 <code>DialogConfig</code> 的 <code>ariaLabel</code> 或 <code>ariaLabelledBy</code> 属性来为此根对话框元素提供无障碍化标签。你还可以通过 <code>DialogConfig</code> 的 <code>ariaDescribedBy</code> 属性来指定描述元素的 ID。</p>
 
-        <h4 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o"><span header-link="keyboard-interaction"></span>键盘交互</h4>
+        <h4 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o">键盘交互</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="18cvssgcql3adwc1i9z5k78kn">默认情况下，用 <code>escape</code> 键关闭 <code>Dialog</code> 。虽然你可以通过 <code>DialogConfig</code> 的 <code>disableClose</code> 属性禁用此行为，但这样做会破坏 ARIA <code>role="dialog"</code> 模式的预期交互模式。</p>
 
-        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5"><span header-link="focus-management"></span>焦点管理</h4>
+        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5">焦点管理</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="14zngkg42jwwvfzch0vylzoby">打开时， <code>Dialog</code> 会捕获浏览器焦点，使其无法离开带有 <code>role="dialog"</code> 的根元素。默认情况下，对话框中的第一个可 tab 到的元素会获得焦点。你可以使用 <code>DialogConfig</code> 的 <code>autoFocus</code> 属性来自定义哪个元素接收焦点，该属性支持以下值。</p>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Behavior</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="66vasbp44yre2dcyqjx64g0vw">值</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ams69bxknsvkxy7e6gbayrjfr">行为</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>first-tabbable</code></td>
-<td>Focus the first tabbable element. This is the default setting.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dk7g5yakmncac8fjp1bxf6iz8">将焦点设置到第一个可获得焦点的元素。这是默认设置。</td>
 </tr>
 <tr>
 <td><code>first-header</code></td>
-<td>Focus the first header element (<code>role="heading"</code>, <code>h1</code> through <code>h6</code>)</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="323m5xdjyqy1kx32ku51nyl7o">将焦点设置到第一个标题元素（
+<code>role="heading"</code>，
+<code>h1</code> 到 
+<code>h6</code>）</td>
 </tr>
 <tr>
 <td><code>dialog</code></td>
-<td>Focus the root <code>role="dialog"</code> element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3rrvnxg2jf3yc1b07uukt98ou">将焦点设置到根 
+<code>role="dialog"</code> 元素。</td>
 </tr>
 <tr>
-<td>Any CSS selector</td>
-<td>Focus the first element matching the given selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2m7dfl8d9mdkb0rr50xqatpj4">任何 CSS 选择器</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dnxecjmwpu24v5he1majh1guo">将焦点设置到与给定选择器匹配的第一个元素。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6jud6n8rprnd2vva1fdhzehcw">虽然默认设置是适用于大多数应用程序的最佳行为，但特殊情况下也可能会需要这些替代方案。始终测试你的应用程序以验证最适合你的用户的行为。</p>
 
-        <h4 id="focus-restoration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="976h7t015lbosmnd903f0l2ce"><span header-link="focus-restoration"></span>焦点还原</h4>
+        <h4 id="focus-restoration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="976h7t015lbosmnd903f0l2ce">焦点还原</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="78z1vd2rdetsznby6gwbpg6od">关闭时 <code>Dialog</code> 默认会将焦点还原到打开对话框之前持有焦点的元素。你可以使用 <code>DialogConfig</code> 的 <code>restoreFocus</code> 属性自定义焦点恢复行为。它支持以下值。</p>
 <table>
 <thead>
 <tr>
-<th>Value type</th>
-<th>Behavior</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="41wmm5xo0qdczud54aaoli1mv">值类型</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ams69bxknsvkxy7e6gbayrjfr">行为</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>boolean</code></td>
-<td>When <code>true</code>, focus will be restored to the previously-focused element, otherwise focus won't be restored at all.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dxrx033ltbr7kefnxf4igyc8l">当 
+<code>true</code> 时，焦点将恢复到先前获得焦点的元素，否则焦点将完全不会恢复。</td>
 </tr>
 <tr>
 <td><code>string</code></td>
-<td>Value is treated as a CSS selector. Focus will be restored to the element matching the selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="av3zek0qarooi2qxb19wzdj3u">值被视为 CSS 选择器。焦点将恢复到与选择器匹配的元素。</td>
 </tr>
 <tr>
 <td><code>HTMLElement</code></td>
-<td>Specific element that focus should be restored to.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="38zvzuppiks36d67noz71f6ru">应恢复焦点的特定元素。</td>
 </tr>
 </tbody></table>
 </div>

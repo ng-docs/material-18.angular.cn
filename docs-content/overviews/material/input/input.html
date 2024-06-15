@@ -2,12 +2,12 @@
 <div material-docs-example="input-overview"></div>
 
 
-        <h3 id="input-and-textarea-attributes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="11b9et2in8rx5gjkb7lriuwkr"><span header-link="input-and-textarea-attributes"></span><code>&lt;input&gt;</code> 和 <code>&lt;textarea&gt;</code> 的属性</h3>
+        <h3 id="input-and-textarea-attributes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="11b9et2in8rx5gjkb7lriuwkr"><code>&lt;input&gt;</code> 和 <code>&lt;textarea&gt;</code> 的属性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="bz861pdae5x5q2xuhzn2eebpg">所有能在标准 <code>&lt;input&gt;</code> 和 <code>&lt;textarea&gt;</code> 元素上使用的属性都同样能用在 <code>&lt;mat-form-field&gt;</code> 内部的元素上。
 这些属性也包括像 <code>ngModel</code> 和 <code>formControl</code> 这样的 Angular 指令。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4wo7c5r3kj3regrhz1a9mhc81">唯一的限制是 <code>type</code> 属性只能是 <code>matInput</code> 所支持的值之一。</p>
 
-        <h3 id="supported-input-types" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2dzdc2d7t5li25n81yw67t7z3"><span header-link="supported-input-types"></span>支持的 <code>&lt;input&gt;</code> 类型（type）</h3>
+        <h3 id="supported-input-types" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2dzdc2d7t5li25n81yw67t7z3">支持的 <code>&lt;input&gt;</code> 类型（type）</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="a6bqoue6mvszr5zngkwwlqzw0">下列<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">输入框类型</a>可以和 <code>matInput</code> 一起使用：</p>
 <ul>
 <li>color</li>
@@ -25,27 +25,28 @@
 <li>week</li>
 </ul>
 
-        <h3 id="form-field-features" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="51w5wkynr5kyilpbjki1ev4fw"><span header-link="form-field-features"></span>表单字段的特性</h3>
+        <h3 id="form-field-features" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="51w5wkynr5kyilpbjki1ev4fw">表单字段的特性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cw07dgrrs6izcy63iv3kyo1kq"><code>&lt;mat-form-field&gt;</code> 的一些特性可以和 <code>&lt;input matInput&gt;</code> 或 <code>&lt;textarea matInput&gt;</code> 一起使用。
 这些特性包括错误信息、提示信息、前缀与后缀和主题。要了解这些特性的更多信息，参见<a href="guide/overview">表单字段的文档</a>。</p>
 
-        <h3 id="placeholder" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1lqstd006zftd30pmowxny780"><span header-link="placeholder"></span>占位符</h3>
+        <h3 id="placeholder" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1lqstd006zftd30pmowxny780">占位符</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cf065n60c44rgv4c7raozfofp">占位符是当 <code>&lt;mat-form-field&gt;</code> 浮起但输入框为空时显示的文本。
 它可以给用户一个额外的提示，来告诉他们该在输入框中输入什么。
 占位符可以通过 <code>&lt;input&gt;</code> 或 <code>&lt;textarea&gt;</code> 上的 <code>placeholder</code> 属性进行指定。
 在某些情况下，<code>&lt;mat-form-field&gt;</code> 可以把此占位符用作标签（参见<a href="guide/overview">表单字段的文档</a>）。</p>
 
-        <h3 id="changing-when-error-messages-are-shown" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9bt00988ej4b3xo6g3uwcqa7c"><span header-link="changing-when-error-messages-are-shown"></span>修改错误信息的显示时机</h3>
-      <p>The <code>&lt;mat-form-field&gt;</code> allows you to
-<a href="https://material.angular.io/components/form-field/overview#error-messages">associate error messages</a>
-with your <code>matNativeControl</code>. By default, these error messages are shown when the control is invalid and
-the user has interacted with (touched) the element or the parent form has been submitted. If
-you wish to override this behavior (e.g. to show the error as soon as the invalid control is dirty
-or when a parent form group is invalid), you can use the <code>errorStateMatcher</code> property of the
-<code>matNativeControl</code>. The property takes an instance of an <code>ErrorStateMatcher</code> object. An <code>ErrorStateMatcher</code>
-must implement a single method <code>isErrorState</code> which takes the <code>FormControl</code> for this <code>matNativeControl</code> as
-well as the parent form and returns a boolean indicating whether errors should be shown. (<code>true</code>
-indicating that they should be shown, and <code>false</code> indicating that they should not.)</p>
+        <h3 id="changing-when-error-messages-are-shown" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9bt00988ej4b3xo6g3uwcqa7c">修改错误信息的显示时机</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="1yekrow5p7pfvjqij7djbvibh"><code>&lt;mat-form-field&gt;</code> 允许你 
+<a href="https://material.angular.io/components/form-field/overview#error-messages">将错误消息与你的 <code>matNativeControl</code> 关联</a>。默认情况下，当控件无效且用户与（触碰）元素交互或父表单已提交时，会显示这些错误消息。如果你希望覆盖此行为（例如，在无效控件变脏或父表单组无效时立即显示错误），可以使用 
+<code>matNativeControl</code> 的 
+<code>errorStateMatcher</code> 属性。该属性接受 
+<code>ErrorStateMatcher</code> 对象的实例。
+<code>ErrorStateMatcher</code> 必须实现一个名为 
+<code>isErrorState</code> 的方法，该方法接受此 
+<code>matNativeControl</code> 的 
+<code>FormControl</code> 以及父表单，并返回一个布尔值，指示是否应该显示错误。（
+<code>true</code> 表示应该显示，
+<code>false</code> 表示不应该显示）。</p>
 <div material-docs-example="input-error-state-matcher"></div>
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5qktc5v6dht7krhcxdczbsbbj">全局的错误状态匹配器可以通过 <code>ErrorStateMatcher</code> 提供者来指定。它将作用于所有输入框。
@@ -57,26 +58,26 @@ indicating that they should be shown, and <code>false</code> indicating that the
 })
 </code></pre>
 
-        <h3 id="auto-resizing-textarea-elements" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="r8yjnqiypus4atqhzj4h93or"><span header-link="auto-resizing-textarea-elements"></span>自动控制 <code>&lt;textarea&gt;</code> 元素的大小</h3>
+        <h3 id="auto-resizing-textarea-elements" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="r8yjnqiypus4atqhzj4h93or">自动控制 <code>&lt;textarea&gt;</code> 元素的大小</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="dbksqk1uhpxrihokombgvgdp9">通过使用 CDK 中的 <a href="https://material.angular.cn/components/input/overview#auto-resizing-textarea-elements"><code>cdkTextareaAutosize</code> 指令</a>，可以把 <code>&lt;textarea&gt;</code> 元素做成自动调整大小的。</p>
 
-        <h3 id="responding-to-changes-in-the-autofill-state-of-an-input" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7gvb919ks6vpo8f2kl0i0wtl"><span header-link="responding-to-changes-in-the-autofill-state-of-an-input"></span>响应 <code>&lt;input&gt;</code> 自动填充状态的变更</h3>
+        <h3 id="responding-to-changes-in-the-autofill-state-of-an-input" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7gvb919ks6vpo8f2kl0i0wtl">响应 <code>&lt;input&gt;</code> 自动填充状态的变更</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2el2id1kpwm4lqh1jhihbgr71">CDK 提供了<a href="guide/overview#monitoring-the-autofill-state-of-an-input">一些工具</a>来检测输入合适被自动填充了，并修改自动填充状态的外观。</p>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4xhrt8wl45rwqj8i7nhqs2z0f"><code>matInput</code> 指令和原生的 <code>&lt;input&gt;</code> 一起使用，以提供具有无障碍性的用户体验。</p>
 
-        <h4 id="aria-attributes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7fv9jepdkle9198f4ttcxj0om"><span header-link="aria-attributes"></span>Aria 属性</h4>
+        <h4 id="aria-attributes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7fv9jepdkle9198f4ttcxj0om">Aria 属性</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1a6nzaakgix1l2hu6enj2wn35">如果容器 <code>&lt;mat-form-field&gt;</code> 具有一个标签，它就会自动用作该 <code>&lt;input&gt;</code> 的 <code>aria-label</code> 属性。
 不过，如果该表单字段没有指定过标签，就应该添加 <code>aria-label</code>、<code>aria-labelledby</code> 或 <code>&lt;label for=...&gt;</code>。</p>
 
-        <h4 id="errors-and-hints" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8bz6e35lz6vgchsu1w2l03a8l"><span header-link="errors-and-hints"></span>错误和提示</h4>
+        <h4 id="errors-and-hints" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8bz6e35lz6vgchsu1w2l03a8l">错误和提示</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="a6ops3vzllox4fmrk3s1e1o7a">任何 <code>mat-error</code> 和 <code>mat-hint</code> 都会自动添加到该输入框的 <code>aria-describedby</code> 列表中，并且 <code>aria-invalid</code> 会根据输入框的有效性状态进行自动更新。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="cl13sdokogpf5zfknfql4vtoj">传达错误时，请确保不要仅仅依赖颜色。在消息本身中，你可以使用图标或文本（例如“错误：”）来指示此消息是错误消息。</p>
 
-        <h3 id="troubleshooting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c7ry1t3j7cdq937tdrii9thyh"><span header-link="troubleshooting"></span>排查问题</h3>
+        <h3 id="troubleshooting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c7ry1t3j7cdq937tdrii9thyh">排查问题</h3>
       
-        <h4 id="error-input-type--isnt-supported-by-matinput" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="53ivx7tm5fwnl5owlyq0uby6e"><span header-link="error-input-type--isnt-supported-by-matinput"></span>错误：输入类型 "..." 不受 matInput 支持</h4>
+        <h4 id="error-input-type--isnt-supported-by-matinput" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="53ivx7tm5fwnl5owlyq0uby6e">错误：输入类型 "..." 不受 matInput 支持</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2fho403ujc7a923vfxfy85y0v">当你尝试将输入框的 <code>type</code> 属性设置为 <code>matInput</code> 指令不支持的值时，将引发此错误。
 如果需要使用不支持的输入类型和 <code>&lt;mat-form-field&gt;</code>，请考虑编写<a href="/guide/creating-a-custom-form-field-control">自定义表单字段控件</a>。</p>
 </div>

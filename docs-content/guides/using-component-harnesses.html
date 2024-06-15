@@ -4,7 +4,7 @@
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6r9g5zi3285rs989a5e78s2xw">本指南讨论了使用组件测试工具的优点，并展示了该如何使用它们。</p>
 
-        <h2 id="benefits-of-component-test-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="34xs47zkr2f09lti0rh2mfbkx"><span header-link="benefits-of-component-test-harnesses"></span>组件测试工具的优点</h2>
+        <h2 id="benefits-of-component-test-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="34xs47zkr2f09lti0rh2mfbkx">组件测试工具的优点</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8dj9ar8gy8tbriw9ubr778lh">在测试中使用 Angular Material 组件测试工具有两个主要的好处：</p>
 <ol>
 <li data-ng_translator_product="100" data-ng_translator_ref_id="7aw7dn5ascgu6xya23o2d7zz6">通过直白的 API，测试工具可以让测试更容易阅读和理解。</li>
@@ -12,10 +12,10 @@
 </ol>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="k06a6urc87hbwi14v6g40ldb">下面会更详细地说明这些优点。</p>
 
-        <h2 id="which-kinds-of-tests-can-use-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4havvbqxxeiw7h14zdxp2a72i"><span header-link="which-kinds-of-tests-can-use-harnesses"></span>哪些测试可以使用测试工具？</h2>
+        <h2 id="which-kinds-of-tests-can-use-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4havvbqxxeiw7h14zdxp2a72i">哪些测试可以使用测试工具？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="61sxr4zmj1t7dipmu5l3d1r47">Angular CDK 的组件测试工具专为多种不同的测试环境而设计。目前支持包括 Karma 单元测试和 Selenium WebDriver 端到端（e2e）测试在内的 Angular Testbed 环境。你还可以通过创建 CDK 的 <code>HarnessEnvironment</code> 和 <code>TestElement</code> 类的自定义扩展来支持更多环境。</p>
 
-        <h2 id="getting-started" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="25kql3n3h5elrbwt098akm93o"><span header-link="getting-started"></span>入门指南</h2>
+        <h2 id="getting-started" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="25kql3n3h5elrbwt098akm93o">入门指南</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9yu80uqygi4eo316r1f3h8c9e">所有测试工具的基础都位于 <code>@angular/cdk/testing</code> 中。根据你要写单元测试还是测试端测试，导入 <code>TestbedHarnessEnvironment</code> 或 <code>SeleniumWebDriverHarnessEnvironment</code>。从 <code>HarnessEnvironment</code> 中，你可以得到一个 <code>HarnessLoader</code> 实例，你将用它来加载 Angular Material 组件测试工具。举例来说，如果我们要编写 <code>UserProfile</code> 组件的单元测试，代码可能是这样的：</p>
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {HarnessLoader} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing'</span>;
 <span class="hljs-keyword">import</span> {TestbedHarnessEnvironment} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/testing/testbed'</span>;
@@ -38,7 +38,7 @@ describe(<span class="hljs-string">'my-component'</span>, <span class="hljs-func
 <li data-ng_translator_product="100" data-ng_translator_ref_id="65muf6gui20cnrrsh2rf4ovg0"><code>@angular/cdk/testing/selenium-webdriver</code>（上面未演示）包含仅用于 Selenium WebDriver 测试中的符号。</li>
 </ul>
 
-        <h2 id="loading-an-angular-material-harness" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3muapqtt5en7ti2sy4dyewhd3"><span header-link="loading-an-angular-material-harness"></span>加载一个 Angular Material 测试工具</h2>
+        <h2 id="loading-an-angular-material-harness" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3muapqtt5en7ti2sy4dyewhd3">加载一个 Angular Material 测试工具</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1493n2gx3wxr4y1dlhl5bk734"><code>HarnessLoader</code> 提供了两种方法，可以用来加载 <code>getHarness</code> 和 <code>getAllHarnesses</code>。<code>getHarness</code> 方法会为所匹配组件的第一个实例获取测试工具，而 <code>getAllHarnesses</code> 会得到一个测试工具列表，每个实例对应一个组件。例如，假设 <code>UserProfile</code> 包含三个 <code>MatButton</code> 实例。我们可以用如下方式为它们加载测试工具：</p>
 <pre><code class="language-ts"><span class="hljs-keyword">import</span> {MatButtonHarness} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/button/testing'</span>;
 
@@ -78,7 +78,7 @@ it(<span class="hljs-string">'should work'</span>, <span class="hljs-keyword">as
 });
 </code></pre>
 
-        <h2 id="using-a-harness-to-interact-with-an-angular-material-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6m5ujcmcq281wgr7vecze18qy"><span header-link="using-a-harness-to-interact-with-an-angular-material-component"></span>使用测试工具与 Angular Material 组件进行交互</h2>
+        <h2 id="using-a-harness-to-interact-with-an-angular-material-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6m5ujcmcq281wgr7vecze18qy">使用测试工具与 Angular Material 组件进行交互</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2v7fw0ox967x7uy03a3rre126">Angular Material 组件通常会暴露这些方法，以执行真实用户可以执行的动作，或者检查真实用户可感知到的组件状态。例如， <code>MatButtonHarness</code> 有一些方法来对这个 <code>mat-button</code> 进行点击、设置焦点或取消焦点，还有一些获取该按钮的文本及其禁用状态的方法。因为 <code>MatButton</code> 是一个非常简单的组件，所以这些测试工具的方法可能和直接使用 DOM 的方式差别不大。而 <code>MatSelectHarness</code> 这样更复杂的测试工具具有 <code>open</code> 和 <code>isOpen</code> 这样的方法，可以捕获更多有关该组件内部结构的知识。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="657z5n0ld7eol7wypnvrqi45z">使用 <code>MatButtonHarness</code> 与 <code>mat-button</code> 互动的测试看起来是这样的：</p>
 <pre><code class="language-ts">it(<span class="hljs-string">'should mark confirmed when ok button clicked'</span>, <span class="hljs-keyword">async</span> () =&gt; {
@@ -91,7 +91,7 @@ it(<span class="hljs-string">'should work'</span>, <span class="hljs-keyword">as
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5gooq4md812sqi42nyajtjliu">注意上面的代码不会调用 <code>fixture.detectChanges()</code>，这是你在单元测试中经常看到的。CDK 的组件测试工具会在执行动作之后和读取状态之前自动执行变更检测。测试工具还会自动等待夹具变得稳定，这会导致该测试等待 <code>setTimeout</code>、<code>Promise</code> 等。</p>
 
-        <h2 id="comparison-with-and-without-component-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="34f4376zy1516qhk28ml784re"><span header-link="comparison-with-and-without-component-harnesses"></span>使用和不使用组件测试工具时的比较</h2>
+        <h2 id="comparison-with-and-without-component-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="34f4376zy1516qhk28ml784re">使用和不使用组件测试工具时的比较</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8hbno2idein7tfgc316fwi91x">考虑你要测试 <code>&lt;issue-report-selector&gt;</code> 组件，它允许用户选择一个问题类型，并为该问题类型显示必要的表单创建报告。你需要一个测试来验证，当用户选择问题类型时，是否显示了正确的报告。首先考虑如果不使用组件测试工具，测试结果会是什么样子：</p>
 <pre><code class="language-ts">describe(<span class="hljs-string">'issue-report-selector'</span>, <span class="hljs-function">() =&gt;</span> {
   <span class="hljs-keyword">let</span> fixture: ComponentFixture&lt;IssueReportSelector&gt;;
@@ -147,12 +147,12 @@ it(<span class="hljs-string">'should work'</span>, <span class="hljs-keyword">as
 });
 </code></pre>
 
-        <h3 id="tests-that-are-easier-to-read-and-understand" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7k7v6ktm4o7fcpz0fihq6g5fy"><span header-link="tests-that-are-easier-to-read-and-understand"></span>这些测试更容易阅读和理解</h3>
+        <h3 id="tests-that-are-easier-to-read-and-understand" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7k7v6ktm4o7fcpz0fihq6g5fy">这些测试更容易阅读和理解</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="794s913dqhl50c5q67qjnz750">上面的代码表明，在测试中采用这些测试工具可以让它们更容易理解。具体到这个例子中，它让 "open the mat-select" 逻辑变得更加明显。一个不太熟悉的读者可能不知道点击 <code>.mat-select-trigger</code> 会有什么用，但 <code>await select.open()</code> 是不言自明的。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2aigt3qbnqck3z5ue3o19vhhz">这些测试工具还明确了应该选择哪个选项。如果没有这些工具，你需要用注释来解释 <code>options[1]</code> 的含义，但是使用 <code>MatSelectHarness</code>，其过滤器 API 就会让代码就会变成自文档化的。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2qx6zkytzlsg3ck484y17nfmx">最后，重复调用 <code>detectChanges</code> 和 <code>whenStable()</code> 可能会混淆测试的底层意图。通过使用这些测试工具 API，你可以消除这些调用，让测试变得更加简洁。</p>
 
-        <h3 id="tests-that-are-more-robust" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ea6alpbou59ehyrc0rx4yo01"><span header-link="tests-that-are-more-robust"></span>测试更健壮</h3>
+        <h3 id="tests-that-are-more-robust" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ea6alpbou59ehyrc0rx4yo01">测试更健壮</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cxss8bl867zhtlirbn07a8ewv">注意，没有测试工具的测试会直接使用 CSS 选择器查询 <code>&lt;mat-select&gt;</code> 中的元素，比如 <code>.mat-select-trigger</code>。如果 <code>&lt;mat-select&gt;</code> 的内部 DOM 发生了变化，这些查询可能会停止工作。虽然 Angular 团队试图最大限度地减少这种类型的变更，但一些特性和 bug 的修复最终都可能影响 DOM 的结构。通过使用 Angular Material 测试工具，你可以避免直接依赖内部的 DOM 结构。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6ccq06s2ol6nhible479aehd2">除了 DOM 结构外，组件异步性在更新组件时也经常会带来挑战。如果一个组件在同步性方面发生了变化，那么下游的单元测试可能会破坏其对计时方面的期待。然后，测试需要添加或删除一些 <code>whenStable</code>、<code>flushMicroTasks</code>、<code>tick</code> 或 <code>detectChanges</code> 的神秘组合。但是，组件测试工具通过规范化所有带异步 API 组件的行为异步性避免了这个问题。当测试使用这些测试工具时，异步性的变化就会变得更加可控。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3nogo4lpykzguyp5zqzinw57v">Angular Material 组件的 DOM 结构和异步性都是其<em>实现细节</em>。当测试依赖于实现细节时，由于库的变化，它们会成为常见的失败之源。Angular CDK 的测试工具可以让应用作者和 Angular 团队对组件库的更新变得更容易，因为 Angular 团队只需为每个人更新一次测试工具。</p>

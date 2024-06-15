@@ -28,7 +28,7 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 }
 </code></pre>
 
-        <h3 id="specifying-global-configuration-defaults" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch5qbx9cisqd93oj3egxye562"><span header-link="specifying-global-configuration-defaults"></span>指定全局配置默认值</h3>
+        <h3 id="specifying-global-configuration-defaults" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch5qbx9cisqd93oj3egxye562">指定全局配置默认值</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="xlb9pnrs70ywngm701v4fomq">对话框的默认选项可以通过在应用根模块中为 <code>MAT_DIALOG_DEFAULT_OPTIONS</code> 令牌提供一个 <code>MatDialogConfig</code> 实例来指定。</p>
 <pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
   <span class="hljs-attr">providers</span>: [
@@ -37,7 +37,7 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 })
 </code></pre>
 
-        <h3 id="sharing-data-with-the-dialog-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9t2bo9cywaglurujsb1kkq4jm"><span header-link="sharing-data-with-the-dialog-component"></span>与 Dialog 组件共享数据。</h3>
+        <h3 id="sharing-data-with-the-dialog-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9t2bo9cywaglurujsb1kkq4jm">与 Dialog 组件共享数据。</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="89gulz7iwrg9pyx4ceilgydkj">如果要和对话框共享数据，可以通过 <code>data</code> 选项把信息传给该组件。</p>
 <pre><code class="language-ts"><span class="hljs-keyword">let</span> dialogRef = dialog.open(YourDialog, {
   <span class="hljs-attr">data</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">'austin'</span> },
@@ -63,7 +63,7 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 <div material-docs-example="dialog-data"></div>
 
 
-        <h3 id="dialog-content" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="go95wmjmuuvkqzv8h1tvl9sw"><span header-link="dialog-content"></span>对话框内容</h3>
+        <h3 id="dialog-content" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="go95wmjmuuvkqzv8h1tvl9sw">对话框内容</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1amz036pcl5fpg1zccu2n0vwp">下面几个指令能让你更轻松地定义对话框内容的结构：</p>
 <table>
 <thead>
@@ -74,19 +74,25 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 </thead>
 <tbody><tr>
 <td><code>mat-dialog-title</code></td>
-<td>[Attr] Dialog title, applied to a heading element (e.g., <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>)</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4xnpydxh7362dhyw6id0t428g">[Attr] 对话框标题，应用于标题元素（例如 
+<code>&lt;h1&gt;</code>、
+<code>&lt;h2&gt;</code>）</td>
 </tr>
 <tr>
 <td><code>&lt;mat-dialog-content&gt;</code></td>
-<td>Primary scrollable content of the dialog.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="a3fgiqucbsddddye1zhcijx20">对话框的主要可滚动内容。</td>
 </tr>
 <tr>
 <td><code>&lt;mat-dialog-actions&gt;</code></td>
-<td>Container for action buttons at the bottom of the dialog. Button alignment can be controlled via the <code>align</code> attribute which can be set to <code>end</code> and <code>center</code>.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8e1eu9xp99paa132qh98wcvkk">对话框底部操作按钮的容器。按钮对齐方式可以通过 
+<code>align</code> 属性控制，该属性可以设置为 
+<code>end</code> 和 
+<code>center</code>。</td>
 </tr>
 <tr>
 <td><code>mat-dialog-close</code></td>
-<td>[Attr] Added to a <code>&lt;button&gt;</code>, makes the button close the dialog with an optional result from the bound value.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5xg1z89zd0tmp4u5gaupuxdtj">[Attr] 添加到 
+<code>&lt;button&gt;</code> 上，使按钮关闭对话框，并可选地从绑定值中获取结果。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4reizjf10jcs1ftw359bt1ndz">例如：</p>
@@ -105,47 +111,51 @@ dialogRef.close(<span class="hljs-string">'Pizza!'</span>);
 <div material-docs-example="dialog-content"></div>
 
 
-        <h3 id="controlling-the-dialog-animation" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bud6pmsi9e8jjdgh3h0dimbcw"><span header-link="controlling-the-dialog-animation"></span>控制对话框动画</h3>
+        <h3 id="controlling-the-dialog-animation" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bud6pmsi9e8jjdgh3h0dimbcw">控制对话框动画</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="c3gkpsi67dt8ghhqoo6rvrxj6">你可以使用 <code>enterAnimationDuration</code> 和 <code>exitAnimationDuration</code> 选项控制对话框的进入和退出动画的持续时间。如果要完全禁用对话框的动画，可以通过将这些属性设置为 <code>0ms</code> 来实现。</p>
 <div material-docs-example="dialog-animations"></div>
 
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5x3iv8gh36l1ntbprsueoklmh"><code>MatDialog</code> 会创建默认实现了 ARIA <code>role="dialog"</code> 模式的模态对话框。你可以通过 <code>MatDialogConfig</code> 来把对话框的 <code>role</code> 改为 <code>alertdialog</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="dbb63csulhocx7vfcysem9t8g">你应该通过设置 <code>MatDialogConfig</code> 的 <code>ariaLabel</code> 或 <code>ariaLabelledBy</code> 属性来为这个根对话框元素提供一个无障碍标签。你还可以通过 <code>MatDialogConfig</code> 的 <code>ariaDescribedBy</code> 属性来指定描述元素 ID。</p>
 
-        <h4 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o"><span header-link="keyboard-interaction"></span>键盘交互</h4>
+        <h4 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o">键盘交互</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="yel4zr8u3u5v62vsgv19es6c">默认情况下，esc 键会关闭 <code>MatDialog</code> 。虽然你可以通过 <code>MatDialogConfig</code> 的 <code>disableClose</code> 属性禁用此行为，但这样做会破坏 ARIA <code>role="dialog"</code> 模式的预期交互模式。</p>
 
-        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5"><span header-link="focus-management"></span>焦点管理</h4>
+        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5">焦点管理</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8wrnkpyz7twiqb83jh2zfpexn">打开时，<code>MatDialog</code> 会捕获浏览器焦点，使其无法逃脱 <code>role="dialog"</code> 的根元素。默认情况下，对话框中的第一个可 tab 到的元素获得焦点。你可以使用 <code>MatDialogConfig</code> 的 <code>autoFocus</code> 属性自定义哪个元素获得焦点，该属性支持以下值。</p>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Behavior</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="66vasbp44yre2dcyqjx64g0vw">值</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ams69bxknsvkxy7e6gbayrjfr">行为</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>first-tabbable</code></td>
-<td>Focus the first tabbable element. This is the default setting.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dk7g5yakmncac8fjp1bxf6iz8">将焦点设置到第一个可获得焦点的元素。这是默认设置。</td>
 </tr>
 <tr>
 <td><code>first-header</code></td>
-<td>Focus the first header element (<code>role="heading"</code>, <code>h1</code> through <code>h6</code>)</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="323m5xdjyqy1kx32ku51nyl7o">将焦点设置到第一个标题元素（
+<code>role="heading"</code>，
+<code>h1</code> 到 
+<code>h6</code>）</td>
 </tr>
 <tr>
 <td><code>dialog</code></td>
-<td>Focus the root <code>role="dialog"</code> element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3rrvnxg2jf3yc1b07uukt98ou">将焦点设置到根 
+<code>role="dialog"</code> 元素。</td>
 </tr>
 <tr>
-<td>Any CSS selector</td>
-<td>Focus the first element matching the given selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2m7dfl8d9mdkb0rr50xqatpj4">任何 CSS 选择器</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dnxecjmwpu24v5he1majh1guo">将焦点设置到与给定选择器匹配的第一个元素。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6jud6n8rprnd2vva1fdhzehcw">虽然默认设置是适用于大多数应用程序的最佳行为，但特殊情况下也可能会需要这些替代方案。始终测试你的应用程序以验证最适合你的用户的行为。</p>
 
-        <h4 id="focus-restoration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="976h7t015lbosmnd903f0l2ce"><span header-link="focus-restoration"></span>焦点还原</h4>
+        <h4 id="focus-restoration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="976h7t015lbosmnd903f0l2ce">焦点还原</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5yxman5rfv61g6d6kvq8safx6">当关闭时， <code>MatDialog</code> 会将焦点恢复到先前在对话框打开时持有焦点的元素。但是，如果先前聚焦的元素已不存在了，则必须添加额外的处理以将焦点返回到对用户工作流程有意义的元素。从菜单打开对话框是导致这种情况的常见模式之一。单击菜单项时菜单就会关闭，因此当底部工作表尝试恢复焦点时，聚焦的菜单项已不存在于 DOM 中。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2mv7zsgyrjayteyx594caf7y">你可以使用来自 <code>MatDialogRef</code> 的 <code>afterClosed()</code> observable 来添加对这种情况的处理。</p>
 <div material-docs-example="dialog-from-menu" file="dialog-from-menu-example.ts" region="focus-restoration"></div>

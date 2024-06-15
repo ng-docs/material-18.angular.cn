@@ -22,20 +22,17 @@
     <tr>
       <td data-ng_translator_product="100" data-ng_translator_ref_id="bem1kr5d3ptu3n16fx7mtrtch">{{element.position}}</td>
 
-      <td [cdkpopoveredit]="nameEdit" cdkpopoveredittabout cdkeditopen>
-        {{element.name}}
-
-        <!-- This edit is defined in the cell and can implicitly access element -->
-        <ng-template #nameedit>
-          <div style="background-color: white; width: 100%">
-            <form #f="ngForm" cdkEditControl cdkEditControlClickOutBehavior="submit" (ngSubmit)="onSubmitName(element, f)" [cdkEditControlPreservedFormValue]="preservedNameValues.get(element)" (cdkEditControlPreservedFormValueChange)="preservedNameValues.set(element, $event)">
-              <input [ngModel]="element.name" name="name" required>
-              <br>
-              <button type="submit">Confirm</button>
-            </form>
-          </div>
-        </ng-template>
-      </td>
+      <td [cdkpopoveredit]="nameEdit" cdkpopoveredittabout cdkeditopen data-ng_translator_product="100" data-ng_translator_ref_id="ctj497jgwanfbqo6h0rlmhcwc">{{element.name}} 
+<!-- 此编辑在单元格中定义，可以隐式访问 element --> 
+<ng-template #nameedit> 
+ <div style="background-color: white; width: 100%"> 
+  <form #f="ngForm" cdkEditControl cdkEditControlClickOutBehavior="submit" (ngSubmit)="onSubmitName(element, f)" [cdkEditControlPreservedFormValue]="preservedNameValues.get(element)" (cdkEditControlPreservedFormValueChange)="preservedNameValues.set(element, $event)"> 
+   <input [ngModel]="element.name" name="name" required> 
+   <br> 
+   <button type="submit">确认</button> 
+  </form> 
+ </div> 
+</ng-template></td>
 
       <td [cdkpopoveredit]="weightEdit" [cdkpopovereditcontext]="element" cdkpopoveredittabout cdkeditopen data-ng_translator_product="100" data-ng_translator_ref_id="bw1k2f8b94hnip3w0mfg8zh5a">{{element.weight}}</td>
 

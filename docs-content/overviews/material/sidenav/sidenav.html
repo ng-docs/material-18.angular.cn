@@ -7,7 +7,7 @@
 <div material-docs-example="sidenav-drawer-overview"></div>
 
 
-        <h3 id="specifying-the-main-and-side-content" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3ldjocum0ps99crwikryf48i2"><span header-link="specifying-the-main-and-side-content"></span>指定主内容和附属内容</h3>
+        <h3 id="specifying-the-main-and-side-content" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3ldjocum0ps99crwikryf48i2">指定主内容和附属内容</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3v9umet9x7v3zu07h4gxbn9ba">无论主内容还是附属内容，都应该放在 <code>&lt;mat-sidenav-container&gt;</code> 的内部，而那些你不希望被侧边栏影响到的内容（比如头或脚），可以放在该容器的外部。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="eveg4wkkzwyb8jqdsl30o08do">附属内容应该包装在 <code>&lt;mat-sidenav&gt;</code> 元素中。它的 <code>position</code> 属性可以指定主内容该放在附属内容的哪一端，它可以是 <code>start</code> 或 <code>end</code>，在从左到右书写的语言中下，分别表示把主内容放在附属内容的左侧或右侧。
 如果没有指定 <code>position</code>，则其默认值是 <code>start</code>。
@@ -52,7 +52,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="erflix8hdub0exm7dn6e5mxaa">这些规则也同样适用于抽屉组件。</p>
 
-        <h3 id="opening-and-closing-a-sidenav" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3d2dgq4r6w82ejoebxzxn66vs"><span header-link="opening-and-closing-a-sidenav"></span>打开和关闭侧边栏</h3>
+        <h3 id="opening-and-closing-a-sidenav" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3d2dgq4r6w82ejoebxzxn66vs">打开和关闭侧边栏</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6cum3a07nfadtgixa6cq0sm5k"><code>&lt;mat-sidenav&gt;</code> 可以使用 <code>open()</code>、<code>close()</code> 和 <code>toggle()</code> 方法来打开或关闭。
 它们都会返回一个 <code>Promise&lt;boolean&gt;</code>，当侧边栏打开之后它会解析为 <code>true</code>，关闭之后解析为 <code>false</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1yp8vg213xegv2lsg57xjibkd">这些打开状态也可以在模板中使用 <code>opened</code> 属性进行设置。该属性支持双向绑定。</p>
@@ -61,26 +61,26 @@
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8xpkyilprub0s86yzns8o8kej">所有这些属性和方法也同样可用在 <code>&lt;mat-drawer&gt;</code> 上。</p>
 
-        <h3 id="changing-the-sidenavs-behavior" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="69991uk0qy0d4t3mdv5y2a2rp"><span header-link="changing-the-sidenavs-behavior"></span>修改侧边栏的行为</h3>
+        <h3 id="changing-the-sidenavs-behavior" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="69991uk0qy0d4t3mdv5y2a2rp">修改侧边栏的行为</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9mczlqtdvul6c4xvfp31i8c34"><code>&lt;mat-sidenav&gt;</code> 可以根据其 <code>mode</code> 属性的值以三种方式之一进行渲染。</p>
 <table>
 <thead>
 <tr>
-<th>Mode</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="5zcxcdlxlzf4dxknjuo0w7pk6">模式</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>over</code></td>
-<td>Sidenav floats over the primary content, which is covered by a backdrop</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="6d29q6hthsanyzyi7d0j1cl5">侧边栏浮动在主要内容之上，主要内容被遮罩覆盖</td>
 </tr>
 <tr>
 <td><code>push</code></td>
-<td>Sidenav pushes the primary content out of its way, also covering it with a backdrop</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="d3gjr0136jn48wnt2ywm5s13i">侧边栏将主要内容推开，同时用遮罩覆盖它</td>
 </tr>
 <tr>
 <td><code>side</code></td>
-<td>Sidenav appears side-by-side with the main content, shrinking the main content's width to make space for the sidenav.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="905a0f0chnisoa0mfsy5nvgmu">侧边栏与主内容并排显示，缩减主内容的宽度为侧边栏腾出空间。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3lxagijusjdru8m4v0lie808m">如果没有指定 <code>mode</code>，则默认为 <code>over</code>。</p>
@@ -92,7 +92,7 @@
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="aj3cmlc9f522qde6amdmw4jy8"><code>&lt;mat-drawer&gt;</code> 也同样支持这些模式和选项。</p>
 
-        <h3 id="disabling-automatic-close" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cokyiaov00qn7yl4s7wmqw43n"><span header-link="disabling-automatic-close"></span>禁用自动关闭功能</h3>
+        <h3 id="disabling-automatic-close" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cokyiaov00qn7yl4s7wmqw43n">禁用自动关闭功能</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4fijllpjh34lwuq7ozl9iobqb">点击背景或按下 <kbd>Esc</kbd> 键通常会关闭侧边栏。
 不过，可以通过设置 <code>&lt;mat-sidenav&gt;</code> 或 <code>&lt;mat-drawer&gt;</code> 上的 <code>disableClose</code> 属性来禁用这种自动关闭的行为。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5fk30khoy31kr379qulirckwi">可以通过给 <code>&lt;mat-sidenav&gt;</code> 添加 <code>keydown</code> 监听器来定制 <kbd>Esc</kbd> 处理器。
@@ -100,14 +100,14 @@
 <div material-docs-example="sidenav-disable-close"></div>
 
 
-        <h3 id="resizing-an-open-sidenav" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6rhk4pg6sth0ohlast02nts9b"><span header-link="resizing-an-open-sidenav"></span>调整打开侧边栏的大小</h3>
+        <h3 id="resizing-an-open-sidenav" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6rhk4pg6sth0ohlast02nts9b">调整打开侧边栏的大小</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5wizak032qr1t4pea3vuf99yg">默认情况下，Material 只会在一些关键时刻（打开、窗口调整大小、模式改变）测量和调整容器的大小，以避免布局颠簸。
 但是在某些情况下这可能会有问题。如果你希望在打开抽屉时更改其宽度，可以使用 <code>autosize</code> 选项来告诉 Material 继续测量它。
 注意，使用该选项时应该<strong>风险自担</strong>，因为它可能会导致性能问题。</p>
 <div material-docs-example="sidenav-autosize"></div>
 
 
-        <h3 id="setting-the-sidenavs-size" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="aa9rhzdulqz7ubetzauts0ui"><span header-link="setting-the-sidenavs-size"></span>设置侧边栏大小</h3>
+        <h3 id="setting-the-sidenavs-size" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="aa9rhzdulqz7ubetzauts0ui">设置侧边栏大小</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2x0gv4bn0twhgperx4gi84fd8">默认情况下，<code>&lt;mat-sidenav&gt;</code> 和 <code>&lt;mat-drawer&gt;</code> 应该自适应其内容的尺寸。不过也可以通过 CSS 来显式指定宽度：</p>
 <pre><code class="language-css">mat-sidenav {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
@@ -115,18 +115,18 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="y8rtysiwtpqzw34unaq44oya">避免使用基于百分比的宽度，因为 <code>resize</code> 事件尚未支持它。</p>
 
-        <h3 id="fixed-position-sidenavs" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2agk96hpo54g957v4o6fbc87t"><span header-link="fixed-position-sidenavs"></span>固定定位的侧边栏</h3>
+        <h3 id="fixed-position-sidenavs" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2agk96hpo54g957v4o6fbc87t">固定定位的侧边栏</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="59cjeshx85pckk74up12cfeio"><code>&lt;mat-sidenav&gt;</code> 只支持固定定位方式（<code>&lt;mat-drawer&gt;</code> 不限）。它可以通过设置 <code>fixedInViewport</code> 属性进行启用。
 另外，还可以通过 <code>fixedTopGap</code> 和 <code>fixedBottomGap</code> 来设置顶部和底部的空白。这些属性可以接受一个像素值来指定要加到顶部或底部的空白尺寸。</p>
 <div material-docs-example="sidenav-fixed"></div>
 
 
-        <h3 id="creating-a-responsive-layout-for-mobile--desktop" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6bervudie9gc29axpmydsz6fz"><span header-link="creating-a-responsive-layout-for-mobile--desktop"></span>为移动端和桌面创建响应式布局</h3>
+        <h3 id="creating-a-responsive-layout-for-mobile--desktop" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6bervudie9gc29axpmydsz6fz">为移动端和桌面创建响应式布局</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2pwazim9nlr7iftilu43zuy8">侧边栏通常要在移动端和桌面端提供不同的行为。在桌面端，只允许内容区滚动是合理的；在移动端，你通常会希望滚动整个 <code>body</code>，这样就能让浏览器自动隐藏地址栏。侧边栏可以使用 CSS 来设置样式，以针对不同类型的设备进行调整。</p>
 <div material-docs-example="sidenav-responsive"></div>
 
 
-        <h3 id="reacting-to-scroll-events-inside-the-sidenav-container" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1oe0quqxjn4br6zez1c6vfrlu"><span header-link="reacting-to-scroll-events-inside-the-sidenav-container"></span>响应侧边栏内部的滚动事件</h3>
+        <h3 id="reacting-to-scroll-events-inside-the-sidenav-container" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1oe0quqxjn4br6zez1c6vfrlu">响应侧边栏内部的滚动事件</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="303ohuxdtmljhis33vb9k5eaq">要响应 <code>&lt;mat-sidenav-container&gt;</code> 内部的滚动事件，你可以通过 <code>MatSidenavContainer</code> 来获取一个底层的 <code>CdkScrollable</code> 实例。</p>
 <pre><code class="language-ts"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YourComponent</span> <span class="hljs-title">implements</span> <span class="hljs-title">AfterViewInit</span> </span>{
   <span class="hljs-meta">@ViewChild</span>(MatSidenavContainer) sidenavContainer: MatSidenavContainer;
@@ -137,20 +137,20 @@
 }
 </code></pre>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="7405rxgxz19ua1s3xpout2p78"><code>&lt;mat-sidenav&gt;</code> 和 <code>&lt;mat-sidenav-content&gt;</code> 都应该根据它们的上下文给出一个合适的 <code>role</code> 属性。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="7qgy8s6bq4jwuezrdrk1al3b3">比如，包含到其它页面的链接的 <code>&lt;mat-sidenav&gt;</code> 可以标记为 <code>role="navigation"</code>，而包含目录的则应该标记为 <code>role="directory"</code>。
 如果没有什么特别的角色来描述这个侧边栏，建议使用 <code>role="region"</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1j71ewjj8y2e9b82ahk90e18s">同样，<code>&lt;mat-sidenav-content&gt;</code> 也应该基于其包含的内容来指定角色。如果它表示页面的主要内容，就应该标记为 <code>role="main"</code>。
 如果没办法指定合理的角色，同样可以用 <code>role="region"</code> 作为回退值。</p>
 
-        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5"><span header-link="focus-management"></span>焦点管理</h4>
+        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5">焦点管理</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="do4mpdx3sdnyez2b8cyodu8h0">sidenav 能够捕获焦点。此功能在 <code>push</code> 和 <code>over</code> 模式下开启，在 <code>side</code> 模式下则被关闭。你可以通过输入属性 <code>autoFocus</code> 来改变其默认行为。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9a2scf9f5iwnlypxc4aqvb36g">默认情况下，一旦打开，其中的第一个可接收焦点的元素就会收到焦点。如果你想让另一个元素获得焦点，可以在它上面添加 <code>cdkFocusInitial</code> 属性。</p>
 
-        <h3 id="troubleshooting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c7ry1t3j7cdq937tdrii9thyh"><span header-link="troubleshooting"></span>排查问题</h3>
+        <h3 id="troubleshooting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c7ry1t3j7cdq937tdrii9thyh">排查问题</h3>
       
-        <h4 id="error-a-drawer-was-already-declared-for-position" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4dpia5mpiwv2rqgw7hmfmp9g3"><span header-link="error-a-drawer-was-already-declared-for-position"></span>错误：已为 'position="..."' 声明了抽屉</h4>
+        <h4 id="error-a-drawer-was-already-declared-for-position" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4dpia5mpiwv2rqgw7hmfmp9g3">错误：已为 'position="..."' 声明了抽屉</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6y992wz91izkfh81rt1vwnky8">如果在指定容器的同一个 <code>position</code> 有多个侧边栏或抽屉，就会抛出本错误。
 由于 <code>position</code> 属性默认为 <code>start</code>，所以出现该问题可能只是因为你忘了给 <code>end</code> 侧边栏标记上 <code>position="end"</code>。</p>
 </div>

@@ -5,9 +5,9 @@
 <div material-docs-example="cdk-table-basic"></div>
 
 
-        <h3 id="using-the-cdk-data-table" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="buzxp85epyb6kpywqhzwj5t9v"><span header-link="using-the-cdk-data-table"></span>使用 CDK 数据表格</h3>
+        <h3 id="using-the-cdk-data-table" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="buzxp85epyb6kpywqhzwj5t9v">使用 CDK 数据表格</h3>
       
-        <h4 id="writing-your-table-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="897w5cnmsoahhyjk3ip31f7ue"><span header-link="writing-your-table-template"></span>写表格模板</h4>
+        <h4 id="writing-your-table-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="897w5cnmsoahhyjk3ip31f7ue">写表格模板</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="422h6in8n766kdyhmsiuui1cc">编写数据表格模板的第一步是定义列。列的定义是通过带有 <code>cdkColumnDef</code> 指令的 <code>&lt;ng-container&gt;</code> 来指定的，并赋予该列一个名字。每个列定义都可以包含一个表头单元格模板（<code>cdkHeaderCellDef</code>），一个数据单元格模板（<code>cdkCellDef</code>）和一个表尾单元格模板（<code>cdkFooterCellDef</code>）。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ng-container</span> <span class="hljs-attr">cdkColumnDef</span>=<span class="hljs-string">"username"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">cdk-header-cell</span> *<span class="hljs-attr">cdkHeaderCellDef</span>&gt;</span> User name <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
@@ -25,7 +25,7 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1wj58q1wft51smefa1t5j9i56">这些行模板通过赋值给 <code>cdkColumnDef</code> 的名字来接受要渲染的指定列。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="84l0kv4pj3vwcbigjoxtbxidr"><code>cdkRowDef</code> 也会导出行的上下文，它可以用在这个行元素的事件和属性绑定上。任何放在标题行或数据行模板中的内容都会被忽略，因为该行渲染的内容来自上面描述的单元格模板。</p>
 
-        <h5 id="example-table-with-three-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e06lxrp1947skmmljm18113bq"><span header-link="example-table-with-three-columns"></span>示例：带三列的表格</h5>
+        <h5 id="example-table-with-three-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e06lxrp1947skmmljm18113bq">示例：带三列的表格</h5>
       <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">cdk-table</span> [<span class="hljs-attr">dataSource</span>]=<span class="hljs-string">"dataSource"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- User name Definition --&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ng-container</span> <span class="hljs-attr">cdkColumnDef</span>=<span class="hljs-string">"username"</span>&gt;</span>
@@ -58,7 +58,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5ok2b5t1wyzbrlyux5yuj3j23">事件和属性绑定可以直接添加到 row 元素上。</p>
 
-        <h5 id="example-table-with-event-and-class-binding" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8sixsqryerj1kydwn3t65kvsu"><span header-link="example-table-with-event-and-class-binding"></span>示例：包含事件和类绑定的表格</h5>
+        <h5 id="example-table-with-event-and-class-binding" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8sixsqryerj1kydwn3t65kvsu">示例：包含事件和类绑定的表格</h5>
       <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">cdk-header-row</span> *<span class="hljs-attr">cdkHeaderRowDef</span>=<span class="hljs-string">"['age', 'username']"</span>
     (<span class="hljs-attr">click</span>)=<span class="hljs-string">"handleHeaderRowClick(row)"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
@@ -69,11 +69,11 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
 </code></pre>
 
-        <h5 id="styling-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="95d1wbbjhq689jusw181xc5dw"><span header-link="styling-columns"></span>为列定义样式</h5>
+        <h5 id="styling-columns" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="95d1wbbjhq689jusw181xc5dw">为列定义样式</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1ewq1gu32w1uboldamaqkbgt8">每个表头和数据行中的单元格都会被提供一个包含其列的 CSS 类。例如，<code>name</code> 列中显示的单元格将被赋予 <code>cdk-column-name</code> 类。这样就可以让列的样式在表头和数据行之间保持一致。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5c59335zqa6ee2gs974kper95">由于列的名字可以是任意字符串，所以它可能无法直接用在 CSS 类中（例如 <code>*nameColumn!</code> ）。此时，这些特殊字符将替换成 <code>-</code> 字符。例如，<code>*nameColumn!</code> 列中的单元格容器将会带有 <code>cdk-column--nameColumn-</code> 类。</p>
 
-        <h4 id="connecting-the-table-to-a-data-source" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="16qscr3kzzs3ax07iphzfs682"><span header-link="connecting-the-table-to-a-data-source"></span>把表格连接到数据源</h4>
+        <h4 id="connecting-the-table-to-a-data-source" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="16qscr3kzzs3ax07iphzfs682">把表格连接到数据源</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9hqh0qcqaeih4ac1rxc3ayu49">数据会通过 <code>DataSource</code> 提供给表格。当表格接收数据源时，它会调用 DataSource 的 <code>connect()</code> 方法，该方法返回一个发出数组型数据的可观察对象。每当数据源向此流中发出数据时，该表格都会重新渲染一次。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4crchkd6w2vh413k9ntsi39vl">由于<em>数据源</em>提供了这个流，因此它要负责触发表格更新。这可能由<em>任何事情</em>触发：websocket 连接、用户交互、模型更新、基于时间间隔等。最常见的是，这些更新将由用户交互（如排序和分页）触发。</p>
 
@@ -102,7 +102,7 @@
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">cdk-table</span> [<span class="hljs-attr">dataSource</span>]=<span class="hljs-string">"dataSource"</span> <span class="hljs-attr">recycleRows</span>&gt;</span>
 </code></pre>
 
-        <h3 id="alternate-html-to-using-native-table" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7pdqcxxq1455xj45roh74nfp6"><span header-link="alternate-html-to-using-native-table"></span>改用原生表格元素的替代 HTML</h3>
+        <h3 id="alternate-html-to-using-native-table" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7pdqcxxq1455xj45roh74nfp6">改用原生表格元素的替代 HTML</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5vprz4gff79s4hnkdxwzszvoa">CDK 表格并不要求你使用原生 HTML 表格。如果你想完全控制表格的样式，遵循不使用原生表格元素标签的替代模板方法可能会更容易些。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="d1jeh8tbo7dp9a79acnvt5ova">这种替代方法用 CDK 的表格指令选择器替换了原生的表格元素标签。比如，<code>&lt;table cdk-table&gt;</code> 变为 <code>&lt;cdk-table&gt;</code>、<code>&lt;tr cdk-row</code> &gt; 变为 <code>&lt;cdk-row&gt;</code>。下面的例子展示了改用这个替代模板实现前一个例子：</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-table</span> [<span class="hljs-attr">dataSource</span>]=<span class="hljs-string">"dataSource"</span>&gt;</span>

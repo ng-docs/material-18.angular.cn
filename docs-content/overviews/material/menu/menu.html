@@ -5,7 +5,7 @@
 <div material-docs-example="menu-overview" file="menu-overview-example.html" region="mat-menu-trigger-for"></div>
 
 
-        <h3 id="toggling-the-menu-programmatically" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cb85tzk6km5vmt6oez1sna6rm"><span header-link="toggling-the-menu-programmatically"></span>以编程方式切换菜单</h3>
+        <h3 id="toggling-the-menu-programmatically" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cb85tzk6km5vmt6oez1sna6rm">以编程方式切换菜单</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="dt0bi36r9lz7nnvg4y1d7juy0">菜单对外暴露了一个 API，用于以编程的方式打开/关闭它。注意，在这种情况下，仍然必须用 <code>matMenuTriggerFor</code> 来把菜单附着到 DOM 中的某个触发器元素上。</p>
 <pre><code class="language-ts"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComponent</span> </span>{
   <span class="hljs-meta">@ViewChild</span>(MatMenuTrigger) trigger: MatMenuTrigger;
@@ -16,24 +16,24 @@
 }
 </code></pre>
 
-        <h3 id="icons" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1qe2qqfzg8vfn74tihkgkre2d"><span header-link="icons"></span>图标</h3>
+        <h3 id="icons" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1qe2qqfzg8vfn74tihkgkre2d">图标</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="63jppuaf5j29av7c9h4l698er">菜单支持在菜单项的文本之前显示 <code>mat-icon</code> 元素上。</p>
 <div material-docs-example="menu-icons" file="menu-icons-example.html"></div>
 
 
-        <h3 id="customizing-menu-position" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d41owx0uzci58pn55z062g85n"><span header-link="customizing-menu-position"></span>自定义菜单位置</h3>
+        <h3 id="customizing-menu-position" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d41owx0uzci58pn55z062g85n">自定义菜单位置</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5zq0h4yjo7o7d6tr3ud7h4pcp">默认情况下，菜单将会显示在触发器的下方（Y 轴）、后方（X 轴）并与触发器元素重叠。
 此位置可以使用 <code>xPosition</code> (<code>before | after</code>) 和 <code>yPosition</code> (<code>above | below</code>) 属性进行修改。
 还可以用 <code>[overlapTrigger]="false"</code> 属性来强迫菜单不要与触发器重叠。</p>
 <div material-docs-example="menu-position" file="menu-position-example.html" region="menu-position"></div>
 
 
-        <h3 id="nested-menu" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1lb22llq18hn7fo6j4s4tgp6n"><span header-link="nested-menu"></span>内嵌菜单</h3>
+        <h3 id="nested-menu" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1lb22llq18hn7fo6j4s4tgp6n">内嵌菜单</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1hz6ekrmv0l3ng563ts7uro58">Material 支持让 <code>mat-menu-item</code> 再打开子菜单。要做到这一点，你要先定义根菜单和子菜单，然后在 <code>mat-menu-item</code> 上设置 <code>[matMenuTriggerFor]</code> 以触发子菜单：</p>
 <div material-docs-example="menu-nested" file="menu-nested-example.html" region="sub-menu"></div>
 
 
-        <h3 id="lazy-rendering" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="f29oqevjq87vhbtv91n3ng2zt"><span header-link="lazy-rendering"></span>延迟渲染</h3>
+        <h3 id="lazy-rendering" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="f29oqevjq87vhbtv91n3ng2zt">延迟渲染</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e61wmq66oqsnz2796obg55x0a">默认情况下，即使菜单面板是关闭的，其内容也会被初始化。要想等到菜单打开时才进行初始化，可以用一个带 <code>matMenuContent</code> 属性的 <code>ng-template</code> 来提供其内容：</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-menu</span> #<span class="hljs-attr">appMenu</span>=<span class="hljs-string">"matMenu"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> <span class="hljs-attr">matMenuContent</span>&gt;</span>
@@ -47,7 +47,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 </code></pre>
 
-        <h3 id="passing-in-data-to-a-menu" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c6lj6onqnuue0121btf668pqd"><span header-link="passing-in-data-to-a-menu"></span>给菜单传入数据</h3>
+        <h3 id="passing-in-data-to-a-menu" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c6lj6onqnuue0121btf668pqd">给菜单传入数据</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="a6okuv788uvydcl3rc22ojux2">当使用惰性渲染时，可以通过输入属性 <code>matMenuTriggerData</code> 来把额外的上下文数据传给菜单。
 这会允许使用不同的数据集渲染同一个菜单实例 —— 取决于在哪个触发器上打开它：</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-menu</span> #<span class="hljs-attr">appMenu</span>=<span class="hljs-string">"matMenu"</span>&gt;</span>
@@ -66,41 +66,41 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 </code></pre>
 
-        <h3 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o"><span header-link="keyboard-interaction"></span>键盘交互</h3>
+        <h3 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o">键盘交互</h3>
       <table>
 <thead>
 <tr>
-<th>Keyboard shortcut</th>
-<th>Action</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="863ede35wj8nw5s9y0a34i8kj">键盘快捷键</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="mrmhabmulen10w0rlhu0uhf">操作</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><kbd data-ng_translator_product="100" data-ng_translator_ref_id="2nnyys53jprynpl0dun8dwhwu">下箭头</kbd></td>
-<td>Focus the next menu item.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="f6tyz7c2m3tcenkka3h2q63w">将焦点移到下一个菜单项。</td>
 </tr>
 <tr>
 <td><kbd data-ng_translator_product="100" data-ng_translator_ref_id="309bucutagp7jselon3lyth1t">上箭头</kbd></td>
-<td>Focus the previous menu item.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="clkb70agn22no5czmk64037zr">将焦点移到上一个菜单项。</td>
 </tr>
 <tr>
 <td><kbd data-ng_translator_product="100" data-ng_translator_ref_id="4m0p4qdgltnr6yjhf23kpz972">左箭头</kbd></td>
-<td>Close the current menu if it is a sub-menu.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1joujirgc43eqzgdsq1jmauhq">如果当前菜单是子菜单，则关闭它。</td>
 </tr>
 <tr>
 <td><kbd data-ng_translator_product="100" data-ng_translator_ref_id="aruecgxx5vlnrezl533zabo1d">右箭头</kbd></td>
-<td>Opens the current menu item's sub-menu.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="f4fxy2svfzc79fxw5hrmrhd9b">打开当前菜单项的子菜单。</td>
 </tr>
 <tr>
 <td><kbd data-ng_translator_product="100" data-ng_translator_ref_id="eaqxyduesc434wq43zo3dxu6z">回车</kbd></td>
-<td>Activate the focused menu item.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4mhjdg6hoxp3tcu1tgcf6li5i">激活获得焦点的菜单项。</td>
 </tr>
 <tr>
 <td><kbd data-ng_translator_product="100" data-ng_translator_ref_id="2nj7fks0e5arzg8a7dvuhs10">Esc</kbd></td>
-<td>Close all open menus.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1jbc1r114utz5d4bxff9hl179">关闭所有打开的菜单。</td>
 </tr>
 </tbody></table>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="73g69wje02myt6gl6ywra75qc">Angular Material 的菜单组件由两个相互关连的部分组成：触发器和弹出菜单。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1jagvfebksa5j77vv5ttd1l1o">菜单触发器是一个标准按钮元素，增加了 <code>aria-haspopup</code> 、 <code>aria-expanded</code> 和 <code>aria-controls</code>，以创建与弹出面板的联系。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="brzwwgtoil8bfmnzpdvnr0z8b">弹出菜单实现了 <code>role="menu"</code> 模式，它会处理键盘交互和焦点管理。打开后，触发器将聚焦第一个可聚焦的菜单项。关闭后，菜单会将焦点返回到其触发器。请避免创建会禁用所有条目的菜单，而是隐藏或禁用菜单触发器。</p>

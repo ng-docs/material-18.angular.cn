@@ -3,10 +3,7 @@ Selected: {{selected1}}
 <ul matselection [datasource]="data" [matselectionmultiple]="true" (matselectionchange)="selected1 = getCurrentSelected($event)">
   <input type="checkbox" matSelectAll #allToggler="matSelectAll" [checked]="allToggler.checked | async" [indeterminate]="allToggler.indeterminate | async" (click)="allToggler.toggle($event)">
   @for (item of data; track item) {
-    <li>
-      <input type="checkbox" matSelectionToggle #toggler="matSelectionToggle" [matSelectionToggleValue]="item" [checked]="toggler.checked | async" (click)="toggler.toggle()">
-      {{item}}
-    </li>
+    <li data-ng_translator_product="100" data-ng_translator_ref_id="9ozkqgxa67gua8kj2rm63i06u"><input type="checkbox" matSelectionToggle #toggler="matSelectionToggle" [matSelectionToggleValue]="item" [checked]="toggler.checked | async" (click)="toggler.toggle()"> {{item}}</li>
   }
 </ul>
 
@@ -23,10 +20,7 @@ Selected: {{selected2}}
 Selected: {{selected3}}
 <ul matselection [datasource]="data" [matselectionmultiple]="false" (matselectionchange)="selected3 = getCurrentSelected($event)">
   @for (item of data; track item) {
-    <li>
-      <mat-checkbox matselectiontoggle [matselectiontogglevalue]="item"></mat-checkbox>
-      {{item}}
-    </li>
+    <li data-ng_translator_product="100" data-ng_translator_ref_id="f4alag8yo8i2654rxhm3nbyib"><mat-checkbox matselectiontoggle [matselectiontogglevalue]="item"></mat-checkbox> {{item}}</li>
   }
 </ul>
 
@@ -35,10 +29,7 @@ Selected: {{selected4}}
 <ul matselection [datasource]="data" [matselectionmultiple]="true" [trackby]="trackByFn" (matselectionchange)="selected4 = getCurrentSelected($event)">
   <mat-checkbox matselectall #toggle2="matSelectAll" [indeterminate]="toggle2.indeterminate | async"></mat-checkbox>
   @for (item of data; track trackByFn(i, item); let i = $index) {
-    <li>
-      <mat-checkbox matselectiontoggle [matselectiontogglevalue]="item" [matselectiontoggleindex]="i"></mat-checkbox>
-      {{item}}
-    </li>
+    <li data-ng_translator_product="100" data-ng_translator_ref_id="5e0hdmw84925fhgfjm0hsm691"><mat-checkbox matselectiontoggle [matselectiontogglevalue]="item" [matselectiontoggleindex]="i"></mat-checkbox> {{item}}</li>
   }
 </ul>
 

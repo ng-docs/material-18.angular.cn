@@ -9,13 +9,13 @@
   }
   <th mat-header-cell *matheadercelldef aria-label="row actions">&nbsp;</th>
     <td mat-cell *matcelldef="let element">
-      <button mat-icon-button aria-label="expand row" (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
-        @if (expandedElement === element) {
-          <mat-icon>keyboard_arrow_up</mat-icon>
-        } @else {
-          <mat-icon>keyboard_arrow_down</mat-icon>
-        }
-      </button>
+      <button mat-icon-button aria-label="expand row" (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()" data-ng_translator_product="100" data-ng_translator_ref_id="31mszpfe60z2gho91hzdbku1s">@if (expandedElement === element) { 
+<mat-icon>
+ keyboard_arrow_up
+</mat-icon> } @else { 
+<mat-icon>
+ keyboard_arrow_down
+</mat-icon> }</button>
     </td>
   
 

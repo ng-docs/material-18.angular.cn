@@ -1,17 +1,17 @@
 <div class="docs-markdown"><h1 data-ng_translator_product="100" data-ng_translator_ref_id="duvb3ltg7dslzqjlpgz8t3pv2">V9 HammerJS 的迁移</h1><p data-ng_translator_product="100" data-ng_translator_ref_id="45uy4zh2q78wjpkepodcti5a">在版本 9 中，Angular Material 的任何组件都不再需要 HammerJS。以前依赖于 HammerJS 的组件不再提供<a href="https://v9.angular.io/api/platform-browser/HammerGestureConfig"><code>HAMMER_GESTURE_CONFIG</code></a>，以便能在模板中使用 HammerJS 事件。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="7r83mn16gf832sftbde94fzvu">此外，来自 <code>@angular/material/core</code> 的 <code>GestureConfig</code> 导出已被标记为弃用，并将在版本 10 中删除。</p>
 
-        <h2 id="why-is-a-migration-needed" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="95u1kpihq5bzo988ldthkddrl"><span header-link="why-is-a-migration-needed"></span>为何需要进行迁移？</h2>
+        <h2 id="why-is-a-migration-needed" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="95u1kpihq5bzo988ldthkddrl">为何需要进行迁移？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5a6sdyygills527px50kf49lc">HammerJS 以前只是少数 Angular Material 组件所需要的，所以项目可能要专门为 Angular Material 安装 <code>HammerJS</code>。由于在更新到 v9 时不再需要 HammerJS，如果它没有直接在你的应用中使用，就可以删除对 HammerJS 的依赖。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3pstaj4vcjkxnpztlpuwjn8s7">在某些情况下，项目会在模板中使用 HammerJS 事件，从而依赖 Angular Material 模块来设置 HammerJS 事件插件。由于版本 9 中情况发生了变化，所以这些项目需要手动配置 HammerJS 事件插件才能继续使用这些 HammerJS 事件。</p>
 
-        <h2 id="what-does-the-migration-do" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6uevvtb91iil099myzekvx6yp"><span header-link="what-does-the-migration-do"></span>本迁移是做什么的？</h2>
+        <h2 id="what-does-the-migration-do" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6uevvtb91iil099myzekvx6yp">本迁移是做什么的？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="et1c9v140li4o022w2fbe0w0r">如果没有使用 HammerJS，迁移会自动从项目中删除 HammerJS。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8x99j1dasvfgawfsf3oudjbpz">此外，Angular Material 的 <code>GestureConfig</code>（已废弃）定义了一些自定义 HammerJS 手势。如果你的应用程序直接使用这些手势，本迁移将为这些自定义手势引入新的特定于应用程序的配置，取消对 Angular Material 中 <code>GestureConfig</code> 的依赖。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3yhku3qq3i5ibqtq5jij6p5ny">最后，如果你的应用使用 Angular Material 中 <code>GestureConfig</code> 提供的任何自定义 HammerJS 手势，或默认的 HammerJS 手势，本迁移就会添加一个对 <code>HammerModule</code> 的新导入，它启用了 HammerJS 事件绑定。Angular 8 及以下版本默认启用了这些绑定。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="10wfwxu7vkg5obgsk1d35si80">如果你的应用提供了一个自定义的 <a href="https://v9.angular.io/api/platform-browser/HammerGestureConfig"><code>HAMMER_GESTURE_CONFIG</code></a>，并且引用了那个已弃用的 Angular Material <code>GestureConfig</code>，那么本迁移就会打印一个关于有歧义用法的警告。本迁移无法自动迁移该项目，需要手动修改。欲知详情，参见<a href="#the-migration-reported-ambiguous-usage-what-should-i-do">专门的章节</a>。</p>
 
-        <h2 id="how-does-the-schematic-remove-hammerjs" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="22z8a9yd5o0134977ez27x64f"><span header-link="how-does-the-schematic-remove-hammerjs"></span>原理图如何去掉 HammerJS？</h2>
+        <h2 id="how-does-the-schematic-remove-hammerjs" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="22z8a9yd5o0134977ez27x64f">原理图如何去掉 HammerJS？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="eak25rdh7tdhxhhmos7nib411">HammerJS 可以通过多种方式进行设置。本迁移可以处理最常见的情况，包括过去 Angular Materials 推荐的方法。迁移的执行过程如下：</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2daedmxoy50i09bjaw3bezjhc">*1.*从项目的 <code>package.json</code> 中删除 <code>hammerjs</code>。</p>
 <pre><code class="language-json">{
@@ -28,7 +28,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="13y59bddyv0zn43n0vvz87bkt">迁移不能自动从测试中删除 HammerJS。请手动清理测试的设置代码并解决所有测试问题。阅读<a href="#how-to-migrate-my-tests">专题文章</a>以了解测试迁移的更多内容。</p>
 
-        <h2 id="how-do-i-migrate-references-to-the-deprecated-gestureconfig" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7gpe41m6c0hss03vxf3hitk6c"><span header-link="how-do-i-migrate-references-to-the-deprecated-gestureconfig"></span>如何迁移到已弃用的 <code>GestureConfig</code> 的引用？</h2>
+        <h2 id="how-do-i-migrate-references-to-the-deprecated-gestureconfig" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7gpe41m6c0hss03vxf3hitk6c">如何迁移到已弃用的 <code>GestureConfig</code> 的引用？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2dyssfzgc81j050hwqc62ec64"><code>GestureConfig</code> 可以通过多种方式使用。迁移涵盖了最常见的情况。最常见的情况是应用中的某个 <code>NgModule</code> 直接提供了 <code>GestureConfig</code> ：</p>
 <pre><code class="language-typescript"><span class="hljs-keyword">import</span> {GestureConfig} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/core'</span>;
 
@@ -45,7 +45,7 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5givgkrrjt5q25j7xhfqp3bfl">还有一些模式对弃用的 <code>GestureConfig</code> 进行了扩展、注入或与其他自定义手势配置组合使用。这些模式无法自动处理，但是本迁移会报告这些模式，并要求你进行手动清理。</p>
 <p><a name="test-migration"></a></p>
 
-        <h2 id="how-to-migrate-my-tests" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="80fz4d9hn9ygjv02qoy76n8fl"><span header-link="how-to-migrate-my-tests"></span>如何迁移我的测试？</h2>
+        <h2 id="how-to-migrate-my-tests" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="80fz4d9hn9ygjv02qoy76n8fl">如何迁移我的测试？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="d7hskyj2auf5o14oh4jlclu4f">你项目中的组件可能会使用之前依赖于 HammerJS 的 Angular Material 组件。这些组件可能还有单元测试，它们也测试了 Angular Material 组件的手势功能。对于这样的单元测试，要确定所有失败的手势测试。然后，你应该重新修改这些测试来发送适当的事件，以模拟手势，或删除这些测试。特别是应该删除 <code>&lt;mat-slide-toggle&gt;</code> 的手势测试，这是因为 <code>&lt;mat-slide-toggle&gt;</code> 不再支持手势了。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="44f0xrt0y8hf249qp99ihs7sj">如果某些单元测试依赖于弃用的 Angular Material <code>GestureConfig</code> 来模拟手势事件，那么该引用应该被删除，并且重新编写这些测试来使用这些 DOM 事件，或者应该把其引用改为该迁移所创建的新手势配置。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="d39po4cmop5qmgd9w7dj2wmkf">如果 HammerJS 已经被本迁移从项目中移除了，你可能需要重构提供 HammerJS 的测试设置代码。这通常是在测试主文件（通常是 <code>src/test.ts</code> ）中完成的，<code>hammerjs</code> 可能是在那里导入的。</p>
@@ -53,7 +53,7 @@
 </code></pre>
 <p><a name="what-to-do-ambiguous-usage"></a></p>
 
-        <h2 id="the-migration-reported-ambiguous-usage-what-should-i-do" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3xdscx4guj63rtxlsk4s3bwkc"><span header-link="the-migration-reported-ambiguous-usage-what-should-i-do"></span>本迁移报告了“有歧义用法”。我该怎么办？</h2>
+        <h2 id="the-migration-reported-ambiguous-usage-what-should-i-do" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3xdscx4guj63rtxlsk4s3bwkc">本迁移报告了“有歧义用法”。我该怎么办？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3hv149fhbolrtwde0htuk8z0t"><strong>案例 1</strong>：它检测到组件模板中使用了已弃用的 <code>GestureConfig</code> 所提供的 HammerJS 事件。这是因为本迁移依赖于静态分析来检测事件绑定，并且永远不能保证没有事件绑定用到了 Hammer 手势插件，或者绑定到实际的 <code>@Output</code>。例如：</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">image-rotator</span> (<span class="hljs-attr">rotate</span>)=<span class="hljs-string">"onRotate()"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">image-rotator</span>&gt;</span>
 </code></pre>

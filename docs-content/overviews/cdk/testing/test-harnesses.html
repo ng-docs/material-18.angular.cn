@@ -1,6 +1,6 @@
 <div class="docs-markdown"><p data-ng_translator_product="100" data-ng_translator_ref_id="cwncisj1fvymeb9tkrwhmac6q"><code>@angular/cdk/testing</code> 提供了一些帮助测试 Angular 组件的基础设施。</p>
 
-        <h3 id="component-test-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="569hgflq671u1p6qgqzz1yp3s"><span header-link="component-test-harnesses"></span>组件测试工具</h3>
+        <h3 id="component-test-harnesses" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="569hgflq671u1p6qgqzz1yp3s">组件测试工具</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="7hsjfaybs6fn4inqtwrtnwk4n">组件测试工具类是一个让测试可以通过其支持的 API 与组件交互的类。每个工具的 API 都会以和用户相同的方式与一个组件进行交互。通过使用测试工具 API，测试可以防止对组件内部的更新，比如改变它的 DOM 结构。组件测试工具的思想来自常用于集成测试的<a href="https://martinfowler.com/bliki/PageObject.html"> PageObject </a>模式。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2etvu24twrmb9cgggkgfxu29i"><code>@angular/cdk/testing</code> 包含用于创建和使用组件测试工具的基础设施。你可以为任何组件创建测试工具，范围从很小的可复用组件到完整的应用页面。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9115kb6sblt745b0xgui2g9wm">组件工具体系支持多种测试环境。你可以在单元测试和端到端测试中使用相同的工具实现。这意味着用户只需要学习一个 API，而组件作者不需要维护单独的单元测试和端到端测试实现。</p>
@@ -13,15 +13,15 @@
 </ol>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ekj9j3oyhttec7e0do8415gvw">由于许多开发人员只会属于这些类别之一，因此相关的 API 会在下面按开发人员类型细分成不同章节。</p>
 
-        <h3 id="api-for-test-authors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="duhjca7frlrqsuydr33pqzlcu"><span header-link="api-for-test-authors"></span>给测试作者的 API</h3>
+        <h3 id="api-for-test-authors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="duhjca7frlrqsuydr33pqzlcu">给测试作者的 API</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5lhhwc4dwyxczoij53w6u2n9b">测试作者就是开发人员，他们使用别人编写的组件测试工具来测试自己的应用。例如，这可能是一个使用第三方菜单组件的应用开发者，需要在单元测试中与该菜单进行交互。</p>
 
-        <h4 id="working-with-componentharness-classes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8otpl54vzdgvo8hpqi6zn2foe"><span header-link="working-with-componentharness-classes"></span>使用 <code>ComponentHarness</code> 类</h4>
+        <h4 id="working-with-componentharness-classes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8otpl54vzdgvo8hpqi6zn2foe">使用 <code>ComponentHarness</code> 类</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9jns8b8tyvl7jm619h0lvksx9"><code>ComponentHarness</code> 是所有组件测试工具的抽象基类。每个测试工具都会扩展这个类。
 所有 <code>ComponentHarness</code> 的子类都有一个静态属性 <code>hostSelector</code>，它把测试工具类与 DOM 中组件的实例相匹配。
 除此之外，任何特定测试工具的 API 都是专属于其对应组件的。请参阅该组件的文档，了解如何使用特定的测试工具。</p>
 
-        <h4 id="using-testbedharnessenvironment-and-seleniumwebdriverharnessenvironment" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bjfn7nrobrpptx4s1394tznnu"><span header-link="using-testbedharnessenvironment-and-seleniumwebdriverharnessenvironment"></span>使用 <code>TestbedHarnessEnvironment</code> 和 <code>SeleniumWebDriverHarnessEnvironment</code></h4>
+        <h4 id="using-testbedharnessenvironment-and-seleniumwebdriverharnessenvironment" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bjfn7nrobrpptx4s1394tznnu">使用 <code>TestbedHarnessEnvironment</code> 和 <code>SeleniumWebDriverHarnessEnvironment</code></h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="hvtjg4mh512l0d31nu2gbqu4">这些类对应于组件工具体系的不同实现，并绑定到特定的测试环境。任何一种测试都只能导入<em>其中一个</em>类。
 基于 Karma 的单元测试应该使用 <code>TestbedHarnessEnvironment</code>，而基于 Protractor 的端到端测试应该使用 <code>SeleniumWebDriverHarnessEnvironment</code>。
 其他环境会要求自定义绑定；给参见<a href="#api-for-harness-environment-authors">测试工具环境作者的 API</a>，以了解有关备用测试环境的更多信息。</p>
@@ -30,21 +30,24 @@
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>loader(fixture: ComponentFixture&lt;unknown&gt;): HarnessLoader</code></td>
-<td>Gets a <code>HarnessLoader</code> instance for the given fixture, rooted at the fixture's root element. Should be used to create harnesses for elements contained inside the fixture</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3di4avdokcntoi3b8blefg0jt">获取给定夹具的 
+<code>HarnessLoader</code> 实例，该实例以夹具的根元素为根。应用于为夹具内包含的元素创建工具。</td>
 </tr>
 <tr>
 <td><code>documentRootLoader(fixture: ComponentFixture&lt;unknown&gt;): HarnessLoader</code></td>
-<td>Gets a <code>HarnessLoader</code> instance for the given fixture, rooted at the HTML document's root element. Can be used to create harnesses for elements that fall outside of the fixture</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cfa7huewo37bu9wdvwukjtd72">获取给定夹具的 
+<code>HarnessLoader</code> 实例，该实例以 HTML 文档的根元素为根。可用于为位于夹具之外的元素创建工具。</td>
 </tr>
 <tr>
 <td><code>harnessForFixture&lt;T extends ComponentHarness&gt;(fixture: ComponentFixture&lt;unknown&gt;, harnessType: ComponentHarnessConstructor&lt;T&gt;): Promise&lt;T&gt;</code></td>
-<td>Used to create a <code>ComponentHarness</code> instance for the fixture's root element directly. This is necessary when bootstrapping the test with the component you plan to load a harness for, because Angular does not set the proper tag name when creating the fixture.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5n5pebp9iuesha95weue9xz02">用于为夹具的根元素直接创建 
+<code>ComponentHarness</code> 实例。当使用要加载工具的组件引导测试时，这是必要的，因为 Angular 在创建夹具时不会设置正确的标签名称。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8tm8ihe7qo03acg103bavb9t2">在大多数情况下，你可以使用 <code>TestbedHarnessEnvironment.loader(fixture)</code> 在 <code>beforeEach</code> 中创建一个 <code>HarnessLoader</code>，然后使用该 <code>HarnessLoader</code> 来创建任何必要的 <code>ComponentHarness</code> 实例。其他方法涵盖了那些特例，如下例所示：</p>
@@ -87,48 +90,57 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>loader(): HarnessLoader</code></td>
-<td>Gets a <code>HarnessLoader</code> instance for the current HTML document, rooted at the document's root element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="btnlmmdhbt6bwtj8kmg4lrk3b">获取当前 HTML 文档的 
+<code>HarnessLoader</code> 实例，该实例以文档的根元素为根。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="75uf5xlqa59czm5dxkljyobcx">虽然 Selenium WebDriver 不知道怎么用夹具，但这个环境下的 API 比较简单。<code>loader()</code> 方法返回的 <code>HarnessLoader</code> 应足以加载所有必需的 <code>ComponentHarness</code> 实例。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="21smx8ykwegid4youwrfl9yu5">请注意，在各种环境中，测试工具的行为可能并不<em>完全相同</em>。当用户点击或输入某个元素时，真正的浏览器生成的事件序列与单元测试中生成的模拟事件序列之间总有一些区别。不过，CDK 会尽最大努力规范其行为，并模拟序列中最重要的事件。</p>
 
-        <h4 id="creating-harnesses-with-harnessloader" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="717l9yb5ss8l2soa87w7sb9ag"><span header-link="creating-harnesses-with-harnessloader"></span>使用 <code>HarnessLoader</code> 创建测试工具</h4>
+        <h4 id="creating-harnesses-with-harnessloader" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="717l9yb5ss8l2soa87w7sb9ag">使用 <code>HarnessLoader</code> 创建测试工具</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1j1gzoppo1nl27t0orennaj47">该类的实例对应一个特定的 DOM 元素（此加载器的“根元素”），用于为该根元素下的元素创建 <code>ComponentHarness</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="468n9eipnltnf4bembjkti5i4"><code>HarnessLoader</code> 实例有以下几种方法：</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>getChildLoader(selector: string): Promise&lt;HarnessLoader&gt;</code></td>
-<td>Searches for an element matching the given selector below the root element of this <code>HarnessLoader</code>, and returns a new <code>HarnessLoader</code> rooted at the first matching element</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ce6qeum1inyeo338hm0vx2yau">在该 
+<code>HarnessLoader</code> 的根元素下搜索与给定选择器匹配的元素，并返回一个以第一个匹配元素为根的新 
+<code>HarnessLoader</code>。</td>
 </tr>
 <tr>
 <td><code>getAllChildLoaders(selector: string): Promise&lt;HarnessLoader[]&gt;</code></td>
-<td>Acts like <code>getChildLoader</code>, but returns an array of <code>HarnessLoader</code> instances, one for each matching element, rather than just the first matching element</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="byuamd88atmeoivx6xfadpoo0">类似于 
+<code>getChildLoader</code>，但返回一个 
+<code>HarnessLoader</code> 实例数组，每个匹配元素一个，而不是仅返回第一个匹配元素。</td>
 </tr>
 <tr>
 <td><code>getHarness&lt;T extends ComponentHarness&gt;(harnessType: ComponentHarnessConstructor&lt;T&gt; | HarnessPredicate&lt;T&gt;): Promise&lt;T&gt;</code></td>
-<td>Searches for an instance of the given <code>ComponentHarness</code> class or <code>HarnessPredicate</code> below the root element of this <code>HarnessLoader</code> and returns an instance of the harness corresponding to the first matching element</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cblfcnkhvttgikb9m5s3c3qv">在该 
+<code>HarnessLoader</code> 的根元素下搜索给定 
+<code>ComponentHarness</code> 类或 
+<code>HarnessPredicate</code> 的实例，并返回与第一个匹配元素相对应的工具实例。</td>
 </tr>
 <tr>
 <td><code>getAllHarnesses&lt;T extends ComponentHarness&gt;(harnessType: ComponentHarnessConstructor&lt;T&gt; | HarnessPredicate&lt;T&gt;): Promise&lt;T[]&gt;</code></td>
-<td>Acts like <code>getHarness</code>, but returns an array of harness instances, one for each matching element, rather than just the first matching element</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ev3yb271nz59rgv8wty62uck7">类似于 
+<code>getHarness</code>，但返回一个工具实例数组，每个匹配元素一个，而不是仅返回第一个匹配元素。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9c9dlcjvh2f5fywcy9ssxmzjm">调用 <code>getHarness</code> 和 <code>getAllHarnesses</code> 的参数可以是 <code>ComponentHarness</code> 的子类或 <code>HarnessPredicate</code>。<code>HarnessPredicate</code> 对搜索应用了额外的限制（比如搜索一些带有特定文本的按钮等）。<a href="#filtering-harness-instances-with-harnesspredicate"><code>HarnessPredicate</code></a> 的<a href="#filtering-harness-instances-with-harnesspredicate">详细信息</a>在<a href="#api-for-component-harness-authors">组件工具作者</a>的 API 部分讨论。组件工具的作者应该在 <code>ComponentHarness</code> 子类中提供了一些创建 <code>HarnessPredicate</code> 实例的便利方法。但是，如果测试工具作者提供的 API 不够用，你也可以手动创建它们。</p>
 
-        <h4 id="change-detection" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6dkt2wllqshd5vn0w6j7ayh2a"><span header-link="change-detection"></span>变更检测</h4>
+        <h4 id="change-detection" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6dkt2wllqshd5vn0w6j7ayh2a">变更检测</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ad9nux2betvrz8lot1g5ix70h">默认情况下，测试工具会在读取 DOM 元素的状态之前和与 DOM 元素交互之后运行 Angular 变更检测。这虽然在大多数情况下很方便，但有时候你需要对变更检测进行更细粒度的控制。例如，你可能希望在异步操作挂起时检查某个组件的状态。在这些情况下，你可以使用 <code>manualChangeDetection</code> 函数来禁用对代码块的自动变更检测。例如：</p>
 <pre><code class="language-ts">it(<span class="hljs-string">'checks state while async action is in progress'</span>, <span class="hljs-keyword">async</span> () =&gt; {
   <span class="hljs-keyword">const</span> buttonHarness = loader.getHarness(MyButtonHarness);
@@ -144,7 +156,7 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 });
 </code></pre>
 
-        <h4 id="working-with-asynchronous-component-harness-methods" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c9ypudk4u2bmtgcm7n28hapx9"><span header-link="working-with-asynchronous-component-harness-methods"></span>使用组件测试工具的异步方法</h4>
+        <h4 id="working-with-asynchronous-component-harness-methods" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c9ypudk4u2bmtgcm7n28hapx9">使用组件测试工具的异步方法</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4f6z9o9e6bg3tjbzt8fuk7f86">为了支持单元测试和端到端测试，并把测试与异步行为的变化隔离开来，测试工具几乎的所有方法都是异步的，并返回一个 <code>Promise</code>；因此，Angular 团队建议使用 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">ES2017 的 <code>async</code> / <code>await</code> 语法</a>来提高测试的可读性。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="cqkfpp1np7lwauhjd38s2cxz1">注意，<code>await</code> 语句会阻塞测试的执行，直到相关的 <code>Promise</code> 被解析为止。有时，你可能希望同时执行多个动作，并等待它们全部完成，而不是按顺序执行每个动作。例如，从单个组件中读取多个属性。在这种情况下，请使用 <code>parallel</code> 函数来并行处理这些操作。parallel 函数与 <code>Promise.all</code> 工作方式类似，但同时优化了变更检测，因此它的运行次数不会太多。以下代码演示如何通过 <code>parallel</code> 从测试工具中读取多个属性：</p>
 <pre><code class="language-ts">it(<span class="hljs-string">'reads properties in parallel'</span>, <span class="hljs-keyword">async</span> () =&gt; {
@@ -159,11 +171,11 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 });
 </code></pre>
 
-        <h3 id="api-for-component-harness-authors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cmbn9r7u5307xot3c3aq77ij9"><span header-link="api-for-component-harness-authors"></span>组件测试工具作者的 API</h3>
+        <h3 id="api-for-component-harness-authors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cmbn9r7u5307xot3c3aq77ij9">组件测试工具作者的 API</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="djure1d6luawkva16b3ptzl9y">组件测试工具作者是那些需要维护一些可复用的 Angular 组件并希望为它创建一个测试工具的开发人员，组件用户可以在测试中使用它。
 例如，可能是第三方 Angular 组件库的作者，也可能是为大型 Angular 应用维护一组通用组件的开发人员。</p>
 
-        <h4 id="extending-componentharness" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6uvm5rd2pl16pfy3a55momffu"><span header-link="extending-componentharness"></span>扩展 <code>ComponentHarness</code></h4>
+        <h4 id="extending-componentharness" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6uvm5rd2pl16pfy3a55momffu">扩展 <code>ComponentHarness</code></h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3lsuog8ak5lzqcayhp3y8tdi">抽象类 <code>ComponentHarness</code> 是所有组件测试工具的基类。要创建自定义组件测试工具，请扩展 <code>ComponentHarness</code> 并实现其静态属性 <code>hostSelector</code>。<code>hostSelector</code> 属性用于标识 DOM 中与该测试工具子类相匹配的元素。在大多数情况下，<code>hostSelector</code> 应该与相应的 <code>Component</code> 或 <code>Directive</code> 的 <code>selector</code> 相同。例如，考虑一个简单的弹出框组件：</p>
 <pre><code class="language-ts"><span class="hljs-meta">@Component</span>({
   <span class="hljs-attr">selector</span>: <span class="hljs-string">'my-popup'</span>,
@@ -189,31 +201,41 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="867dzxyazox87qaj319jct6zd">虽然 <code>ComponentHarness</code> 子类只需要 <code>hostSelector</code> 属性，但大多数测试工具还应该使用静态方法 <code>with</code> 来生成 <code>HarnessPredicate</code> 实例。下面的 <a href="#filtering-harness-instances-with-harnesspredicate"><code>HarnessPredicate</code></a> 部分会更详细介绍这一点。</p>
 
-        <h4 id="finding-elements-in-the-components-dom" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8tbgqjycnzm6upki0qj6cx1sh"><span header-link="finding-elements-in-the-components-dom"></span>在组件的 DOM 中查找元素</h4>
+        <h4 id="finding-elements-in-the-components-dom" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8tbgqjycnzm6upki0qj6cx1sh">在组件的 DOM 中查找元素</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="7erjib1gi3puxlnwzlyqw991e"><code>ComponentHarness</code> 子类的每个实例都表示相应组件的一个特定实例。你可以用 <code>ComponentHarness</code> 类的 <code>host</code> 方法访问组件的宿主元素。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6sltwjcfyse5h0z5brfzqi23e"><code>ComponentHarness</code> 还提供了几种在组件 DOM 中定位元素的方法。它们是 <code>locatorFor</code>、<code>locatorForOptional</code> 和 <code>locatorForAll</code>。但请注意，这些方法并不直接查找元素，而是会<em>创建</em>能寻找元素的函数。这种方式可以防止缓存对过时元素的引用。例如，当一个 <code>ngIf</code> 先隐藏再显示一个元素时，其结果是一个新的 DOM 元素；使用函数可以确保测试总能引用 DOM 的当前状态。</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>host(): Promise&lt;TestElement&gt;</code></td>
-<td>Returns a <code>Promise</code> for the host element of the corresponding component instance.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="c18zoqwpxuq3z7nb58v9yiro1">返回与相应组件实例的宿主元素的 
+<code>Promise</code>。</td>
 </tr>
 <tr>
 <td><code>locatorFor(selector: string): () =&gt; Promise&lt;TestElement&gt;</code></td>
-<td>Creates a function that returns a <code>Promise</code> for the first element matching the given selector when called. If no matching element is found, the <code>Promise</code> rejects.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3tv95ycjs2nlgqyu23gxagxct">创建一个函数，该函数返回一个 
+<code>Promise</code>，当调用时，该 
+<code>Promise</code> 会求解为第一个匹配给定选择器的元素。如果未找到匹配的元素，则该 
+<code>Promise</code> 会被拒绝。</td>
 </tr>
 <tr>
 <td><code>locatorForOptional(selector: string): () =&gt; Promise&lt;TestElement | null&gt;</code></td>
-<td>Creates a function that returns a <code>Promise</code> for the first element matching the given selector when called. If no matching element is found, the <code>Promise</code> is resolved with <code>null</code>.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="6hp15g2zuef1xvio56rlxkewh">创建一个函数，该函数返回一个 
+<code>Promise</code>，当调用时，该 
+<code>Promise</code> 会求解为第一个匹配给定选择器的元素。如果未找到匹配的元素，则该 
+<code>Promise</code> 会求解为 
+<code>null</code>。</td>
 </tr>
 <tr>
 <td><code>locatorForAll(selector: string): () =&gt; Promise&lt;TestElement[]&gt;</code></td>
-<td>Creates a function that returns a <code>Promise</code> for a list of all elements matching the given selector when called.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2p5rtt9njimaaf731gexly39t">创建一个函数，该函数返回一个 
+<code>Promise</code>，当调用时，该 
+<code>Promise</code> 会求解为一个包含所有匹配给定选择器的元素的列表。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5ejps1dws9xbn8cnr57o9zr8l">例如，<code>MyPopupHarness</code> 类可以提供获取触发器和内容元素的方法，如下所示：</p>
@@ -228,54 +250,56 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 }
 </code></pre>
 
-        <h4 id="working-with-testelement-instances" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8wlbzyjoe6vz160vxxhceyou1"><span header-link="working-with-testelement-instances"></span>使用 <code>TestElement</code> 实例</h4>
+        <h4 id="working-with-testelement-instances" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8wlbzyjoe6vz160vxxhceyou1">使用 <code>TestElement</code> 实例</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9tjulcmmagwp6sqnsysidchwd">使用上述定位器方法创建的函数都返回了 <code>TestElement</code> 实例。<code>TestElement</code> 提供了许多与底层 DOM 交互的方法：</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>blur(): Promise&lt;void&gt;</code></td>
-<td>Blurs the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4rqeym2pjd0vvxtqra94b6w4t">使元素失去焦点。</td>
 </tr>
 <tr>
 <td><code>clear(): Promise&lt;void&gt;</code></td>
-<td>Clears the text in the element (intended for <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> only).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="60uaf6k3eip2tzeyxtbfy3h3q">清除元素中的文本（仅适用于 
+<code>&lt;input&gt;</code> 和 
+<code>&lt;textarea&gt;</code>）。</td>
 </tr>
 <tr>
 <td><code>click(relativeX?: number, relativeY?: number): Promise&lt;void&gt;</code></td>
-<td>Clicks the element (at the given position relative to the element's top-left corner).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cmcbq3u24psag45541071ldbw">点击元素（相对于元素左上角的给定位置）。</td>
 </tr>
 <tr>
 <td><code>focus(): Promise&lt;void&gt;</code></td>
-<td>Focuses the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4x78w8uig4s0crzevfpf1pdr8">使元素获得焦点。</td>
 </tr>
 <tr>
 <td><code>getCssValue(property: string): Promise&lt;string&gt;</code></td>
-<td>Gets the computed value of the given CSS property for the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="eeex71pu72tertcexharw9dvt">获取元素的给定 CSS 属性的计算值。</td>
 </tr>
 <tr>
 <td><code>hover(): Promise&lt;void&gt;</code></td>
-<td>Hovers over the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3pjpga86cw5smkacy88kaacol">将鼠标悬停在元素上。</td>
 </tr>
 <tr>
 <td><code>sendKeys(modifiers?: ModifierKeys, ...keys: (string | TestKey)[]): Promise&lt;void&gt;</code></td>
-<td>Sends the given list of key presses to the element (with optional modifier keys).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="mszh4pjlge3f9q49jgz9jaet">向元素发送给定的按键列表（可选修饰键）。</td>
 </tr>
 <tr>
 <td><code>text(): Promise&lt;string&gt;</code></td>
-<td>Gets the text content of the element</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3nyoqbl94sezhbne1lj8fsoc">获取元素的文本内容。</td>
 </tr>
 <tr>
 <td><code>getAttribute(name: string): Promise&lt;string | null&gt;</code></td>
-<td>Gets the value of the given HTML attribute for the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4uy75eqju9axdg9gz1oi09xw4">获取元素的给定 HTML 属性的值。</td>
 </tr>
 <tr>
 <td><code>hasClass(name: string): Promise&lt;boolean&gt;</code></td>
-<td>Checks whether the element has the given class applied.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="9a9ls6us0fkk2cqsu9r0m8sdk">检查元素是否应用了给定的类。</td>
 </tr>
 <tr>
 <td><code>getDimensions(): Promise&lt;ElementDimensions&gt;</code></td>
@@ -283,11 +307,11 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 </tr>
 <tr>
 <td><code>getProperty(name: string): Promise&lt;any&gt;</code></td>
-<td>Gets the value of the given JS property for the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="9ws57emf7tnmpzdgx5wf07lmj">获取元素的给定 JS 属性的值。</td>
 </tr>
 <tr>
 <td><code>matchesSelector(selector: string): Promise&lt;boolean&gt;</code></td>
-<td>Checks whether the element matches the given CSS selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4wftalqyj952ogk635uddhwa7">检查元素是否匹配给定的 CSS 选择器。</td>
 </tr>
 <tr>
 <td><code>setInputValue(value: string): Promise&lt;void&gt;;</code></td>
@@ -325,26 +349,35 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 }
 </code></pre>
 
-        <h4 id="loading-harnesses-for-subcomponents" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2llbj8g5x9sk5r4g4lsmx2414"><span header-link="loading-harnesses-for-subcomponents"></span>为子组件加载测试工具</h4>
+        <h4 id="loading-harnesses-for-subcomponents" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2llbj8g5x9sk5r4g4lsmx2414">为子组件加载测试工具</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1tx5b9mc9ma3dpqcm1iifu3wd">较大的组件通常是由较小的组件组合而成的。你也可以在组件测试工具中反映出这种结构。<code>ComponentHarness</code> 上的每个 <code>locatorFor</code> 族方法都有一个备用签名，可以用来定位子级测试工具而不是元素。</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>locatorFor&lt;T extends ComponentHarness&gt;(harnessType: ComponentHarnessConstructor&lt;T&gt;): () =&gt; Promise&lt;T&gt;</code></td>
-<td>Creates a function that returns a <code>Promise</code> for the first harness matching the given harness type when called. If no matching harness is found, the <code>Promise</code> rejects.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="b2b2qx6wd1dtzjibbn9ba6ikd">创建一个函数，该函数返回一个 
+<code>Promise</code>，当调用时，该 
+<code>Promise</code> 会求解为第一个匹配给定工具类型（harness type）的工具。如果未找到匹配的工具，则该 
+<code>Promise</code> 会被拒绝。</td>
 </tr>
 <tr>
 <td><code>locatorForOptional&lt;T extends ComponentHarness&gt;(harnessType: ComponentHarnessConstructor&lt;T&gt;): () =&gt; Promise&lt;T | null&gt;</code></td>
-<td>Creates a function that returns a <code>Promise</code> for the first harness matching the given harness type when called. If no matching harness is found, the <code>Promise</code> is resolved with <code>null</code>.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="91dai09x4zir6wtl5414huvp9">创建一个函数，该函数返回一个 
+<code>Promise</code>，当调用时，该 
+<code>Promise</code> 会求解为第一个匹配给定工具类型（harness type）的工具。如果未找到匹配的工具，则该 
+<code>Promise</code> 会求解为 
+<code>null</code>。</td>
 </tr>
 <tr>
 <td><code>locatorForAll&lt;T extends ComponentHarness&gt;(harnessType: ComponentHarnessConstructor&lt;T&gt;): () =&gt; Promise&lt;T[]&gt;</code></td>
-<td>Creates a function that returns a <code>Promise</code> for a list of all harnesses matching the given harness type when called.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dzj8wuobwob8qn9rdnbji56g4">创建一个函数，该函数返回一个 
+<code>Promise</code>，当调用时，该 
+<code>Promise</code> 会求解为一个包含所有匹配给定工具类型（harness type）的工具的列表。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="clqas46f11e7ghqcjuc9hqos5">例如，考虑使用上面演示过的弹出菜单来构建菜单：</p>
@@ -388,28 +421,41 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 }
 </code></pre>
 
-        <h4 id="filtering-harness-instances-with-harnesspredicate" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ckl3x4r99tskl3vxt1iy0b8ha"><span header-link="filtering-harness-instances-with-harnesspredicate"></span>使用 <code>HarnessPredicate</code> 过滤测试工具实例</h4>
+        <h4 id="filtering-harness-instances-with-harnesspredicate" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ckl3x4r99tskl3vxt1iy0b8ha">使用 <code>HarnessPredicate</code> 过滤测试工具实例</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="b0xhi8fj1vt1p2l7nrxqbckz2">当一个页面包含特定组件的多个实例时，你可能需要根据该组件的某些属性进行过滤，以得到一个特定的组件实例。例如，你可能想要一个带有特定文本的按钮，或一个带有特定 ID 的菜单。<code>HarnessPredicate</code> 可以为 <code>ComponentHarness</code> 的子类按一定的标准捕获它们。虽然测试作者也能手动构建 <code>HarnessPredicate</code> 实例，但 <code>ComponentHarness</code> 子类提供了一个辅助方法来为常用的过滤器构造谓词，这更容易。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1ots0cby9l8btuc0qk9in6ucq">建议在每个 <code>ComponentHarness</code> 子类的 <code>with</code> 方法中提供这个辅助方法，它返回该类的 <code>HarnessPredicate</code>。这让测试作者可以编写易于理解的代码，例如 <code>loader.getHarness(MyMenuHarness.with({selector: '#menu1'}))</code>。除了标准的 <code>selector</code> 和 <code>ancestor</code> 选项之外，<code>with</code> 方法还应该添加对特定的子类有意义的其他选项。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3dxyve3cfs3z0p27nm28snc4x">需要添加其他选项的测试工具应该根据需要扩展 <code>BaseHarnessFilters</code> 接口和其它可选属性。<code>HarnessPredicate</code> 为添加选项提供了一些便利方法。</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>static stringMatches(s: string | Promise&lt;string&gt;, pattern: string | RegExp): Promise&lt;boolean&gt;</code></td>
-<td>Compares a string or <code>Promise</code> of a string against a <code>string</code> or <code>RegExp</code> and returns a boolean <code>Promise</code> indicating whether it matches.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="70e8yxe3ldmisprvvegs11qw6">将字符串或字符串的 
+<code>Promise</code> 与 
+<code>string</code> 或 
+<code>RegExp</code> 进行比较，并返回一个布尔 
+<code>Promise</code>，指示其是否匹配。</td>
 </tr>
 <tr>
 <td><code>addOption&lt;O&gt;(name: string, option: O | undefined, predicate: (harness: T, option: O) =&gt; Promise&lt;boolean&gt;): HarnessPredicate&lt;T&gt;</code></td>
-<td>Creates a new <code>HarnessPredicate</code> that enforces all of the conditions of the current one, plus the new constraint specified by the <code>predicate</code> parameter. If the <code>option</code> parameter is <code>undefined</code> the <code>predicate</code> is considered to be always true.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="94061algut2rbzj6v9b7ywugi">创建一个新的 
+<code>HarnessPredicate</code>，它强制执行当前 
+<code>HarnessPredicate</code> 的所有条件，以及 
+<code>predicate</code> 参数指定的新的约束。如果 
+<code>option</code> 参数为 
+<code>undefined</code>，则 
+<code>predicate</code> 被认为始终为真。</td>
 </tr>
 <tr>
 <td><code>add(description: string, predicate: (harness: T) =&gt; Promise&lt;boolean&gt;): HarnessPredicate&lt;T&gt;</code></td>
-<td>Creates a new <code>HarnessPredicate</code> that enforces all of the conditions of the current one, plus the new constraint specified by the <code>predicate</code> parameter.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="528xsjwkjtrxr0meiw3jvo889">创建一个新的 
+<code>HarnessPredicate</code>，它强制执行当前 
+<code>HarnessPredicate</code> 的所有条件，以及 
+<code>predicate</code> 参数指定的新的约束。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="e5mx8rbseoyoemeaxwb8dyiiq">例如，当使用菜单时，根据触发器文本添加一种过滤方式并根据文本来过滤菜单项会很有用：</p>
@@ -475,26 +521,39 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 }
 </code></pre>
 
-        <h4 id="creating-a-harnessloader-for-an-element" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="40rvimi9ku5o5u06cs0yhifu6"><span header-link="creating-a-harnessloader-for-an-element"></span>为元素创建一个 <code>HarnessLoader</code></h4>
+        <h4 id="creating-a-harnessloader-for-an-element" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="40rvimi9ku5o5u06cs0yhifu6">为元素创建一个 <code>HarnessLoader</code></h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3gzj01gvz840e54xtwqtqklxi">有些组件会使用 <code>&lt;ng-content&gt;</code> 把其他内容投影到组件的模板中。当为这样的组件创建一个测试工具时，你可以给这个测试工具用户提供一个 <code>&lt;ng-content&gt;</code> 容器范围内的 <code>HarnessLoader</code> 实例。这可以让测试工具的用户能够为任何作为内容传进来的组件加载额外的测试工具。<code>ComponentHarness</code> 有几个 API 可以用来为这种情况创建 <code>HarnessLoader</code> 实例。</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>harnessLoaderFor(selector: string): Promise&lt;HarnessLoader&gt;</code></td>
-<td>Gets a <code>Promise</code> for a <code>HarnessLoader</code> rooted at the first element matching the given selector, if no element is found the <code>Promise</code> rejects.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3i43ynk5ie3c5ilhtggkw059e">获取一个 
+<code>Promise</code>，该 
+<code>Promise</code> 会求解为一个以第一个匹配给定选择器的元素为根的 
+<code>HarnessLoader</code>，如果未找到元素，则该 
+<code>Promise</code> 会被拒绝。</td>
 </tr>
 <tr>
 <td><code>harnessLoaderForOptional(selector: string): Promise&lt;HarnessLoader | null&gt;</code></td>
-<td>Gets a <code>Promise</code> for a <code>HarnessLoader</code> rooted at the first element matching the given selector, if no element is found the <code>Promise</code> resolves to <code>null</code>.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5nsl47jbjj9s8k3x2jt1de4nd">获取一个 
+<code>Promise</code>，该 
+<code>Promise</code> 会求解为一个以第一个匹配给定选择器的元素为根的 
+<code>HarnessLoader</code>，如果未找到元素，则该 
+<code>Promise</code> 会求解为 
+<code>null</code>。</td>
 </tr>
 <tr>
 <td><code>harnessLoaderForAll(selector: string): Promise&lt;HarnessLoader[]&gt;</code></td>
-<td>Gets a <code>Promise</code> for a list of <code>HarnessLoader</code>, one rooted at each element matching the given selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="72dgod8zrki1iep7co99lxxsq">获取一个 
+<code>Promise</code>，该 
+<code>Promise</code> 会求解为一个 
+<code>HarnessLoader</code> 列表，每个 
+<code>HarnessLoader</code> 都以匹配给定选择器的每个元素为根。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2popc0v1lc513tfvq5rkrxsxc">前面讨论过的 <code>MyPopup</code> 组件就是一个很好的例子，它包含了一些用户可能希望为其加载测试工具的内容。
@@ -504,20 +563,21 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 }
 </code></pre>
 
-        <h4 id="accessing-elements-outside-of-the-components-host-element" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3uinr9xmbvj9320c2e1gw89t"><span header-link="accessing-elements-outside-of-the-components-host-element"></span>访问该组件的宿主元素之外的元素</h4>
+        <h4 id="accessing-elements-outside-of-the-components-host-element" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3uinr9xmbvj9320c2e1gw89t">访问该组件的宿主元素之外的元素</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9meqa2l1l1x8xf2z6dzgx9tru">有时组件工具可能需要访问相应组件的宿主元素之外的元素。那些使用 <a href="https://material.angular.cn/cdk/overlay/overview">CDK 浮层</a>的组件就是这样的例子。
 组件的宿主元素外面的 CDK 浮层会创建一个直接附着在 body 上的元素。在这个例子中，<code>ComponentHarness</code> 提供了一个方法，可以用来获取根元素的 <code>LocatorFactory</code>。
 此 <code>LocatorFactory</code> 支持大多数与 <code>ComponentHarness</code> 基类相同的 API，然后可以用来相对于该文档的根元素进行查询。</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>documentRootLocatorFactory(): LocatorFactory</code></td>
-<td>Creates a <code>LocatorFactory</code> rooted at the document's root element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dufg1mj9dn2e80wy2d1wv1oe6">创建一个以文档根元素为根的 
+<code>LocatorFactory</code>。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5owinnscvugkq4e78edezpurb">假设 <code>MyPopup</code> 组件使用了 CDK 浮层作为弹出内容，而不是它自己模板中的一个元素。在这种情况下，<code>MyPopupHarness</code> 可能必须通过 <code>documentRootLocatorFactory()</code> 访问其内容元素：</p>
@@ -532,7 +592,7 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 }
 </code></pre>
 
-        <h4 id="waiting-for-asynchronous-tasks" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2lp401qeloxn1346bzjh523lm"><span header-link="waiting-for-asynchronous-tasks"></span>等待异步任务</h4>
+        <h4 id="waiting-for-asynchronous-tasks" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2lp401qeloxn1346bzjh523lm">等待异步任务</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9z1cvwx94dv00zpx0hibrdmfv"><code>TestElement</code> 上的方法会自动触发 Angular 的变更检测，并等待 <code>NgZone</code> 中的任务，所以在大多数情况下，这些方法不需要特别的工作来让线程作者等待异步任务。
 然而，在一些边缘情况下这可能还不够。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2fo60pitoui1bnr2zea55lovm">在某些情况下，在完全刷新动画事件之前，Angular 动画可能还需要第二个变更检测循环和等待 <code>NgZone</code> 进入稳定状态。
@@ -543,51 +603,55 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>forceStabilize(): Promise&lt;void&gt;</code></td>
-<td>Explicitly runs a round of change detection in Angular and waits for <code>NgZone</code> to stabilize.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="63bsd0sjuxd51qj6ywgsboxsj">在 Angular 中显式地运行一轮变更检测，并等待 
+<code>NgZone</code> 稳定。</td>
 </tr>
 <tr>
 <td><code>waitForTasksOutsideAngular(): Promise&lt;void&gt;</code></td>
-<td>Waits for tasks scheduled outside of <code>NgZone</code> to complete.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3e0p0z96kql3maploraeyjqp6">等待在 
+<code>NgZone</code> 之外安排的任务完成。</td>
 </tr>
 </tbody></table>
 
-        <h3 id="api-for-harness-environment-authors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="17rszpcrstvx5h37hf9pt2uiu"><span header-link="api-for-harness-environment-authors"></span>测试工具环境作者的 API</h3>
+        <h3 id="api-for-harness-environment-authors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="17rszpcrstvx5h37hf9pt2uiu">测试工具环境作者的 API</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="81f6tt7ta98kukaf71kw5tjku">测试工具环境作者是那些希望在其他测试环境中增加使用组件测试工具支持的开发人员。开箱即用的 Angular CDK 组件测试工具可用于 Selenium WebDriver E2E 测试和 Karma 单元测试。开发人员可以创建 <code>TestElement</code> 和 <code>HarnessEnvironment</code> 的自定义实现来支持更多环境。</p>
 
-        <h4 id="creating-a-testelement-implementation-for-the-environment" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9773yserulf6ym4n6rp6605ou"><span header-link="creating-a-testelement-implementation-for-the-environment"></span>为此环境创建一个 <code>TestElement</code></h4>
+        <h4 id="creating-a-testelement-implementation-for-the-environment" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9773yserulf6ym4n6rp6605ou">为此环境创建一个 <code>TestElement</code></h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="7sn7hfd72gi0qu29heujw0hyx">添加对新测试环境的支持的第一步是创建一个 <code>TestElement</code> 实现。<code>TestElement</code> 接口用作 DOM 元素的环境无关表示形式。它能让测试工具与 DOM 元素进行交互，而不用管底层环境如何。由于某些环境不支持与 DOM 元素的同步交互（比如 webdriver），因此所有的 <code>TestElement</code> 方法都是异步的，返回一个包含该操作结果的 <code>Promise</code></p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>blur(): Promise&lt;void&gt;</code></td>
-<td>Blurs the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4rqeym2pjd0vvxtqra94b6w4t">使元素失去焦点。</td>
 </tr>
 <tr>
 <td><code>clear(): Promise&lt;void&gt;</code></td>
-<td>Clears the text from an element (only applies for <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code>).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="76tn6poirh59bglohafeo5qu5">从元素中清除文本（仅适用于 
+<code>&lt;input&gt;</code> 和 
+<code>&lt;textarea&gt;</code>）。</td>
 </tr>
 <tr>
 <td><code>click(relativeX?: number, relativeY?: number): Promise&lt;void&gt;</code></td>
-<td>Clicks an element at a point relative to it's top-left corner.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="6o4xyiak9ko77eugifx1f0azw">相对于元素左上角点击元素。</td>
 </tr>
 <tr>
 <td><code>focus(): Promise&lt;void&gt;</code></td>
-<td>Focuses the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4x78w8uig4s0crzevfpf1pdr8">使元素获得焦点。</td>
 </tr>
 <tr>
 <td><code>getCssValue(property: string): Promise&lt;string&gt;</code></td>
-<td>Gets the computed CSS value of the given property for the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4s5s8n53259ibqu8zkl6q9wwl">获取元素的给定属性的计算 CSS 值。</td>
 </tr>
 <tr>
 <td><code>hover(): Promise&lt;void&gt;</code></td>
@@ -595,19 +659,19 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 </tr>
 <tr>
 <td><code>sendKeys(...keys: (string | TestKey)[]): Promise&lt;void&gt;</code></td>
-<td>Sends a sequence of key events to the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ro50v587rv65tli9f4d6yywx">向元素发送一系列按键事件。</td>
 </tr>
 <tr>
 <td><code>sendKeys(modifiers: ModifierKeys, ...keys: (string | TestKey)[]): Promise&lt;void&gt;</code></td>
-<td>Sends a sequence of key events to the element, while holding a set of modifier keys.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="wzrj8x7nlof7egvvtfabz74h">向元素发送一系列按键事件，同时按住一组修饰键。</td>
 </tr>
 <tr>
 <td><code>text(): Promise&lt;string&gt;</code></td>
-<td>Gets the text content of the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="9jymyss9zausj56mj000hz7ma">获取元素的文本内容。</td>
 </tr>
 <tr>
 <td><code>getAttribute(name: string): Promise&lt;string | null&gt;</code></td>
-<td>Gets the value of the given HTML attribute for the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4uy75eqju9axdg9gz1oi09xw4">获取元素的给定 HTML 属性的值。</td>
 </tr>
 <tr>
 <td><code>hasClass(name: string): Promise&lt;boolean&gt;</code></td>
@@ -619,11 +683,11 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 </tr>
 <tr>
 <td><code>getProperty(name: string): Promise&lt;any&gt;</code></td>
-<td>Gets the value of the given property for the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4vuqacc1u1sr60zt41k5j38t6">获取元素的给定属性的值。</td>
 </tr>
 <tr>
 <td><code>matchesSelector(selector: string): Promise&lt;boolean&gt;</code></td>
-<td>Checks whether the given selector matches the element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="7aro92c1j35xu2zr7h1gtyp9e">检查给定的选择器是否匹配元素。</td>
 </tr>
 <tr>
 <td><code>setInputValue(value: string): Promise&lt;void&gt;;</code></td>
@@ -641,7 +705,7 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6gmrx3nb3vglzciq39bayxvyy"><code>TestElement</code> 接口包含类似 <code>HTMLElement</code> 方法的大部分方法。在大多数测试环境中都存在类似的方法，这使得实现这些方法相当简单。使用 <code>sendKeys</code> 方法时要注意的一个重要区别是，<code>TestKey</code> 枚举中的键码可能与测试环境中使用的键码有所不同。环境作者应该坚持从 <code>TestKey</code> 代码映射到特定测试环境中的代码。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4ms7oiy7stvo8o8v9majx124m">Angular CDK 中的 <a href="https://github.com/angular/components/blob/main/src/cdk/testing/testbed/unit-test-element.ts#L57"><code>UnitTestElement</code></a> 和 <a href="https://github.com/angular/components/blob/main/src/cdk/testing/selenium-webdriver/selenium-web-driver-element.ts#L22"><code>SeleniumWebDriverElement</code></a> 实现就是实现这个接口的好例子。</p>
 
-        <h4 id="creating-a-harnessenvironment-implementation-for-the-environment" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5mmqb1ccj3rfanl3lyvfzq6o7"><span header-link="creating-a-harnessenvironment-implementation-for-the-environment"></span>为此环境创建一个 <code>HarnessEnvironment</code></h4>
+        <h4 id="creating-a-harnessenvironment-implementation-for-the-environment" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5mmqb1ccj3rfanl3lyvfzq6o7">为此环境创建一个 <code>HarnessEnvironment</code></h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="79jkd611doryrhw3uwt5g6gbt">测试作者使用 <code>HarnessEnvironemnt</code> 来创建用于测试的组件工具实例。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="es31hk86yep87zz183vy2lf7i"><code>HarnessEnvironment</code> 是一个抽象类，必须进行扩展才能为新环境创建一个具体的子类。在支持新的测试环境时，你必须创建一个 <code>HarnessEnvironment</code> 子类，为所有抽象成员添加具体的实现。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6fplyg661k20nbzwa71cdeef6">你会发现 <code>HarnessEnvironment</code> 有一个泛型类型参数：<code>HarnessEnvironment&lt;E&gt;</code>。这个参数 <code>E</code> 就表示环境的原始元素类型。例如，这个参数在单元测试环境下是 <code>Element</code>。</p>
@@ -649,40 +713,52 @@ it(<span class="hljs-string">'loads harnesses'</span>, <span class="hljs-keyword
 <table>
 <thead>
 <tr>
-<th>Method</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4ig4whm19kkyq7jxpgodpcmaw">方法</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>abstract getDocumentRoot(): E</code></td>
-<td>Gets the root element for the environment (e.g. <code>document.body</code>).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="687v01v30y1w62fjqd5fa5can">获取环境的根元素（例如 
+<code>document.body</code>）。</td>
 </tr>
 <tr>
 <td><code>abstract createTestElement(element: E): TestElement</code></td>
-<td>Creates a <code>TestElement</code> for the given raw element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="a8b1z46bxuoyevj36d8a15ja2">为给定的原始元素创建一个 
+<code>TestElement</code>。</td>
 </tr>
 <tr>
 <td><code>abstract createEnvironment(element: E): HarnessEnvironment</code></td>
-<td>Creates a <code>HarnessEnvironment</code> rooted at the given raw element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5bmc3zsh66t0troel19pxgfgb">为给定的原始元素创建一个 
+<code>HarnessEnvironment</code>。</td>
 </tr>
 <tr>
 <td><code>abstract getAllRawElements(selector: string): Promise&lt;E[]&gt;</code></td>
-<td>Gets all of the raw elements under the root element of the environment matching the given selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1y7soy9fpchg6zp3hhvaarrdk">获取环境根元素下所有匹配给定选择器的原始元素。</td>
 </tr>
 <tr>
 <td><code>abstract forceStabilize(): Promise&lt;void&gt;</code></td>
-<td>Gets a <code>Promise</code> that resolves when the <code>NgZone</code> is stable. Additionally, if applicable, tells <code>NgZone</code> to stabilize (e.g. calling <code>flush()</code> in a <code>fakeAsync</code> test).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="36877hfxsvby1jo3h4jiopf6">获取一个 
+<code>Promise</code>，该 
+<code>Promise</code> 在 
+<code>NgZone</code> 稳定时求解。此外，如果适用，则告诉 
+<code>NgZone</code> 稳定（例如，在 
+<code>fakeAsync</code> 测试中调用 
+<code>flush()</code>）。</td>
 </tr>
 <tr>
 <td><code>abstract waitForTasksOutsideAngular(): Promise&lt;void&gt;</code></td>
-<td>Gets a <code>Promise</code> that resolves when the parent zone of <code>NgZone</code> is stable.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="6a7jzi080giie61krwf3ny4z4">获取一个 
+<code>Promise</code>，该 
+<code>Promise</code> 在 
+<code>NgZone</code> 的父区域稳定时求解。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="884ay4kqul71s7rtaek80wqzl">除了实现所缺的方法之外，这个类还应该为测试作者提供一种获取 <code>ComponentHarness</code> 实例的方法。
 推荐的方法是具有一个受保护的构造函数，并提供一个名为 <code>loader</code> 的静态方法来返回一个 <code>HarnessLoader</code> 的实例。这让测试作者可以编写如下代码：<code>SomeHarnessEnvironment.loader().getHarness(...)</code>。根据特定环境的需要，该类可以提供几种不同的静态方法，或者要求传递参数。（例如，<code>TestbedHarnessEnvironment</code> 的 <code>loader</code> 方法接受了一个 <code>ComponentFixture</code>，该类还提供了另外一些名为 <code>documentRootLoader</code> 和 <code>harnessForFixture</code> 静态方法）。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="62o2e3sydcv5huw6bp5gvx9ws">Angular CDK 中的 <a href="https://github.com/angular/components/blob/main/src/cdk/testing/testbed/testbed-harness-environment.ts#L20"><code>TestbedHarnessEnvironment</code></a> 和 <a href="https://github.com/angular/components/blob/main/src/cdk/testing/selenium-webdriver/selenium-web-driver-harness-environment.ts#L71"><code>SeleniumWebDriverHarnessEnvironment</code></a> 的实现就是很好的例子。</p>
 
-        <h4 id="handling-auto-change-detection-status" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1jzvwzpxjyv9x0gj5zbdi6d29"><span header-link="handling-auto-change-detection-status"></span>处理自动变更检测状态</h4>
+        <h4 id="handling-auto-change-detection-status" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1jzvwzpxjyv9x0gj5zbdi6d29">处理自动变更检测状态</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3jx78xu79sunlbpyi1sqjau3o">为了支持 <code>manualChangeDetection</code> 和 <code>parallel</code> API，你的环境应该为自动变更检测状态安装一个处理器。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="bby1foltewnubvsoljvuoctbu">当你的环境想要开始处理自动变更检测的状态时，可以调用 <code>handleAutoChangeDetectionStatus(handler)</code>。此处理器函数会要求一个 <code>AutoChangeDetectionStatus</code> 参数，其中有两个属性：</p>
 <ul>

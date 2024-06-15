@@ -7,7 +7,7 @@
 <p data-ng_translator_product="100" data-ng_translator_ref_id="e0iq30dggc4w713rw7mwu1nkh">默认情况下，当 <code>matRipple</code> 指令的宿主元素收到鼠标或触摸事件时，就会激活一个涟漪。当按下时，一个涟漪就会从接触点出现并逐渐消失，其辐射范围会覆盖宿主元件。当释放鼠标或结束触摸时，其涟漪就会淡出。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8rtxvm42fi97y70d4mplch048">还可以获得对 MatRipple 指令的引用并调用其 <code>launch</code> 方法，以编程的方式触发涟漪。</p>
 
-        <h3 id="ripple-trigger" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="40y54xk76waeetjfuuj4bbpup"><span header-link="ripple-trigger"></span>涟漪触发</h3>
+        <h3 id="ripple-trigger" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="40y54xk76waeetjfuuj4bbpup">涟漪触发</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="268ps5jkrrkyzivap1cda8omu">默认情况下，当指令的宿主元素有交互时，涟漪会淡入。在某些情况下，开发人员可能希望在与<em>另一个</em>元素的交互中显示涟漪，但仍希望把这些涟漪在特定的位置播放。要做到这一点，可以为 <code>matRippleTrigger</code> 选项指定那个元素的 <code>HTMLElement</code> 引用。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">matRipple</span> [<span class="hljs-attr">matRippleTrigger</span>]=<span class="hljs-string">"trigger"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-ripple-container"</span>&gt;</span>
@@ -18,7 +18,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-        <h3 id="manual-ripples" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4sfd8r2ihhx8fx79xcgt3qrsi"><span header-link="manual-ripples"></span>手动涟漪</h3>
+        <h3 id="manual-ripples" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4sfd8r2ihhx8fx79xcgt3qrsi">手动涟漪</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="apb73hx3fk14mavsufu32rzng">通过引用 <code>MatRipple</code> 指令，可以用编程的方式显示涟漪。</p>
 <pre><code class="language-ts"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComponent</span> </span>{
 
@@ -43,7 +43,7 @@
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> rippleRef = <span class="hljs-built_in">this</span>.ripple.launch(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, {<span class="hljs-attr">persistent</span>: <span class="hljs-literal">true</span>});
 </code></pre>
 
-        <h3 id="global-options" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ablcglfv26do5b6g1ffx4z9tg"><span header-link="global-options"></span>全局选项</h3>
+        <h3 id="global-options" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ablcglfv26do5b6g1ffx4z9tg">全局选项</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3bddliwbocawr4vw7uik7b8i8">开发人员可以为应用中的所有涟漪指定一些选项。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9vl3587fum75a4m63tzmcxvo6">可以调节涟漪的速度，也可以全局禁用它。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3uluuchz0wi6acww3cdan7dx3">可以通过设置 <code>MAT_RIPPLE_GLOBAL_OPTIONS</code> 提供符来指定全局的涟漪选项。</p>
@@ -63,7 +63,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="33wxswjcvvwmwfh2sfdyc5fhi">所有可用的全局选项都能在 <code>RippleGlobalOptions</code> 接口中找到。</p>
 
-        <h3 id="disabling-animation" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="13pynarpdidnzr25hye453ahq"><span header-link="disabling-animation"></span>禁用动画</h3>
+        <h3 id="disabling-animation" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="13pynarpdidnzr25hye453ahq">禁用动画</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5ca65uky7xbzlruzgyl9r83hz">使用全局选项 <code>animation</code> 可以禁用涟漪的动画。如果 <code>enterDuration</code> 和 <code>exitDuration</code> 被设置为 <code>0</code>，那么当出现涟漪时就不会产生任何动画。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1tmhy37h2dledl6j8q8v93ajy">这在与全局选项 <code>disabled</code> 共同出现的时候特别有用，因为全局禁用涟漪不会影响焦点指示器的涟漪效果。如果出于性能原因，有人仍要禁用这些涟漪，那么可以把持续时间设置为 <code>0</code>，以消除涟漪效果。</p>
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> globalRippleConfig: RippleGlobalOptions = {
@@ -76,7 +76,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6ntmaht30f474qdnee1azirwe"><strong>注意</strong>：如果正在使用 <code>NoopAnimationsModule</code> 涟漪也不会有动画。这意味着不必考虑 <code>animation</code> 配置中的持续时间。</p>
 
-        <h3 id="animation-behavior" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="djcg5d8oghh4f7mj392ncrbii"><span header-link="animation-behavior"></span>动画行为</h3>
+        <h3 id="animation-behavior" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="djcg5d8oghh4f7mj392ncrbii">动画行为</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4b93fzwrsagqinze3c1ma0i1v">Material Design 规范中所展示的涟漪淡出有两种不同的动画行为。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="9medoh5t3rhpg0dfems2i29rk">默认情况下，如果释放鼠标或触摸并且已完成进场动画，那么所有涟漪都会淡出。另一种可能的行为，就是在放开鼠标或结束触摸时，涟漪也会立即淡出，正如规范中所要求的那样。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ekt8vmsy1poxi1nh2zw8g3goy">在某些情况下，开发人员可能更喜欢覆盖默认行为，并希望 Angular Material 也这样做。这时可以通过指定全局选项 <code>terminateOnPointerUp</code> 来激活第二种行为。</p>
@@ -85,7 +85,7 @@
 };
 </code></pre>
 
-        <h3 id="updating-global-options-at-runtime" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2cqkz2y5lgzysglpta79ousmn"><span header-link="updating-global-options-at-runtime"></span>在运行时更新全局选项</h3>
+        <h3 id="updating-global-options-at-runtime" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2cqkz2y5lgzysglpta79ousmn">在运行时更新全局选项</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3mtkan37b2p9zkt57xi8lccsf">要想在运行时更改全局的 ripple 选项，只需要注入 <code>MAT_RIPPLE_GLOBAL_OPTIONS</code> 提供者并更新所需的选项。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="adct1n9ginbgi8yqhj3yg1es">有多种注入全局选项的方式。为了便于在运行时注入和更新选项，我们建议你创建一个实现 <code>RippleGlobalOptions</code> 接口的服务。</p>
 <pre><code class="language-ts"><span class="hljs-meta">@Injectable</span>({<span class="hljs-attr">providedIn</span>: <span class="hljs-string">'root'</span>})

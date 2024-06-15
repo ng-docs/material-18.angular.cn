@@ -1,7 +1,7 @@
 <div class="docs-markdown"><p data-ng_translator_product="100" data-ng_translator_ref_id="7xly2ve6ybc10uw7y25hiz3ue"><code>&lt;cdk-tree&gt;</code> 让开发人员能够为结构化数据构建自定义的树型体验。<code>&lt;cdk-tree&gt;</code> 为构建其它特性提供了基础，比如对树进行过滤。对于 Material Design 风格的树，参见基于 <code>&lt;cdk-tree&gt;</code> 构建的 <code>&lt;mat-tree&gt;</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="azw3cj9d64bwwlgiua5ru4js9">树有两种类型：扁平树和嵌套树。这两种树的 DOM 结构是不同的。</p>
 
-        <h4 id="flat-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cp10chopmy3fziusutz0hnclo"><span header-link="flat-tree"></span>扁平树</h4>
+        <h4 id="flat-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cp10chopmy3fziusutz0hnclo">扁平树</h4>
       <div material-docs-example="cdk-tree-flat"></div>
 
 
@@ -14,7 +14,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="eizhzyqd12baw1u7w959iflis">扁平的树通常更容易设置样式和进行探查。它们对各种滚动（如无限滚动或虚拟滚动）也更友好。</p>
 
-        <h4 id="nested-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="477l6x7q579rfynkgn6lwbq20"><span header-link="nested-tree"></span>嵌套树</h4>
+        <h4 id="nested-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="477l6x7q579rfynkgn6lwbq20">嵌套树</h4>
       <div material-docs-example="cdk-tree-nested"></div>
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="56hh2wvi1q896jl5p8loc4e3c">对于嵌套树，在 DOM 树中的子节点会放在父节点内部。父节点包含一个用于投射（project）子节点内容的节点出口。</p>
@@ -28,9 +28,9 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="3t67y0daz8hke62juff6jzzcx">当需要以可视的方式来表示层次关系时，用嵌套树会比用扁平树更容易。</p>
 
-        <h3 id="using-the-cdk-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d06xfto8m66put64uadeevdy3"><span header-link="using-the-cdk-tree"></span>使用 CDK 树</h3>
+        <h3 id="using-the-cdk-tree" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d06xfto8m66put64uadeevdy3">使用 CDK 树</h3>
       
-        <h4 id="writing-your-tree-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="a63z0kasbbp5vz5my3opdbvic"><span header-link="writing-your-tree-template"></span>编写你的树模板</h4>
+        <h4 id="writing-your-tree-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="a63z0kasbbp5vz5my3opdbvic">编写你的树模板</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6ezger08zu1eai0bb58wff2kv">唯一需要定义的是树节点模板。有两种类型的树节点，对于扁平树有 <code>&lt;cdk-tree-node&gt;</code>，对于嵌套树有 <code>&lt;cdk-tree-nested-node&gt;</code>。树节点的模板定义了树节点的外观、展开/折叠控件以及用来嵌套子节点的结构。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ejimc6iuh38yxj479nmeu763p">任何带 <code>cdkNodeDef</code> 的元素都会指定一个节点定义。该指令会导出要在节点模板中的各个绑定所需的节点数据。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span>&gt;</span>
@@ -38,10 +38,10 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
 </code></pre>
 
-        <h5 id="flat-tree-node-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="95wxd45q4xz75pbfsrygvkdih"><span header-link="flat-tree-node-template"></span>扁平树节点模板</h5>
+        <h5 id="flat-tree-node-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="95wxd45q4xz75pbfsrygvkdih">扁平树节点模板</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="19zpu87osm9cmmwsg8901i74j">扁平树使用每个节点的 <code>level</code> 来渲染节点的层次结构。指定节点的“缩进（indent）”是通过根据每个节点的级别为其增加间距来完成的。可以通过应用 <code>cdkNodePadding</code> 指令或自定义样式来添加间距。</p>
 
-        <h5 id="nested-tree-node-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3m1ihmhn51xbug36e940rdbvb"><span header-link="nested-tree-node-template"></span>嵌套树节点模板</h5>
+        <h5 id="nested-tree-node-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3m1ihmhn51xbug36e940rdbvb">嵌套树节点模板</h5>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="bc5ana4tlxjjfic4ibakhm0xb">当使用嵌套树节点时，该节点模板中必须包含一个 <code>cdkTreeNodeOutlet</code>，用于标记该节点的子节点要渲染到的位置。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-nested-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span>&gt;</span>
   {{node.value}}
@@ -49,7 +49,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-nested-tree-node</span>&gt;</span>
 </code></pre>
 
-        <h4 id="adding-expandcollapse" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3k41tkn6xq2kenoyytosp0d9o"><span header-link="adding-expandcollapse"></span>添加展开/折叠器</h4>
+        <h4 id="adding-expandcollapse" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3k41tkn6xq2kenoyytosp0d9o">添加展开/折叠器</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5hjrfpsnyfpcweat8hvsj6pr4">可以在这个树节点模板中添加 <code>cdkTreeNodeToggle</code> 来展开/折叠此节点。这个切换开关切换了 TreeControl 的 <code>expand</code>/<code>collapse</code> 函数，还可以把 <code>[cdkTreeNodeToggleRecursive]</code> 设置为 <code>true</code> 来递归展开/折叠某个树节点。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span> <span class="hljs-attr">cdkTreeNodeToggle</span> [<span class="hljs-attr">cdkTreeNodeToggleRecursive</span>]=<span class="hljs-string">"true"</span>&gt;</span>
     {{node.value}}
@@ -64,7 +64,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
 </code></pre>
 
-        <h4 id="padding-flat-tree-only" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="393gi09i4jx8k8txvcupjpuww"><span header-link="padding-flat-tree-only"></span>衬距（仅限扁平树）</h4>
+        <h4 id="padding-flat-tree-only" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="393gi09i4jx8k8txvcupjpuww">衬距（仅限扁平树）</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="44e010rmgc10lcotyaqqs4cvr"><code>cdkTreeNodePadding</code> 可以放在扁平树的节点模板中，以显示扁平树节点的级别信息。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span> <span class="hljs-attr">cdkNodePadding</span>&gt;</span>
   {{node.value}}
@@ -72,7 +72,7 @@
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="diyx3bowk961q5p1vdqrqdhzk">嵌套树不需要这种衬距，因为 <code>padding</code> 可以很容易地添加到 DOM 中的层次结构上。</p>
 
-        <h4 id="conditional-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6yvu94yb5mpjf67xxmje4l55"><span header-link="conditional-template"></span>条件模板</h4>
+        <h4 id="conditional-template" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6yvu94yb5mpjf67xxmje4l55">条件模板</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="d9igrcdi9u9lm58daal3bhc3q">树可以包括多个节点模板，并通过模板的 <code>when</code> 谓词为特定的数据节点选择模板。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">cdk-tree-node</span> *<span class="hljs-attr">cdkNodeDef</span>=<span class="hljs-string">"let node"</span> <span class="hljs-attr">cdkTreeNodePadding</span>&gt;</span>
   {{node.value}}
@@ -82,16 +82,16 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">cdk-tree-node</span>&gt;</span>
 </code></pre>
 
-        <h3 id="data-source" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="315wctr9cmo44g2ak1yacyw3e"><span header-link="data-source"></span>数据源</h3>
+        <h3 id="data-source" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="315wctr9cmo44g2ak1yacyw3e">数据源</h3>
       
-        <h4 id="connecting-the-tree-to-a-data-source" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3sgfnb9g4t4mr534el1ll3l5v"><span header-link="connecting-the-tree-to-a-data-source"></span>把树连接到数据源</h4>
+        <h4 id="connecting-the-tree-to-a-data-source" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3sgfnb9g4t4mr534el1ll3l5v">把树连接到数据源</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ejg48oin3vuylyxrcj7dug3cr">类似于 <code>cdk-table</code>，数据也通过 <code>DataSource</code> 提供给树。当树接收到一个 <code>DataSource</code> 时，就会调用数据源的 <code>connect()</code> 方法，该方法返回一个发出数组型数据的可观察对象。只要数据源向此流中发出数据，该树就会渲染出这些更新。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="2ruawl6st4csrh1osmvib8b1p">由于数据源提供了这个流，因此它要负责切换树的更新。这可以来源于任何事：树节点的展开状态变化了、websocket 连接、用户交互、模型更新、基于时间间隔等。</p>
 
-        <h4 id="flat-tree-1" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cp10chopmy3fziusutz0hnclo"><span header-link="flat-tree-1"></span>扁平树</h4>
+        <h4 id="flat-tree-1" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cp10chopmy3fziusutz0hnclo">扁平树</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="51357cg2buq6xkyaiv5vdb8av">扁平树的数据源要负责节点的展开/折叠事件，因为当其展开状态发生变化时，该树的数据节点也会随之变化。这些可视节点的新列表应该把当前的展开状态发送给树的组件。</p>
 
-        <h4 id="nested-tree-1" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="477l6x7q579rfynkgn6lwbq20"><span header-link="nested-tree-1"></span>嵌套树</h4>
+        <h4 id="nested-tree-1" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="477l6x7q579rfynkgn6lwbq20">嵌套树</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9s1wlcdgs11sqqroy38nagyde">嵌套树的数据源有一个选项，可让每个树节点组件处理该节点的展开/折叠事件。</p>
 
         <h5 id="trackby" class="docs-header-link">

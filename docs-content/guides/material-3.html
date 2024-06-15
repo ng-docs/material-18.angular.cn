@@ -1,51 +1,42 @@
-<div class="docs-markdown"><h1>Material 3 Theming</h1>
-        <h2 id="what-is-material-3" class="docs-header-link">
-          
-          What is Material 3
-        </h2>
-      <p><a href="https://m3.material.io/">Material 3 (M3)</a> is the latest iteration of Google's open-source design
-system, Material Design. It is the successor to <a href="https://m2.material.io/">Material 2 (M2)</a>, the
-design system which Angular Material has followed.</p>
-<p>As of v17.2.0, Angular Material includes experimental support for M3 styling in addition to M2. The
-team plans to stabilize support for M3 after a brief period in experimental in order to get feedback
-on the design and API.</p>
+<div class="docs-markdown"><h1 data-ng_translator_product="100" data-ng_translator_ref_id="2w9b1vs2owyb18vjpe7ai2ud7">Material 3 主题</h1>
+        <h2 id="what-is-material-3" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="72gxwtoz8l2hw5afsvaopdij8">什么是 Material 3</h2>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="bla2bd4waz6aqisplgjmdumtj"><a href="https://m3.material.io/">Material 3 (M3)</a> 是 Google 开源设计系统 Material Design 的最新版本。它是 
+<a href="https://m2.material.io/">Material 2 (M2)</a> 的继任者，Angular Material 一直遵循该设计系统。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="zyojiojmjcbatjamigeiwa4j">从 v17.2.0 开始，Angular Material 除了 M2 之外，还包含对 M3 样式的实验性支持。该团队计划在 M3 经过短暂的实验阶段后稳定其支持，以便收集有关设计和 API 的反馈。</p>
 
-        <h2 id="how-to-use-material-3-in-your-app" class="docs-header-link">
-          
-          How to use Material 3 in your app
-        </h2>
-      <p>M3 is implemented in Angular Material as an alternate Sass theme for the same set of Angular
-Material components already used by many apps. To use M3 with Angular Material, create your theme
-using the <code>define-theme</code> function from <code>@angular/material-experimental</code>, as opposed to the
-<code>define-light-theme</code> or <code>define-dark-theme</code> from <code>@angular/material</code> that are used to create M2
-themes.</p>
+        <h2 id="how-to-use-material-3-in-your-app" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ciaojk1gr6bsv3pq32o836d03">如何在你的应用中使用 Material 3</h2>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="86rzrmsiauy6qpqahkd6rs4r0">M3 在 Angular Material 中实现为一组备用 Sass 主题，这些主题与许多应用中使用的相同 Angular Material 组件集相同。要在 Angular Material 中使用 M3，请使用 
+<code>@angular/material-experimental</code> 中的 
+<code>define-theme</code> 函数创建你的主题，而不是使用 
+<code>@angular/material</code> 中的 
+<code>define-light-theme</code> 或 
+<code>define-dark-theme</code> 来创建 M2 主题。</p>
 
-        <h3 id="defining-your-theme" class="docs-header-link">
-          
-          Defining your theme
-        </h3>
-      <p>The simplest usage of the API, <code>$theme: matx.define-theme()</code> defines a theme with default values.
-However, like its M2 counterparts, <code>define-theme</code> allows you to configure the appearance of your
-Angular Material app along three theming dimensions: color, typography, and density, by passing a
-theme configuration object. The configuration object may have the following properties.</p>
+        <h3 id="defining-your-theme" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1248vgdl13cjseb92zam5c38o">定义你的主题</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="13gs1yav5am58jlwfs56f38kp">API 的最简单用法 
+<code>$theme: matx.define-theme()</code> 定义了一个具有默认值的主题。 但是，与它的 M2 对应项一样，
+<code>define-theme</code> 允许你通过传递一个主题配置对象来配置 Angular Material 应用的三个主题维度：颜色、排版和密度。配置对象可以具有以下属性。</p>
 <table>
 <thead>
 <tr>
-<th>Property</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="5dkddoxcqk28ajo52wkpdu2by">属性</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>color</code></td>
-<td>[Optional] A map of color options. See <a href="#customizing-your-colors">customizing your colors</a> for details.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8sg6ueg0ymhbdmt18j3t97b98">[可选] 颜色选项的映射表。有关详细信息，请参阅 
+<a href="#customizing-your-colors">自定义你的颜色</a>。</td>
 </tr>
 <tr>
 <td><code>typography</code></td>
-<td>[Optional] A map of color options. See <a href="#customizing-your-typography">customizing your typography</a> for details.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="abivy0lntd2ad1xlsueke5w2b">[可选] 颜色选项的映射表。有关详细信息，请参阅 
+<a href="#customizing-your-typography">自定义你的排版</a>。</td>
 </tr>
 <tr>
 <td><code>density</code></td>
-<td>[Optional] A map of density options. See <a href="#customizing-your-density">customizing your density</a> for details.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4ek06d0j5z9077nniihe64cyu">[可选] 密度选项的映射表。有关详细信息，请参阅 
+<a href="#customizing-your-density">自定义你的密度</a>。</td>
 </tr>
 </tbody></table>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
@@ -66,35 +57,36 @@ theme configuration object. The configuration object may have the following prop
 ));
 </code></pre>
 
-        <h4 id="customizing-your-colors" class="docs-header-link">
-          
-          Customizing your colors
-        </h4>
-      <p>The following aspects of your app's colors can be customized via the <code>color</code> property of the theme
-configuration object (see the <a href="https://m3.material.io/styles/color/roles">M3 color spec</a> to learn
-more about these terms):</p>
+        <h4 id="customizing-your-colors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3q4cljna3xlzeix6e9k3vknld">自定义你的颜色</h4>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="efonn4ilthkoqtsfczrl3njau">可以通过主题配置对象的 
+<code>color</code> 属性自定义应用颜色的以下方面（请参阅 
+<a href="https://m3.material.io/styles/color/roles">M3 颜色规范</a> 了解有关这些术语的更多信息）：</p>
 <table>
 <thead>
 <tr>
-<th>Color Property</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="dt4qa34dkjnuutfkyt6pypwgp">颜色属性</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>theme-type</code></td>
-<td>[Optional] Specifies the type of theme, <code>light</code> or <code>dark</code>.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5us4899mca4rjicz13hnkv4od">[可选] 指定主题类型，
+<code>light</code> 或 
+<code>dark</code>。</td>
 </tr>
 <tr>
 <td><code>primary</code></td>
-<td>[Optional] Specifies the palette to use for the app's primary color palette. (Note: the secondary, neutral, and neutral-variant palettes described in the M3 spec will be automatically chosen based on your primary palette, to ensure a harmonious color combination).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="gxapi07lnyprw984c7oyf4nf">[可选] 指定应用主色调调色板使用的调色板。（注意：M3 规范中描述的次要、中性、中性变体调色板将根据你的主色调自动选择，以确保和谐的色彩组合）。</td>
 </tr>
 <tr>
 <td><code>tertiary</code></td>
-<td>[Optional] Specifies the palette to use for the app's tertiary color palette.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="5qvt0er6x43w1miqo22rzlmql">[可选] 指定应用三级色调调色板使用的调色板。</td>
 </tr>
 </tbody></table>
-<p>There are a number of color palettes available in <code>@angular/material-experimental</code> that can be
-used with the <code>primary</code> and <code>tertiary</code> options:</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="5ah9srppf5a9rmw5oo8s67wug">在 
+<code>@angular/material-experimental</code> 中有许多可用的调色板，可以与 
+<code>primary</code> 和 
+<code>tertiary</code> 选项一起使用：</p>
 <ul>
 <li><code>$m3-red-palette</code></li>
 <li><code>$m3-green-palette</code></li>
@@ -111,89 +103,84 @@ used with the <code>primary</code> and <code>tertiary</code> options:</p>
 <!-- TODO(mmalerba): Illustrate palettes with example. -->
 
 
-        <h4 id="customizing-your-typography" class="docs-header-link">
-          
-          Customizing your typography
-        </h4>
-      <p>The following aspects of your app's typography can be customized via the <code>typography</code> property of
-the theme configuration object (see the
-<a href="https://m3.material.io/styles/typography/type-scale-tokens">M3 typography spec</a> to learn more about
-these terms):</p>
+        <h4 id="customizing-your-typography" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3xcyjdgot3x3mblc0vlolk85g">自定义你的排版</h4>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="epbmfreij69useh87tpro213w">可以通过主题配置对象的 
+<code>typography</code> 属性自定义应用排版的以下方面（有关这些术语的更多信息，请参阅 
+<a href="https://m3.material.io/styles/typography/type-scale-tokens">M3 排版规范</a>）：</p>
 <table>
 <thead>
 <tr>
-<th>Typography Property</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="92bmka2n4wtdihw02bklvg830">排版属性</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>plain</code></td>
-<td>[Optional] The font family to use for plain text, such as body text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cp908feki771y9nuz6c95kd5g">[可选] 用于普通文本（如正文）的字体系列。</td>
 </tr>
 <tr>
 <td><code>brand</code></td>
-<td>[Optional] The font family to use for brand text, such as headlines.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1hegnbny4t33cdl0is2vfz5ci">[可选] 用于品牌文本（如标题）的字体系列。</td>
 </tr>
 <tr>
 <td><code>bold</code></td>
-<td>[Optional] The font weight to use for bold text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2un5dv8tjqbri2yvg65qm9gxi">[可选] 用于粗体文本的字体粗细。</td>
 </tr>
 <tr>
 <td><code>medium</code></td>
-<td>[Optional] The font weight to use for medium text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dpzf1syrh8xcqy95olvblou8w">[可选] 用于中等文本的字体粗细。</td>
 </tr>
 <tr>
 <td><code>regular</code></td>
-<td>[Optional] The font weight to use for regular text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cz9d1swd9jqgva4wyt97tgi7e">[可选] 用于常规文本的字体粗细。</td>
 </tr>
 </tbody></table>
 
-        <h4 id="customizing-your-density" class="docs-header-link">
-          
-          Customizing your density
-        </h4>
-      <p>The following aspects of your app's density can be customized via the <code>density</code> property of the
-theme configuration object:</p>
+        <h4 id="customizing-your-density" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="da4md6fbb33hlquex7376bbvb">自定义你的密度</h4>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="cnao6nwoh15x88sbdo5msdyk0">可以通过主题配置对象的 
+<code>density</code> 属性自定义应用密度的以下方面：</p>
 <table>
 <thead>
 <tr>
-<th>Density Property</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="1hcknvc46ys8iyywjqmu8tkbb">密度属性</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>scale</code></td>
-<td>[Optional] The level of compactness of the components in your app, from <code>0</code> (most space) to <code>-5</code> (most compact).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="c8ngbr9sei682geq8w7eaitcj">[可选] 应用中组件的紧凑程度，从 
+<code>0</code>（最宽松）到 
+<code>-5</code>（最紧凑）。</td>
 </tr>
 </tbody></table>
 
-        <h3 id="applying-your-theme" class="docs-header-link">
-          
-          Applying your theme
-        </h3>
-      <p>Once you've created your theme, you can apply it using the same <code>-theme</code>, <code>-color</code>, <code>-typography</code>,
-<code>-density</code>, and <code>-base</code> mixins used to apply M2 themes (read more about these mixins in the
-<a href="/guide/theming#applying-a-theme-to-components">general theming guide</a>). For M3 themes, these mixins
-make some guarantees about the emitted styles. These guarantees do <em>not</em> apply when passing
-M2 themes.</p>
+        <h3 id="applying-your-theme" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2n1yrf8crrspooa3qil4rvmto">应用你的主题</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="69kgw5l29zkgnj4lihkkz62ws">创建主题后，可以使用与应用 M2 主题相同的 
+<code>-theme</code>、
+<code>-color</code>、
+<code>-typography</code>、 
+<code>-density</code> 和 
+<code>-base</code> 混合器来应用它（有关这些混合器的更多信息，请阅读 
+<a href="/guide/theming#applying-a-theme-to-components">通用主题指南</a>）。对于 M3 主题，这些混合器 对发出的样式做出了一些保证。这些保证
+<em>不</em>适用于传递 M2 主题。</p>
 <ul>
-<li>The mixins emit properties under the exact selector you specify. They will <em>not</em> add to the
-selector or increase the specificity of the rule.</li>
-<li>The mixins only emit
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS custom property declarations</a>
-(e.g. <code>--some-prop: xyz</code>). They do <em>not</em> emit any standard CSS properties such as <code>color</code>,
-<code>width</code>, etc.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="atnw11aujvp1t8ampw026g145">混合器在您指定的精确选择器下发出属性。它们
+<em>不会</em>添加到 选择器或增加规则的特异性。</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="f3zl05wzir1qbtybgyohv87xw">混合器只发出 
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS 自定义属性声明</a> （例如 
+<code>--some-prop: xyz</code>）。它们
+<em>不会</em>发出任何标准的 CSS 属性，如 
+<code>color</code>、 
+<code>width</code> 等。</li>
 </ul>
 
-        <h4 id="using-component-color-variants" class="docs-header-link">
-          
-          Using component color variants
-        </h4>
-      <p>A number of components have a <code>color</code> input property that allows developers to apply different color
-variants of the component. When using an M3 theme, this input still adds a CSS class to the
-component (e.g. <code>.mat-accent</code>). However, there are no built-in styles targeting these classes. You
-can instead apply color variants by passing the <code>$color-variant</code> option to a component's <code>-theme</code> or
-<code>-color</code> mixins.</p>
+        <h4 id="using-component-color-variants" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9dqea6zbcc2ob0zl43s6hnypl">使用组件颜色变体</h4>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="292jyewfxrja2dr1q2oz4j24d">许多组件都有一个 
+<code>color</code> 输入属性，允许开发人员应用组件的不同颜色变体。使用 M3 主题时，此输入仍然会向 组件添加一个 CSS 类（例如 
+<code>.mat-accent</code>）。但是，没有针对这些类的内置样式。你可以通过将 
+<code>$color-variant</code> 选项传递给组件的 
+<code>-theme</code> 或 
+<code>-color</code> 混合器来应用颜色变体。</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-checkbox</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tertiary-checkbox"</span> /&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tertiary-checkbox"</span>&gt;</span>
@@ -209,133 +196,186 @@ can instead apply color variants by passing the <code>$color-variant</code> opti
   <span class="hljs-keyword">@include</span> mat.checkbox-color(<span class="hljs-variable">$theme</span>, <span class="hljs-variable">$color-variant</span>: tertiary);
 }
 </code></pre>
-<p>This API is more flexible, and produces less CSS. For example, the <code>.tertiary-checkbox</code> class shown
-above can be applied to any checkbox <em>or</em> any element that contains checkboxes, to change the color
-of all checkboxes within that element.</p>
-<p>While you should prefer applying the mixins with color variants explicitly, you can alternatively
-use
-<a href="#how-to-migrate-an-app-from-material-2-to-material-3">the provided backwards compatibility mixins</a>
-that apply styles directly to the existing CSS classes (<code>mat-primary</code>, <code>mat-accent</code>, and
-<code>mat-warn</code>).</p>
-<p>The table below shows the supported <code>$color-variant</code> values for each component. (Unlisted components
-do not support any color variants.)</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="f0hkutdgxczngvzqsii8ss614">此 API 更灵活，并且生成更少的 CSS。例如，上面显示的 
+<code>.tertiary-checkbox</code> 类可以应用于任何复选框
+<em>或</em>包含复选框的任何元素，以更改该元素中所有复选框的颜色。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="8z0oysslssycr9fesj4c6n2r1">虽然你应该优先使用带有颜色变体的混合器，但你也可以选择使用 
+<a href="#how-to-migrate-an-app-from-material-2-to-material-3">提供的向后兼容混合器</a> ，它们直接将样式应用于现有的 CSS 类（
+<code>mat-primary</code>、
+<code>mat-accent</code> 和 
+<code>mat-warn</code>）。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="a3tnvbt73j8tt4zbl52o73g5v">下表显示了每个组件支持的 
+<code>$color-variant</code> 值。（未列出的组件不支持任何颜色变体。）</p>
 <table>
 <thead>
 <tr>
-<th>Component</th>
-<th>Supported <code>$color-variant</code> values</th>
-<th>Default</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="2n8tguxhs6hbmqbwyqfclvff1">组件</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="4jaotadhbtj2s73yy0y8wn2np">支持的 
+<code>$color-variant</code> 值</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="7885717akma5xjdy245prhgfb">默认</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Badge</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="43oek0a0x3jug764f6fzus7y2">徽章</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>error</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="8191h5043ul3mzdy7nxd8g880">按钮</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Button-toggle</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="d87knyetm7h3fpc415v2wfcgl">按钮切换</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>secondary</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="4pgdt8vs1hjgfxgqssmllz931">复选框</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="dr81hhmu81rtuxojgyai41ii2">纸片</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>secondary</code></td>
 </tr>
 <tr>
-<td>Datepicker</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3gf03e0h3zf6d6223c0wtonzr">日期选择器</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Fab</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3gdctg9i58p60922k7x13jik2">浮动操作按钮</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="68bb8oc61bk4wpuy6wshtvpcy"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Form-field</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="iszafhbuugy8btvr7wfhpag4">表单字段</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Icon</td>
-<td><code>surface</code>, <code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="7nwiwjn0oo95tskix14iz2jdz">图标</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="9a5vnaq4zrcib2v0nhfr6vm39"><code>surface</code>、
+<code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>surface</code></td>
 </tr>
 <tr>
-<td>Option</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ba7axgt6bldn3wzg2te3xd6f">选项</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>secondary</code></td>
 </tr>
 <tr>
-<td>Progress-bar</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2mplf33iqvfefnsuec4rk0c27">进度条</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Progress-spinner</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="46k86nsgjtyy1mn21seq8ozdd">进度指示器</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Pseudo-checkbox</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="7ozw2mr9do4rbk5e5gi0vp0dw">伪复选框</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="1uhqyflkrffq93ea6ov3r7xvl">单选</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="da86p6bwqfwvohvs7oykqzzsv">选择框</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Slide-toggle</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="87r6s5wq1hz4a7mbscfivvwc5">滑块切换</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="2p7bkiglx3kyfhyv2jjzdafdt">滑块</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Stepper</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="399gi54v5m4ivd2f2sp6119os">步骤指示器</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="6mvs7gzuknb3qunmbprx7pkqo">选项卡</td>
-<td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2517q2jrekrsq90iy24p8qq8g"><code>primary</code>、
+<code>secondary</code>、
+<code>tertiary</code>、
+<code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 </tbody></table>
 
-        <h4 id="granular-customizations-with-css-custom-properties" class="docs-header-link">
-          
-          Granular customizations with CSS custom properties
-        </h4>
-      <p>The CSS custom properties emitted by the theme mixins are derived from
-<a href="https://m3.material.io/foundations/design-tokens/overview">M3's design tokens</a>. To further
-customize your UI beyond the <code>define-theme</code> API, you can manually set these custom properties in
-your styles.</p>
-<p>The guarantees made by the theme mixins mean that you do not need to target internal selectors of
-components or use excessive specificity to override any of these tokenized properties. Always apply
-your base theme to your application's root element (typically <code>html</code> or <code>body</code>) and apply any
-overrides on the highest-level selector where they apply.</p>
+        <h4 id="granular-customizations-with-css-custom-properties" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="68l3kfvi41yz4ejsia6a4yjqy">使用 CSS 自定义属性进行细粒度自定义</h4>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8pp7x98y2q6t9579l2t14z9po">主题混合器发出的 CSS 自定义属性源自 
+<a href="https://m3.material.io/foundations/design-tokens/overview">M3 的设计标记</a>。要进一步 自定义超出 
+<code>define-theme</code> API 的 UI，可以在样式中手动设置这些自定义属性。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="dme9fmvdnzfd7meps06xsjqqv">主题混合器做出的保证意味着你不需要针对组件的内部选择器或使用过高的特异性来覆盖任何这些标记化的属性。始终将你的基本主题应用于应用程序的根元素（通常是 
+<code>html</code> 或 
+<code>body</code>），并在适用的最高级别选择器上应用任何覆盖。</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-sidenav-container</span>&gt;</span>
   Some content...
@@ -373,17 +413,11 @@ mat-sidenav {
 }
 </code></pre>
 
-        <h2 id="theme-your-own-components-using-a-material-3-theme" class="docs-header-link">
-          
-          Theme your own components using a Material 3 theme
-        </h2>
-      <p>The same utility functions for reading properties of M2 themes (described in
-<a href="/guide/theming-your-components">our guide for theming your components</a>) can be used to read
-properties from M3 themes. However, the named palettes, typography levels, etc. available are
-different for M3 themes, in accordance with the spec.</p>
-<p>The structure of the theme object is considered an implementation detail. Code should not depend on
-directly reading properties off of it, e.g. using <code>map.get</code>. Always use the utility functions
-provided by Angular Material to access properties of the theme.</p>
+        <h2 id="theme-your-own-components-using-a-material-3-theme" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="1zsit97rr48e72d8nvl3pn3re">使用 Material 3 主题对自己的组件进行主题化</h2>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7yrvdvm2o8fohpfynueshcqhe">用于读取 M2 主题属性的相同实用函数（在 
+<a href="/guide/theming-your-components">对组件进行主题化的指南</a> 中描述）可用于读取 M3 主题的属性。但是，根据规范，可用的命名调色板、排版级别等对于 M3 主题是不同的。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="45dwfgo1g8c1drih24yo7cp63">主题对象的结构被认为是实现细节。代码不应依赖于直接读取它的属性，例如使用 
+<code>map.get</code>。始终使用 Angular Material 提供的实用函数来访问主题的属性。</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@anuglar/material'</span> as mat;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">'@anuglar/material-experimental'</span> as matx;
@@ -403,23 +437,20 @@ provided by Angular Material to access properties of the theme.</p>
 }
 </code></pre>
 
-        <h3 id="reading-tonal-palette-colors" class="docs-header-link">
-          
-          Reading tonal palette colors
-        </h3>
-      <p>To read a 
-<a href="https://m3.material.io/styles/color/system/how-the-system-works#3ce9da92-a118-4692-8b2c-c5c52a413fa6">tonal palette color</a>
-from the theme, use the <code>get-theme-color</code> function with three arguments:</p>
+        <h3 id="reading-tonal-palette-colors" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cl9e7neruqlk8ogn7d0fym6hm">读取色调调色板颜色</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4vbqmqx9mo0r56drs0zjleafi">要从主题中读取 
+<a href="https://m3.material.io/styles/color/system/how-the-system-works#3ce9da92-a118-4692-8b2c-c5c52a413fa6">色调调色板颜色</a> ，请使用 
+<code>get-theme-color</code> 函数，并提供三个参数：</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="1fufha58swa4cfv613pusq6ln">参数</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>$theme</code></td>
-<td>The M3 theme to read from.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8secsfij05nb7ag9elqxeyeij">要从中读取的 M3 主题。</td>
 </tr>
 <tr>
 <td><code>$palette</code></td>
@@ -433,22 +464,20 @@ from the theme, use the <code>get-theme-color</code> function with three argumen
 <!-- TODO(mmalerba): Illustrate palettes and hues with example. -->
 
 
-        <h3 id="reading-color-roles" class="docs-header-link">
-          
-          Reading color roles
-        </h3>
-      <p>To read a <a href="https://m3.material.io/styles/color/roles">color role</a>, use <code>get-theme-color</code> with two
-arguments:</p>
+        <h3 id="reading-color-roles" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6rb4q4xz8y0a5xxj2ky1ks4ys">读取颜色角色</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="6fin9d9kxym3xs7owpx19ifwn">要读取 
+<a href="https://m3.material.io/styles/color/roles">颜色角色</a>，请使用 
+<code>get-theme-color</code> 并传入两个参数：</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="1fufha58swa4cfv613pusq6ln">参数</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>$theme</code></td>
-<td>The M3 theme to read from.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8secsfij05nb7ag9elqxeyeij">要从中读取的 M3 主题。</td>
 </tr>
 <tr>
 <td><code>$role</code></td>
@@ -458,40 +487,38 @@ arguments:</p>
 <!-- TODO(mmalerba): Illustrate color roles with example. -->
 
 
-        <h3 id="reading-the-theme-type" class="docs-header-link">
-          
-          Reading the theme type
-        </h3>
-      <p>To read the theme type (<code>light</code> or <code>dark</code>), call <code>get-theme-type</code> with a single argument:</p>
+        <h3 id="reading-the-theme-type" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4lryodh2162edvr79dsv02dg1">读取主题类型</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="81t1pd33ek96jk605lellhdjn">要读取主题类型（
+<code>light</code> 或 
+<code>dark</code>），请使用 
+<code>get-theme-type</code> 并传入一个参数：</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="1fufha58swa4cfv613pusq6ln">参数</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>$theme</code></td>
-<td>The M3 theme to read from.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8secsfij05nb7ag9elqxeyeij">要从中读取的 M3 主题。</td>
 </tr>
 </tbody></table>
 
-        <h3 id="reading-typescale-properties" class="docs-header-link">
-          
-          Reading typescale properties
-        </h3>
-      <p>To read a <a href="https://m3.material.io/styles/typography/type-scale-tokens">typescale</a> property from the
-theme, call <code>get-theme-typography</code> with three arguments:</p>
+        <h3 id="reading-typescale-properties" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="f5h0u8dahjmyn5wf23xguc44">读取类型比例属性</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3t7q04gosbjzizmibj6bnj1vc">要从主题中读取 
+<a href="https://m3.material.io/styles/typography/type-scale-tokens">类型比例</a> 属性，请使用 
+<code>get-theme-typography</code> 并传入三个参数：</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="1fufha58swa4cfv613pusq6ln">参数</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>$theme</code></td>
-<td>The M3 theme to read from.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8secsfij05nb7ag9elqxeyeij">要从中读取的 M3 主题。</td>
 </tr>
 <tr>
 <td><code>$level</code></td>
@@ -499,52 +526,45 @@ theme, call <code>get-theme-typography</code> with three arguments:</p>
 </tr>
 <tr>
 <td><code>$property</code></td>
-<td>The CSS font property to get a value for. This can be one of the following CSS properties:<ul><li><code>font</code> (The CSS font shorthand, includes all font properties except letter-spacing)</li><li><code>font-family</code></li><li><code>font-size</code></li><li><code>font-weight</code></li><li><code>line-height</code></li><li><code>letter-spacing</code></li></ul></td>
+<td>The CSS font property to get a value for. This can be one of the following CSS properties:<ul><li data-ng_translator_product="100" data-ng_translator_ref_id="11zlnl3r7ujuc4e1fpo24qdja"><code>font</code>（CSS 字体简写，包含除字间距以外的所有字体属性）</li><li><code>font-family</code></li><li><code>font-size</code></li><li><code>font-weight</code></li><li><code>line-height</code></li><li><code>letter-spacing</code></li></ul></td>
 </tr>
 </tbody></table>
 <!-- TODO(mmalerba): Illustrate typescales with example. -->
 
 
-        <h3 id="reading-the-density-scale" class="docs-header-link">
-          
-          Reading the density scale
-        </h3>
-      <p>To read the density scale (<code>0</code>, <code>-1</code>, <code>-2</code>, <code>-3</code>, <code>-4</code>, or <code>-5</code>) from the theme, call
-<code>get-theme-density</code> with a single argument:</p>
+        <h3 id="reading-the-density-scale" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bkfycabrxhhuk4v1pzjb7zp72">读取密度比例</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2xv225hy93hm5948udeiga3cg">要从主题中读取密度比例（
+<code>0</code>、
+<code>-1</code>、
+<code>-2</code>、
+<code>-3</code>、
+<code>-4</code> 或 
+<code>-5</code>），请使用 
+<code>get-theme-density</code> 并传入一个参数：</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="1fufha58swa4cfv613pusq6ln">参数</th>
 <th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>$theme</code></td>
-<td>The M3 theme to read from.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8secsfij05nb7ag9elqxeyeij">要从中读取的 M3 主题。</td>
 </tr>
 </tbody></table>
 
-        <h2 id="how-to-migrate-an-app-from-material-2-to-material-3" class="docs-header-link">
-          
-          How to migrate an app from Material 2 to Material 3
-        </h2>
-      <p>Angular Material does not offer an automated migration from M2 to M3 because the design of your app
-is subjective. Material Design offers general principles and constraints to guide you, but
-ultimately it is up to you to decide how to apply those in your app. That said, Angular Material's
-M3 themes were designed with maximum compatibility in mind.</p>
+        <h2 id="how-to-migrate-an-app-from-material-2-to-material-3" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4iq0zsxzq6p2aue3kashoh5uo">如何将应用从 Material 2 迁移到 Material 3</h2>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="6xeutd4l41rmqv3bxn3nej854">Angular Material 不提供从 M2 到 M3 的自动迁移，因为应用的设计是主观的。Material Design 提供了一般原则和约束来指导你，但最终如何将这些原则应用到你的应用中取决于你。也就是说，Angular Material 的 M3 主题在设计时就考虑了最大程度的兼容性。</p>
 
-        <h3 id="update-your-components-that-use-angular-material-themes-to-be-compatible-with-material-3" class="docs-header-link">
-          
-          Update your components that use Angular Material themes to be compatible with Material 3
-        </h3>
-      <p>In order to facilitate a smooth transition from M2 to M3, it may make sense to have your components
-support both M2 and M3 themes. Once the entire app is migrated, the support for M2 themes can be
-removed.</p>
-<p>The simplest way to accomplish this is by checking the theme version and emitting different styles
-for M2 vs M3. You can check the theme version using the <code>get-theme-version</code> function from
-<code>@angular/material</code>. The function will return <code>0</code> for an M2 theme or <code>1</code> for an M3 theme (see 
-<a href="#theme-your-own-components-using-a-material-3-theme">theme your own components using a Material 3 theme</a>
-for how to read values from an M3 theme).</p>
+        <h3 id="update-your-components-that-use-angular-material-themes-to-be-compatible-with-material-3" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c0siicl87kirfloffslx6wkxx">更新使用 Angular Material 主题的组件，使其与 Material 3 兼容</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="691rncm4t8ncy5v0hmdr3g2vo">为了便于从 M2 平滑过渡到 M3，你的组件可能需要同时支持 M2 和 M3 主题。一旦整个应用迁移完成，就可以移除对 M2 主题的支持。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="dlj3wxcplfzjgkx4vsqjtou1b">最简单的方法是检查主题版本，并为 M2 和 M3 发射不同的样式。你可以使用 
+<code>@angular/material</code> 中的 
+<code>get-theme-version</code> 函数来检查主题版本。该函数将为 M2 主题返回 
+<code>0</code>，为 M3 主题返回 
+<code>1</code>（有关如何从 M3 主题中读取值的详细信息，请参阅 
+<a href="#theme-your-own-components-using-a-material-3-theme">使用 Material 3 主题为自己的组件设置主题</a>）。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 
 <span class="hljs-keyword">@mixin</span> my-comp-theme(<span class="hljs-variable">$theme</span>) {
@@ -556,48 +576,44 @@ for how to read values from an M3 theme).</p>
 }
 </code></pre>
 
-        <h3 id="pass-a-new-m3-theme-in-your-global-theme-styles" class="docs-header-link">
-          
-          Pass a new M3 theme in your global theme styles
-        </h3>
-      <p>Create a new M3 theme object using <code>define-theme</code> and pass it everywhere you were previously passing
-your M2 theme. All Angular Material mixins that take an M2 theme are compatible with M3 themes as
-well.</p>
+        <h3 id="pass-a-new-m3-theme-in-your-global-theme-styles" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="emrjnm394b32spwbrob00375e">在全局主题样式中传递一个新的 M3 主题</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="bm1l666n2kykb6nf902endnqn">使用 
+<code>define-theme</code> 创建一个新的 M3 主题对象，并在之前传递 M2 主题的所有地方传递它。所有接受 M2 主题的 Angular Material 混合都与 M3 主题兼容。</p>
 
-        <h3 id="update-usages-of-apis-that-are-not-supported-for-material-3-themes" class="docs-header-link">
-          
-          Update usages of APIs that are not supported for Material 3 themes
-        </h3>
-      <p>Because Material 3 is implemented as an alternate theme for the same components used for Material 2,
-the APIs for both are largely the same. However, there are a few differences to be aware of:</p>
+        <h3 id="update-usages-of-apis-that-are-not-supported-for-material-3-themes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="b4w7m6c4u3ipuj123gv436pk0">更新不支持 Material 3 主题的 API 的用法</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="22fdahtzintem6fjios4fn4ik">由于 Material 3 是作为 Material 2 使用的相同组件的备用主题实现的，因此两者的 API 在很大程度上是相同的。但是，有一些需要注意的差异：</p>
 <ul>
-<li>M3 expects that any <code>@include</code> of the <code>-theme</code>, <code>-color</code>, <code>-typography</code>, <code>-density</code>, or <code>-base</code>
-mixins should be wrapped in a selector. If your app includes such an <code>@include</code> at the root level,
-we recommend wrapping it in <code>html { ... }</code></li>
-<li>M3 has a different API for setting the color variant of a component (see
-<a href="#using-component-color-variants">using component color variants</a> for more).</li>
-<li>The <code>backgroundColor</code> property of <code>&lt;mat-tab-group&gt;</code> is not supported, and should not be used with
-M3 themes.</li>
-<li>The <code>appearance="legacy"</code> variant of <code>&lt;mat-button-toggle&gt;</code> is not supported, and should not be
-used with M3 themes.</li>
-<li>For M3 themes, calling <code>all-component-typographies</code> does <em>not</em> emit the <code>typography-hierarchy</code>
-styles, as this would violate M3's guarantee to not add selectors. Instead, the
-<code>typography-hierarchy</code> mixin must be explicitly called if you want these styles in your app.</li>
-<li>The <code>typography-hierarchy</code> mixin outputs CSS class names that correspond to the names of M3
-typescale levels rather than M2 typescale levels. If you were relying on the M2 classes to style
-your app, you may need to update the class names.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="6vg07yyoy01j3n301i1syp0sm">M3 预计任何 
+<code>@include</code> 的 
+<code>-theme</code>、
+<code>-color</code>、
+<code>-typography</code>、
+<code>-density</code> 或 
+<code>-base</code> 混合都应该包装在一个选择器中。如果你的应用在根级别包含这样的 
+<code>@include</code>，我们建议将其包装在 
+<code>html { ... }</code> 中。</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="8q691dgubm3y34gat5evq23pa">M3 具有不同的 API 用于设置组件的颜色变体（有关更多信息，请参阅 
+<a href="#using-component-color-variants">使用组件颜色变体</a>）。</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="a1h7onacf0mlkc30mdmde8kx2"><code>&lt;mat-tab-group&gt;</code> 的 
+<code>backgroundColor</code> 属性不受支持，不应与 M3 主题一起使用。</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="brefiuwfjvtsw91t1oqxp4ypv"><code>&lt;mat-button-toggle&gt;</code> 的 
+<code>appearance="legacy"</code> 变体不受支持，不应与 M3 主题一起使用。</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="3b90h8tootdmzcqnqk7l0qn3s">对于 M3 主题，调用 
+<code>all-component-typographies</code> 
+<em>不会</em> 发射 
+<code>typography-hierarchy</code> 样式，因为这会违反 M3 不添加选择器的保证。相反，如果你想在你的应用中使用这些样式，则必须显式调用 
+<code>typography-hierarchy</code> 混合。</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="51vlwxncz2a3klec4me46mt6d"><code>typography-hierarchy</code> 混合输出的 CSS 类名对应于 M3 类型比例级别名称，而不是 M2 类型比例级别名称。如果你依赖 M2 类来为你的应用设置样式，则可能需要更新类名。</li>
 </ul>
 
-        <h3 id="optional-add-backwards-compatibility-styles-for-color-variants" class="docs-header-link">
-          
-          (Optional) add backwards compatibility styles for color variants
-        </h3>
-      <p>We recommend <em>not</em> relying on the <code>color="primary"</code>, <code>color="accent"</code>, or <code>color="warn"</code> options
-that are offered by a number of Angular Material components for M2 themes. However, if you want to
-quickly update to M3 and are willing to accept the extra CSS generated for these variants, you can
-enable backwards compatibility styles that restore the behavior of this API. Call the 
-<code>color-variants-back-compat</code> mixin from <code>@angular/material-experimental</code> with the M3 theme you want
-to generate color variant styles for.</p>
+        <h3 id="optional-add-backwards-compatibility-styles-for-color-variants" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3w1qr1cb9i30fy74t17p1etj">（可选）为颜色变体添加向后兼容样式</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2kvmu421z9z69h81igy47o03d">我们建议
+<em>不要</em>依赖 M2 主题提供的许多 Angular Material 组件提供的 
+<code>color="primary"</code>、
+<code>color="accent"</code> 或 
+<code>color="warn"</code> 选项。但是，如果你想快速更新到 M3，并且愿意接受为这些变体生成的额外 CSS，则可以启用恢复此 API 行为的向后兼容样式。从 
+<code>@angular/material-experimental</code> 中调用 
+<code>color-variants-back-compat</code> 混合，并传入要为其生成颜色变体样式的 M3 主题。</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
@@ -610,17 +626,13 @@ to generate color variant styles for.</p>
 }
 </code></pre>
 
-        <h3 id="optional-add-backwards-compatibility-styles-for-typography-hierarchy" class="docs-header-link">
-          
-          (Optional) add backwards compatibility styles for typography hierarchy
-        </h3>
-      <p>Calling the <code>typography-hierarchy</code> mixin with an M3 theme generates styles for CSS classes that
-match the names of M3 typescale names (e.g. <code>.mat-headline-large</code>) rather than ones that match M2
-typescale names (<code>.mat-headline-1</code>). If you were using the M2 class names in your app we recommend
-updating all usages to one of the new class names. However, to make migration easier, the
-<code>typography-hierarchy</code> mixin does support emitting the old class names in addition to the new ones.
-We have made a best effort to map the M2 classes to reasonable equivalents in M3. To enable these
-styles, pass an additional argument <code>$back-compat: true</code> to the mixin.</p>
+        <h3 id="optional-add-backwards-compatibility-styles-for-typography-hierarchy" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5x5zk80qta2w8ur7f07r8u32f">（可选）为类型比例层次结构添加向后兼容样式</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="b85l5ftgyyb1lbh6d3k0vufkg">使用 M3 主题调用 
+<code>typography-hierarchy</code> 混合会为与 M3 类型比例名称匹配的 CSS 类名（例如 
+<code>.mat-headline-large</code>）生成样式，而不是与 M2 类型比例名称匹配的 CSS 类名（
+<code>.mat-headline-1</code>）。如果你在你的应用中使用 M2 类名，我们建议将所有用法更新为新的类名之一。但是，为了使迁移更容易，
+<code>typography-hierarchy</code> 混合支持除了新的类名之外还发射旧的类名。我们尽力将 M2 类映射到 M3 中合理的等效类。要启用这些样式，请向混合传递一个额外的参数 
+<code>$back-compat: true</code>。</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 <span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
@@ -635,28 +647,13 @@ styles, pass an additional argument <code>$back-compat: true</code> to the mixin
           FAQ
         </h2>
       
-        <h3 id="can-i-use-colors-other-than-the-pre-defined-material-3-palettes" class="docs-header-link">
-          
-          Can I use colors other than the pre-defined Material 3 palettes?
-        </h3>
-      <p>Currently, we only offer predefined palettes, but we plan to add support for using custom generated
-palettes as part of making the M3 APIs stable and available in <code>@angular/material</code>.</p>
+        <h3 id="can-i-use-colors-other-than-the-pre-defined-material-3-palettes" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6sx47locfph4ut0jecpgngo9o">我可以使用除预定义的 Material 3 调色板以外的颜色吗？</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="d4cy3mu85o4jj932bg2mpv70w">目前，我们只提供预定义的调色板，但我们计划在使 M3 API 稳定并在 
+<code>@angular/material</code> 中可用时添加对使用自定义生成的调色板的支持。</p>
 
-        <h3 id="can-i-depend-on-the-css-custom-property-names-being-stable" class="docs-header-link">
-          
-          Can I depend on the CSS custom property names being stable?
-        </h3>
-      <p>We may make changes to the custom property names before moving the API out of experimental, but
-these changes would be accompanied by a schematic to find &amp; replace the old name with the new name
-across your app.</p>
+        <h3 id="can-i-depend-on-the-css-custom-property-names-being-stable" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="73pxh28ovdclbtvg03bideu4a">我可以依赖 CSS 自定义属性名称保持稳定吗？</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="5f2r9k2au9bwz4fu3lq556jf0">我们可能会在将 API 从实验性 API 中移出之前更改自定义属性名称，但这些更改将伴随着一个原理图，用于在你的整个应用中查找并替换旧名称为新名称。</p>
 
-        <h3 id="are-the-material-2-styles-and-apis-going-away" class="docs-header-link">
-          
-          Are the Material 2 styles and APIs going away?
-        </h3>
-      <p>Material 2 styles and their APIs will continue to be supported, and we do not have any immediate 
-plans to deprecate them. We understand that it will take time for applications to switch to the 
-latest Material 3 styles, and we want to provide enough time for migrations. When we do decide to 
-remove these APIs, they will be marked as deprecated and continue to be supported in the following 
-two major releases. As of now, they are not considered deprecated.</p>
+        <h3 id="are-the-material-2-styles-and-apis-going-away" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c4svkjk7m0ljzwaqxjskcd5yr">Material 2 样式和 API 会消失吗？</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8ae5qn5tfh5xek4kgjwov5h02">Material 2 样式及其 API 将继续得到支持，我们目前没有立即弃用它们的计划。我们理解应用切换到最新的 Material 3 样式需要时间，我们希望提供足够的时间进行迁移。当我们决定移除这些 API 时，它们将被标记为已弃用，并在接下来的两个主要版本中继续得到支持。截至目前，它们不被视为已弃用。</p>
 </div>

@@ -9,12 +9,12 @@
 <div material-docs-example="breakpoint-observer-overview"></div>
 
 
-        <h4 id="check-the-current-viewport-size" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="861yqwreptt9x7xs3fiwuyyqt"><span header-link="check-the-current-viewport-size"></span>检查当前视口大小</h4>
+        <h4 id="check-the-current-viewport-size" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="861yqwreptt9x7xs3fiwuyyqt">检查当前视口大小</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="a9pvt7qb6y9f3bhd0y4yonbz6">你可以使用 <code>isMatched</code> 方法根据当前视口大小来计算一个或多个媒体查询。</p>
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> isSmallScreen = breakpointObserver.isMatched(<span class="hljs-string">'(max-width: 599px)'</span>);
 </code></pre>
 
-        <h4 id="react-to-changes-to-the-viewport" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8prge51efc4ohz07s8dqals7d"><span header-link="react-to-changes-to-the-viewport"></span>对视口的变化做出反应</h4>
+        <h4 id="react-to-changes-to-the-viewport" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8prge51efc4ohz07s8dqals7d">对视口的变化做出反应</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="55wjsgkr2gbi4u7miud248qlv">你可以使用 <code>observe</code> 方法获取一个可观察流，该流会在视口大小越过断点时发出事件。</p>
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> layoutChanges = breakpointObserver.observe([
   <span class="hljs-string">'(orientation: portrait)'</span>,
@@ -26,13 +26,13 @@ layoutChanges.subscribe(<span class="hljs-function"><span class="hljs-params">re
 });
 </code></pre>
 
-        <h4 id="predefined-breakpoints" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9i9pnr516dmupak1u0v81ci8q"><span header-link="predefined-breakpoints"></span>预定义断点</h4>
+        <h4 id="predefined-breakpoints" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9i9pnr516dmupak1u0v81ci8q">预定义断点</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3hzzmk5ag8my8s5zfkr5kc46n">为方便起见，内置的 <code>Breakpoints</code> 常量提供了下列预定义断点，这些断点<a href="https://material.io/archive/guidelines/layout/responsive-ui.html">最初来自 Material Design 规范</a>。</p>
 <table>
 <thead>
 <tr>
-<th>Breakpoint name</th>
-<th>Media query</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="cm3mevktasyz6943284dtl64a">断点名称</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="bmwz5ddqzotosu3q6vxhqf7mn">媒体查询</th>
 </tr>
 </thead>
 <tbody><tr>

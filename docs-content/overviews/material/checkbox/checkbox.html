@@ -2,19 +2,19 @@
 <div material-docs-example="checkbox-overview"></div>
 
 
-        <h3 id="checkbox-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2o6easoi1sjc8cie5jsiew7up"><span header-link="checkbox-label"></span>检查框标签</h3>
+        <h3 id="checkbox-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="2o6easoi1sjc8cie5jsiew7up">检查框标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="d2bxg92wozdzua7n0gvlhtdfp">检查框的标签是以 <code>&lt;mat-checkbox&gt;</code> 元素内容的形式提供的。该标签可以通过把 <code>labelPosition</code> 属性设置为 <code>'before'</code> 或 <code>'after'</code> 来让自己定位于检查框的前面或后面。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="xs52n80xjvh1pp4f08uso7r1">如果你不想紧挨着检查框显示该标签，可以使用 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-label"><code>aria-label</code></a> 或 
 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-labelledby"><code>aria-labelledby</code></a> 为它指定一个合适的标签。</p>
 
-        <h3 id="use-with-angularforms" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7amg17s1117y427qhrsse0rww"><span header-link="use-with-angularforms"></span>和 <code>@angular/forms</code> 一起使用</h3>
+        <h3 id="use-with-angularforms" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7amg17s1117y427qhrsse0rww">和 <code>@angular/forms</code> 一起使用</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="sv68dk9umemk5k5g8f9hbw39"><code>&lt;mat-checkbox&gt;</code> 与 <code>@angular/forms</code> 兼容，并且同时支持 <code>FormsModule</code> 和 <code>ReactiveFormsModule</code>。</p>
 
-        <h3 id="indeterminate-state" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="egrgzu1flmffk9badwfru2iwe"><span header-link="indeterminate-state"></span>未决状态</h3>
+        <h3 id="indeterminate-state" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="egrgzu1flmffk9badwfru2iwe">未决状态</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2syex8vsrgfqgpi152wvxod2z">像原生的 <code>&lt;input type="checkbox"&gt;</code> 一样，<code>&lt;mat-checkbox&gt;</code> 也支持未决（<code>indeterminate</code>）状态。
 当检查框的 <code>indeterminate</code> 属性为 <code>true</code> 时，无论 <code>checked</code> 的值是什么，它都会渲染位未决状态。用户与该检查框的任何交互（比如点击）都会移除未决状态。</p>
 
-        <h3 id="click-action-config" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="23o0kxizsoq5o52xapvd0jmuq"><span header-link="click-action-config"></span>配置点击动作</h3>
+        <h3 id="click-action-config" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="23o0kxizsoq5o52xapvd0jmuq">配置点击动作</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8g4ogm70wqdwxo7wtqmrhbdkd">当用户点击 <code>mat-checkbox</code> 时，其默认行为是切换 <code>checked</code> 的值并把 <code>indeterminate</code> 设置为 <code>false</code>。
 该行为可以通过为检查框的 <code>MAT_CHECKBOX_DEFAULT_OPTIONS</code> 令牌<a href="https://angular.cn/guide/dependency-injection">提供一个新值</a>进行定制。</p>
 <pre><code>providers: [
@@ -42,10 +42,10 @@
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cntue5muyahgqcrx7wprwyf3r"><code>mat-checkbox</code> 的默认行为。当用户点击 <code>mat-checkbox</code> 时，总是把 <code>indeterminate</code> 设置为 <code>false</code>。
 这种行为和原生 <code>&lt;input type="checkbox"&gt;</code> 的完全一样。</p>
 
-        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs"><span header-link="theming"></span>主题</h3>
+        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs">主题</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="682qt4yv3u6hjspcqgmv274dg"><code>&lt;mat-checkbox&gt;</code> 的颜色可以通过 <code>color</code> 属性进行修改。默认情况下，检查框使用主题的 <code>accent</code> 颜色。它还可以修改为 <code>'primary'</code> 或 <code>'warn'</code>。</p>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4ymdnpw45zetuyspq48gz1iqq"><code>MatCheckbox</code> 使用一个内部的 <code>&lt;input type="checkbox"&gt;</code> 来提供无障碍性体验。
 这个内部检查框可以接受焦点，并且自动把 <code>&lt;mat-checkbox&gt;</code> 元素的文本内容作为标签。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6zcmegn1u0isdpm6jwxhqsyj6">始终通过 <code>aria-label</code> 或 <code>aria-labelledby</code> 为没有描述性文本内容的复选框提供无障碍标签。对于动态标签， <code>MatCheckbox</code> 提供了用于绑定 <code>aria-label</code> 和 <code>aria-labelledby</code> 的输入属性。这意味着你不应该使用 <code>attr.</code> 作为绑定这些属性时的前缀，如下所示。</p>

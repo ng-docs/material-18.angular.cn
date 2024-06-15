@@ -11,7 +11,7 @@
 <div material-docs-example="form-field-overview"></div>
 
 
-        <h3 id="form-field-appearance-variants" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="51lwyenvrhwtkgo0kyh2hztcv"><span header-link="form-field-appearance-variants"></span>表单字段外观的变体形式</h3>
+        <h3 id="form-field-appearance-variants" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="51lwyenvrhwtkgo0kyh2hztcv">表单字段外观的变体形式</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1o3cx58uw0z1862zo9k87wkd9"><code>mat-form-field</code> 支持两种不同的外观变体，可以通过输入属性 <code>appearance</code> 进行设置：<code>fill</code> 和 <code>outline</code>。
 <code>fill</code> 外观显示的表单字段除了下划线之外还带有填充的背景。
 <code>outline</code> 外观会显示一个带四周边框的表单字段，而不仅有下划线。</p>
@@ -25,7 +25,7 @@
 <div material-docs-example="form-field-appearance"></div>
 
 
-        <h3 id="floating-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="nudyzy16j1i6hla732bn123q"><span header-link="floating-label"></span>浮动标签</h3>
+        <h3 id="floating-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="nudyzy16j1i6hla732bn123q">浮动标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5yaavqwjsanphkuxwjhfphxsd">当控件不包含任何文本时，显示在表单字段控件顶部的那个文本标签就叫做浮动标签。
 默认情况下，如果存在文本，则浮动标签将显示在表单字段控件的上方。
 可以通过添加 <code>mat-label</code> 元素来为表单字段指定浮动标签。</p>
@@ -44,7 +44,7 @@
 })
 </code></pre>
 
-        <h3 id="hint-labels" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5xtjmlekon1f7em6zhswo3k5f"><span header-link="hint-labels"></span>提示标签</h3>
+        <h3 id="hint-labels" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="5xtjmlekon1f7em6zhswo3k5f">提示标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="kr835a29ee9gfhz8npwcyofp">提示标签是显示在表单字段下划线下方的额外的描述性文本。<code>&lt;mat-form-field&gt;</code> 最多能有两个提示标签：
 一个向开始处对齐（LTR 语言下向左，RTL 语言下向右 —— 如阿拉伯语），一个向末尾处对齐。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="dl0nfww7j739tvau0ipb9fp5g">提示标签可以用两种方式指定：<code>&lt;mat-form-field&gt;</code> 的 <code>hintLabel</code> 属性或在表单字段中添加一个 <code>&lt;mat-hint&gt;</code> 元素。
@@ -52,47 +52,46 @@
 <div material-docs-example="form-field-hint"></div>
 
 
-        <h3 id="error-messages" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="slgtdw91xc83c5b1ewqiuazf"><span header-link="error-messages"></span>错误信息</h3>
+        <h3 id="error-messages" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="slgtdw91xc83c5b1ewqiuazf">错误信息</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6dzn8jn62ft0nst7mmbe8uelj">通过往表单字段中添加 <code>mat-error</code> 元素，就可以在表单字段的下划线下方显示错误信息。
 错误信息最初是隐藏的，在用户与元素进行过交互或提交了父表单后，无效表单字段上的错误信息就会显示出来。
 由于错误信息和提示信息占用相同的空间，因此在显示错误时就会隐藏提示。</p>
-<p>If a form field can have more than one error state, it is up to the consumer to toggle which
-messages should be displayed. This can be done with CSS, <code>@if</code> or <code>@switch</code>. Multiple error
-messages can be shown at the same time if desired, but the <code>&lt;mat-form-field&gt;</code> only reserves enough
-space to display one error message at a time. Ensuring that enough space is available to display
-multiple errors is up to the user.</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="3rojf1h45rektwmc05zn1vc8m">如果表单字段可以有多个错误状态，则由使用者来切换应该显示哪些消息。这可以通过 CSS、
+<code>@if</code> 或 
+<code>@switch</code> 来完成。如果需要，可以同时显示多个错误消息，但 
+<code>&lt;mat-form-field&gt;</code> 每次只保留足够的空间来显示一条错误消息。确保有足够的空间来显示多个错误由用户负责。</p>
 <div material-docs-example="form-field-error"></div>
 
 
-        <h3 id="prefix--suffix" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8owklloidjhhvrn0enp58jpee"><span header-link="prefix--suffix"></span>前缀与后缀</h3>
+        <h3 id="prefix--suffix" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="8owklloidjhhvrn0enp58jpee">前缀与后缀</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5uqgpjrqcpqy39cwksqj3hjbw">自定义内容可以作为前缀或后缀加在输入框标记之前或之后。根据 Material 规范，它要位于包裹着表单控件的视觉容器内部。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="accxi0m0mhxpwnau3h9hb0g1q">把 <code>matPrefix</code> 指令添加到 <code>&lt;mat-form-field&gt;</code> 内的某个元素上就会把该元素用作前缀，而 <code>matSuffix</code> 会把它用作后缀。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="250d2oydo6yvxp64pqvyhcxvx">如果前缀/后缀的内容是完全基于文本的，建议使用 <code>matTextPrefix</code> 或 <code>matTextSuffix</code> 指令，它们可以确保此文本与表单控件对齐。</p>
 <div material-docs-example="form-field-prefix-suffix"></div>
 
 
-        <h3 id="custom-form-field-controls" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bzrqf3j1wb5rnp2uz5uj8rw1s"><span header-link="custom-form-field-controls"></span>自定义表单字段控件</h3>
+        <h3 id="custom-form-field-controls" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bzrqf3j1wb5rnp2uz5uj8rw1s">自定义表单字段控件</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3tzunhwbgn9zdm2hxvvpgbhmm">除了 Angular Material 提供的表单字段控件之外，也同样可以创建能和 <code>&lt;mat-form-field&gt;</code> 协同工作的自定义表单字段控件。
 欲知详情，参见<a href="/guide/creating-a-custom-form-field-control">创建自定义 mat-form-field 控件</a>。</p>
 
-        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs"><span header-link="theming"></span>主题</h3>
+        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs">主题</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e9wvqak3rn0rmv4hpoxpt8fli"><code>&lt;mat-form-field&gt;</code> 有一个 <code>color</code> 属性，它可以设置为 <code>primary</code>、<code>accent</code> 或 <code>warn</code>。
 这将会根据应用的主题颜色来设置表单字段的下划线和浮动标签的颜色。</p>
 <div material-docs-example="form-field-theming"></div>
 
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="47nmhbubiuiwtvrgwb8xgq76i">就其本身而言， <code>MatFormField</code> 不会对控件应用任何额外的无障碍性处理。但是，表单字段的一些可选特性会与表单字段中包含的控件交互。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4v8zjtud9gox5bbt638x4hazy">当你通过 <code>&lt;mat-label&gt;</code> 提供标签时， <code>MatFormField</code> 会通过原生 <code>&lt;label&gt;</code> 元素自动将此标签与字段的控件相关联，使用 <code>for</code> 属性来引用控件的 ID。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="77gfwcaqi1cu9318gy0progf3">如果指定了浮动标签，它就会自动用作表单字段控件的标签。如果没有指定浮动标签，用户就应该使用 <code>aria-label</code>、<code>aria-labelledby</code> 或 <code>&lt;label for=...&gt;</code> 来给表单字段控件提供标签。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="a4cr5wcps52udrvipbdpjxhi6">当你通过 <code>&lt;mat-hint&gt;</code> 或 <code>&lt;mat-error&gt;</code> 来提供信息文本时， <code>MatFormField</code> 会自动将这些元素的 ID 添加到控件的 <code>aria-describedby</code> 属性中。此外， <code>MatError</code> 会应用 <code>aria-live="polite"</code> ，这样辅助技术就会在错误出现时播报这些错误。</p>
 
-        <h3 id="troubleshooting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c7ry1t3j7cdq937tdrii9thyh"><span header-link="troubleshooting"></span>排查问题</h3>
+        <h3 id="troubleshooting" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="c7ry1t3j7cdq937tdrii9thyh">排查问题</h3>
       
-        <h4 id="error-a-hint-was-already-declared-for-align" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="a7oabjogakkz5x34bnjjq6zs6"><span header-link="error-a-hint-was-already-declared-for-align"></span>错误：已为 align="..." 声明了提示</h4>
+        <h4 id="error-a-hint-was-already-declared-for-align" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="a7oabjogakkz5x34bnjjq6zs6">错误：已为 align="..." 声明了提示</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="du59pfx1n32gss58qk28p8cua">该错误会在你往同一侧添加了多个提示信息时出现。记住，<code>hintLabel</code> 属性会在开始侧添加一个提示信息。</p>
 
-        <h4 id="error-mat-form-field-must-contain-a-matformfieldcontrol" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4azo2wp1kkkel5g2h3f13p7tc"><span header-link="error-mat-form-field-must-contain-a-matformfieldcontrol"></span>错误：mat-form-field 必须包含 MatFormFieldControl</h4>
+        <h4 id="error-mat-form-field-must-contain-a-matformfieldcontrol" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4azo2wp1kkkel5g2h3f13p7tc">错误：mat-form-field 必须包含 MatFormFieldControl</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="8c2b1tt8yhz8c7hjqlgl16ci5">该错误会在你没有往表单字段中添加过表单字段控件时出现。如果你的表单字段包含了原生的 <code>&lt;input&gt;</code> 或 <code>&lt;textarea&gt;</code> 元素，
 请确保你往它们上添加过 <code>matInput</code> 指令，并且导入过 <code>MatInputModule</code>。
 可以充当表单字段控件的其它组件包括 <code>&lt;mat-select&gt;</code>、<code>&lt;mat-chip-list&gt;</code> 以及你创建的任何自定义表单字段控件。</p>

@@ -31,29 +31,14 @@
     <tr>
       <td data-ng_translator_product="100" data-ng_translator_ref_id="4lbsyughrychbgy3e5ocxxgl3">{{person.id}}</td>
 
-      <td [cdkpopoveredit]="nameEdit" [cdkpopovereditcontext]="{person: person, focus: 'firstName'}" [cdkpopovereditcolspan]="{after: 2}">
-        {{person.firstName}}
+      <td [cdkpopoveredit]="nameEdit" [cdkpopovereditcontext]="{person: person, focus: 'firstName'}" [cdkpopovereditcolspan]="{after: 2}" data-ng_translator_product="100" data-ng_translator_ref_id="amdyskyrcaou1vc71flajnn7q">{{person.firstName}} 
+<span *cdkrowhovercontent> <button cdkeditopen>编辑</button> </span></td>
 
-        <span *cdkrowhovercontent>
-          <button cdkeditopen>Edit</button>
-        </span>
-      </td>
+      <td [cdkpopoveredit]="nameEdit" [cdkpopovereditcontext]="{person: person, focus: 'middleName'}" [cdkpopovereditcolspan]="{before: 1, after: 1}" data-ng_translator_product="100" data-ng_translator_ref_id="5ltux4tn3xoljp0v07rucahqk">{{person.middleName}} 
+<span *cdkrowhovercontent> <button cdkeditopen>编辑</button> </span></td>
 
-      <td [cdkpopoveredit]="nameEdit" [cdkpopovereditcontext]="{person: person, focus: 'middleName'}" [cdkpopovereditcolspan]="{before: 1, after: 1}">
-        {{person.middleName}}
-
-        <span *cdkrowhovercontent>
-          <button cdkeditopen>Edit</button>
-        </span>
-      </td>
-
-      <td [cdkpopoveredit]="nameEdit" [cdkpopovereditcontext]="{person: person, focus: 'lastName'}" [cdkpopovereditcolspan]="{before: 2}">
-        {{person.lastName}}
-
-        <span *cdkrowhovercontent>
-          <button cdkeditopen>Edit</button>
-        </span>
-      </td>
+      <td [cdkpopoveredit]="nameEdit" [cdkpopovereditcontext]="{person: person, focus: 'lastName'}" [cdkpopovereditcolspan]="{before: 2}" data-ng_translator_product="100" data-ng_translator_ref_id="36iy7zq29ghv9ya2290l03i7j">{{person.lastName}} 
+<span *cdkrowhovercontent> <button cdkeditopen>编辑</button> </span></td>
     </tr>
   }
 </tbody></table>

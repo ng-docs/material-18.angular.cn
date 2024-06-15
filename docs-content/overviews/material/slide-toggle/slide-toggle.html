@@ -3,18 +3,18 @@
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="92qld19qo46t4820brgruwyg0">滑块开关的行为和检查框一样，不过它不像 <code>&lt;mat-checkbox&gt;</code> 那样支持 <code>indeterminate</code> 状态。</p>
 
-        <h3 id="slide-toggle-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ap80f7nn9s8ve41jubifshnr7"><span header-link="slide-toggle-label"></span>滑块开关标签</h3>
+        <h3 id="slide-toggle-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ap80f7nn9s8ve41jubifshnr7">滑块开关标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="b9u724azlkqdhtvvzuukq5wu8">滑块开关的标签是作为 <code>&lt;mat-slide-toggle&gt;</code> 的内容来提供的。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="81wrhfp2h6w90l77ckp340636">如果你不希望该标签出现在滑块开关的紧后方，可以使用 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-label"><code>aria-label</code></a> 或 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-labelledby"><code>aria-labelledby</code></a> 来指定一个合适的标签。</p>
 
-        <h3 id="use-with-angularforms" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7amg17s1117y427qhrsse0rww"><span header-link="use-with-angularforms"></span>和 <code>@angular/forms</code> 一起使用</h3>
+        <h3 id="use-with-angularforms" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7amg17s1117y427qhrsse0rww">和 <code>@angular/forms</code> 一起使用</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ah4b9oko9btwje8s4vznio6k2"><code>&lt;mat-slide-toggle&gt;</code> 与 <code>@angular/forms</code> 兼容，并支持 <code>FormsModule</code> 和 <code>ReactiveFormsModule</code>。</p>
 
-        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs"><span header-link="theming"></span>主题</h3>
+        <h3 id="theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dc8h4pfccp147xdismoolf1gs">主题</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2rjnvek0jraj54zqgrwci9lim"><code>&lt;mat-slide-toggle&gt;</code> 的颜色可以通过 <code>color</code> 属性进行修改。默认情况下，滑块开关使用主题的 <code>accent</code>（强调）色。
 可以把它修改为 <code>'primary'</code> 或 <code>'warn'</code>。</p>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="3s25x8bfk61305kgphimq9h0a"><code>MatSlideToggle</code> 使用带有 <code>role="switch"</code> 的内部 <code>&lt;input type="checkbox"&gt;</code> 来提供无障碍体验。此内部复选框可接收焦点并由 <code>&lt;mat-slide-toggle&gt;</code> 元素的文本内容自动标记。尽量不要在 <code>&lt;mat-slide-toggle&gt;</code> 的内容中添加其他交互式控件，因为这会降低辅助技术用户的体验。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="313iwuq3g3swww8n284yz80bu">始终要通过 <code>aria-label</code> 或 <code>aria-labelledby</code> 为没有描述性文本内容的切换器提供无障碍标签。对于动态标签， <code>MatSlideToggle</code> 提供了用于绑定的输入属性 <code>aria-label</code> 和 <code>aria-labelledby</code>。这意味着你不应该使用 <code>attr.</code> 作为绑定这些属性时的前缀，如下所示。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slide-toggle</span> [<span class="hljs-attr">aria-label</span>]=<span class="hljs-string">"isSubscribedToEmailsMessage"</span>&gt;</span>

@@ -2,7 +2,7 @@
 <div material-docs-example="slider-overview"></div>
 
 
-        <h3 id="selecting-a-value" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dtkm7ci4wdooqvyjayb08ifol"><span header-link="selecting-a-value"></span>选择一个值</h3>
+        <h3 id="selecting-a-value" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="dtkm7ci4wdooqvyjayb08ifol">选择一个值</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="eltt5sxafkwf6rrm3wdmf62c6">默认情况下，滑杆（slider）的最小值是 <code>0</code>，最大值是 <code>100</code>，滑块（thumb）移动时的增量是 <code>1</code>。
 这些值可以通过设置 <code>min</code>、<code>max</code> 和 <code>step</code> 属性进行修改。除非另行指定，否则其初始值就等于最小值。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span> <span class="hljs-attr">min</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">step</span>=<span class="hljs-string">"0.5"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1.5"</span>&gt;</span>
@@ -10,12 +10,17 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">mat-slider</span>&gt;</span>
 </code></pre>
 
-        <h3 id="selecting-a-range" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="41ruwvhzyn1dfkjxcgzg80llp"><span header-link="selecting-a-range"></span>选择范围</h3>
-      <p>A <code>&lt;mat-slider&gt;</code> can be converted into a range slider by projecting both a <code>matSliderStartThumb</code> and a
-<code>matSliderEndThumb</code> into it. Each thumb has its own value, but both are still
-constrained by the slider's <code>min</code> and <code>max</code> values. The <code>matSliderStartThumb</code> cannot have a value
-greater than that of the <code>matSliderEndThumb</code> and the <code>matSliderEndThumb</code> cannot have a value less than
-that of the <code>matSliderStartThumb</code>, though they both may have the same value.</p>
+        <h3 id="selecting-a-range" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="41ruwvhzyn1dfkjxcgzg80llp">选择范围</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="94kh9x0pvxyccjp071az6lds8">通过将 
+<code>matSliderStartThumb</code> 和 
+<code>matSliderEndThumb</code> 投影到 
+<code>&lt;mat-slider&gt;</code> 中，可以将其转换为范围滑块。每个滑块都有自己的值，但都受到滑块的 
+<code>min</code> 和 
+<code>max</code> 值的约束。
+<code>matSliderStartThumb</code> 的值不能大于 
+<code>matSliderEndThumb</code> 的值，
+<code>matSliderEndThumb</code> 的值也不能小于 
+<code>matSliderStartThumb</code> 的值，但它们的值可以相同。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">matSliderStartThumb</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">matSliderEndThumb</span>&gt;</span>
@@ -24,7 +29,7 @@ that of the <code>matSliderStartThumb</code>, though they both may have the same
 <div material-docs-example="slider-range"></div>
 
 
-        <h3 id="thumb-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="by2emdzbpqbw0giz0tmigg1mi"><span header-link="thumb-label"></span>滑块标签</h3>
+        <h3 id="thumb-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="by2emdzbpqbw0giz0tmigg1mi">滑块标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="4d3ub81heui4ajkjlgvw4tav">默认情况下，滑块的精确选择值对用户不可见。但是，可以通过添加 
 <code>discrete</code> 属性将此值添加到滑块的滑块上。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span> <span class="hljs-attr">discrete</span>&gt;</span>
@@ -32,13 +37,13 @@ that of the <code>matSliderStartThumb</code>, though they both may have the same
 <span class="hljs-tag">&lt;/<span class="hljs-name">mat-slider</span>&gt;</span>
 </code></pre>
 
-        <h3 id="formatting-the-thumb-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7zanbhmwv0jibb35atj4duejr"><span header-link="formatting-the-thumb-label"></span>格式化滑块标签</h3>
+        <h3 id="formatting-the-thumb-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7zanbhmwv0jibb35atj4duejr">格式化滑块标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9elny7m7gu9ra2v5v6fbtnxmv">默认情况下，滑块标签上的值会始终和模型的值相同，不过它可能太大，而没办法放进标签中。
 如果你要控制要显示的值，你可以使用输入属性 <code>displayWith</code> 来实现。</p>
 <div material-docs-example="slider-formatting"></div>
 
 
-        <h3 id="tick-marks" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="98qc4z8dl4otszipcmkmj5szg"><span header-link="tick-marks"></span>刻度标记</h3>
+        <h3 id="tick-marks" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="98qc4z8dl4otszipcmkmj5szg">刻度标记</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="i65wlst4jajlw6ekvhsrzzqy">默认情况下，滑块不会在滑块轨道上显示刻度线。可以使用 
 <code>showTickMarks</code> 属性启用此功能。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slider</span> <span class="hljs-attr">showTickMarks</span>&gt;</span>
@@ -46,49 +51,49 @@ that of the <code>matSliderStartThumb</code>, though they both may have the same
 <span class="hljs-tag">&lt;/<span class="hljs-name">mat-slider</span>&gt;</span>
 </code></pre>
 
-        <h3 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o"><span header-link="keyboard-interaction"></span>键盘交互</h3>
+        <h3 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o">键盘交互</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="rxlzwz3volzz1mkhsujs4ocd">滑杆具有下列键盘绑定：</p>
 <table>
 <thead>
 <tr>
-<th>Key</th>
-<th>Action</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="84y2r05frm4ebbrxt54tqv5iy">键</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="mrmhabmulen10w0rlhu0uhf">操作</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Right arrow</td>
-<td>Increment the slider value by one step (decrements in RTL).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cqes1inl13a4z298v7ztxl15h">右箭头</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="j4bm21fx5k41hdc6if328473">将滑块值增加一个步长（在 RTL 中减小）。</td>
 </tr>
 <tr>
-<td>Up arrow</td>
-<td>Increment the slider value by one step.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="50tti5kbm1ysvjl2b8zc0arlm">上箭头</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="72y67hzlm46fzb95r86mfy9a1">将滑块值增加一个步长。</td>
 </tr>
 <tr>
-<td>Left arrow</td>
-<td>Decrement the slider value by one step (increments in RTL).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3p6ztqnggvvqqa0t49528gyz2">左箭头</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dugg871knz71cdefa9bp30xtq">将滑块值减少一个步长（在 RTL 中增加）。</td>
 </tr>
 <tr>
-<td>Down arrow</td>
-<td>Decrement the slider value by one step.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="93pmzfcs5gn3pv0uzznstdf6m">下箭头</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="a5zdlbhzco6k8m95lwo6m091o">将滑块值减少一个步长。</td>
 </tr>
 <tr>
-<td>Page up</td>
-<td>Increment the slider value by 10% (of the max value).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="cnrg76hijftqimr1z65432l3v">Page Up</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="82e189pzmf7xexprnykqyrssu">将滑块值增加 10%（最大值的 10%）。</td>
 </tr>
 <tr>
-<td>Page down</td>
-<td>Decrement the slider value by 10% (of the max value).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="7nfq0tpeigv9o0u5uwt3bkkwo">Page Down</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="pzfl9g98ev0tu7o74lu31m9e">将滑块值减少 10%（最大值的 10%）。</td>
 </tr>
 <tr>
 <td>End</td>
-<td>Set the value to the maximum possible.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1h9gas5dls4diww5lg4p0abrp">将值设置为最大可能值。</td>
 </tr>
 <tr>
 <td>Home</td>
-<td>Set the value to the minimum possible.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="f5kaiatwusxwvn13kiwes98it">将值设置为最小可能值。</td>
 </tr>
 </tbody></table>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2r475qcsux6p00ezun6ksopjf"><code>MatSlider</code> 实现了 ARIA <code>role="slider"</code> 模式，它会处理键盘输入和焦点管理。始终要通过 <code>aria-label</code> 或 <code>aria-labelledby</code> 为每个滑块提供无障碍标签。</p>
 </div>

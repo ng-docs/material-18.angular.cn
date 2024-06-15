@@ -17,7 +17,7 @@
 bottomSheetRef.dismiss();
 </code></pre>
 
-        <h3 id="sharing-data-with-the-bottom-sheet-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3uniclirvq7fle6mreg0jhf6t"><span header-link="sharing-data-with-the-bottom-sheet-component"></span>与底部操作表组件共享数据</h3>
+        <h3 id="sharing-data-with-the-bottom-sheet-component" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="3uniclirvq7fle6mreg0jhf6t">与底部操作表组件共享数据</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ar67o1wv1lwxkajn4bnr6gawi">如果你要把一些数据传给底部操作表，可以使用 <code>data</code> 属性：</p>
 <pre><code class="language-ts"><span class="hljs-keyword">const</span> bottomSheetRef = bottomSheet.open(HobbitSheet, {
   <span class="hljs-attr">data</span>: { <span class="hljs-attr">names</span>: [<span class="hljs-string">'Frodo'</span>, <span class="hljs-string">'Bilbo'</span>] },
@@ -36,7 +36,7 @@ bottomSheetRef.dismiss();
 }
 </code></pre>
 
-        <h3 id="specifying-global-configuration-defaults" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch5qbx9cisqd93oj3egxye562"><span header-link="specifying-global-configuration-defaults"></span>指定全局配置默认值</h3>
+        <h3 id="specifying-global-configuration-defaults" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="ch5qbx9cisqd93oj3egxye562">指定全局配置默认值</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="hxsjlj7paubgnfsua5rkzss">可以通过在应用的根模块中为 <code>MAT_BOTTOM_SHEET_DEFAULT_OPTIONS</code> 提供一个 <code>MatBottomSheetConfig</code> 实例来为底部操作表指定默认选项。</p>
 <pre><code class="language-ts"><span class="hljs-meta">@NgModule</span>({
   <span class="hljs-attr">providers</span>: [
@@ -45,41 +45,45 @@ bottomSheetRef.dismiss();
 })
 </code></pre>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e1xijg2jzoxebspld0nvw1bge"><code>MatBottomSheet</code> 会创建实现了 ARIA <code>role="dialog"</code> 模式的模态对话框。这个根对话框元素应该通过 <code>MatBottomSheetConfig</code> 的 <code>ariaLabel</code> 属性被赋予一个无障碍标签。</p>
 
-        <h4 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o"><span header-link="keyboard-interaction"></span>键盘交互</h4>
+        <h4 id="keyboard-interaction" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cbrztssap137sgktrlf2lr30o">键盘交互</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ej1yxu63te3njkkrhsdxx0lm1">默认情况下，esc 键会关闭 <code>MatBottomSheet</code> 。虽然你可以使用 <code>MatBottomSheetConfig</code> 的 <code>disableClose</code> 属性禁用此行为，但这样做会破坏 ARIA <code>role="dialog"</code> 模式的预期交互模式。</p>
 
-        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5"><span header-link="focus-management"></span>焦点管理</h4>
+        <h4 id="focus-management" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="boluq1lmqxpsz6h0tcz0wi3k5">焦点管理</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="87x0ayfqeacxrnfobfmif0xcj">在打开时， <code>MatBottomSheet</code> 会捕获浏览器焦点，使其无法逃脱 <code>role="dialog"</code> 的根元素。默认情况下，底部工作表中的第一个可 tab 到的元素会获得焦点。你可以使用 <code>MatBottomSheetConfig</code> 的 <code>autoFocus</code> 属性来自定义哪个元素将获得焦点，该属性支持以下值。</p>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Behavior</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="66vasbp44yre2dcyqjx64g0vw">值</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ams69bxknsvkxy7e6gbayrjfr">行为</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>first-tabbable</code></td>
-<td>Focus the first tabbable element. This is the default setting.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dk7g5yakmncac8fjp1bxf6iz8">将焦点设置到第一个可获得焦点的元素。这是默认设置。</td>
 </tr>
 <tr>
 <td><code>first-header</code></td>
-<td>Focus the first header element (<code>role="heading"</code>, <code>h1</code> through <code>h6</code>)</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="323m5xdjyqy1kx32ku51nyl7o">将焦点设置到第一个标题元素（
+<code>role="heading"</code>，
+<code>h1</code> 到 
+<code>h6</code>）</td>
 </tr>
 <tr>
 <td><code>dialog</code></td>
-<td>Focus the root <code>role="dialog"</code> element.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="3rrvnxg2jf3yc1b07uukt98ou">将焦点设置到根 
+<code>role="dialog"</code> 元素。</td>
 </tr>
 <tr>
-<td>Any CSS selector</td>
-<td>Focus the first element matching the given selector.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2m7dfl8d9mdkb0rr50xqatpj4">任何 CSS 选择器</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dnxecjmwpu24v5he1majh1guo">将焦点设置到与给定选择器匹配的第一个元素。</td>
 </tr>
 </tbody></table>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6jud6n8rprnd2vva1fdhzehcw">虽然默认设置是适用于大多数应用程序的最佳行为，但特殊情况下也可能会需要这些替代方案。始终测试你的应用程序以验证最适合你的用户的行为。</p>
 
-        <h4 id="focus-restoration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="976h7t015lbosmnd903f0l2ce"><span header-link="focus-restoration"></span>焦点还原</h4>
+        <h4 id="focus-restoration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="976h7t015lbosmnd903f0l2ce">焦点还原</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="cfn7wokkv8f1p219dr6t2hh34">关闭时，<code>MatBottomSheet</code> 会将焦点还原到之前打开底部工作表时持有焦点的元素。但是，如果先前聚焦的元素不再存在，则必须添加额外的处理以将焦点返回到对用户的工作流程有意义的元素。从菜单打开底部工作表是导致这种情况的一种常见模式。单击菜单项时菜单关闭，因此当底部工作表尝试恢复焦点时，聚焦的菜单项已不再存在于 DOM 中。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="65cnu5ii32vot3m8t39k7c0fm">你可以使用来自 <code>MatBottomSheetRef</code> 的 <code>afterDismissed()</code> 这个 Observable 添加对这种情况的处理。</p>
 <pre><code class="language-typescript"><span class="hljs-keyword">const</span> bottomSheetRef = bottomSheet.open(FileTypeChooser);

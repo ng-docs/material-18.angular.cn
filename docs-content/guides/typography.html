@@ -1,16 +1,16 @@
 <div class="docs-markdown"><h1 data-ng_translator_product="100" data-ng_translator_ref_id="7eoksqjnikkyqyszesc0wt3t2">自定义排版</h1>
-        <h2 id="what-is-typography" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="abupe2en9oa6vdtkgkqcjli4y"><span header-link="what-is-typography"></span>什么是排版？</h2>
+        <h2 id="what-is-typography" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="abupe2en9oa6vdtkgkqcjli4y">什么是排版？</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1mzy0cho9ow52mtp7cs83bdj6">排版是一种排列字体的方式，使文本在显示时清晰易读且吸引人。Angular Material 的<a href="https://material.angular.io/guide/theming">主题体系</a>支持自定义库组件的排版设置。此外，Angular Material 提供了用于将排版样式应用于你的应用程序中元素的 API。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="czy2a3gpdf0vdvyfgy8che0hz">Angular Material 的主题 API 是用 <a href="https://sass-lang.com">Sass</a> 构建的。本文档假设你熟悉 CSS 和 Sass 的基础知识，包括变量、函数和 mixin。</p>
 
-        <h2 id="including-font-assets" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bamlabm4e4xcoqbej3b5mf5h4"><span header-link="including-font-assets"></span>包含字体资产</h2>
+        <h2 id="including-font-assets" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bamlabm4e4xcoqbej3b5mf5h4">包含字体资产</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="27kp3kpzynkvw9j0l9d0toyq1">Angular Material 的排版 API 允许你指定任何字体。默认 font-face 值配置为具有 300、400 和 500 三种字体粗细风格的 <a href="https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500">Google Roboto 字体</a>。要使用 Roboto，你的应用程序必须加载字体，该字体不包含在 Angular Material 中。加载 Roboto 或任何其他自定义字体的最简单方法是使用 Google 字体。以下代码段可以放置在你的应用程序的 <code>&lt;head&gt;</code> 中，以从 Google Fonts 中加载 Roboto。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"preconnect"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.gstatic.com"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6554zqg0wxba8xij8b5g4wjjj">有关使用 Google Fonts 的更多信息，请参阅 <a href="https://developers.google.com/fonts/docs/getting_started">Google Fonts API 入门</a>。另请注意，默认情况下， <a href="https://angular.io/guide/workspace-config#fonts-optimization-options">Angular CLI 会内联来自 Google Fonts 的资产以减少会阻塞渲染的请求</a>。</p>
 
-        <h2 id="typography-levels" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e154tdfppjvd69hr65y1g9eeu"><span header-link="typography-levels"></span>排版级别</h2>
+        <h2 id="typography-levels" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e154tdfppjvd69hr65y1g9eeu">排版级别</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="dfw1hqurg1cgd2b154bdnnyqa"><strong>排版级别</strong>是与应用程序结构的特定部分（例如标题）相对应的排版样式的集合。每个级别包括字体系列、字体粗细、字体大小和字母间距的样式。 Angular Material 使用 <a href="https://m2.material.io/design/typography/the-type-system.html#type-scale">2018 版 Material Design 规范中的排版级别</a>，如下表所示。</p>
 <table>
 <thead>
@@ -21,55 +21,59 @@
 </thead>
 <tbody><tr>
 <td><code>headline-1</code></td>
-<td>One-off header, usually at the top of the page (e.g. a hero header).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4v7wvicbpbp25u5ll6m8a9x0b">一次性标题，通常位于页面顶部（例如英雄标题）。</td>
 </tr>
 <tr>
 <td><code>headline-2</code></td>
-<td>One-off header, usually at the top of the page (e.g. a hero header).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4v7wvicbpbp25u5ll6m8a9x0b">一次性标题，通常位于页面顶部（例如英雄标题）。</td>
 </tr>
 <tr>
 <td><code>headline-3</code></td>
-<td>One-off header, usually at the top of the page (e.g. a hero header).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4v7wvicbpbp25u5ll6m8a9x0b">一次性标题，通常位于页面顶部（例如英雄标题）。</td>
 </tr>
 <tr>
 <td><code>headline-4</code></td>
-<td>One-off header, usually at the top of the page (e.g. a hero header).</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4v7wvicbpbp25u5ll6m8a9x0b">一次性标题，通常位于页面顶部（例如英雄标题）。</td>
 </tr>
 <tr>
 <td><code>headline-5</code></td>
-<td>Section heading corresponding to the <code>&lt;h1&gt;</code> tag.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2ru7vm0zmhdk5ezgimdw4e2nw">对应于 
+<code>&lt;h1&gt;</code> 标签的节标题。</td>
 </tr>
 <tr>
 <td><code>headline-6</code></td>
-<td>Section heading corresponding to the <code>&lt;h2&gt;</code> tag.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="efn6pvod0yjtjtoabg1tofkwb">对应于 
+<code>&lt;h2&gt;</code> 标签的节标题。</td>
 </tr>
 <tr>
 <td><code>subtitle-1</code></td>
-<td>Section heading corresponding to the <code>&lt;h3&gt;</code> tag.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="bv6oxra8oi6lw1kbn26p20qd4">对应于 
+<code>&lt;h3&gt;</code> 标签的节标题。</td>
 </tr>
 <tr>
 <td><code>subtitle-2</code></td>
-<td>Section heading corresponding to the <code>&lt;h4&gt;</code> tag.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="ai9g2snylclmu0rm34rf5vtcf">对应于 
+<code>&lt;h4&gt;</code> 标签的节标题。</td>
 </tr>
 <tr>
 <td><code>body-1</code></td>
-<td>Base body text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dicbdmoywcv52rii7mdyqp7kn">基本正文文本。</td>
 </tr>
 <tr>
 <td><code>body-2</code></td>
-<td>Secondary body text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="egqagvl12rna5y15ajqkaxxf">次要正文文本。</td>
 </tr>
 <tr>
 <td><code>caption</code></td>
-<td>Smaller body and hint text.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8gpjju50aa7i6ukjl4a8dslmn">较小的正文和提示文本。</td>
 </tr>
 <tr>
 <td><code>button</code></td>
-<td>Buttons and anchors.</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="76pyppbo808edlq03fr81w18c">按钮和锚点。</td>
 </tr>
 </tbody></table>
 
-        <h3 id="define-a-level" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d17xtaiwylp0pwa5rdln4nbu9"><span header-link="define-a-level"></span>定义一个级别</h3>
+        <h3 id="define-a-level" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d17xtaiwylp0pwa5rdln4nbu9">定义一个级别</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5sdbus2cxvnto7p718k23v3t7">你可以使用 Sass 函数 <code>define-typography-level</code> 来定义排版级别。此函数依次接受 <code>font-size</code> 、 <code>line-height</code> 、 <code>font-weight</code> 、 <code>font-family</code> 和 <code>letter-spacing</code> 这些 CSS 值。你还可以按名称指定参数，如下例所示。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 
@@ -82,7 +86,7 @@
 );
 </code></pre>
 
-        <h2 id="typography-config" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4940z98khyo55bola6tb27pfs"><span header-link="typography-config"></span>排版配置</h2>
+        <h2 id="typography-config" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="4940z98khyo55bola6tb27pfs">排版配置</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="1giegvwbzd70vsynexbme8fqs"><strong>排版配置</strong>是所有排版级别的集合。 Angular Material 将此配置表示为 Sass 映射表。此主题体系的映射表包含每个级别的样式，按名称键入。你可以使用 Sass 函数 <code>define-typography-config</code> 创建一个排版配置。 <code>define-typography-config</code> 的每个参数都是可选的；如果未指定，级别的样式将默认为 Material Design 的基线级别。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 
@@ -96,7 +100,7 @@
 );
 </code></pre>
 
-        <h3 id="typography-configs-and-theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cqby2gbqjniqm3xwptjvb1xwz"><span header-link="typography-configs-and-theming"></span>排版配置和主题</h3>
+        <h3 id="typography-configs-and-theming" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cqby2gbqjniqm3xwptjvb1xwz">排版配置和主题</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="dzu23wg8yjki87j2sv9hco7l2">当你通过定义主题来定制排版样式时，可以提供一个排版配置。参见 <a href="https://material.angular.io/guide/theming">主题指南</a> 以深入了解如何自定义主题。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="ca4n2wc7vgwf00pl8613d5h1r">下面的示例显示了一个典型的主题定义和一个“kids 主题”，它仅在 <code>".kids-theme"</code> CSS 类存在时才适用。你可以<a href="https://material.angular.io/guide/theming#defining-multiple-themes">查看主题指南以获取有关定义多个主题的更多指导</a>。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
@@ -150,7 +154,7 @@
 <span class="hljs-keyword">@include</span> mat.button-typography(<span class="hljs-variable">$kids-typography</span>);
 </code></pre>
 
-        <h2 id="using-typography-styles-in-your-application" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6bh5n5acx4cy6cpyuda0bw9k0"><span header-link="using-typography-styles-in-your-application"></span>在应用程序中使用排版样式</h2>
+        <h2 id="using-typography-styles-in-your-application" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="6bh5n5acx4cy6cpyuda0bw9k0">在应用程序中使用排版样式</h2>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6s8kuhp51s9sacc5nuqnm49eg">除了组件之间共享的样式之外， <code>typography-hierarchy</code> mixin 还包括用于设计应用程序样式的 CSS 类。 这些 CSS 类对应于版式配置中的版式级别。 此 mixin 还为 <code>.mat-typography</code> CSS 类范围内的本机标题元素发出样式。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 
@@ -162,9 +166,9 @@
 <table>
 <thead>
 <tr>
-<th>CSS class</th>
-<th>Level name</th>
-<th>Native elements</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="eivfm9lxgg7g3czqddfn7c4y8">CSS 类</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="8x7i7a9oaxjx3awhaghxj7vaq">级别名称</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="xq7gc1uqcm669xj50ek4d6vu">原生元素</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -188,22 +192,26 @@
 <td data-ng_translator_product="100" data-ng_translator_ref_id="6bs071f5k1m1udzmhtyd822xg">无</td>
 </tr>
 <tr>
-<td><code>.mat-h1</code> or <code>.mat-headline-5</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="898our5c9uyl39yi6eo6gsrth"><code>.mat-h1</code> 或 
+<code>.mat-headline-5</code></td>
 <td><code>headline-5</code></td>
 <td><code>&lt;h1&gt;</code></td>
 </tr>
 <tr>
-<td><code>.mat-h2</code> or <code>.mat-headline-6</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2rmpwhzo11vt6uucaep1u5xu"><code>.mat-h2</code> 或 
+<code>.mat-headline-6</code></td>
 <td><code>headline-6</code></td>
 <td><code>&lt;h2&gt;</code></td>
 </tr>
 <tr>
-<td><code>.mat-h3</code> or <code>.mat-subtitle-1</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dkjiihl6mjik1wtgs7wqfdjw6"><code>.mat-h3</code> 或 
+<code>.mat-subtitle-1</code></td>
 <td><code>subtitle-1</code></td>
 <td><code>&lt;h3&gt;</code></td>
 </tr>
 <tr>
-<td><code>.mat-h4</code> or <code>.mat-body-1</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4py6he3ipwpexh2iwqjmee0r7"><code>.mat-h4</code> 或 
+<code>.mat-body-1</code></td>
 <td><code>body-1</code></td>
 <td><code>&lt;h4&gt;</code></td>
 </tr>
@@ -218,17 +226,20 @@
 <td><code>&lt;h6&gt;</code></td>
 </tr>
 <tr>
-<td><code>.mat-body</code> or <code>.mat-body-2</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="58zgl2tb1073hf9x20ezfsurj"><code>.mat-body</code> 或 
+<code>.mat-body-2</code></td>
 <td><code>body-2</code></td>
-<td>Body text</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="59sj8k3ka1zc4x9poneuf0e2y">正文文本</td>
 </tr>
 <tr>
-<td><code>.mat-body-strong</code> or <code>.mat-subtitle-2</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4g67zuu62cksijqeg524803xs"><code>.mat-body-strong</code> 或 
+<code>.mat-subtitle-2</code></td>
 <td><code>subtitle-2</code></td>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="6bs071f5k1m1udzmhtyd822xg">无</td>
 </tr>
 <tr>
-<td><code>.mat-small</code> or <code>.mat-caption</code></td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8x7af4i300iwhw4lfyymnsh1i"><code>.mat-small</code> 或 
+<code>.mat-caption</code></td>
 <td><code>caption</code></td>
 <td data-ng_translator_product="100" data-ng_translator_ref_id="6bs071f5k1m1udzmhtyd822xg">无</td>
 </tr>
@@ -254,7 +265,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
 
-        <h3 id="reading-typography-values-from-a-config" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e8ow8zhwi8le9higxbejoryn5"><span header-link="reading-typography-values-from-a-config"></span>从配置中读取排版值</h3>
-      <p>It is possible to read typography properties from a theme for use in your own components. For more
-information about this see our guide on <a href="https://material.angular.io/guide/theming-your-components#reading-typography-values">Theming your own components</a>.</p>
+        <h3 id="reading-typography-values-from-a-config" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="e8ow8zhwi8le9higxbejoryn5">从配置中读取排版值</h3>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="dkvxg1ktxb48sylbyn1n9wh3e">可以从主题中读取排版属性并在你自己的组件中使用。有关此主题的更多信息，请参阅我们关于 
+<a href="https://material.angular.io/guide/theming-your-components#reading-typography-values">主题化你自己的组件</a> 的指南。</p>
 </div>

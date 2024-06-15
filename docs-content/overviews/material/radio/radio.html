@@ -3,21 +3,21 @@
 
 <p data-ng_translator_product="100" data-ng_translator_ref_id="97dao7qy8mumhx2avkmlwbx4l">所有具有相同 <code>name</code> 的单选按钮会构成一个集合，一次只能选择一个。</p>
 
-        <h3 id="radio-button-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="f3rpyotxi59pbiq1gg5aj8oue"><span header-link="radio-button-label"></span>单选按钮的标签</h3>
+        <h3 id="radio-button-label" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="f3rpyotxi59pbiq1gg5aj8oue">单选按钮的标签</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="2ffm1h9sdx2w5qcg73p8jo9kq">单选按钮的标签是通过 <code>&lt;mat-radio-button&gt;</code> 元素的内容提供的。
 该标签可以通过把 <code>labelPosition</code> 属性的值设置为 <code>'before'</code> 或 <code>'after'</code> 来把该标签定位在单选按钮的前面或后面。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="8zbnqar78i1ymgmrhcaivsfp9">如果你不想让此标签出现在单选按钮的紧后面，你可以用 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-label"><code>aria-label</code></a> 或 
 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-labelledby"><code>aria-labelledby</code></a> 来指定一个合适的标签。</p>
 
-        <h3 id="radio-groups" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7pxq87fa99e2646aog7ens8lo"><span header-link="radio-groups"></span>单选组</h3>
+        <h3 id="radio-groups" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7pxq87fa99e2646aog7ens8lo">单选组</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="c9ptgmypv7869f2e1dn2w3y2n">除非 DOM 结构不允许（比如在表格单元格中的单选按钮），否则单选按钮通常都要放在 <code>&lt;mat-radio-group&gt;</code> 的内部。
 单选组具有一个 <code>value</code> 属性，用于表示该组中当前选中的单选按钮。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="emrp0ryw296zw896dskyi6jli">单选组中的每个单选按钮都会继承该组的 <code>name</code>。</p>
 
-        <h3 id="use-with-angularforms" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7amg17s1117y427qhrsse0rww"><span header-link="use-with-angularforms"></span>和 <code>@angular/forms</code> 一起使用</h3>
+        <h3 id="use-with-angularforms" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="7amg17s1117y427qhrsse0rww">和 <code>@angular/forms</code> 一起使用</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="6egcfy04s7f6ghxkg3lr26ws7"><code>&lt;mat-radio-group&gt;</code> 与 <code>@angular/forms</code> 兼容，并且同时支持 <code>FormsModule</code> 和 <code>ReactiveFormsModule</code>。</p>
 
-        <h3 id="default-color-configuration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="aen7qahm66pgeqa8c7is2xnat"><span header-link="default-color-configuration"></span>默认颜色配置</h3>
+        <h3 id="default-color-configuration" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="aen7qahm66pgeqa8c7is2xnat">默认颜色配置</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="f2iy0kryr5kj2rrhu1xw7pq96">可以使用 <code>MAT_RADIO_DEFAULT_OPTIONS</code> 提供者全局配置单选按钮的默认颜色</p>
 <pre><code>providers: [{
     provide: MAT_RADIO_DEFAULT_OPTIONS,
@@ -25,7 +25,7 @@
 }]
 </code></pre>
 
-        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8"><span header-link="accessibility"></span>无障碍性</h3>
+        <h3 id="accessibility" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="55b8z3baik2ejxevaqhco84f8">无障碍性</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="e0xa3nkm45vxqyii92c0ezqup"><code>MatRadioButton</code> 使用内部的 <code>&lt;input type="radio"&gt;</code> 来提供无障碍体验。这个内部单选按钮会接收焦点并由 <code>&lt;mat-radio-button&gt;</code> 元素的文本内容自动标记。尽量不要在 <code>&lt;mat-radio-button&gt;</code> 的内容中添加其他可交互控件，因为这会降低辅助技术用户的体验。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="1a6qn4jgd09nle4qtfv96lkv5">始终通过 <code>aria-label</code> 或 <code>aria-labelledby</code> 为没有描述性文本内容的单选按钮提供无障碍标签。对于动态标签和描述， <code>MatRadioButton</code> 提供了用于绑定 <code>aria-label</code> 、 <code>aria-labelledby</code> 和 <code>aria-describedby</code> 的输入属性。这意味着你不应该使用 <code>attr.</code> 作为绑定这些属性时的前缀，如下所示。</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-radio-button</span> [<span class="hljs-attr">aria-label</span>]=<span class="hljs-string">"getMultipleChoiceAnswer()"</span>&gt;</span>

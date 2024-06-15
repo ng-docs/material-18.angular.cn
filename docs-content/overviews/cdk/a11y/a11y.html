@@ -6,7 +6,7 @@
         </h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="bbxh7sd6g3bbp2115dyytovb"><code>ListKeyManager</code> 可以通过键盘交互来管理条目列表中的激活选项。主要针对带有 <code>role="menu"</code> 或 <code>role="listbox"</code> 的组件。</p>
 
-        <h4 id="basic-usage" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9tk4o68rwaddjx6qrla8ns3hv"><span header-link="basic-usage"></span>基本用法</h4>
+        <h4 id="basic-usage" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9tk4o68rwaddjx6qrla8ns3hv">基本用法</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="afs0ptf190p2gp5zh1xh3ukcs">那些使用 <code>ListKeyManager</code> 的组件通常要做三件事：</p>
 <ul>
 <li data-ng_translator_product="100" data-ng_translator_ref_id="57kqdynnmhdao64rnh9t4kt5y">为要管理的条目创建一个 <code>@ViewChildren</code> 查询。</li>
@@ -20,12 +20,12 @@
 }
 </code></pre>
 
-        <h4 id="wrapping" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="50xawwj5npu0ujggbhqljsmp1"><span header-link="wrapping"></span>包装</h4>
+        <h4 id="wrapping" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="50xawwj5npu0ujggbhqljsmp1">包装</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="dwmg9nt83v1m1y0asja1diqp4">可以通过 <code>withWrap</code> 方法对 <code>withWrap</code> 选项进行导航</p>
 <pre><code class="language-ts"><span class="hljs-built_in">this</span>.keyManager = <span class="hljs-keyword">new</span> FocusKeyManager(...).withWrap();
 </code></pre>
 
-        <h4 id="types-of-key-managers" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cb50hndqn6veqxnoug6u6wqt0"><span header-link="types-of-key-managers"></span>键盘管理器的类型</h4>
+        <h4 id="types-of-key-managers" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="cb50hndqn6veqxnoug6u6wqt0">键盘管理器的类型</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="ej5cxvrwctxl1bolnmsakj2fj"><code>ListKeyManager</code> 有两种变体形式：<code>FocusKeyManager</code> 和 <code>ActiveDescendantKeyManager</code>。</p>
 
         <h5 id="focuskeymanager" class="docs-header-link">
@@ -57,14 +57,14 @@
       <p data-ng_translator_product="100" data-ng_translator_ref_id="9ui717ts6fpjrw2dpsujy53nb"><code>cdkTrapFocus</code> 指令用于捕获一个元素中的 <code>Tab</code> 键焦点。这可以用来创建<a href="https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal">模态对话框</a>等组件的无障碍体验，这时候必须限制焦点的移动。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="6966nybzzpxob39ehw6y9f1q2">该指令声明在 <code>A11yModule</code> 中。</p>
 
-        <h4 id="example" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="29q9l4igoe67fr0wgmo9v704z"><span header-link="example"></span>范例</h4>
+        <h4 id="example" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="29q9l4igoe67fr0wgmo9v704z">范例</h4>
       <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"my-inner-dialog-content"</span> <span class="hljs-attr">cdkTrapFocus</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- Tab and Shift + Tab will not leave this element. --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="q4pd00j3w14hvugsyhigursf">该指令不会阻止焦点因鼠标交互而移出陷阱区域。</p>
 
-        <h4 id="regions" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="66o7c26owd4t5rs3npdxxyw3z"><span header-link="regions"></span>区域</h4>
+        <h4 id="regions" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="66o7c26owd4t5rs3npdxxyw3z">区域</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="dehhudkir4ikf7g0jond0d7za">可以使用 <code>cdkFocusRegionStart</code>，<code>cdkFocusRegionEnd</code> 和 <code>cdkFocusInitial</code> 等 DOM 属性，来显式声明一个初始元素。<code>cdkFocusInitial</code> 用于指定在初始化该区域时哪个元素会获得焦点。<code>cdkFocusRegionStart</code> 和 <code>cdkFocusRegionEnd</code> 定义了获得焦点陷阱的区域。使用 tab 键的时候，焦点会在这个区域内移动，并在区域的两端自动回卷。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="4reizjf10jcs1ftw359bt1ndz">例如：</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">mat-list-item</span> <span class="hljs-attr">routerLink</span> <span class="hljs-attr">cdkFocusRegionStart</span>&gt;</span>Focus region start<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -86,7 +86,7 @@
         </h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="33uqrmnp491vzdj7hugbg1pms"><code>LiveAnnouncer</code> 用于通过 <code>aria-live</code> 区域为屏幕阅读器用户播报信息。关于 <code>aria-live</code> 区域的详细信息，请参见 <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-live">W3C 的 WAI-ARIA</a>。</p>
 
-        <h4 id="example-1" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="29q9l4igoe67fr0wgmo9v704z"><span header-link="example-1"></span>范例</h4>
+        <h4 id="example-1" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="29q9l4igoe67fr0wgmo9v704z">范例</h4>
       <pre><code class="language-ts"><span class="hljs-meta">@Component</span>({...})
 <span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComponent</span> </span>{
 
@@ -120,15 +120,15 @@
 <div material-docs-example="focus-monitor-focus-via"></div>
 
 
-        <h4 id="cdkmonitorelementfocus-and-cdkmonitorsubtreefocus" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d8k0l9djih22glvnbr6f55i2s"><span header-link="cdkmonitorelementfocus-and-cdkmonitorsubtreefocus"></span>cdkMonitorElementFocus 和 cdkMonitorSubtreeFocus</h4>
+        <h4 id="cdkmonitorelementfocus-and-cdkmonitorsubtreefocus" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="d8k0l9djih22glvnbr6f55i2s">cdkMonitorElementFocus 和 cdkMonitorSubtreeFocus</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="51iwqtf3wob4sjf6ld71acg6a">为了方便使用，CDK 还提供了两个指令，可以简单地监控某个元素。<code>cdkMonitorElementFocus</code> 相当于在 <code>checkChildren</code> 为 <code>false</code> 的宿主元素上调用 <code>monitor</code>。<code>cdkMonitorSubtreeFocus</code> 相当于在 <code>checkChildren</code> 为 <code>true</code> 的宿主元素上调用 <code>monitor</code>。这两个指令都有一个 <code>@Output()</code> <code>cdkFocusChange</code>，每当它发生变化时都会通过该事件发出新的 <code>FocusOrigin</code>。</p>
 <div material-docs-example="focus-monitor-directives"></div>
 
 
-        <h3 id="styling-utilities" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="alxhhvu8pyhwgely92gl8fip5"><span header-link="styling-utilities"></span>样式实用工具</h3>
+        <h3 id="styling-utilities" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="alxhhvu8pyhwgely92gl8fip5">样式实用工具</h3>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="27vhunl8uayduo7azluqlzmey"><code>cdk/a11y</code> 包中附带了一组 Sass Mixin，可生成一些有用的样式，以构建无障碍化体验。</p>
 
-        <h4 id="hiding-elements-in-an-accessible-way" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9c25tl5f8edsrawq6jo6jkttc"><span header-link="hiding-elements-in-an-accessible-way"></span>以无障碍化的方式隐藏元素</h4>
+        <h4 id="hiding-elements-in-an-accessible-way" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="9c25tl5f8edsrawq6jo6jkttc">以无障碍化的方式隐藏元素</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="5a6kky8y1mzslmbtpgjglg1hy">屏幕阅读器和其它辅助科技会跳过带有 <code>display: none</code>、<code>visibility: hidden</code>、<code>opacity: 0</code>、<code>height: 0</code> 或 <code>width: 0</code> 的元素。某些情况下，你需要在视觉上隐藏掉某个元素，但是仍然让它对辅助科技可用。你可以使用 Sass Mixin <code>a11y-visually-hidden</code> 来实现这一点，它会生成一个 CSS 类 <code>.cdk-visually-hidden</code>。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="5k7zvsq6hkpfwqzjjfzb1quxt">如果你正在使用 Angular Material，这个类会自动被 Angular Material 的主题体系包含尽量。否则，你就要在全局样式表中包含这个 Mixin。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/cdk'</span>;
@@ -140,7 +140,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 
-        <h4 id="targeting-high-contrast-users" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bed6w10dz4tfuk8vk966mu64d"><span header-link="targeting-high-contrast-users"></span>针对高对比度用户</h4>
+        <h4 id="targeting-high-contrast-users" class="docs-header-link" data-ng_translator_product="100" data-ng_translator_ref_id="bed6w10dz4tfuk8vk966mu64d">针对高对比度用户</h4>
       <p data-ng_translator_product="100" data-ng_translator_ref_id="971wkcsuospu523gwlb3vpazz">Microsoft Windows 包含一种称为<a href="https://support.microsoft.com/en-us/windows/use-high-contrast-mode-in-windows-10-fedc744c-90ac-69df-aed5-c8a90125e696">Windows 高对比度模式</a>的无障碍功能。<code>cdk/a11y</code> 包提供了一个 Sass mixin，可让你定义仅适用于高对比度模式的样式。要创建高对比度样式，请在 <code>high-contrast</code> mixin 中定义样式。</p>
 <p data-ng_translator_product="100" data-ng_translator_ref_id="c9pfikita6ymuvokurl21q5xa">这个 Mixin 会借助某个 CSS 类来起作用。在运行期间，当 CDK 借助 <code>HighContrastModeDetector</code> 服务检测到高对比度模式时，就会把这个类添加到 <code>body</code> 上。</p>
 <pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/cdk'</span>;

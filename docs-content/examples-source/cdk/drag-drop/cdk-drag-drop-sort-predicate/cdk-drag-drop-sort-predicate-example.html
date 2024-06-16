@@ -1,12 +1,5 @@
-<div
-  cdkDropList
-  class="example-list"
-  (cdkDropListDropped)="drop($event)"
-  [cdkDropListSortPredicate]="sortPredicate">
+<div cdkdroplist class="example-list" (cdkdroplistdropped)="drop($event)" [cdkdroplistsortpredicate]="sortPredicate">
   @for (number of numbers; track number) {
-    <div
-      class="example-box"
-      [cdkDragData]="number"
-      cdkDrag>{{number}}</div>
+    <div class="example-box" [cdkdragdata]="number" cdkdrag>{{number}}</div>
   }
 </div>

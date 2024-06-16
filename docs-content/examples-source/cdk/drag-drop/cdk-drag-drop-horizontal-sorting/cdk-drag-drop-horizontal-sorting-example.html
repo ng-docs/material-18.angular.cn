@@ -1,5 +1,5 @@
-<div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+<div cdkdroplist cdkdroplistorientation="horizontal" class="example-list" (cdkdroplistdropped)="drop($event)">
   @for (timePeriod of timePeriods; track timePeriod) {
-    <div class="example-box" cdkDrag>{{timePeriod}}</div>
+    <div class="example-box" cdkdrag>{{timePeriod}}</div>
   }
 </div>

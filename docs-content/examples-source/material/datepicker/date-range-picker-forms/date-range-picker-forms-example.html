@@ -1,11 +1,11 @@
 <mat-form-field>
   <mat-label>Enter a date range</mat-label>
-  <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+  <mat-date-range-input [formgroup]="range" [rangepicker]="picker">
     <input matStartDate formControlName="start" placeholder="Start date">
     <input matEndDate formControlName="end" placeholder="End date">
   </mat-date-range-input>
   <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker-toggle maticonsuffix [for]="picker"></mat-datepicker-toggle>
   <mat-date-range-picker #picker></mat-date-range-picker>
 
   @if (range.controls.start.hasError('matStartDateInvalid')) {
@@ -16,4 +16,4 @@
   }
 </mat-form-field>
 
-<p>Selected range: {{range.value | json}}</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="5lunsp3z0kas8tecw10pyt2u3">选定的范围：{{range.value | json}}</p>

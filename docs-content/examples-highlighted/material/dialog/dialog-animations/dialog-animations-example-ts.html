@@ -1,4 +1,4 @@
-<span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {
   MatDialog,
   MatDialogRef,
@@ -6,16 +6,16 @@
   MatDialogClose,
   MatDialogTitle,
   MatDialogContent,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/material/dialog&#x27;</span>;
-<span class="hljs-keyword">import</span> {MatButtonModule} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/material/button&#x27;</span>;
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/dialog'</span>;
+<span class="hljs-keyword">import</span> {MatButtonModule} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/button'</span>;
 
 <span class="hljs-comment">/**
  * <span class="hljs-doctag">@title </span>Dialog Animations
  */</span>
 <span class="hljs-meta">@Component</span>({
-  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;dialog-animations-example&#x27;</span>,
-  <span class="hljs-attr">styleUrl</span>: <span class="hljs-string">&#x27;dialog-animations-example.css&#x27;</span>,
-  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">&#x27;dialog-animations-example.html&#x27;</span>,
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">'dialog-animations-example'</span>,
+  <span class="hljs-attr">styleUrl</span>: <span class="hljs-string">'dialog-animations-example.css'</span>,
+  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">'dialog-animations-example.html'</span>,
   <span class="hljs-attr">standalone</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">imports</span>: [MatButtonModule],
 })
@@ -24,7 +24,7 @@
 
   openDialog(enterAnimationDuration: <span class="hljs-built_in">string</span>, <span class="hljs-attr">exitAnimationDuration</span>: <span class="hljs-built_in">string</span>): <span class="hljs-built_in">void</span> {
     <span class="hljs-built_in">this</span>.dialog.open(DialogAnimationsExampleDialog, {
-      <span class="hljs-attr">width</span>: <span class="hljs-string">&#x27;250px&#x27;</span>,
+      <span class="hljs-attr">width</span>: <span class="hljs-string">'250px'</span>,
       enterAnimationDuration,
       exitAnimationDuration,
     });
@@ -32,8 +32,8 @@
 }
 
 <span class="hljs-meta">@Component</span>({
-  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;dialog-animations-example-dialog&#x27;</span>,
-  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">&#x27;dialog-animations-example-dialog.html&#x27;</span>,
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">'dialog-animations-example-dialog'</span>,
+  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">'dialog-animations-example-dialog.html'</span>,
   <span class="hljs-attr">standalone</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">imports</span>: [MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent],
 })

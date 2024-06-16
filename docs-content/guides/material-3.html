@@ -1,9 +1,9 @@
 <div class="docs-markdown"><h1>Material 3 Theming</h1>
         <h2 id="what-is-material-3" class="docs-header-link">
-          <span header-link="what-is-material-3"></span>
+          
           What is Material 3
         </h2>
-      <p><a href="https://m3.material.io/">Material 3 (M3)</a> is the latest iteration of Google&#39;s open-source design
+      <p><a href="https://m3.material.io/">Material 3 (M3)</a> is the latest iteration of Google's open-source design
 system, Material Design. It is the successor to <a href="https://m2.material.io/">Material 2 (M2)</a>, the
 design system which Angular Material has followed.</p>
 <p>As of v17.2.0, Angular Material includes experimental support for M3 styling in addition to M2. The
@@ -11,7 +11,7 @@ team plans to stabilize support for M3 after a brief period in experimental in o
 on the design and API.</p>
 
         <h2 id="how-to-use-material-3-in-your-app" class="docs-header-link">
-          <span header-link="how-to-use-material-3-in-your-app"></span>
+          
           How to use Material 3 in your app
         </h2>
       <p>M3 is implemented in Angular Material as an alternate Sass theme for the same set of Angular
@@ -21,7 +21,7 @@ using the <code>define-theme</code> function from <code>@angular/material-experi
 themes.</p>
 
         <h3 id="defining-your-theme" class="docs-header-link">
-          <span header-link="defining-your-theme"></span>
+          
           Defining your theme
         </h3>
       <p>The simplest usage of the API, <code>$theme: matx.define-theme()</code> defines a theme with default values.
@@ -32,7 +32,7 @@ theme configuration object. The configuration object may have the following prop
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -49,7 +49,7 @@ theme configuration object. The configuration object may have the following prop
 </tr>
 </tbody></table>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material-experimental&#x27;</span> as matx;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
 
 <span class="hljs-variable">$theme</span>: matx.define-theme((
   color: (
@@ -57,7 +57,7 @@ theme configuration object. The configuration object may have the following prop
     primary: matx.<span class="hljs-variable">$m3-violet-palette</span>,
   ),
   typography: (
-    brand-family: <span class="hljs-string">&#x27;Comic Sans&#x27;</span>,
+    brand-family: <span class="hljs-string">'Comic Sans'</span>,
     bold-weight: <span class="hljs-number">900</span>
   ),
   density: (
@@ -67,17 +67,17 @@ theme configuration object. The configuration object may have the following prop
 </code></pre>
 
         <h4 id="customizing-your-colors" class="docs-header-link">
-          <span header-link="customizing-your-colors"></span>
+          
           Customizing your colors
         </h4>
-      <p>The following aspects of your app&#39;s colors can be customized via the <code>color</code> property of the theme
+      <p>The following aspects of your app's colors can be customized via the <code>color</code> property of the theme
 configuration object (see the <a href="https://m3.material.io/styles/color/roles">M3 color spec</a> to learn
 more about these terms):</p>
 <table>
 <thead>
 <tr>
 <th>Color Property</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -86,11 +86,11 @@ more about these terms):</p>
 </tr>
 <tr>
 <td><code>primary</code></td>
-<td>[Optional] Specifies the palette to use for the app&#39;s primary color palette. (Note: the secondary, neutral, and neutral-variant palettes described in the M3 spec will be automatically chosen based on your primary palette, to ensure a harmonious color combination).</td>
+<td>[Optional] Specifies the palette to use for the app's primary color palette. (Note: the secondary, neutral, and neutral-variant palettes described in the M3 spec will be automatically chosen based on your primary palette, to ensure a harmonious color combination).</td>
 </tr>
 <tr>
 <td><code>tertiary</code></td>
-<td>[Optional] Specifies the palette to use for the app&#39;s tertiary color palette.</td>
+<td>[Optional] Specifies the palette to use for the app's tertiary color palette.</td>
 </tr>
 </tbody></table>
 <p>There are a number of color palettes available in <code>@angular/material-experimental</code> that can be
@@ -112,10 +112,10 @@ used with the <code>primary</code> and <code>tertiary</code> options:</p>
 
 
         <h4 id="customizing-your-typography" class="docs-header-link">
-          <span header-link="customizing-your-typography"></span>
+          
           Customizing your typography
         </h4>
-      <p>The following aspects of your app&#39;s typography can be customized via the <code>typography</code> property of
+      <p>The following aspects of your app's typography can be customized via the <code>typography</code> property of
 the theme configuration object (see the
 <a href="https://m3.material.io/styles/typography/type-scale-tokens">M3 typography spec</a> to learn more about
 these terms):</p>
@@ -123,7 +123,7 @@ these terms):</p>
 <thead>
 <tr>
 <th>Typography Property</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -149,16 +149,16 @@ these terms):</p>
 </tbody></table>
 
         <h4 id="customizing-your-density" class="docs-header-link">
-          <span header-link="customizing-your-density"></span>
+          
           Customizing your density
         </h4>
-      <p>The following aspects of your app&#39;s density can be customized via the <code>density</code> property of the
+      <p>The following aspects of your app's density can be customized via the <code>density</code> property of the
 theme configuration object:</p>
 <table>
 <thead>
 <tr>
 <th>Density Property</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -168,10 +168,10 @@ theme configuration object:</p>
 </tbody></table>
 
         <h3 id="applying-your-theme" class="docs-header-link">
-          <span header-link="applying-your-theme"></span>
+          
           Applying your theme
         </h3>
-      <p>Once you&#39;ve created your theme, you can apply it using the same <code>-theme</code>, <code>-color</code>, <code>-typography</code>,
+      <p>Once you've created your theme, you can apply it using the same <code>-theme</code>, <code>-color</code>, <code>-typography</code>,
 <code>-density</code>, and <code>-base</code> mixins used to apply M2 themes (read more about these mixins in the
 <a href="/guide/theming#applying-a-theme-to-components">general theming guide</a>). For M3 themes, these mixins
 make some guarantees about the emitted styles. These guarantees do <em>not</em> apply when passing
@@ -186,22 +186,22 @@ selector or increase the specificity of the rule.</li>
 </ul>
 
         <h4 id="using-component-color-variants" class="docs-header-link">
-          <span header-link="using-component-color-variants"></span>
+          
           Using component color variants
         </h4>
       <p>A number of components have a <code>color</code> input property that allows developers to apply different color
 variants of the component. When using an M3 theme, this input still adds a CSS class to the
 component (e.g. <code>.mat-accent</code>). However, there are no built-in styles targeting these classes. You
-can instead apply color variants by passing the <code>$color-variant</code> option to a component&#39;s <code>-theme</code> or
+can instead apply color variants by passing the <code>$color-variant</code> option to a component's <code>-theme</code> or
 <code>-color</code> mixins.</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-checkbox</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tertiary-checkbox&quot;</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tertiary-checkbox&quot;</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-checkbox</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tertiary-checkbox"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tertiary-checkbox"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">mat-checkbox</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 </code></pre>
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material&#x27;</span> as mat;
-<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material-experimental&#x27;</span> as matx;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
 
 <span class="hljs-variable">$theme</span>: matx.define-theme();
 
@@ -233,7 +233,7 @@ do not support any color variants.)</p>
 <td><code>error</code></td>
 </tr>
 <tr>
-<td>Button</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="8191h5043ul3mzdy7nxd8g880">按钮</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>primary</code></td>
 </tr>
@@ -243,12 +243,12 @@ do not support any color variants.)</p>
 <td><code>secondary</code></td>
 </tr>
 <tr>
-<td>Checkbox</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="4pgdt8vs1hjgfxgqssmllz931">复选框</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Chips</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="dr81hhmu81rtuxojgyai41ii2">纸片</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>secondary</code></td>
 </tr>
@@ -293,12 +293,12 @@ do not support any color variants.)</p>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Radio</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="1uhqyflkrffq93ea6ov3r7xvl">单选</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Select</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="da86p6bwqfwvohvs7oykqzzsv">选择框</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>primary</code></td>
 </tr>
@@ -308,7 +308,7 @@ do not support any color variants.)</p>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Slider</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="2p7bkiglx3kyfhyv2jjzdafdt">滑块</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>primary</code></td>
 </tr>
@@ -318,35 +318,35 @@ do not support any color variants.)</p>
 <td><code>primary</code></td>
 </tr>
 <tr>
-<td>Tabs</td>
+<td data-ng_translator_product="100" data-ng_translator_ref_id="6mvs7gzuknb3qunmbprx7pkqo">选项卡</td>
 <td><code>primary</code>, <code>secondary</code>, <code>tertiary</code>, <code>error</code></td>
 <td><code>primary</code></td>
 </tr>
 </tbody></table>
 
         <h4 id="granular-customizations-with-css-custom-properties" class="docs-header-link">
-          <span header-link="granular-customizations-with-css-custom-properties"></span>
+          
           Granular customizations with CSS custom properties
         </h4>
       <p>The CSS custom properties emitted by the theme mixins are derived from
-<a href="https://m3.material.io/foundations/design-tokens/overview">M3&#39;s design tokens</a>. To further
+<a href="https://m3.material.io/foundations/design-tokens/overview">M3's design tokens</a>. To further
 customize your UI beyond the <code>define-theme</code> API, you can manually set these custom properties in
 your styles.</p>
 <p>The guarantees made by the theme mixins mean that you do not need to target internal selectors of
 components or use excessive specificity to override any of these tokenized properties. Always apply
-your base theme to your application&#39;s root element (typically <code>html</code> or <code>body</code>) and apply any
+your base theme to your application's root element (typically <code>html</code> or <code>body</code>) and apply any
 overrides on the highest-level selector where they apply.</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-sidenav-container</span>&gt;</span>
   Some content...
   <span class="hljs-tag">&lt;<span class="hljs-name">mat-sidenav</span>&gt;</span>
     Some sidenav content...
-    <span class="hljs-tag">&lt;<span class="hljs-name">mat-checkbox</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;danger&quot;</span>&gt;</span>Enable admin mode<span class="hljs-tag">&lt;/<span class="hljs-name">mat-checkbox</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">mat-checkbox</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"danger"</span>&gt;</span>Enable admin mode<span class="hljs-tag">&lt;/<span class="hljs-name">mat-checkbox</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">mat-sidenav</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">mat-sidenav-container</span>&gt;</span>
 </code></pre>
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material&#x27;</span> as mat;
-<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material-experimental&#x27;</span> as matx;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
 
 <span class="hljs-variable">$light-theme</span>: matx.define-theme();
 <span class="hljs-variable">$dark-theme</span>: matx.define-theme((
@@ -374,7 +374,7 @@ mat-sidenav {
 </code></pre>
 
         <h2 id="theme-your-own-components-using-a-material-3-theme" class="docs-header-link">
-          <span header-link="theme-your-own-components-using-a-material-3-theme"></span>
+          
           Theme your own components using a Material 3 theme
         </h2>
       <p>The same utility functions for reading properties of M2 themes (described in
@@ -385,8 +385,8 @@ different for M3 themes, in accordance with the spec.</p>
 directly reading properties off of it, e.g. using <code>map.get</code>. Always use the utility functions
 provided by Angular Material to access properties of the theme.</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@anuglar/material&#x27;</span> as mat;
-<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@anuglar/material-experimental&#x27;</span> as matx;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@anuglar/material'</span> as mat;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">'@anuglar/material-experimental'</span> as matx;
 
 <span class="hljs-keyword">@mixin</span> my-comp-theme(<span class="hljs-variable">$theme</span>) {
   <span class="hljs-selector-class">.my-comp</span> {
@@ -404,7 +404,7 @@ provided by Angular Material to access properties of the theme.</p>
 </code></pre>
 
         <h3 id="reading-tonal-palette-colors" class="docs-header-link">
-          <span header-link="reading-tonal-palette-colors"></span>
+          
           Reading tonal palette colors
         </h3>
       <p>To read a 
@@ -414,7 +414,7 @@ from the theme, use the <code>get-theme-color</code> function with three argumen
 <thead>
 <tr>
 <th>Argument</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -434,7 +434,7 @@ from the theme, use the <code>get-theme-color</code> function with three argumen
 
 
         <h3 id="reading-color-roles" class="docs-header-link">
-          <span header-link="reading-color-roles"></span>
+          
           Reading color roles
         </h3>
       <p>To read a <a href="https://m3.material.io/styles/color/roles">color role</a>, use <code>get-theme-color</code> with two
@@ -443,7 +443,7 @@ arguments:</p>
 <thead>
 <tr>
 <th>Argument</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -459,7 +459,7 @@ arguments:</p>
 
 
         <h3 id="reading-the-theme-type" class="docs-header-link">
-          <span header-link="reading-the-theme-type"></span>
+          
           Reading the theme type
         </h3>
       <p>To read the theme type (<code>light</code> or <code>dark</code>), call <code>get-theme-type</code> with a single argument:</p>
@@ -467,7 +467,7 @@ arguments:</p>
 <thead>
 <tr>
 <th>Argument</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -477,7 +477,7 @@ arguments:</p>
 </tbody></table>
 
         <h3 id="reading-typescale-properties" class="docs-header-link">
-          <span header-link="reading-typescale-properties"></span>
+          
           Reading typescale properties
         </h3>
       <p>To read a <a href="https://m3.material.io/styles/typography/type-scale-tokens">typescale</a> property from the
@@ -486,7 +486,7 @@ theme, call <code>get-theme-typography</code> with three arguments:</p>
 <thead>
 <tr>
 <th>Argument</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -506,7 +506,7 @@ theme, call <code>get-theme-typography</code> with three arguments:</p>
 
 
         <h3 id="reading-the-density-scale" class="docs-header-link">
-          <span header-link="reading-the-density-scale"></span>
+          
           Reading the density scale
         </h3>
       <p>To read the density scale (<code>0</code>, <code>-1</code>, <code>-2</code>, <code>-3</code>, <code>-4</code>, or <code>-5</code>) from the theme, call
@@ -515,7 +515,7 @@ theme, call <code>get-theme-typography</code> with three arguments:</p>
 <thead>
 <tr>
 <th>Argument</th>
-<th>Description</th>
+<th data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -525,16 +525,16 @@ theme, call <code>get-theme-typography</code> with three arguments:</p>
 </tbody></table>
 
         <h2 id="how-to-migrate-an-app-from-material-2-to-material-3" class="docs-header-link">
-          <span header-link="how-to-migrate-an-app-from-material-2-to-material-3"></span>
+          
           How to migrate an app from Material 2 to Material 3
         </h2>
       <p>Angular Material does not offer an automated migration from M2 to M3 because the design of your app
 is subjective. Material Design offers general principles and constraints to guide you, but
-ultimately it is up to you to decide how to apply those in your app. That said, Angular Material&#39;s
+ultimately it is up to you to decide how to apply those in your app. That said, Angular Material's
 M3 themes were designed with maximum compatibility in mind.</p>
 
         <h3 id="update-your-components-that-use-angular-material-themes-to-be-compatible-with-material-3" class="docs-header-link">
-          <span header-link="update-your-components-that-use-angular-material-themes-to-be-compatible-with-material-3"></span>
+          
           Update your components that use Angular Material themes to be compatible with Material 3
         </h3>
       <p>In order to facilitate a smooth transition from M2 to M3, it may make sense to have your components
@@ -545,7 +545,7 @@ for M2 vs M3. You can check the theme version using the <code>get-theme-version<
 <code>@angular/material</code>. The function will return <code>0</code> for an M2 theme or <code>1</code> for an M3 theme (see 
 <a href="#theme-your-own-components-using-a-material-3-theme">theme your own components using a Material 3 theme</a>
 for how to read values from an M3 theme).</p>
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material&#x27;</span> as mat;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
 
 <span class="hljs-keyword">@mixin</span> my-comp-theme(<span class="hljs-variable">$theme</span>) {
   <span class="hljs-keyword">@if</span> (mat.get-theme-version(<span class="hljs-variable">$theme</span>) == <span class="hljs-number">1</span>) {
@@ -557,7 +557,7 @@ for how to read values from an M3 theme).</p>
 </code></pre>
 
         <h3 id="pass-a-new-m3-theme-in-your-global-theme-styles" class="docs-header-link">
-          <span header-link="pass-a-new-m3-theme-in-your-global-theme-styles"></span>
+          
           Pass a new M3 theme in your global theme styles
         </h3>
       <p>Create a new M3 theme object using <code>define-theme</code> and pass it everywhere you were previously passing
@@ -565,7 +565,7 @@ your M2 theme. All Angular Material mixins that take an M2 theme are compatible 
 well.</p>
 
         <h3 id="update-usages-of-apis-that-are-not-supported-for-material-3-themes" class="docs-header-link">
-          <span header-link="update-usages-of-apis-that-are-not-supported-for-material-3-themes"></span>
+          
           Update usages of APIs that are not supported for Material 3 themes
         </h3>
       <p>Because Material 3 is implemented as an alternate theme for the same components used for Material 2,
@@ -578,10 +578,10 @@ we recommend wrapping it in <code>html { ... }</code></li>
 <a href="#using-component-color-variants">using component color variants</a> for more).</li>
 <li>The <code>backgroundColor</code> property of <code>&lt;mat-tab-group&gt;</code> is not supported, and should not be used with
 M3 themes.</li>
-<li>The <code>appearance=&quot;legacy&quot;</code> variant of <code>&lt;mat-button-toggle&gt;</code> is not supported, and should not be
+<li>The <code>appearance="legacy"</code> variant of <code>&lt;mat-button-toggle&gt;</code> is not supported, and should not be
 used with M3 themes.</li>
 <li>For M3 themes, calling <code>all-component-typographies</code> does <em>not</em> emit the <code>typography-hierarchy</code>
-styles, as this would violate M3&#39;s guarantee to not add selectors. Instead, the
+styles, as this would violate M3's guarantee to not add selectors. Instead, the
 <code>typography-hierarchy</code> mixin must be explicitly called if you want these styles in your app.</li>
 <li>The <code>typography-hierarchy</code> mixin outputs CSS class names that correspond to the names of M3
 typescale levels rather than M2 typescale levels. If you were relying on the M2 classes to style
@@ -589,18 +589,18 @@ your app, you may need to update the class names.</li>
 </ul>
 
         <h3 id="optional-add-backwards-compatibility-styles-for-color-variants" class="docs-header-link">
-          <span header-link="optional-add-backwards-compatibility-styles-for-color-variants"></span>
+          
           (Optional) add backwards compatibility styles for color variants
         </h3>
-      <p>We recommend <em>not</em> relying on the <code>color=&quot;primary&quot;</code>, <code>color=&quot;accent&quot;</code>, or <code>color=&quot;warn&quot;</code> options
+      <p>We recommend <em>not</em> relying on the <code>color="primary"</code>, <code>color="accent"</code>, or <code>color="warn"</code> options
 that are offered by a number of Angular Material components for M2 themes. However, if you want to
 quickly update to M3 and are willing to accept the extra CSS generated for these variants, you can
 enable backwards compatibility styles that restore the behavior of this API. Call the 
 <code>color-variants-back-compat</code> mixin from <code>@angular/material-experimental</code> with the M3 theme you want
 to generate color variant styles for.</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material&#x27;</span> as mat;
-<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material-experimental&#x27;</span> as matx;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
 
 <span class="hljs-variable">$theme</span>: matx.define-theme();
 
@@ -611,7 +611,7 @@ to generate color variant styles for.</p>
 </code></pre>
 
         <h3 id="optional-add-backwards-compatibility-styles-for-typography-hierarchy" class="docs-header-link">
-          <span header-link="optional-add-backwards-compatibility-styles-for-typography-hierarchy"></span>
+          
           (Optional) add backwards compatibility styles for typography hierarchy
         </h3>
       <p>Calling the <code>typography-hierarchy</code> mixin with an M3 theme generates styles for CSS classes that
@@ -622,8 +622,8 @@ updating all usages to one of the new class names. However, to make migration ea
 We have made a best effort to map the M2 classes to reasonable equivalents in M3. To enable these
 styles, pass an additional argument <code>$back-compat: true</code> to the mixin.</p>
 <!-- TODO(mmalerba): Upgrade to embedded example -->
-<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material&#x27;</span> as mat;
-<span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;@angular/material-experimental&#x27;</span> as matx;
+<pre><code class="language-scss"><span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material'</span> as mat;
+<span class="hljs-keyword">@use</span> <span class="hljs-string">'@angular/material-experimental'</span> as matx;
 
 <span class="hljs-variable">$theme</span>: matx.define-theme();
 
@@ -631,19 +631,19 @@ styles, pass an additional argument <code>$back-compat: true</code> to the mixin
 </code></pre>
 
         <h2 id="faq" class="docs-header-link">
-          <span header-link="faq"></span>
+          
           FAQ
         </h2>
       
         <h3 id="can-i-use-colors-other-than-the-pre-defined-material-3-palettes" class="docs-header-link">
-          <span header-link="can-i-use-colors-other-than-the-pre-defined-material-3-palettes"></span>
+          
           Can I use colors other than the pre-defined Material 3 palettes?
         </h3>
       <p>Currently, we only offer predefined palettes, but we plan to add support for using custom generated
 palettes as part of making the M3 APIs stable and available in <code>@angular/material</code>.</p>
 
         <h3 id="can-i-depend-on-the-css-custom-property-names-being-stable" class="docs-header-link">
-          <span header-link="can-i-depend-on-the-css-custom-property-names-being-stable"></span>
+          
           Can I depend on the CSS custom property names being stable?
         </h3>
       <p>We may make changes to the custom property names before moving the API out of experimental, but
@@ -651,7 +651,7 @@ these changes would be accompanied by a schematic to find &amp; replace the old 
 across your app.</p>
 
         <h3 id="are-the-material-2-styles-and-apis-going-away" class="docs-header-link">
-          <span header-link="are-the-material-2-styles-and-apis-going-away"></span>
+          
           Are the Material 2 styles and APIs going away?
         </h3>
       <p>Material 2 styles and their APIs will continue to be supported, and we do not have any immediate 

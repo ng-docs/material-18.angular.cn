@@ -1,20 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="docs-api">
   <h2>
     API reference for Angular CDK menu
@@ -24,21 +7,21 @@
       </code>
     </p>
   <h3 id="cdk-menu-services" class="docs-header-link docs-api-h3">
-      <span header-link="services"></span>
+      
       Services
     </h3>
     
       
 
 <h4 id="ContextMenuTracker" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="ContextMenuTracker"></span>
+  
   <code>ContextMenuTracker</code>
   
-</h4><p class="docs-api-class-description"><p>Tracks the last open context menu trigger across the entire application.</p>
-</p>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="9kwt3b65ze7nu6e1zj6sratg3">跟踪整个应用程序中最后打开的上下文菜单触发器。</p>
+<p></p>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -48,18 +31,18 @@
       <th colspan="2" class="docs-api-method-name-cell">update
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Close the previous open context menu and set the given one as being open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="31ndpqvxs9nu9133cmimw0wkh">关闭上一个打开的上下文菜单并将给定的菜单设置为打开。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         trigger</p>
@@ -67,12 +50,12 @@
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The trigger for the currently open Context Menu.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="b8ypyb99bm9clpudb6k6j6uz8">当前打开的上下文菜单的触发器。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -83,18 +66,15 @@
       
 
 <h4 id="MenuStack" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="MenuStack"></span>
+  
   <code>MenuStack</code>
   
-</h4><p class="docs-api-class-description"><p>MenuStack allows subscribers to listen for close events (when a MenuStackItem is popped off
-of the stack) in order to perform closing actions. Upon the MenuStack being empty it emits
-from the <code>empty</code> observable specifying the next focus action which the listener should perform
-as requested by the closer.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="3y0646g0gbu8vumhqdkfdpx4v">MenuStack 允许订阅者监听关闭事件（当 MenuStackItem 从堆栈中弹出时）以执行关闭操作。当 MenuStack 为空时，它会从 <code>empty</code> 的 observable 发出，指定侦听器应根据更近者的请求执行的下一个焦点操作。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -104,7 +84,7 @@ as requested by the closer.</p>
       <code>closed: Observable&lt;MenuStackCloseEvent&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Observable which emits the MenuStackItem which has been requested to close.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1mra7o52a0jacq6u711bim66z">这个 Observable 发出已请求关闭的 MenuStackItem。</p>
 </td>
 </tr>
 
@@ -117,9 +97,7 @@ as requested by the closer.</p>
       <code>emptied: Observable&lt;FocusNext | undefined&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Observable which emits when the MenuStack is empty after popping off the last element. It
-emits a FocusNext event which specifies the action the closer has requested the listener
-perform.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="aj1ibhj9w5tnp0s2e3069vp5x">弹出最后一个元素后，当 MenuStack 为空时发出的 Observable。它发出一个 FocusNext 事件，该事件指定关闭者请求侦听器执行的操作。</p>
 </td>
 </tr>
 
@@ -132,7 +110,7 @@ perform.</p>
       <code>hasFocus: Observable&lt;boolean&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Observable which emits whether any menu in the menu stack has focus.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="expdzf3k1kmlufnw2tosh2b08">这个 Observable 发出菜单栈中的任何菜单是否具有焦点。</p>
 </td>
 </tr>
 
@@ -145,16 +123,16 @@ perform.</p>
       <code>id: `${nextId++}`</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The ID of this menu stack.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dd9xeb3mgj4fek08ai87l49ed">此菜单栈的 ID。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -164,19 +142,18 @@ perform.</p>
       <th colspan="2" class="docs-api-method-name-cell">close
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Pop items off of the stack up to and including <code>lastItem</code> and emit each on the close
-observable. If the stack is empty or <code>lastItem</code> is not on the stack it does nothing.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="1ru5a8bz96wgmtpkoyeha9ysy">从堆栈中弹出项目直到 <code>lastItem</code>（含）并在 close 这个 observable 上发出每个项目。如果堆栈为空或 <code>lastItem</code> 不在此堆栈上，则什么也不做。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         lastItem</p>
@@ -184,26 +161,26 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>the last item to pop off the stack.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="6g5giz6mf2bl0t9zoae4nqaf3">从堆栈中弹出的最后一项。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
   
   <tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">CloseOptions</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options that configure behavior on close.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ee152u2fta04ogszi7zkv3y4f">配置关闭行为的选项。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -215,31 +192,31 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">closeAll
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Pop off all MenuStackItems and emit each one on the <code>close</code> observable one by one.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="dbfqk507g245hsthbn2kyo3wz">弹出所有 MenuStackItems 并在 <code>close</code> 这个 observable 上逐一发出。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">CloseOptions</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options that configure behavior on close.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ee152u2fta04ogszi7zkv3y4f">配置关闭行为的选项。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -251,19 +228,18 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">closeSubMenuOf
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Pop items off of the stack up to but excluding <code>lastItem</code> and emit each on the close
-observable. If the stack is empty or <code>lastItem</code> is not on the stack it does nothing.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="142qmkikxmqb17jne6ma6798b">从堆栈中弹出项目直到 <code>lastItem</code>（不含）并在 close 这个 observable 上发出每个项目。如果堆栈为空或 <code>lastItem</code> 不在堆栈上，则什么也不做。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         lastItem</p>
@@ -271,12 +247,12 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>the element which should be left on the stack</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="9t394twad5poszw2mr993w30l">应该留在堆栈上的元素</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -288,12 +264,12 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">hasInlineMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether the menu stack is associated with an inline menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="cnm988eprca2q6z1tdz5wwcwb">菜单栈是否关联着内联菜单。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -302,27 +278,26 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
 <table class="docs-api-method-table">
   <thead>
     <tr class="docs-api-method-name-row">
-      <th colspan="2" class="docs-api-method-name-cell"><div class="docs-api-modifier-method-marker">
-          static
-        </div>inline
-      </th>
+      <th colspan="2" class="docs-api-method-name-cell" data-ng_translator_product="100" data-ng_translator_ref_id="50rpn7ve8dbjzncmcj56f12th"><div class="docs-api-modifier-method-marker">
+  static 
+</div>inline</th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Creates a menu stack that originates from an inline menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="bvddxz2i9tyijdwwpi95upiyb">创建源自内联菜单的菜单栈。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         orientation</p>
-      <code class="docs-api-method-parameter-type">&quot;vertical&quot; | &quot;horizontal&quot;</code>
+      <code class="docs-api-method-parameter-type">"vertical" | "horizontal"</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
@@ -330,7 +305,7 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -342,12 +317,12 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">inlineMenuOrientation
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>The orientation of the associated inline menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="9xiwrir5xi7buzc5xrt71y8l3">关联的内联菜单的方向。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -359,12 +334,12 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">isEmpty
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Return true if this stack is empty.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="635dpyis9a2mpnwejiexqarpa">如果此堆栈为空，则返回 true。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -376,12 +351,12 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">length
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Return the length of the stack.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="f2vyhidakzx7mw6qye2m3rojb">返回堆栈的长度。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -393,17 +368,17 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">peek
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the top most element on the stack.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="9g14958466hbqs89bhvptc1tw">获取堆栈中最顶部的元素。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">MenuStackItem | undefined</code>
     </td>
@@ -412,7 +387,7 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -424,18 +399,18 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">push
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Adds an item to the menu stack.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2njiqt8gm44po3nudruy57v3z">将项目添加到此菜单栈。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         menu</p>
@@ -443,12 +418,12 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>the MenuStackItem to put on the stack.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="2vjjcg7evbfwnmtndrsky4om2">要放入此堆栈的 MenuStackItem。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -460,18 +435,18 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       <th colspan="2" class="docs-api-method-name-cell">setHasFocus
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sets whether the menu stack contains the focused element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="dbv0tetk2zmotxsttlt20orri">设置菜单栈是否包含有焦点的元素。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         hasFocus</p>
@@ -483,7 +458,7 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -494,20 +469,15 @@ observable. If the stack is empty or <code>lastItem</code> is not on the stack i
       
 
 <h4 id="TargetMenuAim" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="TargetMenuAim"></span>
+  
   <code>TargetMenuAim</code>
   
-</h4><p class="docs-api-class-description"><p>TargetMenuAim predicts if a user is moving into a submenu. It calculates the
-trajectory of the user&#39;s mouse movement in the current menu to determine if the
-mouse is moving towards an open submenu.</p>
-<p>The determination is made by calculating the slope of the users last NUM_POINTS moves where each
-pair of points determines if the trajectory line points into the submenu. It uses consensus
-approach by checking if at least NUM_POINTS / 2 pairs determine that the user is moving towards
-to submenu.</p>
-</p>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="26speb0jdyx48klxwtrpel1km">TargetMenuAim 会预测用户是否正在进入子菜单。它计算用户鼠标在当前菜单中移动的轨迹，以确定鼠标是否正在向打开的子菜单移动。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="5llf84vk57qa5c4pqf6efo3gh">通过计算用户最后 NUM_POINTS 移动的斜率来确定，其中每对点确定轨迹线是否指向子菜单。它使用的方法是检查是否至少有 NUM_POINTS / 2 对来确定用户正在移至子菜单来。</p>
+<p></p>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -517,18 +487,18 @@ to submenu.</p>
       <th colspan="2" class="docs-api-method-name-cell">initialize
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Set the Menu and its PointerFocusTracker.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7ztmflfobor9o9d3gdjuvrgtx">设置菜单及其 PointerFocusTracker。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         menu</p>
@@ -536,9 +506,9 @@ to submenu.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The menu that this menu aim service controls.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="elp67567ed6socz9dayx6yu6f">该 MenuAim 服务控制的菜单。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
   
@@ -550,12 +520,12 @@ to submenu.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The <code>PointerFocusTracker</code> for the given menu.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="9adxov9wh8cnx1exo0qayj76t">给定菜单的 <code>PointerFocusTracker</code> 。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -567,19 +537,18 @@ to submenu.</p>
       <th colspan="2" class="docs-api-method-name-cell">toggle
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Calls the <code>doToggle</code> callback when it is deemed that the user is not moving towards
-the submenu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="9kisjmtybcuk1jszjsdshnylc">当认为用户没有向子菜单移动时调用 <code>doToggle</code> 回调。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         doToggle</p>
@@ -587,12 +556,12 @@ the submenu.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>the function called when the user is not moving towards the submenu.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="1c4f5q346m8z0vy8ncgvyd8sa">当用户没有移向子菜单时要调用的函数。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -600,37 +569,25 @@ the submenu.</p>
 
 
     <h3 id="cdk-menu-directives" class="docs-header-link docs-api-h3">
-      <span header-link="directives"></span>
+      
       Directives
     </h3>
     
       
 
-<h4 id="CdkMenuBar" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuBar"></span>
-  <code>CdkMenuBar</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuBase" class="docs-api-class-extends-type">
-      CdkMenuBase
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Directive applied to an element which configures it as a MenuBar by setting the appropriate
-role, aria attributes, and accessible keyboard and mouse handling logic. The component that
-this directive is applied to should contain components marked with CdkMenuItem.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkMenuBar" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="5yakgnxdd8x189houy3nspuvh"><span header-link="CdkMenuBar"></span><code>CdkMenuBar</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuBase" class="docs-api-class-extends-type"> CdkMenuBase </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="aty6p115dc40z3i78qzkzz6bs">指令应用于通过设置适当的角色、aria 属性和无障碍化键盘和鼠标处理逻辑将其配置为 MenuBar 的元素。应用此指令的组件应包含标有 CdkMenuItem 的组件。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenuBar]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkMenuBar</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkMenuBar</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -641,7 +598,7 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <code>id: `cdk-menu-${nextId++}`</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The id of the menu&#39;s host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="b979ipybmwbn6dkcwqwribfym">此菜单的宿主元素的 id。</p>
 </td>
 </tr>
 
@@ -654,7 +611,7 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <code>isInline: true</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu is displayed inline (i.e. always present vs a conditional popup that the user triggers with a trigger element).</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="24wn3c3lsdag3k8n14bhvbq91">菜单是否内联显示（即始终存在的弹出菜单，与之相对的是通过触发器元素由用户触发的条件化弹出菜单）。</p>
 </td>
 </tr>
 
@@ -667,7 +624,7 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <code>items: QueryList&lt;CdkMenuItem&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>All child MenuItem elements nested in this Menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ay0vc0petmmg2awr84ejoos4f">嵌套在此菜单中的所有子 MenuItem 元素。</p>
 </td>
 </tr>
 
@@ -680,7 +637,7 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <code>menuStack: MenuStack</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The stack of menus this menu belongs to.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="95nxgptlat7lkv7irlj1j3k0u">此菜单所属的菜单栈。</p>
 </td>
 </tr>
 
@@ -693,7 +650,7 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <code>nativeElement: HTMLElement</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu&#39;s native DOM host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="8qsrwwspvu7wjiwcntbrzcioj">菜单的原生 DOM 宿主元素。</p>
 </td>
 </tr>
 
@@ -703,19 +660,19 @@ this directive is applied to should contain components marked with CdkMenuItem.<
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>orientation: &#39;horizontal&#39;</code>
+      <code>orientation: 'horizontal'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The direction items in the menu flow.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="edr5rp4043l01w7z1efuysemb">菜单流中的菜单项方向。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -725,31 +682,31 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <th colspan="2" class="docs-api-method-name-cell">focusFirstItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the first MenuItem in the menu and set the focus origin.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8ja4nyh1gb1aje1yv9k2qhbgg">将焦点放在菜单中的第一个 MenuItem 上并设置焦点原点。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
-      <code class="docs-api-method-parameter-type">FocusOrigin = &#39;program&#39;</code>
+      <code class="docs-api-method-parameter-type">FocusOrigin = 'program'</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The origin input mode of the focus event.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ewyxrbx570svp76sv8l3re5y8">导致此焦点事件的来源模式。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -761,31 +718,31 @@ this directive is applied to should contain components marked with CdkMenuItem.<
       <th colspan="2" class="docs-api-method-name-cell">focusLastItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the last MenuItem in the menu and set the focus origin.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="580bo40zya0jcp4gi7jdea8hu">将焦点放在菜单中的最后一个 MenuItem 上并设置焦点原点。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
-      <code class="docs-api-method-parameter-type">FocusOrigin = &#39;program&#39;</code>
+      <code class="docs-api-method-parameter-type">FocusOrigin = 'program'</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The origin input mode of the focus event.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ewyxrbx570svp76sv8l3re5y8">导致此焦点事件的来源模式。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -795,32 +752,20 @@ this directive is applied to should contain components marked with CdkMenuItem.<
     
       
 
-<h4 id="CdkMenu" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenu"></span>
-  <code>CdkMenu</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuBase" class="docs-api-class-extends-type">
-      CdkMenuBase
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Directive which configures the element as a Menu which should contain child elements marked as
-CdkMenuItem or CdkMenuGroup. Sets the appropriate role and aria-attributes for a menu and
-contains accessible keyboard and mouse handling logic.</p>
-<p>It also acts as a RadioGroup for elements marked with role <code>menuitemradio</code>.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkMenu" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="8h6evqemjjkvtsfhm4q2lqdw9"><span header-link="CdkMenu"></span><code>CdkMenu</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuBase" class="docs-api-class-extends-type"> CdkMenuBase </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="66myk1ngggza2qmmxuky5bxmn">将此元素配置为菜单的指令，该菜单应包含标记为 CdkMenuItem 或 CdkMenuGroup 的子元素。为菜单设置适当的角色和 aria 属性，并包含可访问的键盘和鼠标处理逻辑。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="7k2scn2ws6jcv2cx84lawrf5i">它还充当标有角色 <code>menuitemradio</code> 的元素的 RadioGroup。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenu]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkMenu</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkMenu</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -831,7 +776,7 @@ contains accessible keyboard and mouse handling logic.</p>
       <code>id: `cdk-menu-${nextId++}`</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The id of the menu&#39;s host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="b979ipybmwbn6dkcwqwribfym">此菜单的宿主元素的 id。</p>
 </td>
 </tr>
 
@@ -845,7 +790,7 @@ contains accessible keyboard and mouse handling logic.</p>
       <code>closed: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Event emitted when the menu is closed.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="bkrc1ei7cvvp48aq1z2ldtdn3">当菜单关闭时会发出本事件。</p>
 </td>
 </tr>
 
@@ -858,7 +803,7 @@ contains accessible keyboard and mouse handling logic.</p>
       <code>isInline: !this._parentTrigger</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu is displayed inline (i.e. always present vs a conditional popup that the user triggers with a trigger element).</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="24wn3c3lsdag3k8n14bhvbq91">菜单是否内联显示（即始终存在的弹出菜单，与之相对的是通过触发器元素由用户触发的条件化弹出菜单）。</p>
 </td>
 </tr>
 
@@ -871,7 +816,7 @@ contains accessible keyboard and mouse handling logic.</p>
       <code>items: QueryList&lt;CdkMenuItem&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>All child MenuItem elements nested in this Menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ay0vc0petmmg2awr84ejoos4f">嵌套在此菜单中的所有子 MenuItem 元素。</p>
 </td>
 </tr>
 
@@ -884,7 +829,7 @@ contains accessible keyboard and mouse handling logic.</p>
       <code>menuStack: MenuStack</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The stack of menus this menu belongs to.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="95nxgptlat7lkv7irlj1j3k0u">此菜单所属的菜单栈。</p>
 </td>
 </tr>
 
@@ -897,7 +842,7 @@ contains accessible keyboard and mouse handling logic.</p>
       <code>nativeElement: HTMLElement</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu&#39;s native DOM host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="8qsrwwspvu7wjiwcntbrzcioj">菜单的原生 DOM 宿主元素。</p>
 </td>
 </tr>
 
@@ -907,19 +852,19 @@ contains accessible keyboard and mouse handling logic.</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>orientation: &#39;vertical&#39;</code>
+      <code>orientation: 'vertical'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The direction items in the menu flow.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="edr5rp4043l01w7z1efuysemb">菜单流中的菜单项方向。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -929,31 +874,31 @@ contains accessible keyboard and mouse handling logic.</p>
       <th colspan="2" class="docs-api-method-name-cell">focusFirstItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the first MenuItem in the menu and set the focus origin.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8ja4nyh1gb1aje1yv9k2qhbgg">将焦点放在菜单中的第一个 MenuItem 上并设置焦点原点。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
-      <code class="docs-api-method-parameter-type">FocusOrigin = &#39;program&#39;</code>
+      <code class="docs-api-method-parameter-type">FocusOrigin = 'program'</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The origin input mode of the focus event.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ewyxrbx570svp76sv8l3re5y8">导致此焦点事件的来源模式。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -965,31 +910,31 @@ contains accessible keyboard and mouse handling logic.</p>
       <th colspan="2" class="docs-api-method-name-cell">focusLastItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the last MenuItem in the menu and set the focus origin.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="580bo40zya0jcp4gi7jdea8hu">将焦点放在菜单中的最后一个 MenuItem 上并设置焦点原点。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
-      <code class="docs-api-method-parameter-type">FocusOrigin = &#39;program&#39;</code>
+      <code class="docs-api-method-parameter-type">FocusOrigin = 'program'</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The origin input mode of the focus event.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ewyxrbx570svp76sv8l3re5y8">导致此焦点事件的来源模式。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -999,24 +944,13 @@ contains accessible keyboard and mouse handling logic.</p>
     
       
 
-<h4 id="CdkMenuBase" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuBase"></span>
-  <code>CdkMenuBase</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuGroup" class="docs-api-class-extends-type">
-      CdkMenuGroup
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Abstract directive that implements shared logic common to all menus.
-This class can be extended to create custom menu types.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<h4 id="CdkMenuBase" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="dz5fsmcttfknu7fdseyfasmok"><span header-link="CdkMenuBase"></span><code>CdkMenuBase</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuGroup" class="docs-api-class-extends-type"> CdkMenuGroup </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="sdall6wwkjmo80mqpgs5h8vs">实现所有菜单共有的共享逻辑的抽象指令。可以扩展此类以创建自定义菜单类型。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1027,7 +961,7 @@ This class can be extended to create custom menu types.</p>
       <code>id: `cdk-menu-${nextId++}`</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The id of the menu&#39;s host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="b979ipybmwbn6dkcwqwribfym">此菜单的宿主元素的 id。</p>
 </td>
 </tr>
 
@@ -1040,7 +974,7 @@ This class can be extended to create custom menu types.</p>
       <code>destroyed: Subject&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the MenuBar is destroyed.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="bxt4ncv27vfbjx7c8p414xqjm">当 MenuBar 被销毁时发出。</p>
 </td>
 </tr>
 
@@ -1053,7 +987,7 @@ This class can be extended to create custom menu types.</p>
       <code>dir: inject(Directionality, { optional: true })</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The directionality (text direction) of the current page.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="bof59xxoiyxdxg9tvcfr0wal4">当前页面的方向性（文本方向）。</p>
 </td>
 </tr>
 
@@ -1066,8 +1000,7 @@ This class can be extended to create custom menu types.</p>
       <code>isInline: false</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu is displayed inline (i.e. always present vs a conditional popup that the
-user triggers with a trigger element).</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="7lnpf5ofrqcy36qzd2uafyx9z">菜单是否内联显示（即始终存在的弹出菜单，与之相对的是通过触发器元素由用户触发的条件化弹出菜单）。</p>
 </td>
 </tr>
 
@@ -1080,7 +1013,7 @@ user triggers with a trigger element).</p>
       <code>items: QueryList&lt;CdkMenuItem&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>All child MenuItem elements nested in this Menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ay0vc0petmmg2awr84ejoos4f">嵌套在此菜单中的所有子 MenuItem 元素。</p>
 </td>
 </tr>
 
@@ -1093,7 +1026,7 @@ user triggers with a trigger element).</p>
       <code>keyManager: FocusKeyManager&lt;CdkMenuItem&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Handles keyboard events for the menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4gnu7kf6hymlg3r4z5st7uaz5">处理菜单的键盘事件。</p>
 </td>
 </tr>
 
@@ -1106,7 +1039,7 @@ user triggers with a trigger element).</p>
       <code>menuAim: inject(MENU_AIM, { optional: true, self: true })</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu aim service used by this menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="b5w4x6y5ymr1ed8bi5pcsa8i1">此菜单使用的 MenuAim 服务。</p>
 </td>
 </tr>
 
@@ -1119,7 +1052,7 @@ user triggers with a trigger element).</p>
       <code>menuStack: MenuStack</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The stack of menus this menu belongs to.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="95nxgptlat7lkv7irlj1j3k0u">此菜单所属的菜单栈。</p>
 </td>
 </tr>
 
@@ -1132,7 +1065,7 @@ user triggers with a trigger element).</p>
       <code>nativeElement: HTMLElement</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu&#39;s native DOM host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="8qsrwwspvu7wjiwcntbrzcioj">菜单的原生 DOM 宿主元素。</p>
 </td>
 </tr>
 
@@ -1145,7 +1078,7 @@ user triggers with a trigger element).</p>
       <code>ngZone: inject(NgZone)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The Angular zone.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4f0estwn3azz2rg7o0cib0ble">Angular 区域（Zone）。</p>
 </td>
 </tr>
 
@@ -1155,10 +1088,10 @@ user triggers with a trigger element).</p>
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>orientation: &#39;horizontal&#39; | &#39;vertical&#39;</code>
+      <code>orientation: 'horizontal' | 'vertical'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The direction items in the menu flow.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="edr5rp4043l01w7z1efuysemb">菜单流中的菜单项方向。</p>
 </td>
 </tr>
 
@@ -1171,7 +1104,7 @@ user triggers with a trigger element).</p>
       <code>pointerTracker: PointerFocusTracker&lt;CdkMenuItem&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Tracks the users mouse movements over the menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="5bu7xpja64lpy6qjw9dqk74rp">跟踪用户鼠标在菜单上的移动。</p>
 </td>
 </tr>
 
@@ -1184,16 +1117,16 @@ user triggers with a trigger element).</p>
       <code>triggerItem: CdkMenuItem</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The Menu Item which triggered the open submenu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="a8r88uwkg3bmwq50zie9iabsl">触发打开子菜单的菜单项。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1203,18 +1136,18 @@ user triggers with a trigger element).</p>
       <th colspan="2" class="docs-api-method-name-cell">closeOpenMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Close the open menu if the current active item opened the requested MenuStackItem.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="e1qb3dek54ff1ctjun6dzkdwt">如果当前活动项打开了所请求的 MenuStackItem，则关闭打开的菜单。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         menu</p>
@@ -1222,29 +1155,29 @@ user triggers with a trigger element).</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The menu requested to be closed.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="96gn2zsjq3e4ldsdo0xupo3fs">请求关闭菜单。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
   
   <tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">{ focusParentTrigger?</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options to configure the behavior on close.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="bm76wiz80k1ylkbkhwd07tpxh">用于配置关闭行为的选项。</p>
 <ul>
-<li><code>focusParentTrigger</code> Whether to focus the parent trigger after closing the menu.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="6y2saztpm64exgp3s8d5ps93d"><code>focusParentTrigger</code> 关闭菜单后是否聚焦父触发器。</li>
 </ul>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -1256,31 +1189,31 @@ user triggers with a trigger element).</p>
       <th colspan="2" class="docs-api-method-name-cell">focusFirstItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the first MenuItem in the menu and set the focus origin.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8ja4nyh1gb1aje1yv9k2qhbgg">将焦点放在菜单中的第一个 MenuItem 上并设置焦点原点。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
-      <code class="docs-api-method-parameter-type">FocusOrigin = &#39;program&#39;</code>
+      <code class="docs-api-method-parameter-type">FocusOrigin = 'program'</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The origin input mode of the focus event.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ewyxrbx570svp76sv8l3re5y8">导致此焦点事件的来源模式。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -1292,31 +1225,31 @@ user triggers with a trigger element).</p>
       <th colspan="2" class="docs-api-method-name-cell">focusLastItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the last MenuItem in the menu and set the focus origin.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="580bo40zya0jcp4gi7jdea8hu">将焦点放在菜单中的最后一个 MenuItem 上并设置焦点原点。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
-      <code class="docs-api-method-parameter-type">FocusOrigin = &#39;program&#39;</code>
+      <code class="docs-api-method-parameter-type">FocusOrigin = 'program'</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The origin input mode of the focus event.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="ewyxrbx570svp76sv8l3re5y8">导致此焦点事件的来源模式。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -1327,34 +1260,32 @@ user triggers with a trigger element).</p>
       
 
 <h4 id="CdkMenuItem" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuItem"></span>
+  
   <code>CdkMenuItem</code>
   
-</h4><p class="docs-api-class-description"><p>Directive which provides the ability for an element to be focused and navigated to using the
-keyboard when residing in a CdkMenu, CdkMenuBar, or CdkMenuGroup. It performs user defined
-behavior when clicked.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="1yjd1n76i95w9e45ea4u7qwzj">当位于 CdkMenu、CdkMenuBar 或 CdkMenuGroup 中时，该指令为元素提供使用键盘进行聚焦和导航的能力。它在单击时执行用户定义的行为。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenuItem]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkMenuItem</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkMenuItem</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemDisabled&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemDisabled', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the CdkMenuItem is disabled - defaults to false</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ed8iuuy7zwecgmumv7kzoq4i">CdkMenuItem 是否被禁用 - 默认为 false</p>
 </td>
 </tr>
 
@@ -1363,13 +1294,12 @@ behavior when clicked.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">&#39;cdkMenuitemTypeaheadLabel&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">'cdkMenuitemTypeaheadLabel'</span>)
         </div><p class="docs-api-property-name">
       <code>typeaheadLabel: string | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The text used to locate this item during menu typeahead. If not specified,
-the <code>textContent</code> of the item will be used.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4jkwa0pr7w95frd9tph8ydhdv">在菜单预先输入期间用于定位此菜单项的文本。如果未指定，将使用菜单项的 <code>textContent</code> 。</p>
 </td>
 </tr>
 
@@ -1378,13 +1308,12 @@ the <code>textContent</code> of the item will be used.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">&#39;cdkMenuItemTriggered&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">'cdkMenuItemTriggered'</span>)
         </div><p class="docs-api-property-name">
       <code>triggered: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>If this MenuItem is a regular MenuItem, outputs when it is triggered by a keyboard or mouse
-event.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dnc61bthy84wfj8vijdsyo6je">如果此 MenuItem 是常规 MenuItem，则在由键盘或鼠标事件触发时输出。</p>
 </td>
 </tr>
 
@@ -1397,7 +1326,7 @@ event.</p>
       <code>closeOnSpacebarTrigger: true</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the item should close the menu if triggered by the spacebar.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1qgilwdhufx8qfyw5abdq9bw8">如果由空格键触发，本菜单项是否应关闭此菜单。</p>
 </td>
 </tr>
 
@@ -1410,7 +1339,7 @@ event.</p>
       <code>destroyed: Subject&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the menu item is destroyed.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="buivxmljz08cpxc02njwd4s07">当此菜单项被销毁时发出。</p>
 </td>
 </tr>
 
@@ -1423,16 +1352,16 @@ event.</p>
       <code>hasMenu: </code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu item opens a menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="23jhd8g9actkfxwn0dixskxli">该菜单项是否已打开了某个菜单。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1442,12 +1371,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">focus
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7asprgkfbqqguid4lil60vb7f">将焦点放在元素上。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1459,17 +1388,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getLabel
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the label for this element which is required by the FocusableOption interface.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="43uuiyj8nff988lr9429zgln">获取 FocusableOption 接口所需的本元素的标签。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">string</code>
     </td>
@@ -1478,7 +1407,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1490,27 +1419,27 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get a reference to the rendered Menu if the Menu is open and it is visible in the DOM.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3eyh5imlwigdtyfn8m8odkpb9">如果 Menu 已打开并且在 DOM 中可见，则获取对所渲染的 Menu 的引用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">Menu | undefined</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <p class="docs-api-method-returns-description">
-        <p>the menu if it is open, otherwise undefined.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="32onrx7sz0v8jyajtvazr355v">如果菜单已打开则为此菜单，否则为 undefined。</p>
 
-      </p>
+      <p></p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1522,17 +1451,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenuTrigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the CdkMenuTrigger associated with this element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="6a9r23jc7us33qhtvomlra0gi">获取与此元素关联的 CdkMenuTrigger。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">CdkMenuTrigger | null</code>
     </td>
@@ -1541,7 +1470,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1553,12 +1482,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">isMenuOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Return true if this MenuItem has an attached menu and it is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4zhujgv0k4721snwvjl4oiozl">如果此 MenuItem 有一个已附着的菜单并且它是打开的，则返回 true。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1570,35 +1499,34 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">trigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>If the menu item is not disabled and the element does not have a menu trigger attached, emit
-on the cdkMenuItemTriggered emitter and close all open menus.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="e6xqe7lspiw39xlghhgeotzkw">如果此菜单项未禁用并且元素没有附着到某个菜单触发器，则在 cdkMenuItemTriggered 上发出事件并关闭所有打开的菜单。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">{ keepOpen</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options the configure how the item is triggered</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="etovj04vfv9z7er6pmkcxth41">配置此菜单项如何触发的选项</p>
 <ul>
-<li>keepOpen: specifies that the menu should be kept open after triggering the item.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="9xmrj781yzfsyx1x4e4jg4cte">keepOpen：指定触发此菜单项后菜单是否应保持打开状态。</li>
 </ul>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -1608,41 +1536,30 @@ on the cdkMenuItemTriggered emitter and close all open menus.</p>
     
       
 
-<h4 id="CdkMenuItemCheckbox" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuItemCheckbox"></span>
-  <code>CdkMenuItemCheckbox</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuItemSelectable" class="docs-api-class-extends-type">
-      CdkMenuItemSelectable
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>A directive providing behavior for the &quot;menuitemcheckbox&quot; ARIA role, which behaves similarly to a
-conventional checkbox.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkMenuItemCheckbox" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="84wzb3699p9235adtdd2hw5ub"><span header-link="CdkMenuItemCheckbox"></span><code>CdkMenuItemCheckbox</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuItemSelectable" class="docs-api-class-extends-type"> CdkMenuItemSelectable </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="aqamh8txo2epi9nobzthnjy9u">为 “menuitemcheckbox” ARIA 角色提供行为的指令，其行为类似于传统的复选框。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenuItemCheckbox]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkMenuItemCheckbox</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkMenuItemCheckbox</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemChecked&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemChecked', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>checked: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the element is checked</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="cxy3mte8xwqpejo4j64aly56f">是否已选中此元素</p>
 </td>
 </tr>
 
@@ -1651,12 +1568,12 @@ conventional checkbox.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemDisabled&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemDisabled', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the CdkMenuItem is disabled - defaults to false</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ed8iuuy7zwecgmumv7kzoq4i">CdkMenuItem 是否被禁用 - 默认为 false</p>
 </td>
 </tr>
 
@@ -1665,13 +1582,12 @@ conventional checkbox.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">&#39;cdkMenuitemTypeaheadLabel&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">'cdkMenuitemTypeaheadLabel'</span>)
         </div><p class="docs-api-property-name">
       <code>typeaheadLabel: string | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The text used to locate this item during menu typeahead. If not specified,
-the <code>textContent</code> of the item will be used.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4jkwa0pr7w95frd9tph8ydhdv">在菜单预先输入期间用于定位此菜单项的文本。如果未指定，将使用菜单项的 <code>textContent</code> 。</p>
 </td>
 </tr>
 
@@ -1680,13 +1596,12 @@ the <code>textContent</code> of the item will be used.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">&#39;cdkMenuItemTriggered&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">'cdkMenuItemTriggered'</span>)
         </div><p class="docs-api-property-name">
       <code>triggered: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>If this MenuItem is a regular MenuItem, outputs when it is triggered by a keyboard or mouse
-event.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dnc61bthy84wfj8vijdsyo6je">如果此 MenuItem 是常规 MenuItem，则在由键盘或鼠标事件触发时输出。</p>
 </td>
 </tr>
 
@@ -1699,16 +1614,16 @@ event.</p>
       <code>hasMenu: </code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu item opens a menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="23jhd8g9actkfxwn0dixskxli">该菜单项是否已打开了某个菜单。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1718,12 +1633,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">focus
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7asprgkfbqqguid4lil60vb7f">将焦点放在元素上。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1735,17 +1650,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getLabel
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the label for this element which is required by the FocusableOption interface.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="43uuiyj8nff988lr9429zgln">获取 FocusableOption 接口所需的本元素的标签。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">string</code>
     </td>
@@ -1754,7 +1669,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1766,27 +1681,27 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get a reference to the rendered Menu if the Menu is open and it is visible in the DOM.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3eyh5imlwigdtyfn8m8odkpb9">如果 Menu 已打开并且在 DOM 中可见，则获取对所渲染的 Menu 的引用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">Menu | undefined</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <p class="docs-api-method-returns-description">
-        <p>the menu if it is open, otherwise undefined.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="32onrx7sz0v8jyajtvazr355v">如果菜单已打开则为此菜单，否则为 undefined。</p>
 
-      </p>
+      <p></p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1798,17 +1713,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenuTrigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the CdkMenuTrigger associated with this element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="6a9r23jc7us33qhtvomlra0gi">获取与此元素关联的 CdkMenuTrigger。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">CdkMenuTrigger | null</code>
     </td>
@@ -1817,7 +1732,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1829,12 +1744,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">isMenuOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Return true if this MenuItem has an attached menu and it is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4zhujgv0k4721snwvjl4oiozl">如果此 MenuItem 有一个已附着的菜单并且它是打开的，则返回 true。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1846,34 +1761,34 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">trigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggle the checked state of the checkbox.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4dq9qw6rvjqorl34hmqsk968i">切换复选框的选中状态。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">{ keepOpen</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options the configure how the item is triggered</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="etovj04vfv9z7er6pmkcxth41">配置此菜单项如何触发的选项</p>
 <ul>
-<li>keepOpen: specifies that the menu should be kept open after triggering the item.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="9xmrj781yzfsyx1x4e4jg4cte">keepOpen：指定触发此菜单项后菜单是否应保持打开状态。</li>
 </ul>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -1883,42 +1798,30 @@ event.</p>
     
       
 
-<h4 id="CdkMenuItemRadio" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuItemRadio"></span>
-  <code>CdkMenuItemRadio</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuItemSelectable" class="docs-api-class-extends-type">
-      CdkMenuItemSelectable
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>A directive providing behavior for the &quot;menuitemradio&quot; ARIA role, which behaves similarly to
-a conventional radio-button. Any sibling <code>CdkMenuItemRadio</code> instances within the same <code>CdkMenu</code>
-or <code>CdkMenuGroup</code> comprise a radio group with unique selection enforced.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkMenuItemRadio" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="1zlutizdenu91zn4lv5w5kqtt"><span header-link="CdkMenuItemRadio"></span><code>CdkMenuItemRadio</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuItemSelectable" class="docs-api-class-extends-type"> CdkMenuItemSelectable </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="66q5yhok834lpifdlwmmnhnrb">为 “menuitemradio” ARIA 角色提供行为的指令，其行为类似于传统的单选按钮。同一个 <code>CdkMenu</code> 或 <code>CdkMenuGroup</code> 中的任何同级 <code>CdkMenuItemRadio</code> 实例都包含一个强制执行唯一选择的单选组。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenuItemRadio]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkMenuItemRadio</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkMenuItemRadio</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemChecked&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemChecked', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>checked: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the element is checked</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="cxy3mte8xwqpejo4j64aly56f">是否已选中此元素</p>
 </td>
 </tr>
 
@@ -1927,12 +1830,12 @@ or <code>CdkMenuGroup</code> comprise a radio group with unique selection enforc
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemDisabled&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemDisabled', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the CdkMenuItem is disabled - defaults to false</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ed8iuuy7zwecgmumv7kzoq4i">CdkMenuItem 是否被禁用 - 默认为 false</p>
 </td>
 </tr>
 
@@ -1941,13 +1844,12 @@ or <code>CdkMenuGroup</code> comprise a radio group with unique selection enforc
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">&#39;cdkMenuitemTypeaheadLabel&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">'cdkMenuitemTypeaheadLabel'</span>)
         </div><p class="docs-api-property-name">
       <code>typeaheadLabel: string | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The text used to locate this item during menu typeahead. If not specified,
-the <code>textContent</code> of the item will be used.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4jkwa0pr7w95frd9tph8ydhdv">在菜单预先输入期间用于定位此菜单项的文本。如果未指定，将使用菜单项的 <code>textContent</code> 。</p>
 </td>
 </tr>
 
@@ -1956,13 +1858,12 @@ the <code>textContent</code> of the item will be used.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">&#39;cdkMenuItemTriggered&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">'cdkMenuItemTriggered'</span>)
         </div><p class="docs-api-property-name">
       <code>triggered: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>If this MenuItem is a regular MenuItem, outputs when it is triggered by a keyboard or mouse
-event.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dnc61bthy84wfj8vijdsyo6je">如果此 MenuItem 是常规 MenuItem，则在由键盘或鼠标事件触发时输出。</p>
 </td>
 </tr>
 
@@ -1975,16 +1876,16 @@ event.</p>
       <code>hasMenu: </code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu item opens a menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="23jhd8g9actkfxwn0dixskxli">该菜单项是否已打开了某个菜单。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1994,12 +1895,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">focus
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7asprgkfbqqguid4lil60vb7f">将焦点放在元素上。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2011,17 +1912,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getLabel
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the label for this element which is required by the FocusableOption interface.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="43uuiyj8nff988lr9429zgln">获取 FocusableOption 接口所需的本元素的标签。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">string</code>
     </td>
@@ -2030,7 +1931,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2042,27 +1943,27 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get a reference to the rendered Menu if the Menu is open and it is visible in the DOM.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3eyh5imlwigdtyfn8m8odkpb9">如果 Menu 已打开并且在 DOM 中可见，则获取对所渲染的 Menu 的引用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">Menu | undefined</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <p class="docs-api-method-returns-description">
-        <p>the menu if it is open, otherwise undefined.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="32onrx7sz0v8jyajtvazr355v">如果菜单已打开则为此菜单，否则为 undefined。</p>
 
-      </p>
+      <p></p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2074,17 +1975,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenuTrigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the CdkMenuTrigger associated with this element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="6a9r23jc7us33qhtvomlra0gi">获取与此元素关联的 CdkMenuTrigger。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">CdkMenuTrigger | null</code>
     </td>
@@ -2093,7 +1994,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2105,12 +2006,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">isMenuOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Return true if this MenuItem has an attached menu and it is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4zhujgv0k4721snwvjl4oiozl">如果此 MenuItem 有一个已附着的菜单并且它是打开的，则返回 true。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2122,34 +2023,34 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">trigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggles the checked state of the radio-button.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="1n5c1gpop6x4seupiuroj9500">切换单选按钮的选中状态。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">{ keepOpen</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options the configure how the item is triggered</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="etovj04vfv9z7er6pmkcxth41">配置此菜单项如何触发的选项</p>
 <ul>
-<li>keepOpen: specifies that the menu should be kept open after triggering the item.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="9xmrj781yzfsyx1x4e4jg4cte">keepOpen：指定触发此菜单项后菜单是否应保持打开状态。</li>
 </ul>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2159,33 +2060,19 @@ event.</p>
     
       
 
-<h4 id="CdkMenuTrigger" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuTrigger"></span>
-  <code>CdkMenuTrigger</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuTriggerBase" class="docs-api-class-extends-type">
-      CdkMenuTriggerBase
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>A directive that turns its host element into a trigger for a popup menu.
-It can be combined with cdkMenuItem to create sub-menus. If the element is in a top level
-MenuBar it will open the menu on click, or if a sibling is already opened it will open on hover.
-If it is inside of a Menu it will open the attached Submenu on hover regardless of its sibling
-state.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkMenuTrigger" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="7dc20jsc9yuypacgbbtqborl9"><span header-link="CdkMenuTrigger"></span><code>CdkMenuTrigger</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuTriggerBase" class="docs-api-class-extends-type"> CdkMenuTriggerBase </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="cpmgpk6e36schgqwpf13p1l8m">将其宿主元素转换为弹出菜单触发器的指令。它可以与 cdkMenuItem 结合创建子菜单。如果此元素在顶级 MenuBar 中，将在单击它时打开菜单，如果已打开了同级元素，则在悬停时打开。如果此元素在其它菜单内，它将在悬停时打开所附着的子菜单，而无论其兄弟的状态如何。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenuTriggerFor]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkMenuTriggerFor</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkMenuTriggerFor</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -2196,7 +2083,7 @@ state.</p>
       <code>menuData: unknown</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Context data to be passed along to the menu template</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2psari2k0tst0p0z05wx9wxus">要传递给菜单模板的上下文数据</p>
 </td>
 </tr>
 
@@ -2210,8 +2097,7 @@ state.</p>
       <code>menuPosition: ConnectedPosition[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A list of preferred menu positions to be used when constructing the
-<code>FlexibleConnectedPositionStrategy</code> for this trigger&#39;s menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="cfzdqp8r308o760hn00e4taj">为该触发器的菜单构造 <code>FlexibleConnectedPositionStrategy</code> 时要使用的首选菜单位置列表。</p>
 </td>
 </tr>
 
@@ -2225,7 +2111,7 @@ state.</p>
       <code>menuTemplateRef: TemplateRef&lt;unknown&gt; | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Template reference variable to the menu this trigger opens</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dvqyin9ilq1rr3skhf8xexkk">此触发器打开的菜单的模板引用变量</p>
 </td>
 </tr>
 
@@ -2239,7 +2125,7 @@ state.</p>
       <code>closed: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the attached menu is requested to close</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1uq9hlyq5k0xkp4p0rzuhpy2i">当请求关闭已附着菜单时发出</p>
 </td>
 </tr>
 
@@ -2253,7 +2139,7 @@ state.</p>
       <code>opened: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the attached menu is requested to open</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="5kjp1jvod7y7g59bemtfckuf1">请求打开已附着菜单时发出</p>
 </td>
 </tr>
 
@@ -2266,16 +2152,16 @@ state.</p>
       <code>injector: inject(Injector)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The DI injector for this component.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="e81ovzb7zj42olwr6z6wl5dug">此组件的 DI 注入器。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -2285,12 +2171,12 @@ state.</p>
       <th colspan="2" class="docs-api-method-name-cell">close
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Close the opened menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="eaq3uw1zrvio0cr245mxei52x">关闭已打开的菜单。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2302,17 +2188,17 @@ state.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get a reference to the rendered Menu if the Menu is open and rendered in the DOM.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="e585c4ous4ozsmwfm0osxg9ro">如果菜单在 DOM 中打开并渲染，则获取对渲染出的菜单的引用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">Menu | undefined</code>
     </td>
@@ -2321,7 +2207,7 @@ state.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2333,12 +2219,12 @@ state.</p>
       <th colspan="2" class="docs-api-method-name-cell">isOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether the attached menu is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ck8cmdsk9z1iig17pel44wetl">已附着的菜单是否打开。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2350,12 +2236,12 @@ state.</p>
       <th colspan="2" class="docs-api-method-name-cell">open
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Open the attached menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="aiywm31tia3xfnaeszirkxovz">打开已附着的菜单。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2367,18 +2253,18 @@ state.</p>
       <th colspan="2" class="docs-api-method-name-cell">registerChildMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Registers a child menu as having been opened by this trigger.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ep3ldcpg0a3w52amiqiszckci">将子菜单注册为已被此触发器打开。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         child</p>
@@ -2390,7 +2276,7 @@ state.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2402,12 +2288,12 @@ state.</p>
       <th colspan="2" class="docs-api-method-name-cell">toggle
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Toggle the attached menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="38f5ei7qjy9pljt1e0g3mlwq8">切换已附着的菜单。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2418,11 +2304,11 @@ state.</p>
       
 
 <h4 id="CdkMenuGroup" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuGroup"></span>
+  
   <code>CdkMenuGroup</code>
   
-</h4><p class="docs-api-class-description"><p>A grouping container for <code>CdkMenuItemRadio</code> instances, similar to a <code>role=&quot;radiogroup&quot;</code> element.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="a0xfo3lbhf83oqg2ozwhgnt18"><code>CdkMenuItemRadio</code> 实例的分组容器，类似于 <code>role="radiogroup"</code> 元素。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkMenuGroup]</span>
@@ -2438,34 +2324,24 @@ state.</p>
     
       
 
-<h4 id="CdkMenuItemSelectable" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuItemSelectable"></span>
-  <code>CdkMenuItemSelectable</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuItem" class="docs-api-class-extends-type">
-      CdkMenuItem
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Base class providing checked state for selectable MenuItems.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<h4 id="CdkMenuItemSelectable" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="c4vhqayz7sf7ulan66ym2ghlm"><span header-link="CdkMenuItemSelectable"></span><code>CdkMenuItemSelectable</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuItem" class="docs-api-class-extends-type"> CdkMenuItem </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="9maau3cw8nh1nnq2805qv1d7u">为可选择的 MenuItems 提供检查状态的基类。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemChecked&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemChecked', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>checked: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the element is checked</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="cxy3mte8xwqpejo4j64aly56f">是否已选中此元素</p>
 </td>
 </tr>
 
@@ -2474,12 +2350,12 @@ state.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkMenuItemDisabled&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkMenuItemDisabled', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the CdkMenuItem is disabled - defaults to false</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ed8iuuy7zwecgmumv7kzoq4i">CdkMenuItem 是否被禁用 - 默认为 false</p>
 </td>
 </tr>
 
@@ -2488,13 +2364,12 @@ state.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">&#39;cdkMenuitemTypeaheadLabel&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">'cdkMenuitemTypeaheadLabel'</span>)
         </div><p class="docs-api-property-name">
       <code>typeaheadLabel: string | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The text used to locate this item during menu typeahead. If not specified,
-the <code>textContent</code> of the item will be used.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4jkwa0pr7w95frd9tph8ydhdv">在菜单预先输入期间用于定位此菜单项的文本。如果未指定，将使用菜单项的 <code>textContent</code> 。</p>
 </td>
 </tr>
 
@@ -2503,13 +2378,12 @@ the <code>textContent</code> of the item will be used.</p>
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">&#39;cdkMenuItemTriggered&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-output-marker">@Output(<span class="docs-api-output-alias">'cdkMenuItemTriggered'</span>)
         </div><p class="docs-api-property-name">
       <code>triggered: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>If this MenuItem is a regular MenuItem, outputs when it is triggered by a keyboard or mouse
-event.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dnc61bthy84wfj8vijdsyo6je">如果此 MenuItem 是常规 MenuItem，则在由键盘或鼠标事件触发时输出。</p>
 </td>
 </tr>
 
@@ -2522,7 +2396,7 @@ event.</p>
       <code>closeOnSpacebarTrigger: false</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the item should close the menu if triggered by the spacebar.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1qgilwdhufx8qfyw5abdq9bw8">如果由空格键触发，本菜单项是否应关闭此菜单。</p>
 </td>
 </tr>
 
@@ -2535,16 +2409,16 @@ event.</p>
       <code>hasMenu: </code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the menu item opens a menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="23jhd8g9actkfxwn0dixskxli">该菜单项是否已打开了某个菜单。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -2554,12 +2428,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">focus
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7asprgkfbqqguid4lil60vb7f">将焦点放在元素上。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2571,17 +2445,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getLabel
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the label for this element which is required by the FocusableOption interface.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="43uuiyj8nff988lr9429zgln">获取 FocusableOption 接口所需的本元素的标签。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">string</code>
     </td>
@@ -2590,7 +2464,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2602,27 +2476,27 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get a reference to the rendered Menu if the Menu is open and it is visible in the DOM.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3eyh5imlwigdtyfn8m8odkpb9">如果 Menu 已打开并且在 DOM 中可见，则获取对所渲染的 Menu 的引用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">Menu | undefined</code>
     </td>
     <td class="docs-api-method-returns-description-cell">
       <p class="docs-api-method-returns-description">
-        <p>the menu if it is open, otherwise undefined.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="32onrx7sz0v8jyajtvazr355v">如果菜单已打开则为此菜单，否则为 undefined。</p>
 
-      </p>
+      <p></p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2634,17 +2508,17 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenuTrigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the CdkMenuTrigger associated with this element.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="6a9r23jc7us33qhtvomlra0gi">获取与此元素关联的 CdkMenuTrigger。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">CdkMenuTrigger | null</code>
     </td>
@@ -2653,7 +2527,7 @@ event.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2665,12 +2539,12 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">isMenuOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Return true if this MenuItem has an attached menu and it is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="4zhujgv0k4721snwvjl4oiozl">如果此 MenuItem 有一个已附着的菜单并且它是打开的，则返回 true。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2682,35 +2556,34 @@ event.</p>
       <th colspan="2" class="docs-api-method-name-cell">trigger
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>If the menu item is not disabled and the element does not have a menu trigger attached, emit
-on the cdkMenuItemTriggered emitter and close all open menus.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="e6xqe7lspiw39xlghhgeotzkw">如果此菜单项未禁用并且元素没有附着到某个菜单触发器，则在 cdkMenuItemTriggered 上发出事件并关闭所有打开的菜单。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
-      <p class="docs-api-method-parameter-name">
-        options<span class="docs-api-method-parameter-optional-marker">?</span></p>
+      <p class="docs-api-method-parameter-name" data-ng_translator_product="100" data-ng_translator_ref_id="bit4jbgkdxnjcx0jf6vg8o2ji">选项
+<span class="docs-api-method-parameter-optional-marker">?</span></p>
       <code class="docs-api-method-parameter-type">{ keepOpen</code>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>Options the configure how the item is triggered</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="etovj04vfv9z7er6pmkcxth41">配置此菜单项如何触发的选项</p>
 <ul>
-<li>keepOpen: specifies that the menu should be kept open after triggering the item.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="9xmrj781yzfsyx1x4e4jg4cte">keepOpen：指定触发此菜单项后菜单是否应保持打开状态。</li>
 </ul>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2720,41 +2593,30 @@ on the cdkMenuItemTriggered emitter and close all open menus.</p>
     
       
 
-<h4 id="CdkContextMenuTrigger" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkContextMenuTrigger"></span>
-  <code>CdkContextMenuTrigger</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/menu/api#CdkMenuTriggerBase" class="docs-api-class-extends-type">
-      CdkMenuTriggerBase
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>A directive that opens a menu when a user right-clicks within its host element.
-It is aware of nested context menus and will trigger only the lowest level non-disabled context menu.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkContextMenuTrigger" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="e6gh1sbmao4dwgmsdk8ygzylk"><span header-link="CdkContextMenuTrigger"></span><code>CdkContextMenuTrigger</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/menu/api#CdkMenuTriggerBase" class="docs-api-class-extends-type"> CdkMenuTriggerBase </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="5uvqfravxyu5ckpvk96u459aw">当用户在其宿主元素中右键单击时打开菜单的指令。它知道嵌套的上下文菜单，并且只会触发最低级别的非禁用上下文菜单。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkContextMenuTriggerFor]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkContextMenuTriggerFor</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkContextMenuTriggerFor</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkContextMenuDisabled&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkContextMenuDisabled', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>disabled: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether the context menu is disabled.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="6ikral8s825nh8r9o763s0vcc">上下文菜单是否被禁用。</p>
 </td>
 </tr>
 
@@ -2768,7 +2630,7 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <code>menuData: unknown</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Context data to be passed along to the menu template</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2psari2k0tst0p0z05wx9wxus">要传递给菜单模板的上下文数据</p>
 </td>
 </tr>
 
@@ -2782,8 +2644,7 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <code>menuPosition: ConnectedPosition[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A list of preferred menu positions to be used when constructing the
-<code>FlexibleConnectedPositionStrategy</code> for this trigger&#39;s menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="cfzdqp8r308o760hn00e4taj">为该触发器的菜单构造 <code>FlexibleConnectedPositionStrategy</code> 时要使用的首选菜单位置列表。</p>
 </td>
 </tr>
 
@@ -2797,7 +2658,7 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <code>menuTemplateRef: TemplateRef&lt;unknown&gt; | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Template reference variable to the menu this trigger opens</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dvqyin9ilq1rr3skhf8xexkk">此触发器打开的菜单的模板引用变量</p>
 </td>
 </tr>
 
@@ -2811,7 +2672,7 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <code>closed: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the attached menu is requested to close</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1uq9hlyq5k0xkp4p0rzuhpy2i">当请求关闭已附着菜单时发出</p>
 </td>
 </tr>
 
@@ -2825,7 +2686,7 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <code>opened: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the attached menu is requested to open</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="5kjp1jvod7y7g59bemtfckuf1">请求打开已附着菜单时发出</p>
 </td>
 </tr>
 
@@ -2838,16 +2699,16 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <code>injector: inject(Injector)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The DI injector for this component.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="e81ovzb7zj42olwr6z6wl5dug">此组件的 DI 注入器。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -2857,12 +2718,12 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <th colspan="2" class="docs-api-method-name-cell">close
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Close the currently opened context menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8kgihu584mpr2mm78ro0kb9pt">关闭当前打开的上下文菜单。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2874,12 +2735,12 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <th colspan="2" class="docs-api-method-name-cell">isOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether the attached menu is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ck8cmdsk9z1iig17pel44wetl">已附着的菜单是否打开。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -2891,18 +2752,18 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <th colspan="2" class="docs-api-method-name-cell">open
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Open the attached menu at the specified location.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3dp3lajxs8x8b1rx7feb00aop">在指定位置打开已附着的菜单。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         coordinates</p>
@@ -2910,12 +2771,12 @@ It is aware of nested context menus and will trigger only the lowest level non-d
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>where to open the context menu</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="c65ns7prjcgbs6ighktydhaxa">在哪里打开上下文菜单</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2927,18 +2788,18 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       <th colspan="2" class="docs-api-method-name-cell">registerChildMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Registers a child menu as having been opened by this trigger.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ep3ldcpg0a3w52amiqiszckci">将子菜单注册为已被此触发器打开。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         child</p>
@@ -2950,7 +2811,7 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2961,16 +2822,15 @@ It is aware of nested context menus and will trigger only the lowest level non-d
       
 
 <h4 id="CdkMenuTriggerBase" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkMenuTriggerBase"></span>
+  
   <code>CdkMenuTriggerBase</code>
   
-</h4><p class="docs-api-class-description"><p>Abstract directive that implements shared logic common to all menu triggers.
-This class can be extended to create custom menu trigger types.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="bfqjin1xz6zd65qh0foz0gimb">实现所有菜单触发器共有的共享逻辑的抽象指令。可以扩展此类以创建自定义菜单触发器类型。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -2980,7 +2840,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>childMenu: Menu</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The child menu opened by this trigger.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="24ol1f3qk7blfa439i1xkefcf">此触发器打开的子菜单。</p>
 </td>
 </tr>
 
@@ -2993,7 +2853,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>closed: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the attached menu is requested to close</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1uq9hlyq5k0xkp4p0rzuhpy2i">当请求关闭已附着菜单时发出</p>
 </td>
 </tr>
 
@@ -3006,7 +2866,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>destroyed: Subject&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when this trigger is destroyed.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="63ifgiidc4nln4l8i4ozco7wt">当此触发器被销毁时发出。</p>
 </td>
 </tr>
 
@@ -3019,7 +2879,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>injector: inject(Injector)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The DI injector for this component.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="e81ovzb7zj42olwr6z6wl5dug">此组件的 DI 注入器。</p>
 </td>
 </tr>
 
@@ -3032,7 +2892,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>menuData: unknown</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Context data to be passed along to the menu template</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2psari2k0tst0p0z05wx9wxus">要传递给菜单模板的上下文数据</p>
 </td>
 </tr>
 
@@ -3045,8 +2905,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>menuPosition: ConnectedPosition[]</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A list of preferred menu positions to be used when constructing the
-<code>FlexibleConnectedPositionStrategy</code> for this trigger&#39;s menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="cfzdqp8r308o760hn00e4taj">为该触发器的菜单构造 <code>FlexibleConnectedPositionStrategy</code> 时要使用的首选菜单位置列表。</p>
 </td>
 </tr>
 
@@ -3059,7 +2918,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>menuStack: MenuStack</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu stack in which this menu resides.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="618nh70ohwfxy2evawqi0hk5e">此菜单所在的菜单栈。</p>
 </td>
 </tr>
 
@@ -3072,7 +2931,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>menuTemplateRef: TemplateRef&lt;unknown&gt; | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Template reference variable to the menu this trigger opens</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dvqyin9ilq1rr3skhf8xexkk">此触发器打开的菜单的模板引用变量</p>
 </td>
 </tr>
 
@@ -3085,7 +2944,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>opened: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the attached menu is requested to open</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="5kjp1jvod7y7g59bemtfckuf1">请求打开已附着菜单时发出</p>
 </td>
 </tr>
 
@@ -3098,7 +2957,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>overlayRef: OverlayRef | null</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A reference to the overlay which manages the triggered menu</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="7c89e2sl5z80ptf3m28ugu7if">对管理已触发菜单的浮层的引用</p>
 </td>
 </tr>
 
@@ -3111,7 +2970,7 @@ This class can be extended to create custom menu trigger types.</p>
       <code>stopOutsideClicksListener: merge(this.closed, this.destroyed)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the outside pointer events listener on the overlay should be stopped.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="501d6mrtydrln4qa6sqp8fcsb">当应该停止浮层上的外部指针事件侦听器时发出。</p>
 </td>
 </tr>
 
@@ -3124,16 +2983,16 @@ This class can be extended to create custom menu trigger types.</p>
       <code>viewContainerRef: inject(ViewContainerRef)</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The view container ref for this component</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="efq6a8t06yg8le8rbl1npae2b">此组件的视图容器引用</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -3143,13 +3002,12 @@ This class can be extended to create custom menu trigger types.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenuContentPortal
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Get the portal to be attached to the overlay which contains the menu. Allows for the menu
-content to change dynamically and be reflected in the application.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ey6b9rilkt7cy8b63u115fh6d">获取要附着到的包含菜单的浮层的传送点。允许菜单内容动态变化并反映在应用程序中。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -3161,18 +3019,18 @@ content to change dynamically and be reflected in the application.</p>
       <th colspan="2" class="docs-api-method-name-cell">isElementInsideMenuStack
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether the given element is inside the scope of this trigger&#39;s menu stack.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2z1nx2ml12q1g9aa63f89jypb">给定元素是否在此触发器的菜单栈范围内。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         element</p>
@@ -3180,12 +3038,12 @@ content to change dynamically and be reflected in the application.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The element to check.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="egjulbw4xo1ty6cz422egbtqc">要检查的元素。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -3197,12 +3055,12 @@ content to change dynamically and be reflected in the application.</p>
       <th colspan="2" class="docs-api-method-name-cell">isOpen
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Whether the attached menu is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ck8cmdsk9z1iig17pel44wetl">已附着的菜单是否打开。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -3214,18 +3072,18 @@ content to change dynamically and be reflected in the application.</p>
       <th colspan="2" class="docs-api-method-name-cell">registerChildMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Registers a child menu as having been opened by this trigger.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ep3ldcpg0a3w52amiqiszckci">将子菜单注册为已被此触发器打开。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         child</p>
@@ -3237,7 +3095,7 @@ content to change dynamically and be reflected in the application.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -3248,12 +3106,11 @@ content to change dynamically and be reflected in the application.</p>
       
 
 <h4 id="CdkTargetMenuAim" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkTargetMenuAim"></span>
+  
   <code>CdkTargetMenuAim</code>
   
-</h4><p class="docs-api-class-description"><p>CdkTargetMenuAim is a provider for the TargetMenuAim service. It can be added to an
-element with either the <code>cdkMenu</code> or <code>cdkMenuBar</code> directive and child menu items.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="f1vcqy1fwployoaxby6yh36re">CdkTargetMenuAim 是 TargetMenuAim 服务的提供者。它可以通过 <code>cdkMenu</code> 或 <code>cdkMenuBar</code> 指令和子菜单项添加到元素中。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkTargetMenuAim]</span>
@@ -3266,24 +3123,20 @@ element with either the <code>cdkMenu</code> or <code>cdkMenuBar</code> directiv
 
 
 
-    <h3 id="cdk-menu-classes" class="docs-header-link docs-api-h3">
-      <span header-link="classes"></span>
-      Classes
-    </h3>
+    <h3 id="cdk-menu-classes" class="docs-header-link docs-api-h3" data-ng_translator_product="100" data-ng_translator_ref_id="4bn58wgxi998senv9uc3eosks"><span header-link="classes"></span>类</h3>
     
       
 
 <h4 id="PointerFocusTracker" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="PointerFocusTracker"></span>
+  
   <code>PointerFocusTracker</code>
   
-</h4><p class="docs-api-class-description"><p>PointerFocusTracker keeps track of the currently active item under mouse focus. It also has
-observables which emit when the users mouse enters and leaves a tracked element.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="9yp17nj9rj7vhulk6xrtrk5ua">PointerFocusTracker 跟踪鼠标焦点下的当前活动菜单项。它还具有当用户鼠标进入和离开被跟踪元素时发出事件的 observables。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -3293,7 +3146,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>activeElement: T</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The element currently under mouse focus.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="a6kqp1bmast3tzoq30tp8wr8m">当前处于鼠标焦点下的元素。</p>
 </td>
 </tr>
 
@@ -3306,7 +3159,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>entered: Observable&lt;T&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when an element is moused into.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="d6cdy1n0kbpdgk2pbgh97903e">当一个元素被鼠标移入时发出。</p>
 </td>
 </tr>
 
@@ -3319,7 +3172,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>exited: Observable&lt;T&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when an element is moused out.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="r2zgd3083bsg87q5ascnutim">当元素被鼠标移出时发出。</p>
 </td>
 </tr>
 
@@ -3332,16 +3185,16 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>previousElement: T</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The element previously under mouse focus.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="6jzvt8l4wy302jjprn4ptvakl">先前处于鼠标焦点下的元素。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -3351,30 +3204,27 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <th colspan="2" class="docs-api-method-name-cell">destroy
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Stop the managers listeners.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2pf5pansoxemg2b1qi2220fbi">停止管理器侦听器。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
 
 
 
-    <h3 id="cdk-menu-interfaces" class="docs-header-link docs-api-h3">
-      <span header-link="interfaces"></span>
-      Interfaces
-    </h3>
+    <h3 id="cdk-menu-interfaces" class="docs-header-link docs-api-h3" data-ng_translator_product="100" data-ng_translator_ref_id="cyslup7bbt74203j3v5awkt80"><span header-link="interfaces"></span>接口</h3>
     
       
 
 <h4 id="FocusableElement" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="FocusableElement"></span>
+  
   <code>FocusableElement</code>
-</h4><p class="docs-api-interface-description"><p>Item to track for mouse focus events.</p>
-</p>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="6f9qaxah1fu45r9qpqnesf6o5">跟踪鼠标焦点事件的菜单项。</p>
+<p></p>
 
 
 
@@ -3385,14 +3235,14 @@ observables which emit when the users mouse enters and leaves a tracked element.
       
 
 <h4 id="MenuStackItem" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="MenuStackItem"></span>
+  
   <code>MenuStackItem</code>
-</h4><p class="docs-api-interface-description"><p>A single item (menu) in the menu stack.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="8612bwr5297oyq4tfxdltigz">菜单栈中的单个项目（菜单）。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -3402,13 +3252,13 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>menuStack: MenuStack</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>A reference to the menu stack this menu stack item belongs to.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="33awr023axznpar9tuzdninei">对此菜单栈项所属的菜单栈的引用。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -3419,14 +3269,14 @@ observables which emit when the users mouse enters and leaves a tracked element.
       
 
 <h4 id="CloseOptions" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="CloseOptions"></span>
+  
   <code>CloseOptions</code>
-</h4><p class="docs-api-interface-description"><p>Options that can be provided to the close or closeAll methods.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="bzt4l6w4rolqrf5x81l01n794">可以提供给 close 或 closeAll 方法的选项。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -3436,7 +3286,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>focusNextOnEmpty: FocusNext</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The element to focus next if the close operation causes the menu stack to become empty.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="btogub9whvv8ch3ym30wzxtvi">如果关闭操作导致菜单栈变为空，则为下一个要聚焦的元素。</p>
 </td>
 </tr>
 
@@ -3449,13 +3299,13 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>focusParentTrigger: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether to focus the parent trigger after closing the menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="d2epl3xjvnp6acxgymdqu8ta3">关闭菜单后是否聚焦父触发器。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -3466,14 +3316,14 @@ observables which emit when the users mouse enters and leaves a tracked element.
       
 
 <h4 id="MenuStackCloseEvent" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="MenuStackCloseEvent"></span>
+  
   <code>MenuStackCloseEvent</code>
-</h4><p class="docs-api-interface-description"><p>Event dispatched when a menu is closed.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="ahyfpzv0h5otuew0xux2skwq4">关闭菜单时要派发的事件。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -3483,7 +3333,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>focusParentTrigger: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether to focus the parent trigger after closing the menu.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="d2epl3xjvnp6acxgymdqu8ta3">关闭菜单后是否聚焦父触发器。</p>
 </td>
 </tr>
 
@@ -3496,13 +3346,13 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>item: MenuStackItem</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu being closed.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dtrkoxb4uvpo5lu11o5vw3vmy">正在关闭的菜单。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -3513,14 +3363,14 @@ observables which emit when the users mouse enters and leaves a tracked element.
       
 
 <h4 id="Menu" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="Menu"></span>
+  
   <code>Menu</code>
-</h4><p class="docs-api-interface-description"><p>Interface which specifies Menu operations and used to break circular dependency issues</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="d0cczjyvplf5r2ahvnhrqb463">指定菜单操作并用于打破循环依赖问题的接口</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -3530,7 +3380,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>id: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The id of the menu&#39;s host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="b979ipybmwbn6dkcwqwribfym">此菜单的宿主元素的 id。</p>
 </td>
 </tr>
 
@@ -3543,7 +3393,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <code>nativeElement: HTMLElement</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The menu&#39;s native DOM host element.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="8qsrwwspvu7wjiwcntbrzcioj">菜单的原生 DOM 宿主元素。</p>
 </td>
 </tr>
 
@@ -3553,19 +3403,19 @@ observables which emit when the users mouse enters and leaves a tracked element.
 
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><p class="docs-api-property-name">
-      <code>orientation: &#39;horizontal&#39; | &#39;vertical&#39;</code>
+      <code>orientation: 'horizontal' | 'vertical'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The direction items in the menu flow.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="edr5rp4043l01w7z1efuysemb">菜单流中的菜单项方向。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -3575,18 +3425,18 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <th colspan="2" class="docs-api-method-name-cell">focusFirstItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the first MenuItem in the menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="d9nodw4zw0dmcmbjn43v76vjs">将焦点放在菜单中的第一个 MenuItem 上。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
@@ -3598,7 +3448,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -3610,18 +3460,18 @@ observables which emit when the users mouse enters and leaves a tracked element.
       <th colspan="2" class="docs-api-method-name-cell">focusLastItem
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Place focus on the last MenuItem in the menu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="chzpwic6iiaug61xd4rboj32v">将焦点放在菜单中的最后一个 MenuItem。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         focusOrigin</p>
@@ -3633,7 +3483,7 @@ observables which emit when the users mouse enters and leaves a tracked element.
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -3644,15 +3494,13 @@ observables which emit when the users mouse enters and leaves a tracked element.
       
 
 <h4 id="MenuAim" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="MenuAim"></span>
+  
   <code>MenuAim</code>
-</h4><p class="docs-api-interface-description"><p>MenuAim is responsible for determining if a sibling menuitem&#39;s menu should be closed when a
-Toggler item is hovered into. It is up to the hovered in item to call the MenuAim service in
-order to determine if it may perform its close actions.</p>
-</p>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="ahpun31bfwamjidmovwre70gk">MenuAim （菜单瞄准器）负责确定当悬停在切换器（Toggler）菜单项时是否应关闭其同级菜单项的子菜单。使用所悬停的菜单项来调用 MenuAim 服务以确定它是否可以执行其关闭操作。</p>
+<p></p>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -3662,18 +3510,18 @@ order to determine if it may perform its close actions.</p>
       <th colspan="2" class="docs-api-method-name-cell">initialize
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Set the Menu and its PointerFocusTracker.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="7ztmflfobor9o9d3gdjuvrgtx">设置菜单及其 PointerFocusTracker。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         menu</p>
@@ -3681,9 +3529,9 @@ order to determine if it may perform its close actions.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The menu that this menu aim service controls.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="elp67567ed6socz9dayx6yu6f">该 MenuAim 服务控制的菜单。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
   
@@ -3695,12 +3543,12 @@ order to determine if it may perform its close actions.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>The <code>PointerFocusTracker</code> for the given menu.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="9adxov9wh8cnx1exo0qayj76t">给定菜单的 <code>PointerFocusTracker</code> 。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -3712,19 +3560,18 @@ order to determine if it may perform its close actions.</p>
       <th colspan="2" class="docs-api-method-name-cell">toggle
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Calls the <code>doToggle</code> callback when it is deemed that the user is not moving towards
-the submenu.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="9kisjmtybcuk1jszjsdshnylc">当认为用户没有向子菜单移动时调用 <code>doToggle</code> 回调。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         doToggle</p>
@@ -3732,12 +3579,12 @@ the submenu.</p>
     </td>
     <td class="docs-api-method-parameter-description-cell">
       <p class="docs-api-method-parameter-description">
-        <p>the function called when the user is not moving towards the submenu.</p>
+        </p><p data-ng_translator_product="100" data-ng_translator_ref_id="1c4f5q346m8z0vy8ncgvyd8sa">当用户没有移向子菜单时要调用的函数。</p>
 
-      </p>
+      <p></p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -3748,13 +3595,13 @@ the submenu.</p>
       
 
 <h4 id="Toggler" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="Toggler"></span>
+  
   <code>Toggler</code>
-</h4><p class="docs-api-interface-description"><p>An element which when hovered over may open or close a menu.</p>
-</p>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="491u6d696bel0lquihztvsme6">一个元素，当悬停在其上时可以打开或关闭菜单。</p>
+<p></p>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -3764,17 +3611,17 @@ the submenu.</p>
       <th colspan="2" class="docs-api-method-name-cell">getMenu
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets the open menu, or undefined if no menu is open.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="drhcd6iaz2q0l8pjxwvt5pody">获取所打开的菜单，如果没有打开菜单，则为 undefined。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">Menu | undefined</code>
     </td>
@@ -3783,7 +3630,7 @@ the submenu.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -3791,17 +3638,17 @@ the submenu.</p>
 
 
     <h3 id="cdk-menu-type_aliases" class="docs-header-link docs-api-h3">
-      <span header-link="type_aliases"></span>
+      
       Type aliases
     </h3>
     
       
 
 <h4 id="ContextMenuCoordinates" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
-  <span header-link="ContextMenuCoordinates"></span>
+  
   <code>ContextMenuCoordinates</code>
-</h4><p class="docs-api-type-alias-description"><p>The coordinates where the context menu should open.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-type-alias-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="8zoqxsyxvp207cr308ihf9f3y">上下文菜单应打开的坐标。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">type</span> ContextMenuCoordinates = {
     <span class="hljs-attr">x</span>: <span class="hljs-built_in">number</span>;
@@ -3812,17 +3659,17 @@ the submenu.</p>
 
 
     <h3 id="cdk-menu-constants" class="docs-header-link docs-api-h3">
-      <span header-link="constants"></span>
+      
       Constants
     </h3>
     
       
 
 <h4 id="MENU_TRIGGER" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="MENU_TRIGGER"></span>
+  
   <code>MENU_TRIGGER</code>
-</h4><p class="docs-api-constant-description"><p>Injection token used for an implementation of MenuStack.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="bj83b4i4m1z12m314a5xkhoag">用于指定 MenuStack 实现的注入令牌。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> MENU_TRIGGER: InjectionToken&lt;CdkMenuTriggerBase&gt;;</code>
 </pre>
@@ -3833,10 +3680,10 @@ the submenu.</p>
       
 
 <h4 id="MENU_STACK" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="MENU_STACK"></span>
+  
   <code>MENU_STACK</code>
-</h4><p class="docs-api-constant-description"><p>Injection token used for an implementation of MenuStack.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="bj83b4i4m1z12m314a5xkhoag">用于指定 MenuStack 实现的注入令牌。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> MENU_STACK: InjectionToken&lt;MenuStack&gt;;</code>
 </pre>
@@ -3847,10 +3694,10 @@ the submenu.</p>
       
 
 <h4 id="PARENT_OR_NEW_MENU_STACK_PROVIDER" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="PARENT_OR_NEW_MENU_STACK_PROVIDER"></span>
+  
   <code>PARENT_OR_NEW_MENU_STACK_PROVIDER</code>
-</h4><p class="docs-api-constant-description"><p>Provider that provides the parent menu stack, or a new menu stack if there is no parent one.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="ark8xlqklm2sdunguh7wgapfg">提供父菜单栈的提供者，如果没有父菜单栈，则提供新的菜单栈。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> PARENT_OR_NEW_MENU_STACK_PROVIDER: { <span class="hljs-attr">provide</span>: InjectionToken&lt;MenuStack&gt;; deps: Optional[][]; useFactory: <span class="hljs-function">(<span class="hljs-params">parentMenuStack?: MenuStack</span>) =&gt;</span> MenuStack; };</code>
 </pre>
@@ -3861,12 +3708,12 @@ the submenu.</p>
       
 
 <h4 id="PARENT_OR_NEW_INLINE_MENU_STACK_PROVIDER" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="PARENT_OR_NEW_INLINE_MENU_STACK_PROVIDER"></span>
+  
   <code>PARENT_OR_NEW_INLINE_MENU_STACK_PROVIDER</code>
-</h4><p class="docs-api-constant-description"><p>Provider that provides the parent menu stack, or a new inline menu stack if there is no parent one.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="7arfg3z5piihyy93f9x1i8o6a">提供父菜单栈的提供者，如果没有父菜单栈，则提供新的内联菜单栈。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
-<code class="docs-markdown-code"><span class="hljs-keyword">const</span> PARENT_OR_NEW_INLINE_MENU_STACK_PROVIDER: <span class="hljs-function">(<span class="hljs-params">orientation: <span class="hljs-string">&quot;vertical&quot;</span> | <span class="hljs-string">&quot;horizontal&quot;</span></span>) =&gt;</span> { <span class="hljs-attr">provide</span>: InjectionToken&lt;MenuStack&gt;; deps: Optional[][]; useFactory: <span class="hljs-function">(<span class="hljs-params">parentMenuStack?: MenuStack</span>) =&gt;</span> MenuStack; };</code>
+<code class="docs-markdown-code"><span class="hljs-keyword">const</span> PARENT_OR_NEW_INLINE_MENU_STACK_PROVIDER: <span class="hljs-function">(<span class="hljs-params">orientation: <span class="hljs-string">"vertical"</span> | <span class="hljs-string">"horizontal"</span></span>) =&gt;</span> { <span class="hljs-attr">provide</span>: InjectionToken&lt;MenuStack&gt;; deps: Optional[][]; useFactory: <span class="hljs-function">(<span class="hljs-params">parentMenuStack?: MenuStack</span>) =&gt;</span> MenuStack; };</code>
 </pre>
 </div>
 
@@ -3875,10 +3722,10 @@ the submenu.</p>
       
 
 <h4 id="CDK_MENU" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="CDK_MENU"></span>
+  
   <code>CDK_MENU</code>
-</h4><p class="docs-api-constant-description"><p>Injection token used to return classes implementing the Menu interface</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="96mlfh3ph8480iazef77kw7ov">用于返回实现 Menu 接口的类的注入令牌</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> CDK_MENU: InjectionToken&lt;Menu&gt;;</code>
 </pre>
@@ -3889,10 +3736,10 @@ the submenu.</p>
       
 
 <h4 id="MENU_AIM" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="MENU_AIM"></span>
+  
   <code>MENU_AIM</code>
-</h4><p class="docs-api-constant-description"><p>Injection token used for an implementation of MenuAim.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="7j645idqm40xbjy4nmok56wj6">用于实现 MenuAim 的注入令牌。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> MENU_AIM: InjectionToken&lt;MenuAim&gt;;</code>
 </pre>

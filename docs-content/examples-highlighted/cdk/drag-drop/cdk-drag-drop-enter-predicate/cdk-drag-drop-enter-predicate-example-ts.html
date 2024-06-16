@@ -1,19 +1,19 @@
-<span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/core&#x27;</span>;
+<span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {
   CdkDragDrop,
   moveItemInArray,
   transferArrayItem,
   CdkDrag,
   CdkDropList,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/cdk/drag-drop&#x27;</span>;
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/drag-drop'</span>;
 
 <span class="hljs-comment">/**
  * <span class="hljs-doctag">@title </span>Drag&amp;Drop enter predicate
  */</span>
 <span class="hljs-meta">@Component</span>({
-  <span class="hljs-attr">selector</span>: <span class="hljs-string">&#x27;cdk-drag-drop-enter-predicate-example&#x27;</span>,
-  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">&#x27;cdk-drag-drop-enter-predicate-example.html&#x27;</span>,
-  <span class="hljs-attr">styleUrl</span>: <span class="hljs-string">&#x27;cdk-drag-drop-enter-predicate-example.css&#x27;</span>,
+  <span class="hljs-attr">selector</span>: <span class="hljs-string">'cdk-drag-drop-enter-predicate-example'</span>,
+  <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">'cdk-drag-drop-enter-predicate-example.html'</span>,
+  <span class="hljs-attr">styleUrl</span>: <span class="hljs-string">'cdk-drag-drop-enter-predicate-example.css'</span>,
   <span class="hljs-attr">standalone</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">imports</span>: [CdkDropList, CdkDrag],
 })
@@ -39,7 +39,7 @@
     <span class="hljs-keyword">return</span> item.data % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>;
   }
 
-  <span class="hljs-comment">/** Predicate function that doesn&#x27;t allow items to be dropped into a list. */</span>
+  <span class="hljs-comment">/** Predicate function that doesn't allow items to be dropped into a list. */</span>
   <span class="hljs-function"><span class="hljs-title">noReturnPredicate</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
   }

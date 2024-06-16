@@ -1,20 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="docs-api">
   <h2>
     API reference for Angular CDK table
@@ -24,19 +7,18 @@
       </code>
     </p>
   <h3 id="cdk-table-directives" class="docs-header-link docs-api-h3">
-      <span header-link="directives"></span>
+      
       Directives
     </h3>
     
       
 
 <h4 id="CdkRecycleRows" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkRecycleRows"></span>
+  
   <code>CdkRecycleRows</code>
   
-</h4><p class="docs-api-class-description"><p>Enables the recycle view repeater strategy, which reduces rendering latency. Not compatible with
-tables that animate rows.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="e9mlw0mxdmaic5u597cbp0p2p">启用复写器的视图回收策略，从而减少渲染延迟。与为行设置动画的表格不兼容。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-table[recycleRows]</span>
@@ -54,14 +36,11 @@ tables that animate rows.</p>
       
 
 <h4 id="CdkTable" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkTable"></span>
+  
   <code>CdkTable</code>
   
-</h4><p class="docs-api-class-description"><p>A data table that can render a header row, data rows, and a footer row.
-Uses the dataSource input to determine the data to be rendered. The data can be provided either
-as a data array, an Observable stream that emits the data array to render, or a DataSource with a
-connect function that will return an Observable stream that emits the data array to render.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="5r7le8ivs6h0h6wddyt74usm">一个可以渲染表头行、数据行和表尾行的数据表格。使用输入属性 dataSource 来确定要渲染的数据。 这些数据既可以提供为数据数组，也可以提供为要渲染数组的 Observable 流，还提供为一个带有 connect 函数的 DataSource，该函数将返回一个发出要渲染的数组的 Observable 流。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-table</span>
@@ -69,11 +48,11 @@ connect function that will return an Observable stream that emits the data array
     <span class="docs-api-class-selector-name">table[cdk-table]</span>
   
 </p><span class="docs-api-class-export-label">Exported as:</span>
-<span class="docs-api-class-export-name">cdkTable</span><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+<span class="docs-api-class-export-name">cdkTable</span><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -84,23 +63,17 @@ connect function that will return an Observable stream that emits the data array
       <code>dataSource: CdkTableDataSourceInput&lt;T&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The table&#39;s source of data, which can be provided in three ways (in order of complexity):</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="48arqvsq26qguzctlykp6yb72">该表格的数据源可以通过三种方式提供（按复杂程度排序）：</p>
 <ul>
-<li>Simple data array (each object represents one table row)</li>
-<li>Stream that emits a data array each time the array changes</li>
-<li><code>DataSource</code> object that implements the connect/disconnect interface.</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="3em6mu2tr3dra3cmmirik3pm9">简单数据数组（每个对象代表格一个表格行）</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="3n0wnwog5o1qxocsrkvddtb5m">每当数组发生变化时都会发出数据数组的流</li>
+<li data-ng_translator_product="100" data-ng_translator_ref_id="97hf5kr3br4rsamewvqncy1cb">那些实现了 connect / disconnect 接口的 <code>DataSource</code>。</li>
 </ul>
-<p>If a data array is provided, the table must be notified when the array&#39;s objects are
-added, removed, or moved. This can be done by calling the <code>renderRows()</code> function which will
-render the diff since the last table render. If the data array reference is changed, the table
-will automatically trigger an update to the rows.</p>
-<p>When providing an Observable stream, the table will trigger an update automatically when the
-stream emits a new array of data.</p>
-<p>Finally, when providing a <code>DataSource</code> object, the table will use the Observable stream
-provided by the connect function and trigger updates when that stream emits new data array
-values. During the table&#39;s ngOnDestroy or when the data source is removed from the table, the
-table will call the DataSource&#39;s <code>disconnect</code> function (may be useful for cleaning up any
-subscriptions registered during the connect process).</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="1kni8tn5gwq4809af9csxktql">如果提供了数组，那么在添加、删除或移动该数组的对象时，都必须通知该表格。
+这可以通过调用 <code>renderRows()</code> 函数来完成，它会渲染自上次渲染表格以来的差异部分。如果数据数组的引用发生了变化，该表格会自动触发对行的更新。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="awctlkdanis27yct0u0fgr8bn">当提供一个可观察的流时，如果该流发出一个新的数据数组，该表格就会自动触发一次更新。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="9np7j0zhuc9g6kjqv4441uqfu">最后，在提供 <code>DataSource</code> 对象时，该表格将使用 connect 函数提供的 Observable 流，并在该流发出新的数据数组值时触发更新。
+在表格的 ngOnDestroy 中，或者从表格中删除了数据源时，该表格会调用数据源的 <code>disconnect</code> 函数（这可能对清理在连接过程中注册的所有订阅很有帮助）。</p>
 </td>
 </tr>
 
@@ -114,8 +87,7 @@ subscriptions registered during the connect process).</p>
       <code>fixedLayout: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether to use a fixed table layout. Enabling this option will enforce consistent column widths
-and optimize rendering sticky styles for native tables. No-op for flex tables.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="25lkt1vgif4cwa8zhiwawxyht">是否使用固定（fixed）表格布局。启用此选项会强制让所有列宽一致，并优化渲染原生表格的粘性样式。对弹性（flex）表格无效。</p>
 </td>
 </tr>
 
@@ -129,10 +101,9 @@ and optimize rendering sticky styles for native tables. No-op for flex tables.</
       <code>multiTemplateDataRows: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether to allow multiple rows per data object by evaluating which rows evaluate their &#39;when&#39;
-predicate to true. If <code>multiTemplateDataRows</code> is false, which is the default value, then each
-dataobject will render the first row that evaluates its when predicate to true, in the order
-defined in the table, or otherwise the default row which does not have a when predicate.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="abwgecewhogomxb8vasjaf682">通过计算哪些行的 'when' 谓词结果为 true 来允许其数据对象对应于多行。
+如果 <code>multiTemplateDataRows</code> 为 false（这是默认值），那么每个数据对象都会渲染到其谓词结果为 true 的第一行（按照表格中定义的顺序），
+否则就使用默认行（即没有 when 谓词的行）。</p>
 </td>
 </tr>
 
@@ -146,10 +117,8 @@ defined in the table, or otherwise the default row which does not have a when pr
       <code>trackBy: TrackByFunction&lt;T&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Tracking function that will be used to check the differences in data changes. Used similarly
-to <code>ngFor</code> <code>trackBy</code> function. Optimize row operations by identifying a row based on its data
-relative to the function to know if a row should be added/removed/moved.
-Accepts a function that takes two parameters, <code>index</code> and <code>item</code>.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="d0d7i3bazho5zehs6vf2u9buz">跟踪函数，用于检查数据变化的差异。类似于 <code>ngFor</code> 的 <code>trackBy</code> 函数。
+可以优化行操作，方法是根据该函数处理后的数据来标识一行，以了解该行是否应添加/删除/移动。接受带两个参数 <code>index</code> 和 <code>item</code> 的函数。</p>
 </td>
 </tr>
 
@@ -163,8 +132,7 @@ Accepts a function that takes two parameters, <code>index</code> and <code>item<
       <code>contentChanged: EventEmitter&lt;void&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Emits when the table completes rendering a set of data rows based on the latest data from the
-data source, even if the set of rows is empty.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="8tzbou0m5s6vrrr0kyo6vcn07">当表格使用来自数据源的最新数据渲染完一组数据行时发出，即使该组行是空的。</p>
 </td>
 </tr>
 
@@ -177,9 +145,7 @@ data source, even if the set of rows is empty.</p>
       <code>needsPositionStickyOnElement: true</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether to manually add position: sticky to all sticky cell elements. Not needed if
-the position is set in a selector associated with the value of stickyCssClass. May be
-overridden by table subclasses</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="47q08vm97vcaqpn8vqvwzvjc7">是否要为所有粘性单元格元素手动添加 position: sticky。如果 position 是在与 stickyCssClass 值相关联的选择器中设置的，则不需要。可以被表格的子类所改写</p>
 </td>
 </tr>
 
@@ -192,17 +158,16 @@ overridden by table subclasses</p>
       <code>stickyCssClass: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>CSS class added to any row or cell that has sticky positioning applied. May be overridden by
-table subclasses.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2e8snj6ifxgqx2nyzwtei3pqv">CSS 类被添加到任何已应用了粘性定位的行或单元格中。可以被表格的子类改写。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -212,18 +177,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">addColumnDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Adds a column definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="d59neiykgzrjb5055e2fz7ld8">添加一个未包含在内容子组件中的列定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         columnDef</p>
@@ -235,7 +200,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -247,18 +212,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">addFooterRowDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Adds a footer row definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2ntpptusftz61ud7y3ur0zeph">添加一个未包含在内容子组件中的表尾行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         footerRowDef</p>
@@ -270,7 +235,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -282,18 +247,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">addHeaderRowDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Adds a header row definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="dd3jafkiay54sd110rgjgp0hv">添加一个未包含在内容子组件中的表头行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         headerRowDef</p>
@@ -305,7 +270,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -317,18 +282,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">addRowDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Adds a row definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="e7tqoixa1vfstz7pev9vza38m">添加一个未包含在内容子组件中的行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         rowDef</p>
@@ -340,7 +305,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -352,18 +317,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">removeColumnDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Removes a column definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="8j1oy60ulm0y99x2nez7u8d82">删除那些未包含在内容子组件中的列定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         columnDef</p>
@@ -375,7 +340,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -387,18 +352,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">removeFooterRowDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Removes a footer row definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="2xbvji1vfnvyn39aey2bh9zty">删除一个未包含在内容子组件中的表尾行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         footerRowDef</p>
@@ -410,7 +375,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -422,18 +387,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">removeHeaderRowDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Removes a header row definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="5dyq0m0mff7ze8peuyr78ckyt">删除那些未包含在内容子组件中的表头行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         headerRowDef</p>
@@ -445,7 +410,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -457,18 +422,18 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">removeRowDef
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Removes a row definition that was not included as part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="ivf3sq58cm4n3qyzbzf6syp8">删除那些未包含在内容子组件中的行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         rowDef</p>
@@ -480,7 +445,7 @@ table subclasses.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -492,18 +457,13 @@ table subclasses.</p>
       <th colspan="2" class="docs-api-method-name-cell">renderRows
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Renders rows based on the table&#39;s latest set of data, which was either provided directly as an
-input or retrieved through an Observable stream (directly or from a DataSource).
-Checks for differences in the data since the last diff to perform only the necessary
-changes (add/remove/move rows).</p>
-<p>If the table&#39;s data source is a DataSource or Observable, this will be invoked automatically
-each time the provided Observable stream emits a new data array. Otherwise if your data is
-an array, this function will need to be called to render any changes.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="40hdlndoshgoay4ser2r5mi4s">根据表格中最新的数据集来渲染行，这些数据既可以直接输入，也可以从一个可观察的流中检索出来（直接获取或从 DataSource 获取）。检查自上次 diff 之后的数据差异，以便只进行必要的修改（添加/删除/移动行）。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="2f1gj3ige86ns7utznesq4vla">如果表格的数据源是 DataSource 或者 Observable，每当提供的 Observable 流发出一个新的数据数组时，都会自动调用它。如果你的数据是数组，那么就需要手动调用这个函数来渲染任何变化。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -515,18 +475,18 @@ an array, this function will need to be called to render any changes.</p>
       <th colspan="2" class="docs-api-method-name-cell">setNoDataRow
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Sets a no data row definition that was not included as a part of the content children.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="bly5f5ju5matw2n1q2v1pm1yu">设置一个没有包含在内容子组件中的无数据行定义。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         noDataRow</p>
@@ -538,7 +498,7 @@ an array, this function will need to be called to render any changes.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -550,16 +510,12 @@ an array, this function will need to be called to render any changes.</p>
       <th colspan="2" class="docs-api-method-name-cell">updateStickyColumnStyles
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Updates the column sticky styles. First resets all applied styles with respect to the cells
-sticking to the left and right. Then sticky styles are added for the left and right according
-to the column definitions for each cell in each row. This is automatically called when
-the data source provides a new set of data or when a column definition changes its sticky
-input. May be called manually for cases where the cell content changes outside of these events.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="cbev90s9n772ztqcnucogd5j1">更新列的粘性样式。首先，对于已粘附在左右两侧的单元格，重置所有已应用的样式。然后，根据每一行中每个单元格的列定义，评估哪些单元格需要粘附在左侧或右侧。当列定义的粘性属性发生变化时，会自动调用它。如果单元格内容在上述事件之外发生了变化，可以手动调用。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -571,16 +527,12 @@ input. May be called manually for cases where the cell content changes outside o
       <th colspan="2" class="docs-api-method-name-cell">updateStickyFooterRowStyles
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Updates the footer sticky styles. First resets all applied styles with respect to the cells
-sticking to the bottom. Then, evaluating which cells need to be stuck to the bottom. This is
-automatically called when the footer row changes its displayed set of columns, or if its
-sticky input changes. May be called manually for cases where the cell content changes outside
-of these events.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="cqre3nfpz4wov2o7gear7my2y">更新表尾的粘性样式。首先，对于已粘附在底部的单元格，重置所有已应用的样式。然后，评估哪些单元格需要粘附在底部。当表尾行所显示的一组列发生变化时，或者其粘性属性发生变化时，会自动调用它。如果单元格内容在上述事件之外发生了变化，可以手动调用。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -592,16 +544,12 @@ of these events.</p>
       <th colspan="2" class="docs-api-method-name-cell">updateStickyHeaderRowStyles
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Updates the header sticky styles. First resets all applied styles with respect to the cells
-sticking to the top. Then, evaluating which cells need to be stuck to the top. This is
-automatically called when the header row changes its displayed set of columns, or if its
-sticky input changes. May be called manually for cases where the cell content changes outside
-of these events.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="5ebdymijrln0p0paytj4th3mr">更新表头的粘性样式。首先，对于已粘附在顶部的单元格，重置所有已应用的样式。然后，评估哪些单元格需要粘附在上面。当表头行所显示的一组列发生变化时，或者其粘性属性发生变化时，会自动调用它。如果单元格内容在上述事件之外发生了变化，可以手动调用。</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -612,12 +560,11 @@ of these events.</p>
       
 
 <h4 id="CdkCellDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkCellDef"></span>
+  
   <code>CdkCellDef</code>
   
-</h4><p class="docs-api-class-description"><p>Cell definition for a CDK table.
-Captures the template of a column&#39;s data row cell as well as cell-specific properties.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="5c5nglq2zpr5lnw230pr62vcp">CDK 表格的单元格定义。存放列的数据行单元格的模板以及单元格的专有属性。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkCellDef]</span>
@@ -633,12 +580,11 @@ Captures the template of a column&#39;s data row cell as well as cell-specific p
       
 
 <h4 id="CdkHeaderCellDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkHeaderCellDef"></span>
+  
   <code>CdkHeaderCellDef</code>
   
-</h4><p class="docs-api-class-description"><p>Header cell definition for a CDK table.
-Captures the template of a column&#39;s header cell and as well as cell-specific properties.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="6ajupg80bz8tslc54da7fvttd">CDK 表格的表头单元格定义。存放列的表头单元格的模板以及单元格的专有属性。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkHeaderCellDef]</span>
@@ -654,12 +600,11 @@ Captures the template of a column&#39;s header cell and as well as cell-specific
       
 
 <h4 id="CdkFooterCellDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkFooterCellDef"></span>
+  
   <code>CdkFooterCellDef</code>
   
-</h4><p class="docs-api-class-description"><p>Footer cell definition for a CDK table.
-Captures the template of a column&#39;s footer cell and as well as cell-specific properties.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="f4qxyozn20tl2u6kzfd5m2uso">CDK 表格的表尾单元格定义。存放列的表尾单元格的模板以及单元格的专有属性。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkFooterCellDef]</span>
@@ -675,32 +620,31 @@ Captures the template of a column&#39;s footer cell and as well as cell-specific
       
 
 <h4 id="CdkColumnDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkColumnDef"></span>
+  
   <code>CdkColumnDef</code>
   
-</h4><p class="docs-api-class-description"><p>Column definition for the CDK table.
-Defines a set of cells available for a table column.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="c646yoqu7f3aj73xhycnzgmbk">CDK 表格的列定义。定义一组可用于表列的单元格。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkColumnDef]</span>
   
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">&#39;cdkColumnDef&#39;</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">'cdkColumnDef'</span>)
         </div><p class="docs-api-property-name">
       <code>name: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Unique name for this column.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2qxnc8oc5u40tro673fq0kevf">这个列的唯一名称。</p>
 </td>
 </tr>
 
@@ -728,9 +672,7 @@ Defines a set of cells available for a table column.</p>
       <code>stickyEnd: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Whether this column should be sticky positioned on the end of the row. Should make sure
-that it mimics the <code>CanStick</code> mixin such that <code>_hasStickyChanged</code> is set to true if the value
-has been changed.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="dk98c4eks32zuvlr4l1s9gcrt">此列是否应粘性在该行的末尾。应该确保它模仿了混入接口 <code>CanStick</code>，当该值更改后必须把 <code>_hasStickyChanged</code> 设为 true。</p>
 </td>
 </tr>
 
@@ -743,18 +685,16 @@ has been changed.</p>
       <code>cssClassFriendlyName: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Transformed version of the column name that can be used as part of a CSS classname. Excludes
-all non-alphanumeric characters and the special characters &#39;-&#39; and &#39;_&#39;. Any characters that
-do not match are replaced by the &#39;-&#39; character.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="ct0gs0nlgcvvm8nx74pgnviy8">列名的转换后版本，可以作为 CSS 类名的一部分。只允许字母、数字和两个特殊字符 “-” 和 “_”。除此之外的字符都会替换为 “-”。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -764,17 +704,17 @@ do not match are replaced by the &#39;-&#39; character.</p>
       <th colspan="2" class="docs-api-method-name-cell">hasStickyChanged
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Whether the sticky state has changed.</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">boolean</code>
     </td>
@@ -783,7 +723,7 @@ do not match are replaced by the &#39;-&#39; character.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -795,12 +735,12 @@ do not match are replaced by the &#39;-&#39; character.</p>
       <th colspan="2" class="docs-api-method-name-cell">resetStickyChanged
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Resets the sticky changed state.</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -810,19 +750,9 @@ do not match are replaced by the &#39;-&#39; character.</p>
     
       
 
-<h4 id="CdkHeaderCell" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkHeaderCell"></span>
-  <code>CdkHeaderCell</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/table/api#BaseCdkCell" class="docs-api-class-extends-type">
-      BaseCdkCell
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Header cell template container that adds the right classes and role.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkHeaderCell" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="dgmadhufxus3of91ldvsbj8g6"><span header-link="CdkHeaderCell"></span><code>CdkHeaderCell</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/table/api#BaseCdkCell" class="docs-api-class-extends-type"> BaseCdkCell </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="3viwm8qlhfoe8jnxfh9gmawyr">用于添加正确的类和角色的表头单元格模板容器。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-header-cell</span>
@@ -839,19 +769,9 @@ do not match are replaced by the &#39;-&#39; character.</p>
     
       
 
-<h4 id="CdkFooterCell" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkFooterCell"></span>
-  <code>CdkFooterCell</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/table/api#BaseCdkCell" class="docs-api-class-extends-type">
-      BaseCdkCell
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Footer cell template container that adds the right classes and role.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkFooterCell" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="8nc8qq3hez46y675klfrie301"><span header-link="CdkFooterCell"></span><code>CdkFooterCell</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/table/api#BaseCdkCell" class="docs-api-class-extends-type"> BaseCdkCell </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="9b1znz8xhn9xcgs0sijyd56nu">用于添加正确的类和角色的表尾单元格模板容器。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-footer-cell</span>
@@ -868,19 +788,9 @@ do not match are replaced by the &#39;-&#39; character.</p>
     
       
 
-<h4 id="CdkCell" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkCell"></span>
-  <code>CdkCell</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/table/api#BaseCdkCell" class="docs-api-class-extends-type">
-      BaseCdkCell
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Cell template container that adds the right classes and role.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkCell" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="2gczk73ac2iwozjvqmuctmid0"><span header-link="CdkCell"></span><code>CdkCell</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/table/api#BaseCdkCell" class="docs-api-class-extends-type"> BaseCdkCell </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="2ptw6f61as1pwj6anoerk0czn">用于添加正确的类和角色的单元格模板容器。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-cell</span>
@@ -898,7 +808,7 @@ do not match are replaced by the &#39;-&#39; character.</p>
       
 
 <h4 id="CdkHeaderRowDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkHeaderRowDef"></span>
+  
   <code>CdkHeaderRowDef</code>
   
   <span class="docs-api-class-extends-clauses">
@@ -908,18 +818,17 @@ do not match are replaced by the &#39;-&#39; character.</p>
     </a>
   </span>
   
-</h4><p class="docs-api-class-description"><p>Header row definition for the CDK table.
-Captures the header row&#39;s template and other header properties such as the columns to display.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="5dvzevmjg7p9bpepexq9bykxk">CDK 表格的表头行定义。存放表头行的模板和其他标题属性，比如要显示的列。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkHeaderRowDef]</span>
   
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -930,7 +839,7 @@ Captures the header row&#39;s template and other header properties such as the c
       <code>columns: Iterable&lt;string&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The columns to be displayed on this row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2rr7hiacmf7d91lyguia6y0ek">要在行上显示的列。</p>
 </td>
 </tr>
 
@@ -939,7 +848,7 @@ Captures the header row&#39;s template and other header properties such as the c
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkHeaderRowDefSticky&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkHeaderRowDefSticky', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>sticky: boolean</code>
     </p>
@@ -950,10 +859,10 @@ Captures the header row&#39;s template and other header properties such as the c
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -963,18 +872,18 @@ Captures the header row&#39;s template and other header properties such as the c
       <th colspan="2" class="docs-api-method-name-cell">extractCellTemplate
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets this row def&#39;s relevant cell template from the provided column def.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3vnb4wwevnw5irvfy8jop72vh">从提供的列定义中获取对此行的定义有用的相关单元格模板。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         column</p>
@@ -986,12 +895,12 @@ Captures the header row&#39;s template and other header properties such as the c
       </p>
     </td>
   </tr>
-  <thead>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">TemplateRef&lt;any&gt;</code>
     </td>
@@ -1000,7 +909,7 @@ Captures the header row&#39;s template and other header properties such as the c
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1012,18 +921,17 @@ Captures the header row&#39;s template and other header properties such as the c
       <th colspan="2" class="docs-api-method-name-cell">getColumnsDiff
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Returns the difference between the current columns and the columns from the last diff, or null
-if there is no difference.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="a9evo5kje57t4rwcdf4mgardt">返回当前列和最后一个差分过的列之间的差异，如果没有差别，则返回 null。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">IterableChanges&lt;any&gt; | null</code>
     </td>
@@ -1032,7 +940,7 @@ if there is no difference.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1044,17 +952,17 @@ if there is no difference.</p>
       <th colspan="2" class="docs-api-method-name-cell">hasStickyChanged
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Whether the sticky state has changed.</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">boolean</code>
     </td>
@@ -1063,7 +971,7 @@ if there is no difference.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1075,12 +983,12 @@ if there is no difference.</p>
       <th colspan="2" class="docs-api-method-name-cell">resetStickyChanged
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Resets the sticky changed state.</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1091,7 +999,7 @@ if there is no difference.</p>
       
 
 <h4 id="CdkFooterRowDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkFooterRowDef"></span>
+  
   <code>CdkFooterRowDef</code>
   
   <span class="docs-api-class-extends-clauses">
@@ -1101,18 +1009,17 @@ if there is no difference.</p>
     </a>
   </span>
   
-</h4><p class="docs-api-class-description"><p>Footer row definition for the CDK table.
-Captures the footer row&#39;s template and other footer properties such as the columns to display.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="1cd0sgcjezzpg25d54bxxzv0w">CDK 表的表尾行定义，存放表尾行的模板和其他表尾属性，比如要显示的列。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkFooterRowDef]</span>
   
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1123,7 +1030,7 @@ Captures the footer row&#39;s template and other footer properties such as the c
       <code>columns: Iterable&lt;string&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The columns to be displayed on this row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2rr7hiacmf7d91lyguia6y0ek">要在行上显示的列。</p>
 </td>
 </tr>
 
@@ -1132,7 +1039,7 @@ Captures the footer row&#39;s template and other footer properties such as the c
       
 
 <tr class="docs-api-properties-row">
-  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: &#39;cdkFooterRowDefSticky&#39;, transform: booleanAttribute }</span>)
+  <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">@Input(<span class="docs-api-input-alias">{ alias: 'cdkFooterRowDefSticky', transform: booleanAttribute }</span>)
         </div><p class="docs-api-property-name">
       <code>sticky: boolean</code>
     </p>
@@ -1143,10 +1050,10 @@ Captures the footer row&#39;s template and other footer properties such as the c
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1156,18 +1063,18 @@ Captures the footer row&#39;s template and other footer properties such as the c
       <th colspan="2" class="docs-api-method-name-cell">extractCellTemplate
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets this row def&#39;s relevant cell template from the provided column def.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3vnb4wwevnw5irvfy8jop72vh">从提供的列定义中获取对此行的定义有用的相关单元格模板。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         column</p>
@@ -1179,12 +1086,12 @@ Captures the footer row&#39;s template and other footer properties such as the c
       </p>
     </td>
   </tr>
-  <thead>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">TemplateRef&lt;any&gt;</code>
     </td>
@@ -1193,7 +1100,7 @@ Captures the footer row&#39;s template and other footer properties such as the c
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1205,18 +1112,17 @@ Captures the footer row&#39;s template and other footer properties such as the c
       <th colspan="2" class="docs-api-method-name-cell">getColumnsDiff
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Returns the difference between the current columns and the columns from the last diff, or null
-if there is no difference.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="a9evo5kje57t4rwcdf4mgardt">返回当前列和最后一个差分过的列之间的差异，如果没有差别，则返回 null。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">IterableChanges&lt;any&gt; | null</code>
     </td>
@@ -1225,7 +1131,7 @@ if there is no difference.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1237,17 +1143,17 @@ if there is no difference.</p>
       <th colspan="2" class="docs-api-method-name-cell">hasStickyChanged
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Whether the sticky state has changed.</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">boolean</code>
     </td>
@@ -1256,7 +1162,7 @@ if there is no difference.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1268,12 +1174,12 @@ if there is no difference.</p>
       <th colspan="2" class="docs-api-method-name-cell">resetStickyChanged
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
       <p>Resets the sticky changed state.</p>
 
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1283,30 +1189,18 @@ if there is no difference.</p>
     
       
 
-<h4 id="CdkRowDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkRowDef"></span>
-  <code>CdkRowDef</code>
-  
-  <span class="docs-api-class-extends-clauses">
-    <span class="docs-api-class-extends-label">extends</span>
-    <a href="cdk/table/api#BaseRowDef" class="docs-api-class-extends-type">
-      BaseRowDef
-    </a>
-  </span>
-  
-</h4><p class="docs-api-class-description"><p>Data row definition for the CDK table.
-Captures the header row&#39;s template and other row properties such as the columns to display and
-a when predicate that describes when this row should be used.</p>
-</p><p class="docs-api-directive-selectors">
+<h4 id="CdkRowDef" class="docs-header-link docs-api-h4 docs-api-class-name" data-ng_translator_product="100" data-ng_translator_ref_id="4zsvpo1nh4oe0m8aq9ggq62cg"><span header-link="CdkRowDef"></span><code>CdkRowDef</code> 
+<span class="docs-api-class-extends-clauses"> <span class="docs-api-class-extends-label">继承自</span> <a href="cdk/table/api#BaseRowDef" class="docs-api-class-extends-type"> BaseRowDef </a> </span></h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="60kyt1aa4lj3m0fb2iotbbyqu">CDK 表的数据行定义。存放数据行的模板和其他行属性，比如要显示的列和描述何时应该使用该行的谓词。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">[cdkRowDef]</span>
   
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1317,7 +1211,7 @@ a when predicate that describes when this row should be used.</p>
       <code>columns: Iterable&lt;string&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The columns to be displayed on this row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2rr7hiacmf7d91lyguia6y0ek">要在行上显示的列。</p>
 </td>
 </tr>
 
@@ -1331,19 +1225,16 @@ a when predicate that describes when this row should be used.</p>
       <code>when: (index: number, rowData: T) =&gt; boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Function that should return true if this row template should be used for the provided index
-and row data. If left undefined, this row will be considered the default row template to use
-when no other when functions return true for the data.
-For every row, there must be at least one when function that passes or an undefined to default.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4ax1p8selr0pt2m0gs9bfbz8g">如果要把这个行模板用于所提供的索引和行数据，该函数应返回 true。如果未定义，那么当该函数对该数据返回 true 时，该行将被认为是默认的行模板。对于每一行，必须至少有一个函数能通过或者为 undefined 以便作为默认值。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1353,18 +1244,18 @@ For every row, there must be at least one when function that passes or an undefi
       <th colspan="2" class="docs-api-method-name-cell">extractCellTemplate
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets this row def&#39;s relevant cell template from the provided column def.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3vnb4wwevnw5irvfy8jop72vh">从提供的列定义中获取对此行的定义有用的相关单元格模板。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         column</p>
@@ -1376,12 +1267,12 @@ For every row, there must be at least one when function that passes or an undefi
       </p>
     </td>
   </tr>
-  <thead>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">TemplateRef&lt;any&gt;</code>
     </td>
@@ -1390,7 +1281,7 @@ For every row, there must be at least one when function that passes or an undefi
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1402,18 +1293,17 @@ For every row, there must be at least one when function that passes or an undefi
       <th colspan="2" class="docs-api-method-name-cell">getColumnsDiff
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Returns the difference between the current columns and the columns from the last diff, or null
-if there is no difference.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="a9evo5kje57t4rwcdf4mgardt">返回当前列和最后一个差分过的列之间的差异，如果没有差别，则返回 null。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">IterableChanges&lt;any&gt; | null</code>
     </td>
@@ -1422,7 +1312,7 @@ if there is no difference.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1433,11 +1323,11 @@ if there is no difference.</p>
       
 
 <h4 id="CdkHeaderRow" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkHeaderRow"></span>
+  
   <code>CdkHeaderRow</code>
   
-</h4><p class="docs-api-class-description"><p>Header template container that contains the cell outlet. Adds the right class and role.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="5hlltjmtg4k27frsiavaqomf0">包含单元格出口地标的表头模板容器。添加合适的类和角色。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-header-row</span>
@@ -1455,11 +1345,11 @@ if there is no difference.</p>
       
 
 <h4 id="CdkFooterRow" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkFooterRow"></span>
+  
   <code>CdkFooterRow</code>
   
-</h4><p class="docs-api-class-description"><p>Footer template container that contains the cell outlet. Adds the right class and role.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="1tng2w0xtsdsgnq24tp0544jk">包含单元格出口地标的表尾模板容器。添加合适的类和角色。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-footer-row</span>
@@ -1477,11 +1367,11 @@ if there is no difference.</p>
       
 
 <h4 id="CdkRow" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkRow"></span>
+  
   <code>CdkRow</code>
   
-</h4><p class="docs-api-class-description"><p>Data row template container that contains the cell outlet. Adds the right class and role.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="csy7l9sbvutqjxkquisj5ckpu">包含单元格出口地标的数据行模板容器。添加合适的类和角色。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-row</span>
@@ -1499,20 +1389,20 @@ if there is no difference.</p>
       
 
 <h4 id="CdkNoDataRow" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkNoDataRow"></span>
+  
   <code>CdkNoDataRow</code>
   
-</h4><p class="docs-api-class-description"><p>Row that can be used to display a message when no data is shown in the table.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="aeuluuhmtpf6cxc2e04t1azln">当表中没有数据时，可以用来显示一条消息的行。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">ng-template[cdkNoDataRow]</span>
   
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1527,7 +1417,7 @@ if there is no difference.</p>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -1538,25 +1428,22 @@ if there is no difference.</p>
       
 
 <h4 id="CdkTextColumn" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="CdkTextColumn"></span>
+  
   <code>CdkTextColumn</code>
   
-</h4><p class="docs-api-class-description"><p>Column that simply shows text content for the header and row cells. Assumes that the table
-is using the native table implementation (<code>&lt;table&gt;</code>).</p>
-<p>By default, the name of this column will be the header text and data property accessor.
-The header text can be overridden with the <code>headerText</code> input. Cell values can be overridden with
-the <code>dataAccessor</code> input. Change the text justification to the start or end using the <code>justify</code>
-input.</p>
-</p><p class="docs-api-directive-selectors">
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="a6ing3456lz2ukahoqyuuzz8r">只显示表头行和行单元格的文本内容的列。假设该表正在使用原生表格实现（ <code>&lt;table&gt;</code> ）。</p>
+<p data-ng_translator_product="100" data-ng_translator_ref_id="2xflkfddpffh0t5q89eulgdok">默认情况下，该列的名称就是表头文本和数据属性访问器。输入属性 <code>headerText</code> 可以改写表头文本。输入属性 <code>dataAccessor</code> 可以改写单元格的值。
+输入属性 <code>justify</code> 把文本对齐方式修改为对齐到开头或结尾。</p>
+<p></p><p class="docs-api-directive-selectors">
   <span class="docs-api-class-selector-label">Selector:</span>
   
     <span class="docs-api-class-selector-name">cdk-text-column</span>
   
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1567,10 +1454,7 @@ input.</p>
       <code>dataAccessor: (data: T, name: string) =&gt; string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Accessor function to retrieve the data rendered for each cell. If this
-property is not set, the data cells will render the value found in the data&#39;s property matching
-the column&#39;s name. For example, if the column is named <code>id</code>, then the rendered value will be
-value defined by the data&#39;s <code>id</code> property.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2mgjsfet5h98s24akislu58zl">访问器函数用来检索为要每个单元格渲染的数据。如果未设置此属性，数据单元格将渲染数据属性中与该列名匹配的值。 例如，如果列的名字是 <code>id</code>，那么渲染的值就是 data 的 <code>id</code> 属性定义的值。</p>
 </td>
 </tr>
 
@@ -1584,8 +1468,7 @@ value defined by the data&#39;s <code>id</code> property.</p>
       <code>headerText: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Text label that should be used for the column header. If this property is not
-set, the header text will default to the column name with its first letter capitalized.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="r5jb9ywivt3jto6u9tbkq6n6">要作为列表头的文本标签。如果未设置此属性，则表头文本默认使用列名的首字母大写形式。</p>
 </td>
 </tr>
 
@@ -1596,10 +1479,10 @@ set, the header text will default to the column name with its first letter capit
 <tr class="docs-api-properties-row">
   <td class="docs-api-properties-name-cell"><div class="docs-api-input-marker">
           @Input()</div><p class="docs-api-property-name">
-      <code>justify: &#39;start&#39; | &#39;end&#39; | &#39;center&#39;</code>
+      <code>justify: 'start' | 'end' | 'center'</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Alignment of the cell values.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="5a1i6ztfez41rszvvpkizosrv">单元格中值的对齐方式。</p>
 </td>
 </tr>
 
@@ -1613,32 +1496,29 @@ set, the header text will default to the column name with its first letter capit
       <code>name: string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Column name that should be used to reference this column.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="73awaig1yoz71x0y63bpgizw0">要用来引用这个列的列名。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
 
 
 
-    <h3 id="cdk-table-classes" class="docs-header-link docs-api-h3">
-      <span header-link="classes"></span>
-      Classes
-    </h3>
+    <h3 id="cdk-table-classes" class="docs-header-link docs-api-h3" data-ng_translator_product="100" data-ng_translator_ref_id="4bn58wgxi998senv9uc3eosks"><span header-link="classes"></span>类</h3>
     
       
 
 <h4 id="BaseCdkCell" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="BaseCdkCell"></span>
+  
   <code>BaseCdkCell</code>
   
-</h4><p class="docs-api-class-description"><p>Base class for the cells. Adds a CSS classname that identifies the column it renders in.</p>
-</p>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="7i6553dkggz487cg8jls2et1t">单元格的基类。添加一个 CSS 类名来标识它所渲染的列。</p>
+<p></p>
 
 
 
@@ -1649,16 +1529,15 @@ set, the header text will default to the column name with its first letter capit
       
 
 <h4 id="BaseRowDef" class="docs-header-link docs-api-h4 docs-api-class-name">
-  <span header-link="BaseRowDef"></span>
+  
   <code>BaseRowDef</code>
   
-</h4><p class="docs-api-class-description"><p>Base class for the CdkHeaderRowDef and CdkRowDef that handles checking their columns inputs
-for changes and notifying the table.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-class-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="e6oraa1aurti6gv2kwf60y43i">CdkHeaderRowDef 和 CdkRowDef 的基类，负责处理各列的输入变更并通知表格。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1668,16 +1547,16 @@ for changes and notifying the table.</p>
       <code>columns: Iterable&lt;string&gt;</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>The columns to be displayed on this row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="2rr7hiacmf7d91lyguia6y0ek">要在行上显示的列。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -1687,18 +1566,18 @@ for changes and notifying the table.</p>
       <th colspan="2" class="docs-api-method-name-cell">extractCellTemplate
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Gets this row def&#39;s relevant cell template from the provided column def.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="3vnb4wwevnw5irvfy8jop72vh">从提供的列定义中获取对此行的定义有用的相关单元格模板。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         column</p>
@@ -1710,12 +1589,12 @@ for changes and notifying the table.</p>
       </p>
     </td>
   </tr>
-  <thead>
+  </tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">TemplateRef&lt;any&gt;</code>
     </td>
@@ -1724,7 +1603,7 @@ for changes and notifying the table.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
@@ -1736,18 +1615,17 @@ for changes and notifying the table.</p>
       <th colspan="2" class="docs-api-method-name-cell">getColumnsDiff
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Returns the difference between the current columns and the columns from the last diff, or null
-if there is no difference.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="a9evo5kje57t4rwcdf4mgardt">返回当前列和最后一个差分过的列之间的差异，如果没有差别，则返回 null。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-returns-header-row">
-      <th colspan="2" class="docs-api-method-returns-header-cell">Returns</th>
+      <th colspan="2" class="docs-api-method-returns-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="4858lhppdkvnlpbviww3d1tvv">返回值</th>
     </tr>
   </thead>
-  <tr>
+  <tbody><tr>
     <td class="docs-api-method-returns-type-cell">
       <code class="docs-api-method-returns-type">IterableChanges&lt;any&gt; | null</code>
     </td>
@@ -1756,29 +1634,26 @@ if there is no difference.</p>
         
       </p>
     </td>
-  </tr></table>
+  </tr></tbody></table>
 
 
   
 
 
 
-    <h3 id="cdk-table-interfaces" class="docs-header-link docs-api-h3">
-      <span header-link="interfaces"></span>
-      Interfaces
-    </h3>
+    <h3 id="cdk-table-interfaces" class="docs-header-link docs-api-h3" data-ng_translator_product="100" data-ng_translator_ref_id="cyslup7bbt74203j3v5awkt80"><span header-link="interfaces"></span>接口</h3>
     
       
 
 <h4 id="RowOutlet" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="RowOutlet"></span>
+  
   <code>RowOutlet</code>
-</h4><p class="docs-api-interface-description"><p>Interface used to provide an outlet for rows to be inserted into.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="elajlkhm11xy61yl2dri43otb">本接口用来为要插入的行提供出口地标。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1793,7 +1668,7 @@ if there is no difference.</p>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -1804,14 +1679,14 @@ if there is no difference.</p>
       
 
 <h4 id="CellDef" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="CellDef"></span>
+  
   <code>CellDef</code>
-</h4><p class="docs-api-interface-description"><p>Base interface for a cell definition. Captures a column&#39;s cell template definition.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="n3wkfzyn6xhanh551lzjm0u4">用于单元格定义的基本接口。存放列的单元格模板定义。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1826,7 +1701,7 @@ if there is no difference.</p>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -1837,14 +1712,14 @@ if there is no difference.</p>
       
 
 <h4 id="CdkCellOutletRowContext" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="CdkCellOutletRowContext"></span>
+  
   <code>CdkCellOutletRowContext</code>
-</h4><p class="docs-api-interface-description"><p>Context provided to the row cells when <code>multiTemplateDataRows</code> is false</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="7wjcugnlbc1sfatk4kw0qt1yd">当 <code>multiTemplateDataRows</code> 为 false 时，提供给行单元格的上下文</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1854,7 +1729,7 @@ if there is no difference.</p>
       <code>$implicit: T</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Data for the row that this cell is located within.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="12azdjqa2i2brqk1q3sf17om0">该单元格所在行的数据。</p>
 </td>
 </tr>
 
@@ -1867,7 +1742,7 @@ if there is no difference.</p>
       <code>count: number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Length of the number of total rows.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="baiygambie4n9oettibra7ulb">总行数的长度。</p>
 </td>
 </tr>
 
@@ -1880,7 +1755,7 @@ if there is no difference.</p>
       <code>even: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in a row with an even-numbered index.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="9wmsd6bpvsdjmy8y6fdxx3nz0">如果此单元格包含在具有偶数索引的行中，则返回 true。</p>
 </td>
 </tr>
 
@@ -1893,7 +1768,7 @@ if there is no difference.</p>
       <code>first: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in the first row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="bez4yxha0ewitovrqca6o0cyg">如果此单元格包含在第一行，则为 True。</p>
 </td>
 </tr>
 
@@ -1906,7 +1781,7 @@ if there is no difference.</p>
       <code>index: number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Index of the data object in the provided data array.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="93u5bnz47f4nrn8jw734rt749">数据对象在所提供的数据组中的索引。</p>
 </td>
 </tr>
 
@@ -1919,7 +1794,7 @@ if there is no difference.</p>
       <code>last: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in the last row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="7s5i0ol62u71j6s0q24eqt4b0">如果此单元格包含在最后一行，则为 True。</p>
 </td>
 </tr>
 
@@ -1932,13 +1807,13 @@ if there is no difference.</p>
       <code>odd: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in a row with an odd-numbered index.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1uhx2r8lmey4jwkzq3ona8xr9">如果此单元格包含在具有奇数索引的行中，则返回 true。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -1949,16 +1824,14 @@ if there is no difference.</p>
       
 
 <h4 id="CdkCellOutletMultiRowContext" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="CdkCellOutletMultiRowContext"></span>
+  
   <code>CdkCellOutletMultiRowContext</code>
-</h4><p class="docs-api-interface-description"><p>Context provided to the row cells when <code>multiTemplateDataRows</code> is true. This context is the same
-as CdkCellOutletRowContext except that the single <code>index</code> value is replaced by <code>dataIndex</code> and
-<code>renderIndex</code>.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="e6gkbqt06otpsovju1espbdwm"><code>multiTemplateDataRows</code> 为 true 时，提供给行单元格的上下文。这个上下文与 CdkCellOutletRowContext 相同，除非单个的 <code>index</code> 值被置换为了 <code>dataIndex</code> 和 <code>renderIndex</code>。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -1968,7 +1841,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>$implicit: T</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Data for the row that this cell is located within.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="12azdjqa2i2brqk1q3sf17om0">该单元格所在行的数据。</p>
 </td>
 </tr>
 
@@ -1981,7 +1854,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>count: number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Length of the number of total rows.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="baiygambie4n9oettibra7ulb">总行数的长度。</p>
 </td>
 </tr>
 
@@ -1994,7 +1867,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>dataIndex: number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Index of the data object in the provided data array.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="93u5bnz47f4nrn8jw734rt749">数据对象在所提供的数据组中的索引。</p>
 </td>
 </tr>
 
@@ -2007,7 +1880,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>even: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in a row with an even-numbered index.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="9wmsd6bpvsdjmy8y6fdxx3nz0">如果此单元格包含在具有偶数索引的行中，则返回 true。</p>
 </td>
 </tr>
 
@@ -2020,7 +1893,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>first: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in the first row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="bez4yxha0ewitovrqca6o0cyg">如果此单元格包含在第一行，则为 True。</p>
 </td>
 </tr>
 
@@ -2033,7 +1906,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>last: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in the last row.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="7s5i0ol62u71j6s0q24eqt4b0">如果此单元格包含在最后一行，则为 True。</p>
 </td>
 </tr>
 
@@ -2046,7 +1919,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>odd: boolean</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>True if this cell is contained in a row with an odd-numbered index.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="1uhx2r8lmey4jwkzq3ona8xr9">如果此单元格包含在具有奇数索引的行中，则返回 true。</p>
 </td>
 </tr>
 
@@ -2059,13 +1932,13 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       <code>renderIndex: number</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Index location of the rendered row that this cell is located within.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="4d47hksounhlttacs0wxeysne">该单元格所在的渲染行的索引位置。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -2076,13 +1949,13 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       
 
 <h4 id="StickyUpdate" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="StickyUpdate"></span>
+  
   <code>StickyUpdate</code>
-</h4><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -2121,7 +1994,7 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -2132,14 +2005,13 @@ as CdkCellOutletRowContext except that the single <code>index</code> value is re
       
 
 <h4 id="StickyPositioningListener" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="StickyPositioningListener"></span>
+  
   <code>StickyPositioningListener</code>
-</h4><p class="docs-api-interface-description"><p>If provided, CdkTable will call the methods below when it updates the size/
-position/etc of its sticky rows and columns.</p>
-</p>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="bryb8itw8d8sd5gfcl96shic1">如果提供的话，CdkTable 在更新其粘性行和列的大小/位置等时会调用下面的方法。</p>
+<p></p>
 
 
-<h5 class="docs-api-h5 docs-api-method-header">Methods</h5>
+<h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="1xubgaqmffibk0p3s7z4lwoiw">方法</h5>
   
     
 
@@ -2149,18 +2021,18 @@ position/etc of its sticky rows and columns.</p>
       <th colspan="2" class="docs-api-method-name-cell">stickyColumnsUpdated
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Called when CdkTable updates its sticky start columns.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="83ta74cpser3wyjo593tzloc7">当 CdkTable 更新其粘性首列时调用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         update</p>
@@ -2172,7 +2044,7 @@ position/etc of its sticky rows and columns.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2184,18 +2056,18 @@ position/etc of its sticky rows and columns.</p>
       <th colspan="2" class="docs-api-method-name-cell">stickyEndColumnsUpdated
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Called when CdkTable updates its sticky end columns.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="e1a9ezvwkzhsg04blblir8mbc">当 CdkTable 更新其粘性末列时调用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         update</p>
@@ -2207,7 +2079,7 @@ position/etc of its sticky rows and columns.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2219,18 +2091,18 @@ position/etc of its sticky rows and columns.</p>
       <th colspan="2" class="docs-api-method-name-cell">stickyFooterRowsUpdated
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Called when CdkTable updates its sticky footer rows.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="5p1u63m5d9bj9uo10yglowtkg">当 CdkTable 更新其粘性表尾行时调用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         update</p>
@@ -2242,7 +2114,7 @@ position/etc of its sticky rows and columns.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2254,18 +2126,18 @@ position/etc of its sticky rows and columns.</p>
       <th colspan="2" class="docs-api-method-name-cell">stickyHeaderRowsUpdated
       </th>
     </tr>
-  </thead><tr class="docs-api-method-description-row">
+  </thead><tbody><tr class="docs-api-method-description-row">
     <td colspan="2" class="docs-api-method-description-cell">
-      <p>Called when CdkTable updates its sticky header rows.</p>
+      <p data-ng_translator_product="100" data-ng_translator_ref_id="73jurmwsl0a9oyxz0vnh45s3o">当 CdkTable 更新其粘性表头行时调用。</p>
 
     </td>
-  </tr><thead>
+  </tr></tbody><thead>
     <tr class="docs-api-method-parameters-header-row">
-      <th colspan="2" class="docs-api-method-parameters-header-cell">Parameters</th>
+      <th colspan="2" class="docs-api-method-parameters-header-cell" data-ng_translator_product="100" data-ng_translator_ref_id="2yvleri23pqevh8tr49s6skto">参数</th>
     </tr>
   </thead>
   
-  <tr class="docs-api-method-parameter-row">
+  <tbody><tr class="docs-api-method-parameter-row">
     <td class="docs-api-method-parameter-cell">
       <p class="docs-api-method-parameter-name">
         update</p>
@@ -2277,7 +2149,7 @@ position/etc of its sticky rows and columns.</p>
       </p>
     </td>
   </tr>
-  </table>
+  </tbody></table>
 
 
   
@@ -2288,14 +2160,14 @@ position/etc of its sticky rows and columns.</p>
       
 
 <h4 id="TextColumnOptions" class="docs-header-link docs-api-h4 docs-api-interface-name">
-  <span header-link="TextColumnOptions"></span>
+  
   <code>TextColumnOptions</code>
-</h4><p class="docs-api-interface-description"><p>Configurable options for <code>CdkTextColumn</code>.</p>
-</p><h5 class="docs-api-h5 docs-api-method-header">Properties</h5>
+</h4><p class="docs-api-interface-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="dbrbqjt7peyka3acp1s4eh1ux"><code>CdkTextColumn</code> 配置选项。</p>
+<p></p><h5 class="docs-api-h5 docs-api-method-header" data-ng_translator_product="100" data-ng_translator_ref_id="9ghvm54f9feewnb0zbrlubp2h">属性</h5>
   <table class="docs-api-properties-table">
-    <tr class="docs-api-properties-header-row">
-      <th class="docs-api-properties-th">Name</th>
-      <th class="docs-api-properties-th">Description</th>
+    <tbody><tr class="docs-api-properties-header-row">
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="4dkesj3d12v3li73mgaxabh53">名称</th>
+      <th class="docs-api-properties-th" data-ng_translator_product="100" data-ng_translator_ref_id="ar5q09mdsagdppsbze96eagxl">描述</th>
     </tr>
     
       
@@ -2305,7 +2177,7 @@ position/etc of its sticky rows and columns.</p>
       <code>defaultDataAccessor: (data: T, name: string) =&gt; string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Default data accessor to use if one is not provided.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="exkf9r96bkels9mx9s49oxmxm">默认数据访问器，如果一个都没有提供过，就用它。</p>
 </td>
 </tr>
 
@@ -2318,14 +2190,13 @@ position/etc of its sticky rows and columns.</p>
       <code>defaultHeaderTextTransform: (name: string) =&gt; string</code>
     </p>
   </td>
-  <td class="docs-api-property-description"><p>Default function that provides the header text based on the column name if a header
-text is not provided.</p>
+  <td class="docs-api-property-description"><p data-ng_translator_product="100" data-ng_translator_ref_id="8t638tly5ugy1equfzrsqy5br">默认函数，如果没有提供表头文本，它就会根据列名提供表头文本。</p>
 </td>
 </tr>
 
 
     
-  </table>
+  </tbody></table>
 
 
 
@@ -2333,17 +2204,17 @@ text is not provided.</p>
 
 
     <h3 id="cdk-table-type_aliases" class="docs-header-link docs-api-h3">
-      <span header-link="type_aliases"></span>
+      
       Type aliases
     </h3>
     
       
 
 <h4 id="CdkTableDataSourceInput" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
-  <span header-link="CdkTableDataSourceInput"></span>
+  
   <code>CdkTableDataSourceInput</code>
-</h4><p class="docs-api-type-alias-description"><p>Possible types that can be set as the data source for a <code>CdkTable</code>.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-type-alias-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="bjpdqdf5qesdjpu9b71doyt2x">可以被设置为 <code>CdkTable</code> 的数据源的可能的类型。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">type</span> CdkTableDataSourceInput = <span class="hljs-keyword">readonly</span> T[] | DataSource&lt;T&gt; | Observable&lt;<span class="hljs-keyword">readonly</span> T[]&gt;;</code>
 </pre>
@@ -2354,11 +2225,11 @@ text is not provided.</p>
       
 
 <h4 id="StickyDirection" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
-  <span header-link="StickyDirection"></span>
+  
   <code>StickyDirection</code>
 </h4><div class="docs-markdown">
 <pre class="docs-markdown-pre">
-<code class="docs-markdown-code"><span class="hljs-keyword">type</span> StickyDirection = <span class="hljs-string">&#x27;top&#x27;</span> | <span class="hljs-string">&#x27;bottom&#x27;</span> | <span class="hljs-string">&#x27;left&#x27;</span> | <span class="hljs-string">&#x27;right&#x27;</span>;</code>
+<code class="docs-markdown-code"><span class="hljs-keyword">type</span> StickyDirection = <span class="hljs-string">'top'</span> | <span class="hljs-string">'bottom'</span> | <span class="hljs-string">'left'</span> | <span class="hljs-string">'right'</span>;</code>
 </pre>
 </div>
 
@@ -2367,7 +2238,7 @@ text is not provided.</p>
       
 
 <h4 id="StickySize" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
-  <span header-link="StickySize"></span>
+  
   <code>StickySize</code>
 </h4><div class="docs-markdown">
 <pre class="docs-markdown-pre">
@@ -2380,7 +2251,7 @@ text is not provided.</p>
       
 
 <h4 id="StickyOffset" class="docs-header-link docs-api-h4 docs-api-type-alias-name">
-  <span header-link="StickyOffset"></span>
+  
   <code>StickyOffset</code>
 </h4><div class="docs-markdown">
 <pre class="docs-markdown-pre">
@@ -2390,20 +2261,19 @@ text is not provided.</p>
 
 
     <h3 id="cdk-table-constants" class="docs-header-link docs-api-h3">
-      <span header-link="constants"></span>
+      
       Constants
     </h3>
     
       
 
 <h4 id="CDK_ROW_TEMPLATE" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="CDK_ROW_TEMPLATE"></span>
+  
   <code>CDK_ROW_TEMPLATE</code>
-</h4><p class="docs-api-constant-description"><p>The row template that can be used by the mat-table. Should not be used outside of the
-material library.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="c3rbq7m0sjn00uh7dj4sg07gw">供 mat-table 使用的行模板。不应该在 Material 库之外使用。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
-<code class="docs-markdown-code"><span class="hljs-keyword">const</span> CDK_ROW_TEMPLATE: <span class="hljs-string">&quot;&lt;ng-container cdkCellOutlet&gt;&lt;/ng-container&gt;&quot;</span>;</code>
+<code class="docs-markdown-code"><span class="hljs-keyword">const</span> CDK_ROW_TEMPLATE: <span class="hljs-string">"&lt;ng-container cdkCellOutlet&gt;&lt;/ng-container&gt;"</span>;</code>
 </pre>
 </div>
 
@@ -2412,10 +2282,10 @@ material library.</p>
       
 
 <h4 id="STICKY_POSITIONING_LISTENER" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="STICKY_POSITIONING_LISTENER"></span>
+  
   <code>STICKY_POSITIONING_LISTENER</code>
-</h4><p class="docs-api-constant-description"><p>The injection token used to specify the StickyPositioningListener.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="9njt9ztt90tvjm67lt7vdcg3e">这个注入令牌用来指定 StickyPositioningListener。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> STICKY_POSITIONING_LISTENER: InjectionToken&lt;StickyPositioningListener&gt;;</code>
 </pre>
@@ -2426,10 +2296,10 @@ material library.</p>
       
 
 <h4 id="TEXT_COLUMN_OPTIONS" class="docs-header-link docs-api-h4 docs-api-constant-name">
-  <span header-link="TEXT_COLUMN_OPTIONS"></span>
+  
   <code>TEXT_COLUMN_OPTIONS</code>
-</h4><p class="docs-api-constant-description"><p>Injection token that can be used to specify the text column options.</p>
-</p><div class="docs-markdown">
+</h4><p class="docs-api-constant-description"></p><p data-ng_translator_product="100" data-ng_translator_ref_id="962e86bjqew4wxhxy7qw1f8sc">这个注入令牌可以用来指定文本列的选项。</p>
+<p></p><div class="docs-markdown">
 <pre class="docs-markdown-pre">
 <code class="docs-markdown-code"><span class="hljs-keyword">const</span> TEXT_COLUMN_OPTIONS: InjectionToken&lt;TextColumnOptions&lt;<span class="hljs-built_in">any</span>&gt;&gt;;</code>
 </pre>

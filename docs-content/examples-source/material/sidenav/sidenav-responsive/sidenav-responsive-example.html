@@ -2,16 +2,14 @@
   <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
     <mat-toolbar color="primary" class="example-toolbar">
       <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-      <h1 class="example-app-name">Responsive App</h1>
+      <h1 class="example-app-name" data-ng_translator_product="100" data-ng_translator_ref_id="bqj0x43mabazu1s4k4axqtn22">响应式应用</h1>
     </mat-toolbar>
 
-    <mat-sidenav-container class="example-sidenav-container"
-                          [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+    <mat-sidenav-container class="example-sidenav-container" [style.margintop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedinviewport]="mobileQuery.matches" fixedtopgap="56">
         <mat-nav-list>
           @for (nav of fillerNav; track nav) {
-            <a mat-list-item routerLink=".">{{nav}}</a>
+            <a mat-list-item routerlink=".">{{nav}}</a>
           }
         </mat-nav-list>
       </mat-sidenav>
